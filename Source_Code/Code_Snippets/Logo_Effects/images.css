@@ -1,0 +1,77 @@
+#flipimagediv {
+	display: inline-block;
+	border: 1px solid black;
+	width:200px;
+	height:200px;
+	
+}
+
+#flipimagediv img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+#flipimagediv #front, #flipimagediv:hover #back {
+	opacity: 1;
+}
+#flipimagediv:hover #front, #flipimagediv #back{
+	opacity: 0;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper{
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg); /* IE 9 */
+	-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+}	
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 200px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility:hidden; /* Chrome and Safari */
+	-moz-backface-visibility:hidden; /* Firefox */
+	-ms-backface-visibility:hidden; /* Internet Explorer */
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	background: url(frontlogo.png) 0 0 no-repeat;
+	background-size: 200px;
+}
+
+/* back, initially hidden pane */
+.back {
+	background: url(backlogo.png) 0 0 no-repeat;
+	background-size: 200px;
+	transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg); /* IE 9 */
+	-webkit-transform: rotateY(180deg); /* Safari and Chrome */
+}
