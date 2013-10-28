@@ -101,7 +101,8 @@
 
         // Open menu
         $body.css({
-          width: $body.width(),
+		// ########## BILL MODIFICATION: scale the document size to consider menu size
+          width: $body.width() - menuWidth,
           position: 'absolute'
         }).animate(bodyAnimation, speed);
         $menu.css('display', 'block').animate(menuAnimation, speed, function() {
@@ -112,6 +113,7 @@
             callback(name);
           }
         });
+		
       }
       // Close Sidr
       else {

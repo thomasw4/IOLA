@@ -78,14 +78,16 @@
     <div class="jumbotron">
       <div class="container">
 	  
-	  	<div id="sidr">
+		<div id="sidr">
 			<ul>
 				<a class="btn pull-right" id="simple" href="#sidr"> << </a>
 				<li>
-				<a class="accordion-toggle" data-toggle="collapse" data-target="#u1">Unit 1  <b class="caret"></b></a>
+				<a class="accordion-toggle in" href="content_demo.html" data-toggle="collapse" data-target="#u1">Unit 1 Magic Carpet Ride  <b class="caret"></b></a>
 				   <p class="collapse" id="u1">
-						<a href="#" title="Title"> - Task 1</a>
-						<a href="#" title="Title"> - Task 2</a>
+						<a href="#" title="Title"> - Task 1: Working in R^2</a>
+						<a href="#" title="Title"> - Task 2: Working in R^2</a>
+						<a href="#" title="Title"> - Task 3: Working in R^3</a>
+						<a href="#" title="Title"> - Task 4: Moving Towards R^n</a>
 				   </p>
                 </li>		
 				<li>
@@ -174,22 +176,13 @@
 	<!-- Include the Sidr JS -->
 	<script>
 	$(document).ready(function() {
-	$('#simple-menu').sidr();
+	$('#simple-menu').sidr({ speed : 50 });
 	});
 	</script>
 		<script>
 	$(document).ready(function() {
-	$('#simple').sidr();
+	$('#simple').sidr({ speed : 50 });
 	});
 	</script>
-	
-	
-	<!-- Automatically open sidebar -->
-	<!--script>
-	function init(){
-	$('#simple-menu').sidr();
-	$.sidr('open', 'sidr');
-	}
-	</script-->
   </body>
 </html>
