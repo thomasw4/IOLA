@@ -6803,3 +6803,26 @@ td.visible-print {
     display: none !important;
   }
 }
+
+#float1{
+    background:#ebebeb;
+    width:20px;
+    height:100%;
+    position:fixed;
+    top:50px;
+    left:0;
+    display : table-cell;
+    vertical-align : middle;
+    border : 1px solid black;
+    float:none;
+}
+#float{
+    background:#ebebeb;
+    width : 17px;
+    height : 100%;
+    display : table-cell;
+    border : 1px solid black;
+    float:none;
+	position:fixed;
+}
+ .bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}

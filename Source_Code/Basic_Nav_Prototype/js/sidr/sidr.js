@@ -87,7 +87,7 @@
 
         // Left or right?
         if(side === 'left') {
-          bodyAnimation = {left: menuWidth + 'px'};
+          bodyAnimation = {left: menuWidth +'px'};
           menuAnimation = {left: '0px'};
         }
         else {
@@ -102,7 +102,7 @@
         // Open menu
         $body.css({
 		// ########## BILL MODIFICATION: scale the document size to consider menu size
-          width: $body.width() - menuWidth,
+          width: $body.width() - (menuWidth - 1),
           position: 'absolute'
         }).animate(bodyAnimation, speed);
         $menu.css('display', 'block').animate(menuAnimation, speed, function() {
