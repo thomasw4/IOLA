@@ -746,8 +746,8 @@ pre code {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 32px;
+  padding-left: 32px;    /*  Bill: added 17px padding to account for sidebar */
   margin-right: auto;
   margin-left: auto;
 }
@@ -6804,18 +6804,6 @@ td.visible-print {
   }
 }
 
-#float1{
-    background:#ebebeb;
-    width:20px;
-    height:100%;
-    position:fixed;
-    top:50px;
-    left:0;
-    display : table-cell;
-    vertical-align : middle;
-    border : 1px solid black;
-    float:none;
-}
 #float{
     background:#ebebeb;
     width : 17px;
