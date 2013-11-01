@@ -1,0 +1,11 @@
+/* Div for the lefthand floating sidebar expand/contract button */
+#float{
+    background:#ebebeb;
+    width : 17px;
+    height : 100%;
+    display : table-cell;
+    border : 1px solid black;
+    float:none;
+	position:fixed;
+}
+.bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}

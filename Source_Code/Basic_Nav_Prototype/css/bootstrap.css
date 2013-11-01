@@ -6803,14 +6803,122 @@ td.visible-print {
     display: none !important;
   }
 }
-
-#float{
-    background:#ebebeb;
-    width : 17px;
-    height : 100%;
-    display : table-cell;
-    border : 1px solid black;
-    float:none;
-	position:fixed;
+ 
+/* A few custom-colored buttons. */
+/* useful generator: http://twitterbootstrap3buttons.w3masters.nl/ */
+ .btn-orange { 
+  background-color: #df6d0c;  	/* primary color */
+  border-color: #df6d0c;
+  color: #ffffff;				/* inner text color */
 }
- .bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active {
+  background-color: #c7610b;	/* button active colors */
+  border-color: #af5509;
+  color: #f0f0f0;
+}
+.btn-orange.disabled:hover,
+.btn-orange.disabled:focus,
+.btn-orange.disabled:active,
+.btn-orange.disabled.active,
+.btn-orange[disabled]:hover,
+.btn-orange[disabled]:focus,
+.btn-orange[disabled]:active,
+.btn-orange[disabled].active,
+fieldset[disabled] .btn-orange:hover,
+fieldset[disabled] .btn-orange:focus,
+fieldset[disabled] .btn-orange:active,
+fieldset[disabled] .btn-orange.active {
+  background-color: #df6d0c;
+  border-color: #df6d0c;
+}
+
+.btn-blue {
+  background-color: #389eb2;
+  border-color: #389eb2;
+  color:#ffffff;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active {
+  background-color: #328d9f;
+  border-color: #2c7c8b;
+    color:#f0f0f0;
+}
+.btn-blue.disabled:hover,
+.btn-blue.disabled:focus,
+.btn-blue.disabled:active,
+.btn-blue.disabled.active,
+.btn-blue[disabled]:hover,
+.btn-blue[disabled]:focus,
+.btn-blue[disabled]:active,
+.btn-blue[disabled].active,
+fieldset[disabled] .btn-blue:hover,
+fieldset[disabled] .btn-blue:focus,
+fieldset[disabled] .btn-blue:active,
+fieldset[disabled] .btn-blue.active {
+  background-color: #389eb2;
+  border-color: #389eb2;
+}
+
+.btn-tan {
+  background-color: #feebc3;
+  border-color: #feebc3;
+  color: #000000;
+}
+.btn-tan:hover,
+.btn-tan:focus,
+.btn-tan:active,
+.btn-tan.active {
+  background-color: #fee3aa;
+  border-color: #fdda91;
+}
+.btn-tan.disabled:hover,
+.btn-tan.disabled:focus,
+.btn-tan.disabled:active,
+.btn-tan.disabled.active,
+.btn-tan[disabled]:hover,
+.btn-tan[disabled]:focus,
+.btn-tan[disabled]:active,
+.btn-tan[disabled].active,
+fieldset[disabled] .btn-tan:hover,
+fieldset[disabled] .btn-tan:focus,
+fieldset[disabled] .btn-tan:active,
+fieldset[disabled] .btn-tan.active {
+  background-color: #feebc3;
+  border-color: #feebc3;
+}
+
+.btn-gray {
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+  color:#ffffff;
+}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active {
+  background-color: #323232;
+  border-color: #262626;
+    color:#f0f0f0;
+
+}
+.btn-gray.disabled:hover,
+.btn-gray.disabled:focus,
+.btn-gray.disabled:active,
+.btn-gray.disabled.active,
+.btn-gray[disabled]:hover,
+.btn-gray[disabled]:focus,
+.btn-gray[disabled]:active,
+.btn-gray[disabled].active,
+fieldset[disabled] .btn-gray:hover,
+fieldset[disabled] .btn-gray:focus,
+fieldset[disabled] .btn-gray:active,
+fieldset[disabled] .btn-gray.active {
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+}
+
