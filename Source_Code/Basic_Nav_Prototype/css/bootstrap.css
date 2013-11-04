@@ -219,6 +219,10 @@ table {
     text-shadow: none !important;
     background: transparent !important;
     box-shadow: none !important;
+	font-size:8pt; 
+	margin:0;
+	float:none;
+	page-break-after: avoid;
   }
   a,
   a:visited {
@@ -249,6 +253,9 @@ table {
   }
   img {
     max-width: 100% !important;
+  }
+  .btn{
+	display: none !important;
   }
   @page  {
     margin: 2cm .5cm;
@@ -283,6 +290,15 @@ table {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important;
+  }
+  .navbar-header{
+	display: none !important;
+  }
+  .sidr{
+	display:none !important;
+  }
+  .float{
+	display:none !important;
   }
 }
 
@@ -4917,8 +4933,8 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
@@ -4941,8 +4957,8 @@ a.list-group-item.active > .badge,
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .container .jumbotron {
     padding-right: 60px;
@@ -6781,6 +6797,7 @@ td.visible-print {
 }
 
 @media print {
+
   .visible-print {
     display: block !important;
   }

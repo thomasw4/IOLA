@@ -10,7 +10,7 @@
     <title>IOLA Content Demo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css"  type="text/css" rel="stylesheet">
 	<link href="css/iola.css" rel="stylesheet">
 	<link rel="stylesheet" href="js/sidr/stylesheets/jquery.sidr.light.css">
 
@@ -26,7 +26,7 @@
   </head>
 
   <body onload="init()">
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top hidden-print">
 	  <div class="navbar-inner">
 		  <div class="container">
 			<div class="navbar-header">
@@ -76,7 +76,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<a style="display:block" href="#sidr">
-	<div id="float">
+	<div id="float" class="hidden-print">
 		<br>
 		<span class="glyphicon glyphicon-resize-horizontal"></span>
 		<span class="bottomaligned">
@@ -85,12 +85,12 @@
 	</div>
 
 </a>
-    <div class="container">
+    <div class="container print">
 	
 		<div class="jumbotron">
-			<div id="sidr">
+			<div id="sidr" class="hidden-print">
 				<ul>
-					<a class="btn pull-right" id="simple" href="#sidr"> << </a>
+					<a class="btn pull-right hidden-print" id="simple" href="#sidr"> << </a>
 					<li>
 					<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><Strong>Unit 1 Magic Carpet Ride  <b class="caret"></b></strong></a>
 					   <p class="collapse" id="u1">
@@ -132,10 +132,10 @@
 			<br>
 			</p>
 		</div>
-
+		
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
-			<div class="accordion" id="summary">		  
+			<div class="accordion " id="summary">		  
 				<h2><a href="u1t1.html">Task 1: The Carpet Ride Problem (Working in $R^2$)</a></h2>
 				<ul>
 					<a class="btn btn-gray" data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -213,7 +213,7 @@
 		
 				<h2><a href="u1t1.html">Task 4: Linear [In]dependence (Moving Towards $R^n$)</a></h2>
 				<ul>
-					<a class=" btn btn-orange" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class=" btn btn-orange hidden-print" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">
 						<ul>
 							<blockquote>
@@ -306,6 +306,19 @@
 	$.sidr('open', 'sidr');
 	$('#u1').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
 	}
+	
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+
+
 	</script>
   </body>
 </html>

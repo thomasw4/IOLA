@@ -77,7 +77,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<a style="display:block" href="#sidr">
-		<div id="float">
+		<div id="float" class="hidden-print">
 			<br>
 			<span class="glyphicon glyphicon-resize-horizontal"></span>
 			<span class="bottomaligned">
@@ -159,7 +159,7 @@
 		<br>
 		
 		<ul>
-			<a class="btn btn-gray center" href="#print">Print Lesson</a>
+			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
 		</ul>
 		
 		<ul>
@@ -570,6 +570,10 @@
 	$(document).ready(function() {
 	$('#simple-menu').sidr();
 	});
+	$(document).ready(function() {
+	$('#printt').sidr();
+	});
+
 	</script>
 	<script>
 	$(document).ready(function() {
@@ -591,10 +595,10 @@
 	}
 	
 	$('.carousel').carousel(
-{
-pause: true,
-interval: false
-});
+		{
+		pause: true,
+		interval: false
+		});
 	</script>
   </body>
 </html>
