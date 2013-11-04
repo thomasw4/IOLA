@@ -9,3 +9,10 @@
 	position:fixed;
 }
 .bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}
+
+/*img {
+  border: 0;
+  box-shadow: 0 12px 12px -10px #c4c4c4;
+-webkit-box-shadow: 0 17px 22px -20px #c4c4c4;
+-moz-box-shadow: 0 12px 12px -10px #c4c4c4;
+}*/
