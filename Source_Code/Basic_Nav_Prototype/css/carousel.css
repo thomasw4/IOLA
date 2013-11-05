@@ -20,7 +20,6 @@
 
 /* Carousel base class */
 .carousel {
-
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
 .carousel-caption {
@@ -39,9 +38,10 @@
   background-color: #777;
 }
 .carousel-inner > .item > img {
-  position: absolute;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
   top: 0;
-  left: 25%;
   min-width: 50%;
   height: 450px;
   width: 450px;
