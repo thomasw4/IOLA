@@ -59,12 +59,12 @@
 				  </ul>
 				</li>
 			  </ul>
-			  <form class="navbar-form navbar-right">
+			  <form class="navbar-form navbar-right" action="login.php" method="post">
 				<div class="form-group">
-				  <input type="text" placeholder="Username" class="form-control">
+				  <input type="text" placeholder="Username" class="form-control" name="username">
 				</div>
 				<div class="form-group">
-				  <input type="password" placeholder="Password" class="form-control">
+				  <input type="password" placeholder="Password" class="form-control" name="password">
 				</div>
 				<button type="submit" class="btn btn-warning">Sign in</button>
 			  </form>
@@ -72,6 +72,8 @@
 		  </div>
 		</div>
     </div>
+	  
+	  	<?php  if ($_SESSION['login']) {  ?>
 		<a style="display:block" href="#sidr">
 		<div id="float">
 			<br>
@@ -80,6 +82,7 @@
 				<span class="glyphicon glyphicon-resize-horizontal"></span>
 			</span>
 		</div>
+	  	<?php } ?>
 	</a>
 
 	
@@ -88,16 +91,17 @@
     <div class="jumbotron">
       <div class="container">
 	  
+	  	<?php  if ($_SESSION['login']) {  ?>
 		<div id="sidr">
 			<ul>
 				<li>
 				<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1">Unit 1 Magic Carpet Ride  <b class="caret"></b></a>
 				   <p class="collapse" id="u1">
-				   		<a href="u1.html" title="Title">- Unit 1 Summary</a>
-						<a href="u1t1.html" title="Title"> - Task 1: The Carpet Ride Problem</a>
-						<a href="u1t2.html" title="Title"> - Task 2: Hide and Seek</a>
-						<a href="u1t1.html" title="Title"> - Task 3: Getting Back Home</a>
-						<a href="u1t1.html" title="Title"> - Task 4: Linear (In)dependence</a>
+				   		<a href="u1.php" title="Title">- Unit 1 Summary</a>
+						<a href="u1t1.php" title="Title"> - Task 1: The Carpet Ride Problem</a>
+						<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
+						<a href="u1t1.php" title="Title"> - Task 3: Getting Back Home</a>
+						<a href="u1t1.php" title="Title"> - Task 4: Linear (In)dependence</a>
 
 				   </p>
                 </li>		
@@ -125,8 +129,7 @@
                 </li>
 			</ul>
 		</div>
-		
-					
+	  	<?php } ?>		
 
         <h1>Welcome to IOLA!</h1>
         <p>Developing Inquiry -Oriented Instructional Materials for Linear Algebra Instruction</p>

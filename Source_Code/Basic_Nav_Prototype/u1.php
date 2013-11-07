@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['login']) || !$_SESSION['login']) {
+	header('Location:mockup.php');
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,7 +50,7 @@
 			
 			  <ul class="nav navbar-nav">
 				<li></li>
-				<li><a href="mockup.html">Home</a></li>
+				<li><a href="mockup.php">Home</a></li>
 				<li  class="active"><a id="simple-menu" href="#sidr">Modules</a></li>
 				<li><a href="#contact">Team</a></li>
 				<li class="dropdown">
@@ -57,12 +65,12 @@
 				  </ul>
 				</li>
 			  </ul>
-			  <form class="navbar-form navbar-right">
+			  <form class="navbar-form navbar-right" action="login.php" method="post">
 				<div class="form-group">
-				  <input type="text" placeholder="Username" class="form-control">
+				  <input type="text" placeholder="Username" class="form-control" name="username">
 				</div>
 				<div class="form-group">
-				  <input type="password" placeholder="Password" class="form-control">
+				  <input type="password" placeholder="Password" class="form-control" name="password">
 				</div>
 				<button type="submit" class="btn btn-warning">Sign in</button>
 			  </form>
@@ -92,11 +100,11 @@
 					<li>
 					<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><Strong>Unit 1 Magic Carpet Ride  <b class="caret"></b></strong></a>
 					   <p class="collapse" id="u1">
-							<a href="u1.html" title="Title"><strong> - Unit 1 Summary</strong></a>
-							<a href="u1t1.html" title="Title">- Task 1: The Carpet Ride Problem</a>
-							<a href="u1t2.html" title="Title"> - Task 2: Hide and Seek</a>
-							<a href="u1t1.html" title="Title"> - Task 3: Getting Back Home</a>
-							<a href="u1t1.html" title="Title"> - Task 4: Linear (In)dependence</a>
+							<a href="u1.php" title="Title"><strong> - Unit 1 Summary</strong></a>
+							<a href="u1t1.php" title="Title">- Task 1: The Carpet Ride Problem</a>
+							<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
+							<a href="u1t1.php" title="Title"> - Task 3: Getting Back Home</a>
+							<a href="u1t1.php" title="Title"> - Task 4: Linear (In)dependence</a>
 					   </p>
 					</li>		
 					<li>
@@ -134,7 +142,7 @@
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
 			<div class="accordion " id="summary">		  
-				<h2><a href="u1t1.html">Task 1: The Carpet Ride Problem (Working in $R^2$)</a></h2>
+				<h2><a href="u1t1.php">Task 1: The Carpet Ride Problem (Working in $R^2$)</a></h2>
 				<ul>
 					<a class="btn btn-gray" data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t1">
@@ -161,7 +169,7 @@
 					</div>
 				</ul>
 		
-				<h2><a href="u1t2.html">Task 2: Hide and Seek (Working in $R^2$)</a></h2>
+				<h2><a href="u1t2.php">Task 2: Hide and Seek (Working in $R^2$)</a></h2>
 				<ul>
 					<a class="btn btn-tan" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t2">
@@ -185,7 +193,7 @@
 					</ul>
 				</ul>
 
-				<h2><a href="u1t1.html">Task 3: Getting Back Home (Working in $R^3$)</a></h2>
+				<h2><a href="u1t1.php">Task 3: Getting Back Home (Working in $R^3$)</a></h2>
 				<ul>
 					<a class="btn btn-blue" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t3">
@@ -209,7 +217,7 @@
 					</ul>
 				</ul>
 		
-				<h2><a href="u1t1.html">Task 4: Linear [In]dependence (Moving Towards $R^n$)</a></h2>
+				<h2><a href="u1t1.php">Task 4: Linear [In]dependence (Moving Towards $R^n$)</a></h2>
 				<ul>
 					<a class=" btn btn-orange hidden-print" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">
@@ -256,7 +264,7 @@
 		<footer>
 			<ul class="list-inline text-right">
 				<li><p>&copy; IOLA Team 2013</p></li>
-				<li><a href="#team.html">Contact Us</a></li>
+				<li><a href="#team.php">Contact Us</a></li>
 			</ul>
 		</footer>
     </div> <!-- /container -->
