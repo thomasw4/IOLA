@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['login']) || !$_SESSION['login']) {
+if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	header('Location:mockup.php');
 	exit();
 }
@@ -35,7 +35,7 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
   </head>
 
   <body onload="init()">
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="navbar-inner">
 		  <div class="container">
 			<div class="navbar-header">
@@ -44,7 +44,7 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="#"><img src="img/logo.png" width="48" height="48" alt="IOLA"></a>
+			  <a class="navbar-brand" href="#"><img src="img/logo_i.png" width="48" height="48" alt="IOLA"></a>
 			  			  
 
 			</div>
@@ -54,7 +54,7 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
 				<li></li>
 				<li><a href="mockup.php">Home</a></li>
 				<li  class="active"><a id="simple-menu" href="#sidr">Modules</a></li>
-				<li><a href="#contact">Team</a></li>
+				<li><a href="team.php">Team</a></li>
 				<li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 				  <ul class="dropdown-menu">
@@ -67,15 +67,12 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
 				  </ul>
 				</li>
 			  </ul>
-			  <form class="navbar-form navbar-right" action="login.php" method="post">
-				<div class="form-group">
-				  <input type="text" placeholder="Username" class="form-control" name="username">
+			  <form class="navbar-form navbar-right" action="logout.php" method="post">
+				<div class="form-group" style="padding-right:15px">
+					<font  color="FFFFFF">Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!</font>
 				</div>
-				<div class="form-group">
-				  <input type="password" placeholder="Password" class="form-control" name="password">
-				</div>
-				<button type="submit" class="btn btn-warning">Sign in</button>
-			  </form>
+				<button type="submit" class="btn btn-warning" value="logout">Log out</button>
+			  </form> 
 			</div><!--/.navbar-collapse -->
 		  </div>
 		</div>
@@ -132,10 +129,12 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
                 </li>
 			</ul>
 		</div>
-		
+	
         <h1 class="text-center">Unit 1: Magic Carpet Ride</h1>
 		</div>
 				<!-- Begin expandall section -->
+		<div class="jumbotron">
+
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
 			<div class="accordion" id="summary">		  
@@ -550,7 +549,7 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
 	<footer>
 		<ul class="list-inline text-right">
 			<li><p>&copy; IOLA Team 2013</p></li>
-			<li><a href="#team.php">Contact Us</a></li>
+			<li><a href="team.php">Contact Us</a></li>
 		</ul>
 	</footer>
     </div> <!-- /container -->

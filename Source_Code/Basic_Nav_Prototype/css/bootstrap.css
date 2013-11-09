@@ -320,7 +320,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #428bca;
 }
 
 input,
@@ -658,7 +658,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #3f3f3f;
 }
 
 blockquote p {
@@ -4935,11 +4935,11 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 10px;
   margin-bottom: 10px;
-  font-size: 21px;
+  /*font-size: 21px;
   font-weight: 200;
-  line-height: 2.1428571435;
+  line-height: 2.1428571435;*/
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #efefef;
 }
 
 .jumbotron h1 {
