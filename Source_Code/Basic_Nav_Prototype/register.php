@@ -139,10 +139,10 @@
 				  </ul>
 				</li>
 			  </ul>
-			  <?php  if (!$_SESSION['user']) {  ?>
+			  <?php  if (!isset($_SESSION['user'])) {  ?>
 			  <form class="navbar-form navbar-right" action="mockup.php" method="post">
 				<div class="form-group">
-				  <input type="text" name="username" class="form-control" value="<?php echo $submitted_username; ?>">
+				  <input type="text" name="username" class="form-control" value="">
 				</div>
 				<div class="form-group">
 				  <input type="password" class="form-control" name="password" value="">
@@ -150,7 +150,7 @@
 				<button type="submit" class="btn btn-warning" value="Login">Sign in</button>
 			  </form> 
 			<?php } ?>
- 			<?php  if ($_SESSION['user']) {  ?>
+ 			<?php  if (isset($_SESSION['user'])) {  ?>
 			  <form class="navbar-form navbar-right" action="logout.php" method="post">
 				<div class="form-group" style="padding-right:15px">
 					Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!

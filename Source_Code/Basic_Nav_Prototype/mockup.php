@@ -95,7 +95,7 @@
 			  <ul class="nav navbar-nav">
 				<li></li>
 				<li class="active"><a href="#">Home</a></li>
- 				<?php  if ($_SESSION['user']) {  ?>
+ 				<?php  if (isset($_SESSION['user'])) {  ?>
 					<li><a id="simple-menu" href="#sidr">Modules</a></li>
 	  			<?php } ?>
 				<li><a href="team.php">Team</a></li>
@@ -111,7 +111,7 @@
 				  </ul>
 				</li>
 			  </ul>
-			  <?php  if (!$_SESSION['user']) {  ?>
+			  <?php  if (!isset($_SESSION['user'])) {  ?>
 			  <form class="navbar-form navbar-right" action="mockup.php" method="post">
 				<div class="form-group">
 				  <input type="text" name="username" class="form-control" value="username">
@@ -122,7 +122,7 @@
 				<button type="submit" class="btn btn-primary" value="Login">Sign in</button>
 			  </form> 
 			<?php } ?>
- 			<?php  if ($_SESSION['user']) {  ?>
+ 			<?php  if (isset($_SESSION['user'])) {  ?>
 			  <form class="navbar-form navbar-right" action="logout.php" method="post">
 				<div class="form-group" style="padding-right:15px">
 					<font  color="FFFFFF">Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!</font>
@@ -136,7 +136,7 @@
 		</div>
     </div>
 	  
-	<?php  if ($_SESSION['user']) {  ?>
+	<?php  if (isset($_SESSION['user'])) {  ?>
 	<a style="display:block" href="#sidr">
 		<div id="float" class="hidden-print">
 			<br>
@@ -160,7 +160,7 @@
     <div class="jumbotron">
       <div class="container">
 	  
-	  	<?php  if ($_SESSION['user']) {  ?>
+	  	<?php  if (isset($_SESSION['user'])) {  ?>
 		<div id="sidr">
 			<ul>
 				<li>
