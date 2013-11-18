@@ -136,17 +136,23 @@
 		</div>
     </div>
 	  
-	  	<?php  if ($_SESSION['user']) {  ?>
-		<a style="display:block" href="#sidr">
-		<div id="float">
+	<?php  if ($_SESSION['user']) {  ?>
+	<a style="display:block" href="#sidr">
+		<div id="float" class="hidden-print">
 			<br>
 			<span class="glyphicon glyphicon-resize-horizontal"></span>
 			<span class="bottomaligned">
 				<span class="glyphicon glyphicon-resize-horizontal"></span>
 			</span>
 		</div>
-	  	<?php } ?>
+		<div id="float2" class="hidden-print">
+			<br>
+			<span class="ba"><h3>
+				<span class="glyphicon glyphicon-circle-arrow-right"></span></h3>
+			</span>
+		</div>
 	</a>
+	<?php } ?>
 
 	
 
@@ -258,13 +264,13 @@
 	<!-- Include the Sidr JS -->
 	<script>
 	$(document).ready(function() {
-	$('#simple-menu').sidr({ speed : 50 });
-	});
-		$(document).ready(function() {
+	$('#simple-menu').sidr();
+	$('#float2').sidr();
+	$('#simple').sidr();
 	$('#float').sidr();
 	});
 	</script>
-		<script>
+	<script>
 	$(document).ready(function() {
 	$('#simple').sidr({ speed : 50 });
 	});

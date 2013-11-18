@@ -133,8 +133,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
         <h1 class="text-center">Unit 1: Magic Carpet Ride</h1>
 		</div>
-				<!-- Begin expandall section -->
-      <div class="jumbotron">
+		<!-- Begin expandall section -->
+		<div class="jumbotron">
 
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
@@ -146,22 +146,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 			<ul class="collapse" id = "t1" >
 				<blockquote>
-				<p class="lead" >Goal is to develop students' familiarity with the language, notation, and graphical representations for linear combinations of vectors (and connections to linear systems).</p>
-				<p>By the end of the lesson students should be able to:</p>
-				<ul>
-					<li>Develop graphical and algebraic representations of scalar multiples and linear combinations of vectors</li>
-					<li>Interpret scalar multiplication as repeated tip to tail vector addition and as a multiplicative stretching (or shrinking) of the vector </li>
-					<li>Determine the correct solution of $(30, 17)$ and understand what the 30 means and what the 17 means in relation to the vector equation</li>
-					<li>Represent the problem situation with a Vector Equation and a System of Equations</li>
-					<li>Translate between vector equation, systems of equations, and geometric representations of each</li>
-					<li>Explain what it means to be a solution to a vector equation and to a system of equations</li>
-				</ul>
-				<br>
-				<p>The instructor should:</p>
-				<ul>
-					<li>Define what is meant by scalar multiples and linear combinations of vectors</li>
-					<li>Define what is meant by vector equation and system of equations</li>
-				</ul>
+					<p class="lead" >Main Goal: To develop informal ideas about span in a 2D setting (drawing on a metaphor of "getting anywhere" using 2 modes of transportation corresponding to vectors). </p>
+					<p>By the end of the lesson students should be able to:</p>
+					<ul>
+						<li>Conclude that there is nowhere that Gauss can hide </li>
+						<li>Explicitly compare various graphical and algebraic justifications to this conclusion </li>
+						<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $R^2$ that Gauss tries to hide</li>
+					</ul>
+					<br>
+					<p>The instructor should:</p>
+					<ul>
+						<li>Introduce the formal definition of span</li>
+						<li><em>NOT</em> mention Linear (in)dependence (this comes up in Task 3)</li>
+					</ul>
 				</blockquote>
 			</ul>
 		<br>
@@ -170,7 +167,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		</ul>
 		
 		<ul>
-			<a class="btn btn-info center" href="#handout1">Handout 1: The Carpet Ride Problem</a>
+			<a class="btn btn-info center" href="#handout1">Handout 1: Hide-and-Seek</a>
 		</ul>		
 		
 		<ul>
@@ -180,15 +177,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					<blockquote>
 						<p class="lead">Goals</p>
 						<ul>
-							<li>Students' goal on Handout 1 - <a href="#handout">The Carpet Ride Problem</a> - is to determine if it is possible to reach Old Man Gauss with the two given modes of transportation. </li>
-							<li>More generally, the goal is to develop students' familiarity with the language, notation, and graphical representations for linear combinations of vectors (and connections to systems of equations).</li>
-							<li>An implicit goal for Problem 1 is to provide an opportunity for students to conceptualize and work with linear combination as a mathematical object. This will help students' success in Task 2, when they are asked to consider the collection of all possible places Gauss could live. This sets them up well for the definition of span - the set of all possible linear combinations of a set of vectors.</li>
+							<li>The main goal of the problem on Handout 2 - <a href="#handout">Hide-and-Seek</a> - is to determine whether there is any location where Old Man Gauss can hide so that a person would be unable to reach him using the same two modes of transportation from the previous problem. </li>
+							<li>More generally, the goal is to help students develop the notion of span in a two-dimensional setting before formalizing the concept with a definition. </li>
 						</ul>
 						<br>
 						<p>Rationale</p>
 						<ul>
-							<li>The wording of the Carpet Ride Problem is intended to be clear and unambiguous but also allow for multiple solution strategies (algebraic, geometric, etc.).</li>
-							<li>We chose to have Gauss live at $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ because the solution to $a\begin{bmatrix} 3 \\ 1 \end{bmatrix} + b\begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ (or the equivalent system of equations) is (a) not immediately obvious, (b) cannot be easily guessed, and (c) is small enough in magnitude that students could graph if they so choose.</li>
+							<li>We wrote the Hide-n-Seek task the way it is because it presents an intuitive way to get at the notion of span.  Students' work in Task 1 (determining how to get to Gauss if he lives at $(107,64)$ focused on one particular linear combination.  This task, which asks students if Gauss can hide, focuses on all possible linear combinations of the two transportation vectors.  As part of this process students should realize that with these two modes of transportation (vectors), they can indeed get anywhere.  The bulk of the classroom discussion is on the ways students can come to see this geometrically and algebraically.  In doing this, the task reemphasizes that all real-valued scalars are viable and how to interpret negatives in the MCR task setting.</li><br>
+							<li>The culmination of the task is being able to define span formally using standard symbolic notion while having students have a sense of this as being "all the places you can get" with a set of vectors.  We also note that we asked "Can he hide?" versus "Where all can you get?" because asking students to focus on a series of single points (possible hiding places) naturally leads to an exploration of all possible locations whereas focusing immediately on all possible locations might not push students to consider particular points within the space.</li>
 						</ul>
 					</blockquote>
 				</ul>
@@ -200,107 +196,70 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div class="accordion-body collapse" id = "studentthinking">
 				<ul>
 					<blockquote>
-						It is not immediately obvious to students that Old Man Gauss can be reached by riding the magic carpet forward for 17 hours and the hover board forward for 30 hours, so there is a substantial amount of mathematical work for students to do just with this initial task.  Below are 6 examples of student work.  
+						At the heart of students' difficulties in this task is the issue of developing a coherent geometric interpretation for linear combination of vectors with all possible cases for sign combination of scalar coefficients.  As students work on this task, they begin to develop the ability to conceptualize movement in the plane using combinations of vectors.  In looking at the definition of span, it may seem obvious that a task intended to help students develop an intuitive understanding of span should require students to investigate the idea of linear combinations in depth.  However, we see here that it is a non-trivial task for students to explore and develop a concept image for span in which all possible linear combinations of vectors are conceptualized in a coordinated way.  Below are 6 examples of student work.
 						<br><br>
-
-						<!-- Carousel
-						================================================== -->
+						<!-- Carousel ================================================== -->
 						<div id="myCarousel" class="carousel slide">
 						  <!-- Indicators -->
 						  <div class="carousel-inner">
 							<div class="item active">
-							  <img src="img/u1t1/1.png" alt="Student thinking 1">
+							  <img src="img/u1t2/1.png" alt="Student thinking 1">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Guess and check</em> method: (1/6)</p>
-									This group began by using the hoverboard 10 hours at a time. After iterating this 10-hour journey three times and recognizing that this got them to a location of 90 miles E and 30 units N, they determined that riding the magic carpet for 17 additional hours would allow them to arrive at their desired destination of 107 miles E and 64 miles N.
+								  <p><em>Cone</em> method: (1/6)</p>
+									This group argued that the only points that could be reached were the ones that lie "between" the cone traced out by the extensions of the two transportation vectors. Their argument was framed in terms of the slopes of the lines corresponding to the vectors when drawn from the origin. Notice this response is incorrect, most likely because students neglected to use negative scalars with the modes of transportation. 
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t1/2.jpg"/ alt="Student thinking 2">
+							  <img src="img/u1t2/2.jpg"/ alt="Student thinking 2">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Guess and check via vector weighting method:</em>  (2/6)</p>
-									This group wrote a vector equation (but with 'fraction-like' notation). They determined the weights that each vector would need so the East and North components would sum to 107 and 64, respectively. They included a graphical representation where the weighted vectors are depicted tip-to-tail.
+								  <p><em>Double cone method:</em>  (2/6)</p>
+									This group interpreted the sign of the scalar as an indication of whether they were moving forward or backward in time. So, in their interpretation, either both modes of transportation had to move forward (cone in first quadrant) or both had to move backward (cone in third quadrant). 	
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t1/3.png"/ alt="Student thinking 3">
+							  <img src="img/u1t2/3.jpg"/ alt="Student thinking 3">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Systems of equations</em> method: (3/6)</p>
-									This group defined variables ($t1$ and $t2$) for the amount of time spent on each mode of transportation and represented the problem using a system of equations. They used elimination to solve the system and drew a diagram to indicate the journey corresponding to their solution. In their diagram they used right triangles to illustrate the component parts of each vector that made up their journey to Gauss's cabin and included a dashed line to depict the resultant vector. 																	</div>
+								  <p><em>Grid</em> method: (3/6)</p>
+									This board and the one below illustrate the idea of "gridding" the plane with lines parallel to the two initial vectors.  As part of the discussion a student asked, "Can we use any scalar to slide to any point on the graph?" This question was resolved by exploring when a vector equation equivalent to that shown at the top of this board had a solution.
 							  </div>
 							</div>
+							</div>
 							<div class="item">
-							  <img src="img/u1t1/4.png"/ alt="Student thinking 4">
+							  <img src="img/u1t2/4.jpg"/ alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Vector equation becomes a system</em> method:  (4/6)</p>
-									This group began by representing the problem using a vector equation. They rewrote the vector equation as a system of equations, which they solved. Finally, they depicted the journey corresponding to their solution with vectors drawn tip-to-tail. They also included a depiction of the resultant vector.									
+								  <p><em>Sliding</em> method:  (4/6)</p>
+									This group argued that you can reach any point on the plane by taking into consideration the ability to ride any given mode of transportation backwards. They explained that the portions of the graph that the Double Cone group deemed unreachable were accessible when considering that you can travel in the negative direction. For example, to travel to a point located in the 2nd quadrant, you travel in the positive direction a set distance with the magic carpet then travel in the negative direction with the hover board. Because each vector can be extended to any desired length through scalar multiplication, every point on the graph is reachable.  Their in-class description emphasized the metaphor of "sliding" the second vector along the first one to reach any point: "We can slide where we start riding our other mode of transportation, anywhere up and down.  We can extend this [first] one to infinity each way, and then we just set the initial conditions of this [second] one anywhere we want on here."
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t1/5.jpg"/ alt="Student thinking 5">
+							  <img src="img/u1t2/5.jpg"/ alt="Student thinking 5">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p>Noticing <em>net times</em>:  (5/6)</p>
-									This group's made use of a vector equation becomes a systems of equation approach.  They summarized their conclusion by stating, Solution: Use H. Board for 30 hrs and F. Carpet for 17 hrs (these are net times). The mention of the solution representing net time can be leveraged during whole class discussion to a conversation about unique solutions.									
+								  <p><em>Zig-Zag</em> method:  (5/6)</p>
+									This group also used the "Grid" method.  The green and red lines indicate a detailed gridding of that portion of the graph using vectors with the same direction as the original vectors.  The blue vectors indicate what we call the "zig-zag" method.  For this method, students imagined using each vector (mode of transportation) for a short time repeatedly.  Alternating between the two modes creates a zig-zag appearance on the graph that helps convince some students that they can reach anywhere. In addition, this board illustrates a system of equations to help answer the question.  The x-direction was set equal to an East/West (E/W) directionand the y-direction was equated to a North/South (N/S) direction.  Using substitution, the students solved for what x and y would have to be to reach any location with coordinates (E/W, N/S).  
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t1/6.jpg"/ alt="Student thinking 6">
+							  <img src="img/u1t2/6.jpg"/ alt="Student thinking 6">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Two different paths</em>:  (6/6)</p>
-									This group makes use of horizontal notation for vectors, a practice students may be familiar with from previous calculus classes. Additionally, the sketch of the problem scenario is color-coded, with red notating the hover board's travel and purple notating the magic carpet's travel.  The group sketch both sides of a parallelogram, representing that one could ride the hover board first and then the magic carpet (the lower half of the parallelogram) or vice versa (the upper half). This could be leveraged in a discussion about unique solutions.									
+								  <p><em>+,+;+,-</em> method:  (6/6)</p>
+									For this white board the students extended the two vectors given for the modes of transportation to divide the plane into four spaces.  They labeled each of the four spaces according to how one would travel to reach them.  For example, if one travels forward on both modes of transportation (i.e., if both vectors are multiplied by a positive scalar), then the result is in the quadrant marked as "both +".  If one travels forward in the <1,2> direction and backwards in the <3,1> direction (i.e., the first vector is multiplied by a positive scalar and the second by a negative scalar), then the result is in the quadrant marked as "+, -." 
 								</div>
 							  </div>
 							</div>
-
 							</div>
 						  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 						  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div><!-- /.carousel -->					
-
-						<!-- NON-CAROUSEL STUDENT THINKING: MAY BE BETTER SUITED FOR MOBILE-->
-						<!--div class="paragraphs">
-							<div class="row">
-								<div class="span4">
-									<div class="clearfix content-heading">
-										<img class="pull-left" src="img/u1t1/1.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										<em>Guess and check</em> method:  This group began by using the hoverboard 10 hours at a time. After iterating this 10-hour journey three times and recognizing that this got them to a location of 90 miles E and 30 units N, they determined that riding the magic carpet for 17 additional hours would allow them to arrive at their desired destination of 107 miles E and 64 miles N. 
-										<br><br>
-										<img class="pull-right" src="img/u1t1/2.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										<em>Guess and check via vector weighting</em> method: This group wrote a vector equation (but with 'fraction-like' notation). They determined the weights that each vector would need so the East and North components would sum to 107 and 64, respectively. They included a graphical representation where the weighted vectors are depicted tip-to-tail. 
-										<br><br>
-										<img class="pull-left" src="img/u1t1/3.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										<em>Systems of equations</em> method: This group defined variables ($t1$ and $t2$) for the amount of time spent on each mode of transportation and represented the problem using a system of equations. They used elimination to solve the system and drew a diagram to indicate the journey corresponding to their solution. In their diagram they used right triangles to illustrate the component parts of each vector that made up their journey to Gauss's cabin and included a dashed line to depict the resultant vector. 									
-										<br><br>
-										<img class="pull-right" src="img/u1t1/4.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										<em>Vector equation becomes a system</em> method: This group began by representing the problem using a vector equation. They rewrote the vector equation as a system of equations, which they solved. Finally, they depicted the journey corresponding to their solution with vectors drawn tip-to-tail. They also included a depiction of the resultant vector.									
-										<br><br>
-										<img class="pull-left" src="img/u1t1/5.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										Noticing <em>net times</em>: This group's made use of a vector equation becomes a systems of equation approach.  They summarized their conclusion by stating, Solution: Use H. Board for 30 hrs and F. Carpet for 17 hrs (these are net times). The mention of the solution representing net time can be leveraged during whole class discussion to a conversation about unique solutions.									
-										<br><br>
-										<img class="pull-right" src="img/u1t1/6.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										<em>Two different paths</em>: This group makes use of horizontal notation for vectors, a practice students may be familiar with from previous calculus classes. Additionally, the sketch of the problem scenario is color-coded, with red notating the hover board's travel and purple notating the magic carpet's travel.  The group sketch both sides of a parallelogram, representing that one could ride the hover board first and then the magic carpet (the lower half of the parallelogram) or vice versa (the upper half). This could be leveraged in a discussion about unique solutions.									
-										<br><br>
-									</div>
-		  
-								</div>
-							</div>
-						</div-->						
 					</blockquote>
 				</ul>
 			</div>
@@ -312,128 +271,168 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<ul>
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
-				When we hand out a new task, we take a moment to make sure everyone is "on the same page" of what the task is asking them to do, if the notation makes sense, etc.  For this task, there are a couple key places for this to occur: 
+				Depending on how long it has been since the students completed Task 1, you may want to review briefly some of the basic ideas and vocabulary from Task 1 such as vector, scalar, and vector equation.  Remind students of the ability to multiply each vector by any real-valued scalar.<br><br>
+				Point out to the students that in Task 1 they were trying to determine how to travel to one location, whereas Task 2 of this Magic Carpet Ride Sequence is to determine if one can get to any point on the plane using just these two modes of transportation.
 				<br><br>
-				<ul>
-					<li>How to interpret the movement along $<3, 1>$ and what it looks like graphically (i.e., graphing the vector $<3, 1>$ emanating from the origin)</li>
-					<li>What it means to ride a mode of transportation for different integer and non-integer periods of time (in forward and reverse) to establish allowable scalars</li>
-					<br>
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t5">Example Discussion Questions &raquo;</a>
-					<br>
-						<div class="accordion-body collapse" id = "t5"">
-							<ul>
-								<blockquote style="background-color:#F8F8F8;">
-									<li>How could we represent, in vector notation, riding the hover board in the forward direction for 5 hours and 10 minutes?</li>
-									<li>How could we represent, in vector notation, riding the magic carpet in the reverse direction for $1 \frac{1}{2}$ hours?</li>
-									<br>							
-									<ul>
-										<li>By asking specific positive and negative non-integer valued "periods of time" from the task setting to be represented in mathematical symbolism (such as $5 \frac{1}{6} \begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $-1.5 \begin{bmatrix} 1 \\ 2 \end{bmatrix} $ from above), the students have the chance to discuss and agree as a class that any real number is a viable scalar, even fractions and negatives.</li>
-										<li>The goal of this short whole-class discussion is to establish enough common ground so that students can engage productively in the task. As such, defining terms is not the main goal here. However, defining scalar and scalar multiple here, if it seems natural and fitting, is fine.</li>
-									</ul>
-								</blockquote>
-							</ul>
-						</div>
-					<br>
-					<li><strong>Something to look for:</strong> Some students may interpret negative scalars as traveling back in time. Allow them to discuss this in whole class discussion. The end goal should be to encourage an agreement to interpret negative scalars as riding in reverse direction. This allows considering the span of 2+ vectors, some with positive and some with negative scalars, to make sense in a consistent way.</li>
-
-						
-
-				</ul>
-				<br><br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Discussing Strategies and Answers During Whole Class Discussion &raquo;</a>
+				
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i1" ">
 					<ul>
 						<blockquote>
-							<p>Discussing Strategies and Answers During Whole Class Discussion (WCD) </p>
+							<p>Working in small groups towards a solution  </p>
 							<br>
-							When you ask your students to work in small groups towards a solution to the problem on Task 1, encourage them to work together (verbally as they determine solutions, in writing them, in graphically interpreting them, etc.). Because we normally do this activity on the first day of class, working together like this in a mathematics class might be new to then. 
-							<br><br>
-							Notice that Handout 1 suggests that the students use symbols and graphs to explain their reasoning.  As you walk around while they work in small groups, if students have done one but not the other, suggest that they do the other.  This helps get the most content "out in the open" for you to draw from during whole class discussion.  Alternatively, if no group does a graphical approach at first, you can send them back to their small groups later for that explicit purpose.  
-							<br><br>
-							It is not immediately obvious to students that Old Man Gauss can be reached (namely, by riding the hover board forward for 30 hours and the magic carpet forward for 17 hours), so there is a substantial amount of mathematical work for students to do.  A variety of approaches are common. See pages 7-8 for student thinking on this task.
+							While walking around to small groups, the instructor should note and encourage a wide variety of arguments, both geometric and symbolic.  Students may not agree on whether there is a place where Gauss can hide and will hopefully display a wide variety of geometric arguments.  Students should be encouraged to fully develop their arguments and/or complete a second argument if they have extra time during small group work.  A wide range of solutions is most productive for whole class discussion.  
 						</blockquote>
 					</ul>
 				</div>
 				<br><br>
 
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working in small groups towards a solution  &raquo;</a>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
 					<ul>
 						<blockquote>
-							<p>Working in small groups towards a solution </p>
-								<br>
-								As seen in the student work examples, a variety of approaches are common. During whole class discussion, the instructor chooses a representative sample of these to have students present and discuss as a class. The three most common could be described as intuitive, vector equation, and system of equations.					<br><br>
-								A short description of how we distinguish the importance of highlighting each method during WCD:
-								<br><br>
+							<p>Discussing different solution strategies during whole class discussion</p>
+							Whole class discussion can be organized around various solution methods.  <br><br>
 								<ul>
-									<li>
-										<Strong>Intuitive approaches (method of 'guess-and-check')</strong>
-										<br><br>
-										<ul>
-											<li>Many students try some version of an informed guess-and-check. The purpose of highlighting this during WCD is to emphasize that intuition is a valid and useful way to attack a new problem. </li>
-										</ul>
-									</li>
+									<a class="btn btn-warning center" data-toggle="collapse" data-target="#na">Numeric approaches (method of 'guess-and-check') &raquo;</a>
 									<br>
-									<li>
-										<Strong>System of equations</strong>
-										<br><br>
+									<div class="accordion-body collapse" id = "na"">
 										<ul>
-											<li>This is a very common approach. Talking about this during WCD allows the instructor to investigate and honor student thinking about the problem and solution strategy</li>
-											<li>Highlighting this allows the instructor to define the term "system of equations"</li>
-											<li>NOTE: deeply investigating a systems of equations approach is not the main point of this task. It will get emphasized again later in the unit and in the semester. </li>
+											<blockquote>
+												Students may choose one or more specific locations and then determine the scalars that allow them to get there.  They may generalize from this that because they can always find an answer, there is nowhere Gauss can hide.
+											</blockquote>
 										</ul>
-									</li>
+									</div>
+								</ul>	
+								<br>
+								<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#ga">Geometric approaches &raquo;</a>
 									<br>
-									<li>
-										<Strong>Vector equation</strong>
-										<br><br>
+									<div class="accordion-body collapse" id = "ga"">
 										<ul>
-											<li>This is the most important approach to highlight because it lays a foundation for the rest of the unit, which focuses on vectors.</li>
-											<li>Here the instructor should take the opportunity to build from students' work to <strong>define the terms scalar, scalar multiple, and linear combination. </strong></li>
-											<li>o	This helps to achieve the learning goal, "Develop graphical and algebraic representations of scalar multiples and linear combinations of vectors."</li>
+										<blockquote>
+											There are often a wide variety of geometric arguments presented by students, some correct and some incorrect.  //whiteboard illustration!
+												<br><br>
+												<ul>
+													<li>
+													<em>Zig-Zag</em> method:  In its simplest form, the zig-zag method is a geometric guess and check in that students are imagining travelling for various amounts of time on each mode, possibly in an alternating manner, and seeing which locations this leads them to. By trying a number of examples, it may convince students that by zigging and zagging enough, they can get to all locations.
+													</li>
+													<br>
+													<li>
+													<em>Single cone and Double cone</em> methods.  Students argue that one can travel to any place in between the two vectors in the first quadrant (single cone) or in between the two vectors in both the first and third quadrant (double cone).  These responses may come from the students implicitly or explicitly assuming that only positive scalars are allowed (single cone) or that the scalars on the two vectors must be both positive or both negative (double cone).
+													</li>
+													<br>
+													<li>
+													<em>++;+-</em> method: These students realize that the scalars may be multiplied by four different sets of integers: both positive (++), both negative (--), or one of each (+-) and (-+).  They may draw a graph with the two vectors extended to infinity in each direction and the four new quadrants that are created labeled with one of the four integer combinations. This method allows students to imagine reaching a point in any of their new quadrants, thus allowing them to reach any location on the plane.
+													</li>
+													<br>
+													<li>
+													<em>Gridding</em> method: The students create a gridding of the plane using the initial vectors extended and parallel versions of these vectors at regular intervals.  This creates a coordinate system along which one can imagine travelling to reach all points on the plane. 
+													</li>
+													<br>
+													<li>
+													<em>Sliding</em> method: The students argue that you can reach any point on the plane by imagining one vector extended infinitely in both directions from the origin and the second infinitely extended vector sliding along the first.  As the second vector slides along the first it covers every point in the plane.  To reach a point one slides along the first vector the correct amount and then moves along the second extended vector to reach the destination. 
+													</li>
+												</ul>
+												<br>
+												<b>Points to bring out:</b>
+												<br><br>
+												<ul>
+													<li>
+													The Zig-zag method allows for whole class discussion regarding how adding multiple copies of the same two vectors in an alternating pattern can be rewritten as a linear combination of only two travel vectors used only once. 
+													</li>
+													<br>
+													<li>
+													Discussing the single cone, double cone, and ++;+- methods allows for a review of what scalars are possible and how adding vectors with different signed scalars can be represented geometrically.
+													</li>
+													<br>
+													<li>
+													The ++;+- and gridding methods give a initial look at thinking of the plane in terms of a new basis, although this discussion is probably beyond the scope of the Task 2 discussion.
+													</li>
+													<br>
+													<li>
+													The sliding method is a type of covariational reasoning which may allow students an initial glimpse into the functional reasoning needed later when we think of varying inputs <$x, y$> to reach solutions  in the linear transformation $T($<$x,y$>$)= $<$A,B$>, although discussion of this in detail is probably beyond the scope of the Task 2 discussion.
+													</li>
+											</ul>
+										</blockquote>
 										</ul>
-									</li>
-								</ul>
+									</div>
+								</ul>		
+								<br>
+								<ul>
+									<a class="btn btn-warning center" data-toggle="collapse" data-target="#sle">System of linear equations &raquo;</a>
+									<br>
+									<div class="accordion-body collapse" id = "sle"">
+										<ul>
+											<blockquote>
+												Students may set the vector equation equal to a variable location, e.g., $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ and then convert this into a system of equations.
+												<ul>
+													<li>Informally, students may argue that any system with two equations and two unknowns has a (unique) solution, so you can find a way to get to Gauss at any location.  Students may not realize that although this system does have a unique solution, other systems will have no or infinitely many solutions.</li>
+													<br>
+													<li>To show that this system does indeed have a unique solution for any real numbers A and B, one can solve as follows:<br><br>
+													$A = 3c_1 + c_2$ <br>
+													$B = c_1 + 2c_2$ and we get $c_1 \frac{2A-B}{5}$ and $c_2 = \frac{3B-1}{5}$<br><br>
+													So, for any location we want to reach <A, B>, there exists c_1 and c_2 as defined above, that will allow you to reach that location.
+													</li>
+												</ul>
+											</blockquote>
+										</ul>
+									</div>
+								</ul>	
+								<br>
+
 							</blockquote>
 					</ul>
 				</div>
 				<br><br>					
-				
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Discussing Graphical Representations during Whole Class Discussion &raquo;</a>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Defining span  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i3" ">
 					<ul>
 						<blockquote>				
-							<p>Discussing Graphical Representations during Whole Class Discussion </p>
-							<br>
-							One important aspect of this task is to connect graphical and algebraic representations of scalar multiples, linear combinations of vectors, and vector equations.
+							<p>Defining span </p>				
+							At this point the students, although they don't yet realize it, have a good intuitive sense of the span of two vectors in $R^2$ that are not multiples of each other. The preceding solutions to the Hide-and-Seek problem give us that for any location we might want to reach $\begin{bmatrix} A \\ B \end{bmatrix}$ there exists $c_1$ and $c_2$ such that $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. In other words, any $\begin{bmatrix} A \\ B \end{bmatrix}$ in the plane can be written as a linear combination of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. There is a technical word for the collection of all such vectors $\begin{bmatrix} A \\ B \end{bmatrix}$.  The term is span.  In determining that there is nowhere Gauss can hide, the students have discovered that the span of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ is all of $R^2$.  In other words,  $Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\} = R^2$.  
 							<br><br>
-							If possible, find boards of students who graphed the vector equation associated with the Magic Carpet Problem. This probably would resemble a tip-to-tail method. An explicit discussion about where the various parts of the vector equation "appear" in the graph is beneficial in connecting the graphical and algebraic approaches.
+							We can also relate this back to the calculations in Task 1.  We can see that $\begin{bmatrix} 107 \\ 64 \end{bmatrix} \in Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\}$ because it can be written as a linear combination of those two vectors, i.e., $\begin{bmatrix} 107 \\ 64 \end{bmatrix} = 30\begin{bmatrix} 3 \\ 1 \end{bmatrix} + 17\begin{bmatrix} 1 \\ 2 \end{bmatrix}$.
+							<br><br>
+							We can now define span more generally:
 							<br><br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Discussion Question &raquo;</a>
+								<li>
+								The span of a set of vectors is all possible linear combinations of those vectors, or in other words, all places you could reach with those two vectors.
+								</li><br>
+								<li>
+								Span $\{v_1, v_2, ..., v_p\}$ is the collection of all vectors that can be written in the form $c_1 v_1 + c_2 v_2 + ... + c_P v_P$ $with c_1,c_2,...,c_p$ with scalars.
+								</li>
+							</ul>
+							<br><br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Practice Problems: &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "t6"">
 									<ul>
 										<blockquote style="background-color:#F8F8F8;">
-											<li>In the vector equation $30\begin{bmatrix} 3 \\ 1 \end{bmatrix}+17\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, there is a $30$ in front of the vector $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and a $17$ in 
-												front of $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$.  Where do the $30$ and $17$ appear, if at all, in the graphical representation of that 
-												vector equation? </li>
+											Determine the following:<br>
+											<li>
+											(a) $Span\{\begin{bmatrix} 3 \\ 1 \end{bmatrix}\}$<br>
+											(b) $Span \{ \begin{bmatrix} 2 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 6 \end{bmatrix}\}$<br>
+											(c) $Span \{ \begin{bmatrix} 1 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 5 \end{bmatrix}\}$<br>
+											(d) $Span \{ \begin{bmatrix} 1 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 2 \\ -6 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 6 \end{bmatrix}\}$<br>
+											(e) $Span \{ \begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 4 \\ 5 \end{bmatrix}\}$<br>
+											(f) $Span \{ \begin{bmatrix} 0 \\ 0 \end{bmatrix}$,  $\begin{bmatrix} 2 \\ 3 \end{bmatrix}\}$		<br>
+											(g) $Span\{\begin{bmatrix} -3 \\ 0 \\ -2 \end{bmatrix}\}$
+											</li>
 											<br>							
-											<ul>
-												<li>Some students seem to reason additively (travelling in iterations of the $<3,1>$ vector added together, for instance), while other graph the scalar multiplication multiplicatively (the vector $<3,1>$ is 30 times longer, for instance). Making this a point of discussion helps achieve the learning goal, "Interpret scalar multiplication as repeated tip to tail vector addition and as a multiplicative stretching (or shrinking) of the vector."</li>
-												<li>This discussion question also begins to emphasize the notion of solution.  Here, if it hasn't happened already, the instructor could define the term solution, and informally discuss the notion of existence of solutions. </li>
-											</ul>
 										</blockquote>
 									</ul>
 								</div>
 							</ul>
 							<br>
-							If students had graphed the systems of equations corresponding to the Magic Carpet Ride problem, then the following discussion question follows nicely from the previous one. 
+							These sets of vectors are specifically chosen to help students apply the definition of span and gain the understanding of the definition of span.
 							<br><br>
-							Because systems of equations are not the main focus of this unit, pursuing this graphical interpretation isn't necessary.  However, if students produce this graph or many are focused on systems of equations, it provides a nice way to connect to and honor their thinking. 
+							If time permits, you may want to ask questions of the format, "Is ___ in $Span\{,\}$?"  This is the format of a number of typical homework problems.
 							<br><br>
 							<ul>
 							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t7">Example Discussion Question &raquo;</a>
@@ -441,109 +440,17 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<div class="accordion-body collapse" id = "t7"">
 								<ul>
 									<blockquote style="background-color:#F8F8F8;">
-										<li>After solving the system of equations $3x+y=107,x+2y=64$, you determined $x=30$ and $y=17$. Where do the $30$ and the $17$ appear, if at all, in the graphical representation of that 
-										system of equations? 
+										<li>
+										Would any two vectors allow us to reach all points in the plane?  If not, for what sets of vectors will this not work?  Why will a set of vectors of the type described [e.g., two vectors that are multiples] not span the plane?  What fails in the reasoning above that we had for $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$?
 										</li>
-										<br>							
-										<ul>
-											<li>This would help in achieving the learning goal of translating between a vector equation and systems of equations interpretation of the problem situation and solution. </li>
-											<li>In the systems of equations graph, the solution $(30, 17)$ appears as the location where the lines $3x+y=107$ and $x+2y=64$ intersect.  Furthermore, the transportation vectors $<3, 1>$ and $<1, 2>$ do not appear as vectors in this graph, but determine the slopes of the lines instead.  </li>
-										</ul>
 									</blockquote>
 								</ul>
 							</ul>
 						</blockquote>
 					</ul>
-				</div>
-				<br><br>					
-
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Discussing the notion of solution &raquo;</a>
-				<br>
-				<div class="accordion-body collapse" id = "i4" ">
-					<ul>
-						<blockquote>						
-							<p>Discussing the notion of solution </p>
-							If it hasn't been defined explicitly already, define solution for both a vector equation and a system of equations.  It is nice to begin to use terminology such as existence of solutions. 
-							<br><br>
-							The final two example discussion questions focus on the notion of solution - more specifically, on the idea of uniqueness of solutions.
-							<br><br>
-							<ul>
-							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t8">Example Discussion Question &raquo;</a>
-							<br>
-							<div class="accordion-body collapse" id = "t8" >
-								<ul>
-									<blockquote style="background-color:#F8F8F8;">
-										<li>Is riding the hover board forward for 30 hours and the magic carpet forward for 17 hours the only way to get to Old Man Gauss?
-										</li>
-										<br>							
-										<ul>
-											<li>Algebraically, some students might respond to this question in a manner similar to the following: "We just solved a system of equations in two equations and two unknowns, and we found one solution. So that solution has to be the only one. Maybe if the system was different, we would have found no solutions or infinitely many, but that didn't happen here."  That connection to their experience with systems of equations in high school algebra is appropriate and useful here. </li>
-											<li>Geometrically, this question leads the class to discuss what counts as a "different way" to Gauss. For instance, do the two different sides of the parallelogram (the sketch representing both $30\begin{bmatrix} 3 \\ 1 \end{bmatrix}+17\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ and $17\begin{bmatrix} 1 \\ 2 \end{bmatrix}+30\begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or a "staircase" sketch (e.g., the sketch representing the equation $10\begin{bmatrix} 1 \\ 2 \end{bmatrix}+9\begin{bmatrix} 3 \\ 1 \end{bmatrix}+7\begin{bmatrix} 1 \\ 2 \end{bmatrix}+21\begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ represent the same or different solutions? The underlying sentiment that is important to bring out is that even if they seem like different "paths", they all represent the same solution because they all lead to the same solution of $(30, 17)$. So one could say they are different paths to the same solution, and thus, we can say there is only one solution to the problem. One could use the term "commutativity of vector addition" here if it is appropriate for your class, but it is not essential. </li>
-										</ul>
-									</blockquote>
-								</ul>
-							</div>
-							</ul>
-							<br>
-
-							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t9">Example Discussion Question &raquo;</a>
-								<br>
-								<div class="accordion-body collapse" id = "t9" style="background-color:#F8F8F8;">
-									<ul>
-										<blockquote>
-											<li>Is it possible to reach Old Man Gauss with only one mode of transportation?<br>
-												 If so, provide a solution and sketch of the problem and solution.<br>
-													 If not, develop a justification for why it is not possible.
-											</li>
-											<br>							
-											<ul>
-												<li>In the process of answering the question on Handout 1, many students may have already thought about this Example Discussion Question. </li>
-												<li>Geometrically one goal of this question is to have students practice justification, explaining to their peers in class discussion, and questioning each other's justifications. This question is more justification-oriented than the main problem (determining how to get to Gauss) because it promotes different ways to support and present an argument.</li>
-												<li>Expect both geometric (e.g., the travel paths would miss Gauss) and algebraic (e.g., the ratios are different or can't find one $x$, $y$ for both equations).</li>
-											</ul>
-										</blockquote>
-									</ul>
-								</div>
-							</ul>
-							</blockquote>
-						</ul>
-						</blockquote>
-					</ul>
-				</div>
+				</div>				
+			</div>		
 		</ul>	
-		
-			<ul>
-				<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
-				<div class="accordion-body collapse" id = "studentthinkingexamplequestion">
-					<ul>				
-					<blockquote>
-						Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>
-						<div class="paragraphs">
-							<div class="row">
-								<div class="span4">
-									<div class="clearfix content-heading">
-										<img class="pull-left" src="img/u1t1/s1.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
-										<br><br>
-										<img class="pull-right" src="img/u1t1/s2.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group claimed that you could not reach Gauss with only one mode because "$\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ is not a divisor of $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$," and that the same was true for $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. Algebraically, they showed that for $ t \begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, whatever t-value worked for the top equation would not satisfy the bottom one. This demonstrates 1 of the 4 cases. Their claim, "no matter if you can reach the x coord[inate] of Gauss cabin @ 1 time & y coord[inate] @ 1 time it is never the same time. $\therefore$ You cannot reach the cabin," generalizes beyond that one case.									<br><br>
-										<img class="pull-left" src="img/u1t1/s3.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 									<br><br>
-										<img class="pull-right" src="img/u1t1/s4.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								</div>
-		  
-								</div>
-							</div>
-						</div>
-					</blockquote>
-				</ul>
-			</ul>
-		
 		<ul>
 			<a class="btn btn-info center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
 			<div class="accordion-body collapse" id = "videos">
@@ -556,8 +463,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</video>
 						<br>
 						<video id="video_2" class="video-js vjs-default-skin"
-							controls preload="false"
-							data-setup='{"example_option":true}'>
+							data-setup='{"controls": true, "autoplay": false, "preload": "false"}'>
 							<source src="media/unit1/task2/Justin_Task_2.mp4" type='video/mp4' />
 						</video>
 					</blockquote>
@@ -603,19 +509,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	<script>
 	$(document).ready(function() {
 	$('#simple-menu').sidr();
-	});
-	$(document).ready(function() {
 	$('#printt').sidr();
-	});
-
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#simple').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#float').sidr();
 	});
 	</script>

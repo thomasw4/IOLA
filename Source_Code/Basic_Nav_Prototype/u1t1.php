@@ -90,6 +90,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			</span>
 		</div>
 	</a>
+
     <div class="container">
 
       <div class="jumbotron">
@@ -581,19 +582,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	<script>
 	$(document).ready(function() {
 	$('#simple-menu').sidr();
-	});
-	$(document).ready(function() {
+	$('#float2').sidr();
 	$('#printt').sidr();
-	});
-
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#simple').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#float').sidr();
 	});
 	</script>

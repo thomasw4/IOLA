@@ -296,15 +296,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	<script>
 	$(document).ready(function() {
 	$('#simple-menu').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#simple').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
 	$('#float').sidr();
 	});
 	</script>
