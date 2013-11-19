@@ -169,8 +169,8 @@
 				   		<a href="u1.php" title="Title">- Unit 1 Summary</a>
 						<a href="u1t1.php" title="Title"> - Task 1: The Carpet Ride Problem</a>
 						<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
-						<a href="u1t1.php" title="Title"> - Task 3: Getting Back Home</a>
-						<a href="u1t1.php" title="Title"> - Task 4: Linear (In)dependence</a>
+						<a href="u1t3.php" title="Title"> - Task 3: Getting Back Home</a>
+						<a href="u1t4.php" title="Title"> - Task 4: Linear (In)dependence</a>
 
 				   </p>
                 </li>		

@@ -164,10 +164,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		<br>
 		<ul>
 			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>
-		
+		</ul>	
 		<ul>
-			<a class="btn btn-info center" href="#handout1">Handout 1: Hide-and-Seek</a>
+			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout">Handout 2: Hide-and-Seek &raquo;</a>
+			<div class="accordion-body collapse" id = "handout">
+				<ul>
+					<blockquote>
+						<object data="media/unit1/handouts/u1_handout2.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit1/handouts/h1.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>
 		</ul>		
 		
 		<ul>

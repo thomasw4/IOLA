@@ -102,8 +102,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				   		<a href="u1.php" title="Title"> - Unit 1 Summary</a>
 						<a href="u1t1.php" title="Title"><strong> - Task 1: The Carpet Ride Problem</strong></a>
 						<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
-						<a href="#" title="Title"> - Task 3: Getting Back Home</a>
-						<a href="#" title="Title"> - Task 4: Linear (In)dependence</a>
+						<a href="u1t3.php" title="Title"> - Task 3: Getting Back Home</a>
+						<a href="u1t4.php" title="Title"> - Task 4: Linear (In)dependence</a>
 				   </p>
                 </li>		
 				<li>
@@ -171,7 +171,17 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		</ul>
 		
 		<ul>
-			<a class="btn btn-info center" href="#handout1">Handout 1: The Carpet Ride Problem</a>
+			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: The Carpet Ride Problem &raquo;</a>
+			<div class="accordion-body collapse" id = "handout1">
+				<ul>
+					<blockquote>
+						<object data-src="media/unit1/handouts/u1_handout1.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit1/handouts/h1.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>
 		</ul>		
 		<ul>
 			<a class="btn btn-success center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
