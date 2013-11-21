@@ -127,7 +127,7 @@
 				<div class="form-group" style="padding-right:15px">
 					<font  color="FFFFFF">Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!</font>
 				</div>
-				<button type="submit" class="btn btn-primary" value="logout">Log out</button>
+				<button type="submit" class="btn btn-warning" value="logout">Log out</button>
 			  </form> 
 
 			<?php } ?>
@@ -212,25 +212,27 @@
       <!-- Example row of columns -->
       <div class="row">
 	  
-	   <div class="col-lg-4">
+	   <div class="col-lg-6"><center>
           <h2>New Site In-Progress</h2>
-		  		  <p><img width="250" height="150" src="img/screen.JPG"></p>
+		  		  <p><img width=350" height="230" src="img/screen.jpg" style="border:1px solid gray"></p>
 		  <a class="btn btn-default" data-toggle="collapse" data-target="#u6">View details &raquo;</a>
 				   <p class="collapse" id="u6">
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-       </div>
+          This new site is a work-in-progress.  It's being developed by computer science design students at Virginia Tech: Bill Lucy, Ethan Francis, and Thomas Walton.  
+       </center></div>
 	   
-        <div class="col-lg-4">
-          <h2>Paper Published</h2>
-		  		  		  <p><img width="250" height="150" src="img/paper.JPG"></p>
+        <div class="col-lg-6">
+		<center>
+          <h2>NSF Grant Information</h2>
+		  		  		  <p><img width="230" height="230" src="img/nsf1.gif"></p>
 
 		  <a class="btn btn-default" data-toggle="collapse" data-target="#u5">View details &raquo;</a>
 				   <p class="collapse" id="u5">
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+          This material is based upon work supported by the National Science Foundation under Grant No. 0######. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 		  </p>
-
+<br><br></center>
         </div>
-
+		
+<!--
         <div class="col-lg-4">
           <h2>Classroom Motivation Up</h2>
 		  		  		  		  		  <p><img width="250" height="150" src="img/student.gif"></p>
@@ -241,10 +243,11 @@
           Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
         </div>
       </div>
-
+-->
       <hr>
 
 		<footer>
+
 			<ul class="list-inline text-right">
 				<li><p>&copy; IOLA Team 2013</p></li>
 				<li><a href="team.php">Contact Us</a></li>
