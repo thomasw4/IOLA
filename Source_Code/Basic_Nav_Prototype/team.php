@@ -15,7 +15,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/ico/logo.png">
 
-    <title>IOLA Content Demo</title>
+    <title>IOLA Team</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css"  type="text/css" rel="stylesheet">

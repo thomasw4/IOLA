@@ -88,7 +88,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/ico/logo.png">
 
-    <title>IOLA Mockup</title>
+    <title>IOLA Registration</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

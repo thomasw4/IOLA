@@ -13,9 +13,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Content Demo</title>
+    <title>IOLA Unit 1 Task 4</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -146,18 +146,42 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 			<ul class="collapse" id = "t1" >
 				<blockquote>
-					<p class="lead" >Main Goal: To develop informal ideas about span in a 2D setting (drawing on a metaphor of "getting anywhere" using 2 modes of transportation corresponding to vectors). </p>
+					<p class="lead" >Main Goal: To develop conjectures about linear dependence/independence. Secondary goals are to develop generalizations about span and about connections between span and linear (in)dependence.  </p>
 					<p>By the end of the lesson students should be able to:</p>
 					<ul>
-						<li>Conclude that there is nowhere that Gauss can hide </li>
-						<li>Explicitly compare various graphical and algebraic justifications to this conclusion </li>
-						<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $R^2$ that Gauss tries to hide</li>
+						<li>Develop a travel interpretation of a non-zero scalar times the zero vector (e.g., $4\begin{bmatrix} 0\\0 \end{bmatrix}$] means riding a stationary bike for 4 hours)</li>
+						<li>Develop generalized notions of linear independence and dependence in $R^n$
+							<ul>
+								<br>
+								<li>
+								Essential generalizations: 
+								</li>
+								<ul>
+									<li>If a set contains two vectors that are scalar multiples of each other, then the set is linearly dependent.</li>
+									<li>If at least one vector in a set is a linear combination of the other vectors in the set, then the set is linearly dependent.</li>
+									<li>Any set of vectors from $R^n$ containing more than n vectors is linearly dependent.</li>
+									<li>Any set containing the zero vector is linearly dependent.</li>
+									<li>NOTE: The latter three generalizations are consistent with Theorems 7-9 of Chapter 1 of Lay (2007).</li>
+								</ul>
+								<br>
+								<li>
+								Possible generalizations:
+								<ul>
+									<li>Any set of vectors from $R^n$ with fewer than n vectors cannot span $R^n$</li>
+									<li>A set of n vectors in $R^n$ spans $R^n$ if and only if the set is linearly independent.</li>
+									<li>NOTE: These could support early notions of basis and help form a foundation for the Invertible Matrix Theorem.</li>
+								</ul>
+								</li>
+								<br>
+							</ul>
+						</li>
+						<li>Develop an intellectual need for efficient computational strategies and sophisticated solution techniques when working with vector equations and systems of equations</li>
 					</ul>
 					<br>
 					<p>The instructor should:</p>
 					<ul>
-						<li>Introduce the formal definition of span</li>
-						<li><em>NOT</em> mention Linear (in)dependence (this comes up in Task 3)</li>
+						<li>Assist students in writing out their conjectures in more formal ways</li>
+						<li>It is essential to discuss with the students why these are true, but the level of rigor with which you discuss the proofs of the conjectures depends on the level of your course. </li>
 					</ul>
 				</blockquote>
 			</ul>
@@ -187,82 +211,108 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					<blockquote>
 						<p class="lead">Goals</p>
 						<ul>
-							<li>The main goal of the problem on Handout 2 - <a href="#handout">Hide-and-Seek</a> - is to determine whether there is any location where Old Man Gauss can hide so that a person would be unable to reach him using the same two modes of transportation from the previous problem. </li>
-							<li>More generally, the goal is to help students develop the notion of span in a two-dimensional setting before formalizing the concept with a definition. </li>
+							<li>The main goal of Handout 4 - Linear Independence and Dependence: Creating Examples - is to guide students to develop generalizations and supporting justifications regarding linear independence and dependence for any given set of vectors, shifting away from a reliance on the Magic Carpet Ride scenario.</li>
+							<li>Although worded in terms of $[]^2$ and $[]^3$, the students' reasoning behind the strategies should inform the development of generalizations that extend to any $[]^n$ as they work on and discuss Handout 4.</li>
+							<li>A secondary goal is to develop an intellectual need for efficient computational strategies and sophisticated solution techniques.</li>							
 						</ul>
 						<br>
 						<p>Rationale</p>
 						<ul>
-							<li>We wrote the Hide-n-Seek task the way it is because it presents an intuitive way to get at the notion of span.  Students' work in Task 1 (determining how to get to Gauss if he lives at $(107,64)$ focused on one particular linear combination.  This task, which asks students if Gauss can hide, focuses on all possible linear combinations of the two transportation vectors.  As part of this process students should realize that with these two modes of transportation (vectors), they can indeed get anywhere.  The bulk of the classroom discussion is on the ways students can come to see this geometrically and algebraically.  In doing this, the task reemphasizes that all real-valued scalars are viable and how to interpret negatives in the MCR task setting.</li><br>
-							<li>The culmination of the task is being able to define span formally using standard symbolic notion while having students have a sense of this as being "all the places you can get" with a set of vectors.  We also note that we asked "Can he hide?" versus "Where all can you get?" because asking students to focus on a series of single points (possible hiding places) naturally leads to an exploration of all possible locations whereas focusing immediately on all possible locations might not push students to consider particular points within the space.</li>
+							<li>Handout 4 asks students to generate sets of vectors that satisfy three varying constraints: number of vectors (2, 3, or 4), vector space ($[]^2$ or $[]^3$), and linear dependence or linear independence. These were chosen to provide a wide enough variety of situations that students would have a good opportunity to develop the essential generalizations. The prompts purposefully ask for examples from $[]^2$ and $[]^3$ because students have already developed some intuition for vectors in 2 and 3 dimensions because of their work on Tasks 1-3 (and perhaps from other courses like physics). </li><br>
 						</ul>
 					</blockquote>
 				</ul>
 			</div>
 		</ul>
-
+		<ul>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#lds">Classifying Types of Linearly Dependent Sets: &raquo;</a>
+			<br>
+			<div class="accordion-body collapse" id = "lds"">
+				<ul>
+					<blockquote>
+						To communicate more easily in this document, we developed abbreviated names for the types of generalizations we expect students to make about linearly dependent sets of vectors. We do not intend for the instructor to use these names in class discussion. It is merely for coherence and conciseness within this document that we use the following names. These classifications align with the essential generalizations described in the Overview for Task 4.
+						<br><br>
+						<ul>
+							<li>Scalar multiple dependence: when a set contains two or more vectors that are scalar multiples of each other (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 2\\4 \end{bmatrix}\}$).</li>
+							<li>Zero vector dependence: when the set includes the zero vector (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 0\\0 \end{bmatrix},\begin{bmatrix} -5\\0.4 \end{bmatrix}\}$).</li>
+							<li>Linear combination dependence: when a vector can be written as a linear combination of the other vectors in the set (e.g., $\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 6\\3\\8 \end{bmatrix},\begin{bmatrix} 4\\1\\6 \end{bmatrix}\}$).</li>
+							<li>"Too many vectors" dependence: When the cardinality of the set of vectors exceeds the dimension of the vector space (i.e., a set of 3 vectors in $[]^2$).</li>
+							<br>
+							<li>Note: These classifications are not mutually exclusive. </li>
+						</ul>					
+					</blockquote>
+				</ul>
+			</div>
+		</ul>
 		<ul>
 		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse" id = "studentthinking">
 				<ul>
 					<blockquote>
-						At the heart of students' difficulties in this task is the issue of developing a coherent geometric interpretation for linear combination of vectors with all possible cases for sign combination of scalar coefficients.  As students work on this task, they begin to develop the ability to conceptualize movement in the plane using combinations of vectors.  In looking at the definition of span, it may seem obvious that a task intended to help students develop an intuitive understanding of span should require students to investigate the idea of linear combinations in depth.  However, we see here that it is a non-trivial task for students to explore and develop a concept image for span in which all possible linear combinations of vectors are conceptualized in a coordinated way.  Below are 6 examples of student work.
+						This section highlights examples of responses to Handout 4 and points out the types of linear dependence that the examples satisfy.  It also points out instances in which groups used sets of vectors from previous tasks in the MCR Unit. 
 						<br><br>
 						<!-- Carousel ================================================== -->
 						<div id="myCarousel" class="carousel slide">
 						  <!-- Indicators -->
 						  <div class="carousel-inner">
 							<div class="item active">
-							  <img src="img/u1t2/1.png" alt="Student thinking 1">
+							  <img src="img/u1t4/1.jpg" alt="Student thinking 1">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Cone</em> method: (1/6)</p>
-									This group argued that the only points that could be reached were the ones that lie "between" the cone traced out by the extensions of the two transportation vectors. Their argument was framed in terms of the slopes of the lines corresponding to the vectors when drawn from the origin. Notice this response is incorrect, most likely because students neglected to use negative scalars with the modes of transportation. 
+								  <p>Group 1: (1/5)</p>
+									<em>Linear Dependence:</em> Every row seems to satisfy scalar multiple dependence. In rows 1 and 3, however, the scalar multiple of the first vector is 1 so, set theoretically, each set only has one element and does not satisfy the constraints required by Handout 4. In row 2, the scalar is -1 and in rows 4 and 5, the scalar is 2, making these examples correct.
+									<br>
+									<em>Linear Independence:</em> Row 1contains a correct example. Row 2 contains each vector from the first row as well as the vector <1, 1>. This set satisfies "too many vectors" dependence and, so, is incorrect. Row 4 seems incomplete, since there are only two vectors written. Row 5 has been left blank. This may be because Group 1 was unable to complete the handout in time or because no such example is possible.
+									<br>
+									<em>Generalizations:</em> Group 1 wrote, "At least one vector in the set is a multiple of another vector" under the first column and "No vector is a multiple of another in the set" under the LI column. This first statement is sufficient but not necessary for linear dependence, whereas the second statement is necessary but not sufficient for linear independence.						
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t2/2.jpg"/ alt="Student thinking 2">
+							  <img src="img/u1t4/2.jpg"/ alt="Student thinking 2">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Double cone method:</em>  (2/6)</p>
-									This group interpreted the sign of the scalar as an indication of whether they were moving forward or backward in time. So, in their interpretation, either both modes of transportation had to move forward (cone in first quadrant) or both had to move backward (cone in third quadrant). 	
+								  <p>Group 2: (2/5)</p>
+									<em>Linear Dependence:</em> The sets in rows 1 and 3 satisfy scalar multiple dependence. The group wrote an algebraic formula in row 3 that generally represents scalar multiple dependence. Row 4 contains the vectors from Task 3. Row 5 is left blank. It is seems that Group 2 did not have enough time to finish because row 5 is also blank in the linear independence column.
+									<br>
+									<em>Linear Independence:</em> Rows 1 and 3 contain correct examples of linearly independent sets. Row 2 contains three copies of the zero vector. The fourth row contains the vectors from the third row and also the zero vector. The examples in rows 2 and 4 are incorrect because they satisfy zero vector dependence. 
+									<br>
+									<em>Generalizations:</em> Group 2's work in row 3 of the linearly dependent column indicates that they have developed a general formula for such a set of vectors: $\{\begin{bmatrix} A\\B\\C \end{bmatrix},\begin{bmatrix} A_x\\B_x\\C_x \end{bmatrix}\}$.
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t2/3.jpg"/ alt="Student thinking 3">
+							  <img src="img/u1t4/3.jpg"/ alt="Student thinking 3">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Grid</em> method: (3/6)</p>
-									This board and the one below illustrate the idea of "gridding" the plane with lines parallel to the two initial vectors.  As part of the discussion a student asked, "Can we use any scalar to slide to any point on the graph?" This question was resolved by exploring when a vector equation equivalent to that shown at the top of this board had a solution.
+								  <p>Group 3: (3/5)</p>
+									<em>Linear Dependence:</em> Rows 1 and 3 satisfy scalar multiple dependence. Row 4 contains three vectors that satisfy linear combination dependence - with components arranged as though the students counted from 1 to 9. Row 5 contains four vectors that satisfy "too many vectors" dependence. All of the sets are indeed linearly dependent. 
+									<br>
+									<em>Linear Independence:</em> Rows 1 and 3 contain two vectors that are linearly independent. It is not immediately clear how the students know that these sets are in fact linearly independent. Rows 2 and 4 have the first two vectors from the corresponding sets in the LD columns, but the students have replaced each of the third vectors with the zero vector. These two sets are not linearly independent because they each contain the zero vector and, so, are incorrect responses.
 							  </div>
 							</div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t2/4.jpg"/ alt="Student thinking 4">
+							  <img src="img/u1t4/4.jpg"/ alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Sliding</em> method:  (4/6)</p>
-									This group argued that you can reach any point on the plane by taking into consideration the ability to ride any given mode of transportation backwards. They explained that the portions of the graph that the Double Cone group deemed unreachable were accessible when considering that you can travel in the negative direction. For example, to travel to a point located in the 2nd quadrant, you travel in the positive direction a set distance with the magic carpet then travel in the negative direction with the hover board. Because each vector can be extended to any desired length through scalar multiplication, every point on the graph is reachable.  Their in-class description emphasized the metaphor of "sliding" the second vector along the first one to reach any point: "We can slide where we start riding our other mode of transportation, anywhere up and down.  We can extend this [first] one to infinity each way, and then we just set the initial conditions of this [second] one anywhere we want on here."
+								  <p>Group 4:  (4/5)</p>
+									<em>Linear Dependence:</em> Every row satisfies scalar multiple linear dependence.
+									<br>
+									<em>Linear Independence:</em> Rows 1, 3, and 4 have sets of vectors with integer components, some of which correspond to the components of the vectors in the LD column. Notice that Group 4 used their general rule (below) on rows 2 and 5 as is indicated by their response, "No Soln."
+									<br>
+									<em>Generalization:</em> Group 4 wrote, "If the number of vectors exceeds the number of dimensions, then the set is linearly dependent."
 								</div>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t2/5.jpg"/ alt="Student thinking 5">
+							  <img src="img/u1t4/5.jpg"/ alt="Student thinking 5">
 							  <div class="container">
 								<div class="carousel-caption">
-								  <p><em>Zig-Zag</em> method:  (5/6)</p>
-									This group also used the "Grid" method.  The green and red lines indicate a detailed gridding of that portion of the graph using vectors with the same direction as the original vectors.  The blue vectors indicate what we call the "zig-zag" method.  For this method, students imagined using each vector (mode of transportation) for a short time repeatedly.  Alternating between the two modes creates a zig-zag appearance on the graph that helps convince some students that they can reach anywhere. In addition, this board illustrates a system of equations to help answer the question.  The x-direction was set equal to an East/West (E/W) directionand the y-direction was equated to a North/South (N/S) direction.  Using substitution, the students solved for what x and y would have to be to reach any location with coordinates (E/W, N/S).  
-								</div>
-							  </div>
-							</div>
-							<div class="item">
-							  <img src="img/u1t2/6.jpg"/ alt="Student thinking 6">
-							  <div class="container">
-								<div class="carousel-caption">
-								  <p><em>+,+;+,-</em> method:  (6/6)</p>
-									For this white board the students extended the two vectors given for the modes of transportation to divide the plane into four spaces.  They labeled each of the four spaces according to how one would travel to reach them.  For example, if one travels forward on both modes of transportation (i.e., if both vectors are multiplied by a positive scalar), then the result is in the quadrant marked as "both +".  If one travels forward in the <1,2> direction and backwards in the <3,1> direction (i.e., the first vector is multiplied by a positive scalar and the second by a negative scalar), then the result is in the quadrant marked as "+, -." 
+								  <p>Group 5:  (5/5)</p>
+									<em>Linear Dependence:</em> This group presented their responses as equations with the zero vector on the right hand side (except in row 5, which is a linear combination of vectors that is equivalent to the zero vector). The sets in rows 1-3 and row 5 satisfy scalar multiple dependence. Row 4 contains the vectors from Task 3. While correct examples would have the vectors written as elements in a set, this group's work is useful because the vector equations show how they determined the sets were linearly dependent and can be leveraged to relate students' examples to the definitions of linear dependence and linear independence. 
+									<br>
+									<em>Linear Independence:</em> In rows 1 and 3, these students wrote sets of two vectors that were not scalar multiples of each other. Row 4 contains three empty brackets, which likely indicate that the students did not have time to complete the handout. Rows 2 and 5 read NA. It is not clear whether Group 5 developed a generalization for the "too many vectors" dependence.
 								</div>
 							  </div>
 							</div>
@@ -281,186 +331,285 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<ul>
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
-				Depending on how long it has been since the students completed Task 1, you may want to review briefly some of the basic ideas and vocabulary from Task 1 such as vector, scalar, and vector equation.  Remind students of the ability to multiply each vector by any real-valued scalar.<br><br>
-				Point out to the students that in Task 1 they were trying to determine how to travel to one location, whereas Task 2 of this Magic Carpet Ride Sequence is to determine if one can get to any point on the plane using just these two modes of transportation.
+				Before the students begin work on Handout 4, the instructor may choose to put the formal definitions of linear independence and linear dependence on the class whiteboard or projector screen.  <br><br>
+				To get the students started on Handout 4, the instructor could remind them to make use of the formal definitions, geometric interpretations, and/or travel interpretations to assist them in creating their examples.<br><br>
+				The instructor should ask students to try to identify several strategies for determining the linear (in)dependence of a set of vectors as they generate their examples. The reasoning behind the strategies could inform the development of generalizations as they work on and discuss Handout 4.
 				<br><br>
 				
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i1" ">
 					<ul>
 						<blockquote>
-							<p>Working in small groups towards a solution  </p>
+							<p>Working in small groups </p>
 							<br>
-							While walking around to small groups, the instructor should note and encourage a wide variety of arguments, both geometric and symbolic.  Students may not agree on whether there is a place where Gauss can hide and will hopefully display a wide variety of geometric arguments.  Students should be encouraged to fully develop their arguments and/or complete a second argument if they have extra time during small group work.  A wide range of solutions is most productive for whole class discussion.  
+							As students work on Handout 4 in small groups, the instructor should look for examples from the groups that would be good to include during whole class discussion:
+							<br><br>
+							<ul>
+								<li>One thing to look for is students' examples that illustrate various types of linear dependence:</li><br>
+								<ul>
+									<li><em>Scalar multiple dependence:</em> when a set contains two or more vectors that are scalar multiples of each other (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 2\\4 \end{bmatrix}\}$  or $\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 5\\5\\5 \end{bmatrix},\begin{bmatrix} -4\\-4\\-4 \end{bmatrix}\}$).</li>
+									<li><em>Zero vector dependence:</em> when the set includes the zero vector (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 0\\0 \end{bmatrix},\begin{bmatrix} -5\\0.4 \end{bmatrix}\}$).</li>
+									<li><em>Linear combination dependence:</em> when a vector can be written as a linear combination of the other vectors in the set (e.g., $\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 6\\3\\8 \end{bmatrix},\begin{bmatrix} 4\\1\\6 \end{bmatrix}\}$).</li>
+								</ul><br>
+								<li>Another thing to look for is examples from student work that contradict another group's work. For instance, one group says that having a set of 3 vectors in $[]^2$ that is linearly independent is impossible and another group gives an example of such a set (this is the most common example of a contradictory case).  This will allow the instructor to select specific students to debate their reasoning, in turn, producing a richer and more productive whole-class discussion.</li>
+								<br>
+								<li>Finally, the instructor should look for student thinking that is unexpected and new to him/her. </li>
+							</ul>
+							<br>
+							NOTE: Handout 4 tends to be more successful if students do not have the chance to consult their linear algebra textbook as they complete the handout. Without the book, the students must both (a) generate their own examples, and (b) generate their own conjectures about linear (in)dependent sets. 
+							<br><br>
+							<center><img src="img/u1t4/i1.jpg" width=450 height=300></center><br><br>
+							Example: This group consulted their textbook (Lay, 2009), as indicated by their references to Theorems 8 and 9. While the group's work is correct, consulting the book only allowed them to practice using the theorems, rather than to practice generating theorems that are sensible to them based on their own mathematical experiences and understanding.
+							<br><br>
+							The instructor should keep in mind that some groups may be unsuccessful at generating some of the examples requested in Handout 4.  While only two examples are impossible to generate (3 linearly independent vectors in $[]^2$ and 4 linearly independent vectors in $[]^3$), students may have difficulty generating examples in other cells where it is possible.  The instructor might find it beneficial to talk with students when they have empty blanks - did they run out of time? Did they think those examples were too hard to find, or did they think there was no solution?
+							<br><br>
+							Finally, the instructor should encourage students to keep track of the strategies used to generate their examples. As students use these to write generalizations (that are conjectural), the instructor could encourage them to think about how they might determine if their conjectures are true (i.e., develop some sort of proof of each conjecture). 
+							<br>
 						</blockquote>
 					</ul>
 				</div>
-				<br><br>
+				<br>
 
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Sharing examples during whole class discussion  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
 					<ul>
 						<blockquote>
 							<p>Discussing different solution strategies during whole class discussion</p>
-							Whole class discussion can be organized around various solution methods.  <br><br>
-								<ul>
-									<a class="btn btn-warning center" data-toggle="collapse" data-target="#na">Numeric approaches (method of 'guess-and-check') &raquo;</a>
-									<br>
-									<div class="accordion-body collapse" id = "na"">
-										<ul>
-											<blockquote>
-												Students may choose one or more specific locations and then determine the scalars that allow them to get there.  They may generalize from this that because they can always find an answer, there is nowhere Gauss can hide.
-											</blockquote>
-										</ul>
-									</div>
-								</ul>	
-								<br>
-								<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#ga">Geometric approaches &raquo;</a>
-									<br>
-									<div class="accordion-body collapse" id = "ga"">
-										<ul>
-										<blockquote>
-											There are often a wide variety of geometric arguments presented by students, some correct and some incorrect.  //whiteboard illustration!
-												<br><br>
-												<ul>
-													<li>
-													<em>Zig-Zag</em> method:  In its simplest form, the zig-zag method is a geometric guess and check in that students are imagining travelling for various amounts of time on each mode, possibly in an alternating manner, and seeing which locations this leads them to. By trying a number of examples, it may convince students that by zigging and zagging enough, they can get to all locations.
-													</li>
-													<br>
-													<li>
-													<em>Single cone and Double cone</em> methods.  Students argue that one can travel to any place in between the two vectors in the first quadrant (single cone) or in between the two vectors in both the first and third quadrant (double cone).  These responses may come from the students implicitly or explicitly assuming that only positive scalars are allowed (single cone) or that the scalars on the two vectors must be both positive or both negative (double cone).
-													</li>
-													<br>
-													<li>
-													<em>++;+-</em> method: These students realize that the scalars may be multiplied by four different sets of integers: both positive (++), both negative (--), or one of each (+-) and (-+).  They may draw a graph with the two vectors extended to infinity in each direction and the four new quadrants that are created labeled with one of the four integer combinations. This method allows students to imagine reaching a point in any of their new quadrants, thus allowing them to reach any location on the plane.
-													</li>
-													<br>
-													<li>
-													<em>Gridding</em> method: The students create a gridding of the plane using the initial vectors extended and parallel versions of these vectors at regular intervals.  This creates a coordinate system along which one can imagine travelling to reach all points on the plane. 
-													</li>
-													<br>
-													<li>
-													<em>Sliding</em> method: The students argue that you can reach any point on the plane by imagining one vector extended infinitely in both directions from the origin and the second infinitely extended vector sliding along the first.  As the second vector slides along the first it covers every point in the plane.  To reach a point one slides along the first vector the correct amount and then moves along the second extended vector to reach the destination. 
-													</li>
-												</ul>
-												<br>
-												<b>Points to bring out:</b>
-												<br><br>
-												<ul>
-													<li>
-													The Zig-zag method allows for whole class discussion regarding how adding multiple copies of the same two vectors in an alternating pattern can be rewritten as a linear combination of only two travel vectors used only once. 
-													</li>
-													<br>
-													<li>
-													Discussing the single cone, double cone, and ++;+- methods allows for a review of what scalars are possible and how adding vectors with different signed scalars can be represented geometrically.
-													</li>
-													<br>
-													<li>
-													The ++;+- and gridding methods give a initial look at thinking of the plane in terms of a new basis, although this discussion is probably beyond the scope of the Task 2 discussion.
-													</li>
-													<br>
-													<li>
-													The sliding method is a type of covariational reasoning which may allow students an initial glimpse into the functional reasoning needed later when we think of varying inputs <$x, y$> to reach solutions  in the linear transformation $T($<$x,y$>$)= $<$A,B$>, although discussion of this in detail is probably beyond the scope of the Task 2 discussion.
-													</li>
-											</ul>
-										</blockquote>
-										</ul>
-									</div>
-								</ul>		
-								<br>
-								<ul>
-									<a class="btn btn-warning center" data-toggle="collapse" data-target="#sle">System of linear equations &raquo;</a>
-									<br>
-									<div class="accordion-body collapse" id = "sle"">
-										<ul>
-											<blockquote>
-												Students may set the vector equation equal to a variable location, e.g., $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ and then convert this into a system of equations.
-												<ul>
-													<li>Informally, students may argue that any system with two equations and two unknowns has a (unique) solution, so you can find a way to get to Gauss at any location.  Students may not realize that although this system does have a unique solution, other systems will have no or infinitely many solutions.</li>
-													<br>
-													<li>To show that this system does indeed have a unique solution for any real numbers A and B, one can solve as follows:<br><br>
-													$A = 3c_1 + c_2$ <br>
-													$B = c_1 + 2c_2$ and we get $c_1 \frac{2A-B}{5}$ and $c_2 = \frac{3B-1}{5}$<br><br>
-													So, for any location we want to reach <A, B>, there exists c_1 and c_2 as defined above, that will allow you to reach that location.
-													</li>
-												</ul>
-											</blockquote>
-										</ul>
-									</div>
-								</ul>	
-								<br>
-
-							</blockquote>
-					</ul>
-				</div>
-				<br><br>					
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Defining span  &raquo;</a>
-				<br>
-				<div class="accordion-body collapse" id = "i3" ">
-					<ul>
-						<blockquote>				
-							<p>Defining span </p>				
-							At this point the students, although they don't yet realize it, have a good intuitive sense of the span of two vectors in $R^2$ that are not multiples of each other. The preceding solutions to the Hide-and-Seek problem give us that for any location we might want to reach $\begin{bmatrix} A \\ B \end{bmatrix}$ there exists $c_1$ and $c_2$ such that $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. In other words, any $\begin{bmatrix} A \\ B \end{bmatrix}$ in the plane can be written as a linear combination of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. There is a technical word for the collection of all such vectors $\begin{bmatrix} A \\ B \end{bmatrix}$.  The term is span.  In determining that there is nowhere Gauss can hide, the students have discovered that the span of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ is all of $R^2$.  In other words,  $Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\} = R^2$.  
+							Facilitating the sharing of examples can seem daunting to an instructor because every group will (most likely) have different examples, and there are 10 cells to complete - plus generalizations - on the handout.  Instructors should not feel as though they must have every example from every cell shared and explained in whole class discussion.  Rather, the instructor has the freedom to make choices about which examples to discuss as a class and how to do so. 
 							<br><br>
-							We can also relate this back to the calculations in Task 1.  We can see that $\begin{bmatrix} 107 \\ 64 \end{bmatrix} \in Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\}$ because it can be written as a linear combination of those two vectors, i.e., $\begin{bmatrix} 107 \\ 64 \end{bmatrix} = 30\begin{bmatrix} 3 \\ 1 \end{bmatrix} + 17\begin{bmatrix} 1 \\ 2 \end{bmatrix}$.
-							<br><br>
-							We can now define span more generally:
+							The following two example discussion questions can be used multiple times as the instructor leads the class in discussing Handout 4. 
 							<br><br>
 							<ul>
-								<li>
-								The span of a set of vectors is all possible linear combinations of those vectors, or in other words, all places you could reach with those two vectors.
-								</li><br>
-								<li>
-								Span $\{v_1, v_2, ..., v_p\}$ is the collection of all vectors that can be written in the form $c_1 v_1 + c_2 v_2 + ... + c_P v_P$ $with c_1,c_2,...,c_p$ with scalars.
-								</li>
-							</ul>
-							<br><br>
-							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Practice Problems: &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#na">Example Discussion Question &raquo;</a>
 								<br>
-								<div class="accordion-body collapse" id = "t6"">
+								<div class="accordion-body collapse" id = "na"">
 									<ul>
-										<blockquote style="background-color:#F8F8F8;">
-											Determine the following:<br>
-											<li>
-											(a) $Span\{\begin{bmatrix} 3 \\ 1 \end{bmatrix}\}$<br>
-											(b) $Span \{ \begin{bmatrix} 2 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 6 \end{bmatrix}\}$<br>
-											(c) $Span \{ \begin{bmatrix} 1 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 5 \end{bmatrix}\}$<br>
-											(d) $Span \{ \begin{bmatrix} 1 \\ 3 \end{bmatrix}$,  $\begin{bmatrix} 2 \\ -6 \end{bmatrix}$,  $\begin{bmatrix} 4 \\ 6 \end{bmatrix}\}$<br>
-											(e) $Span \{ \begin{bmatrix} 1 \\ 3 \\ 2 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 4 \\ 5 \end{bmatrix}\}$<br>
-											(f) $Span \{ \begin{bmatrix} 0 \\ 0 \end{bmatrix}$,  $\begin{bmatrix} 2 \\ 3 \end{bmatrix}\}$		<br>
-											(g) $Span\{\begin{bmatrix} -3 \\ 0 \\ -2 \end{bmatrix}\}$
-											</li>
-											<br>							
+										<blockquote>
+											Look around to your classmates' examples.  Do you see any that seem like a different type of example than what your group did for any given cell?
+											<br><br>
+											A question such as this encourages students to be invested in each other's mathematics. It also helps the instructor gauge students' understanding of the content and streamline which aspects of Handout 4 to dwell on and which lead less discussion.
 										</blockquote>
 									</ul>
 								</div>
 							</ul>
+							<br>							
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#na2">Example Discussion Question &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "na2"">
+									<ul>
+										<blockquote>
+											Look around to your classmates' examples.  Do you see any that seem like that group used a different strategy to generate its example than what your group did for any given cell?
+											<br><br>
+											Additionally, as students listen to each other explain why an example is valid, they should also begin to be able to identify instances in which they used a different approach than their peers.
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
 							<br>
-							These sets of vectors are specifically chosen to help students apply the definition of span and gain the understanding of the definition of span.
-							<br><br>
-							If time permits, you may want to ask questions of the format, "Is ___ in $Span\{,\}$?"  This is the format of a number of typical homework problems.
+							<p>Below is a summary of key points of Handout 4, organized by row: </p>
+							<br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r1">Row 1 (2 vectors in $[]^2$) &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "r1"">
+									<ul>
+										<blockquote>
+											Because they have seen examples of each, students normally generate examples in this row relatively easily. 
+											<br><br>
+											<ul>
+												<li>The most common example for LD is 2 nonzero vectors that are scalar multiples of each other (scalar multiple dependence), and the most common for LI is 2 vectors that are not scalar multiples of each other.</li>
+												<br>
+												<li>The instructor should ask students to provide justifications for why these examples are valid. He/she may also encourage students to share more than one type of justification, such as: </li>
+												<br>
+												<ul>
+													<li>Definition: The set $\{\begin{bmatrix} 5\\3 \end{bmatrix},\begin{bmatrix} 10\\6 \end{bmatrix}\}$ is linearly dependent because there exists nonzero solutions, such as $a = 2$ and $b = -1$, to the equation $a\begin{bmatrix} 5\\3 \end{bmatrix}+b\begin{bmatrix} 10\\6 \end{bmatrix}=\begin{bmatrix} 0\\0 \end{bmatrix}$</li>
+													<li>Travel: The set $\{\begin{bmatrix} 5\\3 \end{bmatrix},\begin{bmatrix} 10\\6 \end{bmatrix}\}$  is linearly dependent because I can ride a mode of transportation defined by $\begin{bmatrix} 5\\3 \end{bmatrix}$ in the forward direction for 2 hours and a mode of transportation defined by $\begin{bmatrix} 10\\6 \end{bmatrix}$ in reverse for an hour, and return back home. </li>
+													<li>Geometric: The set $\{\begin{bmatrix} 5\\3 \end{bmatrix},\begin{bmatrix} 10\\6 \end{bmatrix}\}$ is linearly dependent because the vectors in the set lie on the same line. </li>
+												</ul>
+												<br>
+												<li>This could set the bar for what counts as valid justifications in whole class discussion as students explain the remainder of the handout examples. It also allows students to share diverse strategies, which can lay the foundation for generalizations.</li>
+											</ul>
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
+							<br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r2">Row 2 (3 vectors in $[]^2$) &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "r2"">
+									<ul>
+										<blockquote>
+											In the linear dependence column, row 2 provides the opportunity for more variety in examples than in row 1:
+											<br><br>
+											<ul>
+												<li>Students commonly generate examples of scalar multiple dependence or of linear combination dependence. </li>
+												<li>It is less common for students to generate examples that contain the zero vector. If it does occur here, it can lay a nice foundation for the generalization, "Any set containing the zero vector is linearly dependent."</li>
+											</ul>
+											<br>
+											In the linear independence column, row 2 confronts students with trying to create an example that is not possible.
+											<br><br>
+											<ul>
+												<li>It is often the case, however, that students still feel as though they have successfully generated an example. The instructor should be aware of which groups have and have not generated an example so that they may have students debate their reasoning (e.g., students were asked to debate Groups 3 and 4's examples because they could not both be correct). </li>
+												<li>By the end of this discussion, there should at least be a conjecture out that any set in $[]^2$ of more than 2 vectors has to be linearly dependent, hopefully generated by the students' reasoning. This lays a foundation for the broader generalization, "any set of vectors from $[]^n$ containing more than n vectors is linearly dependent."</li>
+											</ul>
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
+							<br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r3">Row 3 (2 vectors in $[]^3$) &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "r3"">
+									<ul>
+										<blockquote>
+											This row is similar to Row 1, except that the vectors are in $[]^3$ rather than $[]^2$. Instructors may want to address that shift in dimension directly, if needed. That is, this row could be useful for allowing students to practice visualizing and reasoning with vectors in $[]^3$, especially when they generate linearly independent sets. Otherwise, this row can be skimmed over and treated more lightly than the other rows. 
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
+							<br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r4">Row 4 (3 vectors in $[]^3$) &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "r4"">
+									<ul>
+										<blockquote>
+											Here, students may have a harder time being sure that the examples they create (or that the other groups create) are indeed linearly independent or linearly dependent. As such, many rely on using systems of equations to try to confirm that a generated set is either linearly independent or linearly dependent. The instructor could hint at how cumbersome and annoying it is to go through this process. This starts to lay the foundation for an intellectual need for solution strategies such as Gaussian elimination.
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
+							<br>	
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r5">Row 5 (4 vectors in $[]^3$) &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "r5"">
+									<ul>
+										<blockquote>
+											Depending on time, this row can receive a lighter treatment. 
+											<br><br>
+											For the linearly dependent column: 
+											<br><br>
+											<ul>
+												<li>Examples using scalar multiple or linear combination dependence are most common</li>
+												<li>Students may suggest examples using zero vector dependence or "too many vectors" dependence, based on discussions about Row 3</li>
+											</ul>
+											<br>
+											For the linearly independent column:
+											<br><br>
+											<ul>
+												<li>In light of Row 3, students should also be able to use "too many vectors" dependence to explain why no such set of vectors is linearly independent. </li>
+											</ul>
+										</blockquote>
+									</ul>
+								</div>
+							</ul>	
+							<ul>
+						</blockquote>
+					</ul>
+				</div>
+				<br>					
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Making generalizations  &raquo;</a>
+				<br>
+				<div class="accordion-body collapse" id = "i3" ">
+					<ul>
+						<blockquote>				
+							<p>Making generalizations </p>				
+							The instructor should elicit student-created generalizations that are inspired by the discussion of the their examples from Rows 1-5. 
 							<br><br>
 							<ul>
-							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t7">Example Discussion Question &raquo;</a>
+								<li>All of these generalizations should be written on the board in one place so that students may organize their results. </li>
+								<li>There is flexibility in how to write these up on the board - organically as the class progresses through the example cells, at the end once the examples are discussed, etc.  The instructor should choose what feels natural during class that day.</li>
+							</ul>
 							<br>
-							<div class="accordion-body collapse" id = "t7"">
-								<ul>
-									<blockquote style="background-color:#F8F8F8;">
-										<li>
-										Would any two vectors allow us to reach all points in the plane?  If not, for what sets of vectors will this not work?  Why will a set of vectors of the type described [e.g., two vectors that are multiples] not span the plane?  What fails in the reasoning above that we had for $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$?
-										</li>
-									</blockquote>
-								</ul>
+							The degree to which students create generalizations - and their confidence in the generalizations' validity - varies between students as well as across the specific generalizations. 
+							<br><br>
+							The four generalizations listed below represent typical responses.  They are considered to be essential generalizations (i.e., if students do not generate them, the instructor should suggest them for consideration): 
+							<br><br>
+							<ul>
+								<li>1.	If a set contains two vectors that are scalar multiples of each other, then the set is linearly dependent.</li>
+								<li>2.	If at least one vector in a set is a linear combination of the other vectors in the set, then the set is linearly dependent.</li>
+								<li>3.	Any set of vectors from $R^n$ containing more than n vectors is linearly dependent.</li>
+								<li>4.	Any set containing the zero vector is linearly dependent.</li><br>
+								<li>NOTE: The latter three generalizations are consistent with Theorems 7-9 of Chapter 1 of Lay (2007). As such, this task, coupled with Task 3, can replace a textbook section on linear (in)dependence. </li><br>
+							</ul>
+							<br>
+							Sometimes students' wording of the conjectures is not of this form. For example, #1 might be written as "A set of vectors is linearly dependent if there are 2 vectors that lie on the same line," or #3 might be written as "If the number of vectors is greater than the number of dimensions then the set is LD." Students might also generate a specific rather than general case of a generalization. For instance, "no two vectors add to be another" can be discussed during whole class discussion to expand to #2. 
+							<br><br>
+							It is up to the instructor to determine what will count as justifications for the various generalizations that the class offers conjecturally.  What counts as a "convincing argument," i.e., a proof, varies depending on the level of rigor expected in a given class. See p. 44 for examples of justifications given by students in whole class discussion for generalizations #3-4 mentioned above. 
+							<br><br>
+							Finally, the instructor could also have students discuss any generalizations that they made that they now think are invalid:
+							<br><br>
+							<ul>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Discussion Question: &raquo;</a>
+								<br>
+								<div class="accordion-body collapse" id = "t6"">
+									<ul>
+										<blockquote style="background-color:#F8F8F8;">
+											After discussing each other's examples, do you think any of the generalizations that your group or other groups conjectured are invalid?  If so, which one and why?
+											<br><br>
+											For instance, Group 3 in the "Student Thinking" section wrote, "No vector is a multiple of another in the set" as a generalization for linear independence. This is a necessary but not sufficient condition to guarantee linear independence. 
+										</blockquote>
+									</ul>
+								</div>
 							</ul>
 						</blockquote>
 					</ul>
-				</div>				
+				</div>		
+				<br>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Developing an intellectual need for sophisticated solution techniques  &raquo;</a>
+				<br>
+				<div class="accordion-body collapse" id = "i4" ">
+					<ul>
+						<blockquote>				
+							<p>Developing an intellectual need for sophisticated solution techniques </p>				
+							A final learning goal of Task 4 is the development of an intellectual need for an efficient computational strategies and sophisticated solution techniques. It is common for students to assume that if by inspection they cannot immediately "see" the dependence relation among a set of vectors in $R^n$ for $n \geq 3$, then the set must be linearly independent. The instructor is in the position to draw attention to this, stating that sometimes it is difficult to be certain from inspection alone whether or not a set of vectors is linearly dependent. Thus, they needed a more rigorous solution strategy. 
+							<br><br>
+							Example Transition Statement, given by the instructor:
+							<br><br>
+							<ul>
+								<li>"One aspect of this Handout is that when we got to the certain part of the table, it's just hard to check if the examples are correct. Some of you were strategic about the way you picked your vectors, and some picked randomly. But it wasn't always easy to check whether they're linearly independent or dependent. That will be even truer as we work with larger sets and with vectors in R4 and higher. So our next goal is to develop an efficient computational method to check if sets are linear independent or dependent, and if certain vectors are in the span of a given set." </li>
+								<br>
+								<li>Based on this need to check rigorously and efficiently for properties of sets of vectors, the instructor can transition out of the Magic Carpet Ride instructional sequence into a section on the method of row-reduction and Gaussian elimination. Rather than simply being the next chapter or the next unit for study, Gaussian elimination can germinate from a genuine need within this classroom: a need to be certain that a set of vectors is or is not linear independent, and a need for an efficient computational strategy for solving large systems of equations.</li>
+							</ul>
+						</blockquote>
+					</ul>
+				</div>	
+				<br>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Extension of Task 4: Span   &raquo;</a>
+				<br>
+				<div class="accordion-body collapse" id = "i5" ">
+					<ul>
+						<blockquote>				
+							<p>Optional Extension of Task 4: Span  </p>				
+							If time permits in a given classroom, an instructor may wish to have students determine the span of the given set for the examples generated in Handout 4.  This provides further practice with span.  It also may lay a foundation for students to make conjectures regarding span, or regarding the relationship between span and linear (in)dependence for certain types of sets of vectors. 
+							<br><br>
+							Alternatively, this exercise could be given as part of a homework assignment.
+						</blockquote>
+					</ul>
+				</div>					
 			</div>		
-		</ul>	
+		</ul>
+
+		<ul>
+			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout2">Handout 4: Linear Independence and Dependence: Creating Examples &raquo;</a>
+			<div class="accordion-body collapse" id = "handout2">
+				<ul>
+					<blockquote>
+						<object data="media/unit1/handouts/u1_handout4_2.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit1/handouts/u1_handout3.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>	
+		</ul>
+		
 		<ul>
 			<a class="btn btn-info center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
 			<div class="accordion-body collapse" id = "videos">
@@ -469,7 +618,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						<video id="video_1" class="video-js vjs-default-skin"
 							controls preload="false"
 							data-setup='{"example_option":true}'>
-							<source src="media/unit1/task2/Justin_Day_5_3_in_R2_ceiling_clip.mp4" type='video/mp4' />
+							<source src="media/unit1/task4/Justin_Day_5_3_in_R2_ceiling_clip.mp4" type='video/mp4' />
 						</video>
 						<br>
 					</blockquote>

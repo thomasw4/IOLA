@@ -13,9 +13,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Content Demo</title>
+    <title>IOLA Unit 1 Summary</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css"  type="text/css" rel="stylesheet">
@@ -170,7 +170,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 				<h2><a href="u1t2.php">Task 2: Hide and Seek (Working in $R^2$)</a></h2>
 				<ul>
-					<a class="btn btn-tan" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class="btn btn-gray" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t2">
 						<ul>
 							<blockquote>
@@ -194,7 +194,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 				<h2><a href="u1t3.php">Task 3: Getting Back Home (Working in $R^3$)</a></h2>
 				<ul>
-					<a class="btn btn-blue" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class="btn btn-gray" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t3">
 						<ul>
 							<blockquote>
@@ -218,7 +218,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 				<h2><a href="u1t4.php">Task 4: Linear [In]dependence (Moving Towards $R^n$)</a></h2>
 				<ul>
-					<a class=" btn btn-orange hidden-print" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class=" btn btn-gray hidden-print" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">
 						<ul>
 							<blockquote>

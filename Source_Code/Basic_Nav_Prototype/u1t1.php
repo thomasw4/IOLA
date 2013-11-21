@@ -13,9 +13,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Content Demo</title>
+    <title>IOLA Unit 1 Task 1</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
