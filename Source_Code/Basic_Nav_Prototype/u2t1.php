@@ -152,8 +152,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<p class="lead" >Goal is to construct a matrix that yields a desired transformation and to explore linear transformations through this example</p>
 				<p>By the end of the lesson students should be able to:</p>
 				<ul>
-					<li>Conceive of a matrix as a way of mapping elements of R<sup>2</sup> to elements of R<sup>2</sup></li>
-					<li>Find a matrix that produces the desired geometric transformation from R<sup>2</sup> to R<sup>2</sup></li>
+					<li>Conceive of a matrix as a way of mapping elements of &#x211d;<sup>2</sup> to elements of &#x211d;<sup>2</sup></li>
+					<li>Find a matrix that produces the desired geometric transformation from &#x211d;<sup>2</sup> to &#x211d;<sup>2</sup></li>
 					<li>Determine whether the matrix for a transformation is unique (relative to the standard basis)</li>
 					<li>Articulate criteria by which a set of vectors can be chosen to determine the (unique) transformation matrix (e.g., the set of vectors must span the domain)</li>
 				</ul>
@@ -184,7 +184,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					</blockquote>
 				</ul>
 			</div>
-		</ul>		
+		</ul>
+
 		<ul>
 			<a class="btn center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
@@ -209,7 +210,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div class="accordion-body collapse"  id = "studentthinking">
 				<ul>
 					<blockquote>
-						It is nontrivial for students to determine that both the inputs and outputs for the transformation lie in R<sup>2</sup> and that a 2 x 2 matrix defines the mapping. Furthermore, students grapple with how to interpret and symbolize the representations of the N. 
+						It is nontrivial for students to determine that both the inputs and outputs for the transformation lie in &#x211d;<sup>2</sup> and that a 2 x 2 matrix defines the mapping. Furthermore, students grapple with how to interpret and symbolize the representations of the N. 
 						<br><br>
 
 						<!-- Carousel
@@ -347,13 +348,13 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
-					
+					<ul>
 						<blockquote>
 							<p>Working in small groups </p>
 							
 								This task involves a number of preliminary key steps for students to engage in during their small group work: <br><br>
 								<ul>
-									<li>Determining that R<sup>2</sup> is the domain and the codomain for the transformation that A represents, so that means A will be a 2x2 matrix</li>
+									<li>Determining that &#x211d;<sup>2</sup> is the domain and the codomain for the transformation that A represents, so that means A will be a 2x2 matrix</li>
 									<li>Determining a way to “coordinatize” the original N and the italicized N (e.g., the lower left corner of both Ns can be described by the point/vector <0,0> and the upper right corners of the Ns can be described by <2,3> and <3,4>, respectively)</li>
 									<li>Finding various input-output pairs that can be used to determine A </li>
 								</ul>	
@@ -365,19 +366,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									<li>What type of input-output pairs are needed to determine the matrix A</li>
 									<li>Whether the matrix A is unique </li>
 								</ul>	
-							</blockquote>
-				
+						</blockquote>
+					</ul>
 				</div>
 				<br><br>					
 				
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Deciding the dimension of A during Whole Class Discussion &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i3" ">
+				<div class="accordion-body collapse" id = "i3">
 					<ul>
 						<blockquote>				
 							<p>Deciding the dimension of A during Whole Class Discussion</p>
 							<br>
-							Some classes may struggle with determining what the dimensions of A should be. If this is the case, it may be advantageous to stop the class partway through small group work to discuss that the two Ns can be described as a collection of images in R<sup>2</sup>, so A is taking input vectors from R<sup>2</sup> (in the original N) and transforming them into output vectors in R<sup>2</sup> (the 16-pt italicized N).  Thus A has to be a 2x2 matrix. An example of how this conversation could go (inspired by how it has occurred in the past) is given: 
+							Some classes may struggle with determining what the dimensions of A should be. If this is the case, it may be advantageous to stop the class partway through small group work to discuss that the two Ns can be described as a collection of images in &#x211d;<sup>2</sup>, so A is taking input vectors from &#x211d;<sup>2</sup> (in the original N) and transforming them into output vectors in &#x211d;<sup>2</sup> (the 16-pt italicized N).  Thus A has to be a 2x2 matrix. An example of how this conversation could go (inspired by how it has occurred in the past) is given: 
 							<br><br>
 							<ul>
 								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Discussion Question &raquo;</a>
@@ -388,8 +389,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 										<li><strong>Instructor:</strong> So did anyone try to think about what the domain or codomain might be for these input and output space?</li><br>
 										<li><strong>Jonathan:</strong> Yes. The regular N is your domain and then the italicized 16 N is your codomain.</li><br>
 										<li><strong>Instructor:</strong> Okay, so you said the domain was the regular N, and the codomain was this italicized N. If we think back to the examples we saw before, we had 
-										spaces like R<sup>2</sup>, R<sup>5</sup>, R<sup>8</sup>, etc. as our domains and codomains. So, here we could say 
-										that the original N is a collection of vectors in the domain, and the italicized N is a	collection of vectors in the codomain. And if we think about the fact that the N and the italicized N are all lying on the plane and can be represented with 2 	components, we’d say that the input space is R<sup>2</sup> and the codomain is still R<sup>2</sup>. </li>
+										spaces like &#x211d;<sup>2</sup>, R<sup>5</sup>, R<sup>8</sup>, etc. as our domains and codomains. So, here we could say 
+										that the original N is a collection of vectors in the domain, and the italicized N is a	collection of vectors in the codomain. And if we think about the fact that the N and the italicized N are all lying on the plane and can be represented with 2 	components, we’d say that the input space is &#x211d;<sup>2</sup> and the codomain is still &#x211d;<sup>2</sup>. </li>
 										</blockquote>
 									</ul>				
 								</div>
@@ -413,7 +414,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							 If the class had not determined that all points on the N will be thought of as the endpoint of a vector that emanates from a fixed origin before they engaged in the task, examination of past student work has revealed two common notational strategies: 
 							<br><br>
 							<ul>
-								<li>Using vectors in R<sup>2</sup> in which the 3 portions of the N are the vectors (e.g., Group 1-2)</li>
+								<li>Using vectors in &#x211d;<sup>2</sup> in which the 3 portions of the N are the vectors (e.g., Group 1-2)</li>
 								<li>Using vectors in R<sup>2 </sup>(or points in the x-y plane) in which the N is represented with vectors whose endpoint lay on the N with tips originating from the same point on the letter (corresponding to a fixed origin) (e.g., Group 3)</li>
 
 							</ul>
@@ -421,7 +422,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							To find the matrix A, students tend to either:
 							<ul>
 									<li>Set up two matrix equations, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ = $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 0 \\  3  \end{bmatrix}$ = $\begin{bmatrix} 1 \\ 4 \end{bmatrix}$, convert them into two systems of equations, and solve for a, b, c, and d.</li>
-									<li>	Set up one matrix equation, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  $\begin{bmatrix} 0 & 2 & 0 & 2\\ 0 & 0 & 3 & 3\end{bmatrix}$ = $\begin{bmatrix} 0 & 2 & 1 & 3\\ 0 & 0 & 4 & 4\end{bmatrix}$, convert it into a system of equations, and solve for a, b, c, and d. <li>
+									<li>Set up one matrix equation, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  $\begin{bmatrix} 0 & 2 & 0 & 2\\ 0 & 0 & 3 & 3\end{bmatrix}$ = $\begin{bmatrix} 0 & 2 & 1 & 3\\ 0 & 0 & 4 & 4\end{bmatrix}$, convert it into a system of equations, and solve for a, b, c, and d. <li>
 							</ul>
 							<br>
 							The instructor could have students present their solution techniques and final solution for A to the class.
@@ -432,7 +433,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<br><br>		
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Defining “Linear Transformation” in whole class discussion &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i5" ">
+				<div class="accordion-body collapse" id = "i5">
 					
 						<blockquote>						
 							<p>Defining “Linear Transformation” in whole class discussion </p>
@@ -441,7 +442,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<br><br>
 							Two other reasons it is useful to define linear transformation here is (a) it can be used to show that any transformation that can be defined with a matrix is linear (and so we can use A(x+y)=Ax+Ay and A(cx)=cAx in calculations and derivations; and (b) it is utilized in proofs of important results (such as knowing how a basis is transformed is sufficient to know how a whole space is transformed).
 							<br><br>
-							<strong>Definition:</strong> A transformation T:R<sup>n</sup>→R<sup>m</sup> is called a linear transformation if it satisfies the following two properties: (1) T(x+y)=T(x)+T(y) for every x,y∈R<sup>n</sup>, and (2) T(cx)=cT(x) for every x∈R<sup>n</sup> and every c∈R.
+							<strong>Definition:</strong> A transformation T:&#x211d;<sup>n</sup>→&#x211d;<sup>m</sup> is called a linear transformation if it satisfies the following two properties: (1) T(x+y)=T(x)+T(y) for every x,y∈&#x211d;<sup>n</sup>, and (2) T(cx)=cT(x) for every x∈&#x211d;<sup>n</sup> and every c∈R.
 							<br><br>
 							<strong>NOTE:</strong> This definition assumes R as the field of scalars for the defined operations.
 							<br><br>
@@ -457,19 +458,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									<ul style="list-style-type: none;">
 										<blockquote style="background-color:#F8F8F8;">	
 										Use the definition of linear transformation to prove that T(0)=0. That is, that under a 
-										linear transformation, the zero vector in R^n has to map to the zero vector in R<sup>m</sup>.
+										linear transformation, the zero vector in R^n has to map to the zero vector in &#x211d;<sup>m</sup>.
 										<br><br>
 										Possible justifications: 
 										<ul>
-											<li>Because T is linear, we know T(cx)=cT(x) for every x∈R<sup>n</sup> and every c∈R. So choose c=0 and consider what happens: </li>
+											<li>Because T is linear, we know T(cx)=cT(x) for every x∈&#x211d;<sup>n</sup> and every c∈R. So choose c=0 and consider what happens: </li>
 											<br>
 											<ul>
 												<li style="list-style-type: none;">
-													T(cx)=T(0x)=T(0) because the scalar 0 times the vector x results in the zero vector in R<sup>n</sup>  for any vector x∈R<sup>n</sup>
+													T(cx)=T(0x)=T(0) because the scalar 0 times the vector x results in the zero vector in &#x211d;<sup>n</sup>  for any vector x∈&#x211d;<sup>n</sup>
 												</li>
 												<br>
 												<li style="list-style-type: none;">
-													cT(x)=0T(x)=0 	because T(x) is a vector in R<sup>m</sup>, and the scalar 0 times the vector T(x) results in the zero vector in R<sup>m</sup>  
+													cT(x)=0T(x)=0 	because T(x) is a vector in &#x211d;<sup>m</sup>, and the scalar 0 times the vector T(x) results in the zero vector in &#x211d;<sup>m</sup>  
 												</li>
 												<br>
 												<li style="list-style-type: none;">
@@ -478,7 +479,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 												<br>
 											</ul>
 
-											<li>Because T is linear, we know T(x+y)=T(x)+T(y) for every x, y∈R<sup>n</sup>. So choose the vector y=-x and consider what happens:</li>
+											<li>Because T is linear, we know T(x+y)=T(x)+T(y) for every x, y∈&#x211d;<sup>n</sup>. So choose the vector y=-x and consider what happens:</li>
 											<br>
 											<ul>
 												<li style="list-style-type: none;">
@@ -516,10 +517,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 										<li>(a) T:R→R where T(x)=x<sup>2</sup></li>
 										<li>(b) T:R→R where T(x)=4x</li>
 										<li>(c) T:R→R where T(x)=x+3</li>
-										<li>(d) T:R<sup>2</sup>→R<sup>2</sup> where T(x<sub>1</sub>,x<sub>2</sub> )=(3x<sub>1</sub>,x<sub>1</sub>+2x<sub>2</sub>)</li>
-										<li>(e) T:R<sup>2</sup>→R<sup>2</sup>where T(x<sub>1</sub>,x<sub>2</sub> )=(x<sub>1</sub>,2x<sub>2</sub>-1)</li>
-										<li>(f) T:R<sup>2</sup>→R<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$.</li>
-										<li>(g) T:R<sup>2</sup>→R<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$,a,b,c,d∈R.</li>
+										<li>(d) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T(x<sub>1</sub>,x<sub>2</sub> )=(3x<sub>1</sub>,x<sub>1</sub>+2x<sub>2</sub>)</li>
+										<li>(e) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup>where T(x<sub>1</sub>,x<sub>2</sub> )=(x<sub>1</sub>,2x<sub>2</sub>-1)</li>
+										<li>(f) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$.</li>
+										<li>(g) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$,a,b,c,d∈R.</li>
 									</blockquote>
 									</ul>
 								</div>
@@ -527,17 +528,57 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<br><br>
 							Of these examples, (a), (c), and (e) are not linear.  Students most likely will be surprised that example (c) is not linear because the graph of T(x)=x+3 “looks like a line.” Letting students discuss this example, and its similarity to example (e), is beneficial to their conceptual understanding of linear transformation.
 							<br><br>
-							Example (g) may want to be saved for homework. If the class is advanced and/or proof-oriented, the example “prove that any T:R<sup>n</sup>→R<sup>m</sup> that can be defined by an m x n matrix A is linear” may be given for homework of small group work.
+							Example (g) may want to be saved for homework. If the class is advanced and/or proof-oriented, the example “prove that any T:&#x211d;<sup>n</sup>→&#x211d;<sup>m</sup> that can be defined by an m x n matrix A is linear” may be given for homework of small group work.
 							<br><br>
 							Example (f) is the matrix that represents the “Italicizing N” transformation.  That can serve as a nice example of how to use the definition to prove linearity: 
+							<br>
 							<ul>
-								<li>
+								<li style="padding-bottom:20px;">
 									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$
-									($\begin{bmatrix} x1 \\ x2 \end{bmatrix}$ +
-									$\begin{bmatrix} y1 \\ y2 \end{bmatrix}$ ) =
+									( $\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$ +
+									$\begin{bmatrix} y_{1} \\ y_{2} \end{bmatrix}$ ) =
 									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$
-									$\begin{bmatrix} x1 + y1 \\ x2 + y2 \end{bmatrix}$
+									$\begin{bmatrix} x_{1}+y_{1} \\ x_{2}+y_{2} \end{bmatrix}$ = 
+									$\begin{bmatrix} (x_{1}+y_{1}) + (1/3)(x_{2} + y_{2}) \\ (4/3)(x_{2} + y_{2}) \end{bmatrix}$
 
+								</li>
+								<li style="list-style-type:none; padding-left:356px; padding-bottom:20px">
+									=   $\begin{bmatrix} x_{1} + (1/3)x_{2} + y_{1} +(1/3)y_{2} \\ (4/3)x_{2} + (4/3)y_{2} \end{bmatrix}$
+								</li>
+								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+									=   $\begin{bmatrix} x_{1} + (1/3)x_{2}  \\ (4/3)x_{2} \end{bmatrix}$ +  $\begin{bmatrix} y_{1} +(1/3)y_{2} \\ (4/3)y_{2} \end{bmatrix}$
+								</li>
+								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+									=   $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} x_{1} \\ x_{2} \end{bmatrix}$ +  $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} y_{1} \\ y_{2} \end{bmatrix}$
+								</li>
+								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+									&there4; T(x+y)=T(x)+ T(y) 	
+								</li>
+								<li style="padding-bottom:20px;">
+									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$(c$\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$) =
+									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} cx_{1} \\ cx_{2}\end{bmatrix}$ =
+									$\begin{bmatrix} cx_{1} + (1/3)cx_{2}\\ (4/3)cx_{2}\end{bmatrix}$ =
+									c$\begin{bmatrix} x_{1} + (1/3)x_{2}\\ (4/3)x_{2}\end{bmatrix}$ 
+									
+								</li>
+								<li style="list-style-type:none; padding-left:413px; padding-bottom:20px">
+									=   c$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$
+								</li>
+								<li style="list-style-type:none; padding-left:413px; padding-bottom:20px">
+									&there4; T(cx)=cT(x)	
+								</li>
+								<li style="padding-bottom:20px;">
+									The two properties of a linear transformation (distribution across vector addition and scalar multiplication) could be illustrated through considering specific input-output pairs of the Italicizing N transformation:
+									<ul>
+										<li>Choosing the bottom left corner of the N to be the origin (in both Ns) illustrates that zero gets sent to zero </li>
+										<li>One could consider the “parallelogram rule,” that $\begin{bmatrix} 2 \\ 0\end{bmatrix}$+
+											$\begin{bmatrix} 0 \\ 3\end{bmatrix}$=$\begin{bmatrix} 2 \\ 3\end{bmatrix}$, and 
+											T($\begin{bmatrix} 2 \\ 3\end{bmatrix}$)=$\begin{bmatrix} 3 \\ 4\end{bmatrix}$, or that
+											T($\begin{bmatrix} 2 \\ 0\end{bmatrix}$)=$\begin{bmatrix} 2 \\ 0\end{bmatrix}$,T($\begin{bmatrix} 0 \\ 3\end{bmatrix}$)=
+											$\begin{bmatrix} 1 \\ 4\end{bmatrix}$,and$\begin{bmatrix} 2 \\ 0\end{bmatrix}$+$\begin{bmatrix} 1 \\ 4\end{bmatrix}$=
+											$\begin{bmatrix} 3 \\ 4\end{bmatrix}$
+										</li>
+									</ul>
 								</li>
 							</ul>
 
@@ -545,52 +586,60 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 				</div>	
 
-
+				<br>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i70">Exploring Nuanced Issues during Whole Class Discussion&raquo;</a>
+				<br>
+				<div class="accordion-body collapse" id = "i70">
+					<ul>
+						<blockquote>				
+							<p>Exploring Nuanced Issues during Whole Class Discussion</p>
+							
+							The instructor may have noticed nuanced issues that students encountered (explicitly or implicitly) during small group work. 
+							There is no linear order in which these need to be discussed, and it is up to the instructor to decide the rigor with which 
+							to discuss these issues, if at all. 
+							<br><br>
 							<ul>
-							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t8">Example Discussion Question &raquo;</a>
-							<br>
-							<div class="accordion-body collapse" id = "t8" >
-								<ul>
-									<blockquote style="background-color:#F8F8F8;">
-										<li>Is riding the hover board forward for 30 hours and the magic carpet forward for 17 hours the only way to get to Old Man Gauss?
-										</li>
-										<br>							
-										<ul>
-											<li>Algebraically, some students might respond to this question in a manner similar to the following: "We just solved a system of equations in two equations and two unknowns, and we found one solution. So that solution has to be the only one. Maybe if the system was different, we would have found no solutions or infinitely many, but that didn't happen here."  That connection to their experience with systems of equations in high school algebra is appropriate and useful here. </li>
-											<li>Geometrically, this question leads the class to discuss what counts as a "different way" to Gauss. For instance, do the two different sides of the parallelogram (the sketch representing both $30\begin{bmatrix} 3 \\ 1 \end{bmatrix}+17\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ and $17\begin{bmatrix} 1 \\ 2 \end{bmatrix}+30\begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or a "staircase" sketch (e.g., the sketch representing the equation $10\begin{bmatrix} 1 \\ 2 \end{bmatrix}+9\begin{bmatrix} 3 \\ 1 \end{bmatrix}+7\begin{bmatrix} 1 \\ 2 \end{bmatrix}+21\begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$ represent the same or different solutions? The underlying sentiment that is important to bring out is that even if they seem like different "paths", they all represent the same solution because they all lead to the same solution of $(30, 17)$. So one could say they are different paths to the same solution, and thus, we can say there is only one solution to the problem. One could use the term "commutativity of vector addition" here if it is appropriate for your class, but it is not essential. </li>
-										</ul>
-									</blockquote>
-								</ul>
-							</div>
+								<li>How many input-output pairs are needed to determine the matrix A</li>
+								<li>What type of input-output pairs are needed to determine the matrix A</li>
+								<li>Whether the matrix A is unique </li>
 							</ul>
 							<br>
-
+							The responses to these three questions are somewhat bound together.  For instance, if students did not choose input vectors 
+							that spanned 2 in order to determine A, the matrix A they found may not be unique. However, that matrix A would not perform
+							the desired italicizing transformation for all possible input vectors. Thus, to find an A that works for all inputs as desired, 
+							one needs to choose input vectors that span the domain. If this occurs, the matrix A will be the unique matrix for that 
+							(up to a choice of basis). 	
+							<br><br>
+							Additionally, the teacher may be able to prompt students to consider what the fewest number of input-output pairs needed is so 
+							that A can be determined. As such, if the term basis has not already been defined in the linear algebra course, this may be a 
+							natural place to do so:
+							<br><br>
+							<strong>Definition:</strong> A basis for a vector space V is a set of linearly independent vectors in V that spans V.  	
+							<br>
+							<strong>NOTE:</strong> An instructor may choose to use a less general definition, such as “A basis for n is a set of linearly independent vectors in V that spans n.”
+							<br><br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t9">Example Discussion Question &raquo;</a>
+								<li>Thus, the class may come to establish that, in order to determine the mxn matrix A for a transformation, they only need to know the input-output pairs for inputs that form a basis for &#x211d;<sup>n</sup>.</li>
+								<li>This can be leveraged to explain that if one knows what happens to a basis under a transformation, then one knows what happens to any vector in the domain:</li>
 								<br>
-								<div class="accordion-body collapse" id = "t9" style="background-color:#F8F8F8;">
-									<ul>
-										<blockquote>
-											<li>Is it possible to reach Old Man Gauss with only one mode of transportation?<br>
-												 If so, provide a solution and sketch of the problem and solution.<br>
-													 If not, develop a justification for why it is not possible.
-											</li>
-											<br>							
-											<ul>
-												<li>In the process of answering the question on Handout 1, many students may have already thought about this Example Discussion Question. </li>
-												<li>Geometrically one goal of this question is to have students practice justification, explaining to their peers in class discussion, and questioning each other's justifications. This question is more justification-oriented than the main problem (determining how to get to Gauss) because it promotes different ways to support and present an argument.</li>
-												<li>Expect both geometric (e.g., the travel paths would miss Gauss) and algebraic (e.g., the ratios are different or can't find one $x$, $y$ for both equations).</li>
-											</ul>
-										</blockquote>
-									</ul>
-								</div>
-							</ul>
-							</blockquote>
-						</ul>
+								<ul>
+									<li style="list-style-type:none;">(Assuming T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup>) Suppose v and w are chosen as input vectors, v and w form a basis for &#x211d;<sup>2</sup>, and how v and w are 
+										transformed under T is known.  Because they form a basis, any vector in &#x211d;<sup>2</sup> can be written as a linear combination 
+										of v and w. That is, for any u in &#x211d;<sup>2</sup> there exists scalars a and b such that u=av+bw.  Next consider T(u).
+										 T(u)=T(av+bw)=T(av)+T(bw) by linearity of T, which equals aT(v)+bT(w), also by linearity of T. 
+										 Thus T(u)= aT(v)+bT(w) for any u. Thus, because it is known what happens to v and w under T, what happens to any
+										 u under T can also be determined.</li>
+								</ul>
+								<br>
+								<li>The teacher may wish to further connect to <strong>basis</strong> by discussing how the columns of A are the images of the (ordered) basis
+								 vectors.  Here, where the standard basis has been assumed, the first column of A is the image of <strong>e</strong><sub>1</sub> (which is just <strong>e</strong><sub>1</sub>), and 
+								 the second column of A is the image of <strong>e</strong><sub>2</sub>(which is <1/3, 4/3>).  While this instructional unit may be completed without this 
+								 information, it may be nice to say it here to connect with later transformations within eigen theory and change of basis. </li>
+							</ul>	
 						</blockquote>
 					</ul>
-				</div>
-		</ul>	
+				</div>	
+									
 		
 			<ul>
 				<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
@@ -624,6 +673,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			</ul>
 		</div>
 	</section>
+
+
+
+
+
+
 
       <hr>
 	<footer>
