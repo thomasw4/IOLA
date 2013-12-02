@@ -133,7 +133,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		<br>
 		
 		<ul>
-			<a class="btn printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
+			<a class="btn btn-gray printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
 		</ul>
 		
 		<ul>
@@ -151,7 +151,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		</ul>
 
 		<ul>
-			<a class="btn center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>

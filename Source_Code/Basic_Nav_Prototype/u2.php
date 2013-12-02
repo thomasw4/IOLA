@@ -122,7 +122,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div class="accordion " id="summary">		  
 				<h2><a href="u2t1.php">Task 1: Italicizing N</a></h2>
 				<ul>
-					<a class="btn" id ="moreInfo"data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class="btn btn-gray" id ="moreInfo"data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t1">
 						<ul>
 							<blockquote>
@@ -149,7 +149,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 				<h2><a href="u2t2.php">Task 2: Beyond N</a></h2>
 				<ul>
-					<a class="btn" id="moreInfo" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class="btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t2">
 						<ul>
 							<blockquote>
@@ -175,7 +175,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 				<h2><a href="u2t3.php">Task 3: Pat and Jamie</a></h2>
 				<ul>
-					<a class="btn" id="moreInfo" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class="btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t3">
 						<ul>
 							<blockquote>
@@ -201,7 +201,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		
 				<h2><a href="u2t4.php">Task 4: Getting Back To N</a></h2>
 				<ul>
-					<a class=" btn  hidden-print" id="moreInfo" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<a class=" btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">
 						<ul>
 							<blockquote>
