@@ -38,8 +38,8 @@
             unset($row['salt']); 
             unset($row['password']); 
             $_SESSION['user'] = $row;  
-            header("Location: mockup.php"); 
-            die("Redirecting to: mockup.php"); 
+            header("Location: index.php"); 
+            die("Redirecting to: index.php"); 
         } 
         else{ 
             print("Login Failed."); 
@@ -55,7 +55,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
     <title>IOLA Mockup</title>
 
@@ -76,66 +76,10 @@
   </head>
 
   <body onload="init()">
-
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <div class="navbar-inner">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#"><img src="img/logo_i.png" width="48" height="48" alt="IOLA"></a>
-			  			  
-
-			</div>
-			<div class="navbar-collapse collapse">
-			
-			  <ul class="nav navbar-nav">
-				<li></li>
-				<li class="active"><a href="#">Home</a></li>
- 				<?php  if (isset($_SESSION['user'])) {  ?>
-					<li><a id="simple-menu" href="#sidr">Modules</a></li>
-	  			<?php } ?>
-				<li><a href="team.php">Team</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Pictures</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header">Links</li>
-					<li><a href="#">NSF</a></li>
-					<li><a href="#">Related Projects</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			  <?php  if (!isset($_SESSION['user'])) {  ?>
-			  <form class="navbar-form navbar-right" action="mockup.php" method="post">
-				<div class="form-group">
-				  <input type="text" name="username" class="form-control" value="username">
-				</div>
-				<div class="form-group">
-				  <input type="password" class="form-control" name="password" value="password">
-				</div>
-				<button type="submit" class="btn btn-primary" value="Login">Sign in</button>
-			  </form> 
-			<?php } ?>
- 			<?php  if (isset($_SESSION['user'])) {  ?>
-			  <form class="navbar-form navbar-right" action="logout.php" method="post">
-				<div class="form-group" style="padding-right:15px">
-					<font  color="FFFFFF">Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!</font>
-				</div>
-				<button type="submit" class="btn btn-primary" value="logout">Log out</button>
-			  </form> 
-
-			<?php } ?>
-			</div><!--/.navbar-collapse -->
-		  </div>
-		</div>
+	  <?php include 'header.php' ?>
     </div>
-	  
+    
 	<?php  if (isset($_SESSION['user'])) {  ?>
 	<a style="display:block" href="#sidr">
 		<div id="float" class="hidden-print">
@@ -153,8 +97,6 @@
 		</div>
 	</a>
 	<?php } ?>
-
-	
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -178,25 +120,27 @@
       <!-- Example row of columns -->
       <div class="row">
 	  
-	   <div class="col-lg-4">
+	   <div class="col-lg-6"><center>
           <h2>New Site In-Progress</h2>
-		  		  <p><img width="250" height="150" src="img/screen.JPG"></p>
+		  		  <p><img width="350" height="230" src="img/screen.jpg" style="border:1px solid gray"></p>
 		  <a class="btn btn-default" data-toggle="collapse" data-target="#u6">View details &raquo;</a>
 				   <p class="collapse" id="u6">
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-       </div>
+          This new site is a work-in-progress.  It's being developed by computer science design students at Virginia Tech: Bill Lucy, Ethan Francis, and Thomas Walton.  
+       </center></div>
 	   
-        <div class="col-lg-4">
-          <h2>Paper Published</h2>
-		  		  		  <p><img width="250" height="150" src="img/paper.JPG"></p>
+        <div class="col-lg-6">
+		<center>
+          <h2>NSF Grant Information</h2>
+		  		  		  <p><img width="230" height="230" src="img/nsf1.gif"></p>
 
 		  <a class="btn btn-default" data-toggle="collapse" data-target="#u5">View details &raquo;</a>
 				   <p class="collapse" id="u5">
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+          This material is based upon work supported by the National Science Foundation under Grant No. 0######. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 		  </p>
-
+<br><br></center>
         </div>
-
+		
+<!--
         <div class="col-lg-4">
           <h2>Classroom Motivation Up</h2>
 		  		  		  		  		  <p><img width="250" height="150" src="img/student.gif"></p>
@@ -207,10 +151,11 @@
           Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
         </div>
       </div>
-
+-->
       <hr>
 
 		<footer>
+
 			<ul class="list-inline text-right">
 				<li><p>&copy; IOLA Team 2013</p></li>
 				<li><a href="team.php">Contact Us</a></li>
