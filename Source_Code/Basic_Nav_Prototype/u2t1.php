@@ -95,10 +95,46 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
       <div class="jumbotron">
 		<div id="sidr">
-			<?php include 'sidebar.php' ?>
+			<ul>
+				<li>
+				<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><strong>Unit 1 Magic Carpet Ride  <b class="caret"></b></strong></a>
+				   <p class="collapse" id="u1">
+				   		<a href="u1.php" title="Title"> - Unit 1 Summary</a>
+						<a href="u1t1.php" title="Title"><strong> - Task 1: The Carpet Ride Problem</strong></a>
+						<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
+						<a href="u1t3.php" title="Title"> - Task 3: Getting Back Home</a>
+						<a href="u1t4.php" title="Title"> - Task 4: Linear (In)dependence</a>
+				   </p>
+                </li>		
+				<li>
+				<a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2  <b class="caret"></b></a>
+				   <p class="collapse" id="u2">
+						<a href="u2.php" title="Title">- Unit 2 Summary</a>
+						<a href="u2t1.php" title="Title"> - Task 1: Italicizing N</a>
+						<a href="u2t2.php" title="Title"> - Task 2: Beyond the N</a>
+						<a href="u2t3.php" title="Title"> - Task 3: Pat and Jamie </a>
+						<a href="u2t4.php" title="Title"> - Task 4: Getting Back to N</a>
+				   </p>
+                </li>	
+				<li>				
+				<a class="accordion-toggle" data-toggle="collapse" data-target="#u3">Unit 3  <b class="caret"></b></a>
+				   <p class="collapse" id="u3">
+						<a href="#" title="Title"> - Task 1</a>
+						<a href="#" title="Title"> - Task 2</a>
+				   </p>
+                </li>
+
+                <li>
+				<a class="accordion-toggle" data-toggle="collapse" data-target="#u4">Unit 4  <b class="caret"></b></a>
+				   <p class="collapse" id="u4">
+						<a href="#" title="Title"> - Task 1</a>
+						<a href="#" title="Title"> - Task 2</a>
+				   </p>
+                </li>
+			</ul>
 		</div>
 	
-        <h1 class="text-center">Unit 2: Italicizing N</h1>
+        <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
 		</div>
 				<!-- Begin expandall section -->
 		<div class="jumbotron">
@@ -151,7 +187,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		</ul>
 
 		<ul>
-			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -307,7 +343,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 				</ul>	
 				
-				<br><br>	
+				<br>	
 
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups  &raquo;</a>
 				<br>
@@ -333,7 +369,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 					</ul>
 				</div>
-				<br><br>					
+				<br>					
 				
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Deciding the dimension of A during Whole Class Discussion &raquo;</a>
 				<br>
@@ -347,7 +383,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<ul>
 								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example Discussion Question &raquo;</a>
 								<br>
-								<div class="accordion-body collapse" id = "t6"">
+								<div class="accordion-body collapse" id = "t6">
 									<ul style="list-style-type: none;">
 										<blockquote style="background-color:#F8F8F8;">	
 										<li><strong>Instructor:</strong> So did anyone try to think about what the domain or codomain might be for these input and output space?</li><br>
@@ -364,19 +400,16 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 					</ul>
 				</div>
-
-
-
-				<br><br>					
+				<br>					
 
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Sharing solution approaches and the correct answer in Whole Class Discussion &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i4" ">
+				<div class="accordion-body collapse" id = "i4">
 					
 						<blockquote>						
 							<p>Sharing solution approaches and the correct answer in Whole Class Discussion </p>
 							 If the class had not determined that all points on the N will be thought of as the endpoint of a vector that emanates from a fixed origin before they engaged in the task, examination of past student work has revealed two common notational strategies: 
-							<br><br>
+							<br>
 							<ul>
 								<li>Using vectors in &#x211d;<sup>2</sup> in which the 3 portions of the N are the vectors (e.g., Group 1-2)</li>
 								<li>Using vectors in R<sup>2 </sup>(or points in the x-y plane) in which the N is represented with vectors whose endpoint lay on the N with tips originating from the same point on the letter (corresponding to a fixed origin) (e.g., Group 3)</li>
@@ -386,7 +419,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							To find the matrix A, students tend to either:
 							<ul>
 									<li>Set up two matrix equations, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ = $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 0 \\  3  \end{bmatrix}$ = $\begin{bmatrix} 1 \\ 4 \end{bmatrix}$, convert them into two systems of equations, and solve for a, b, c, and d.</li>
-									<li>Set up one matrix equation, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  $\begin{bmatrix} 0 & 2 & 0 & 2\\ 0 & 0 & 3 & 3\end{bmatrix}$ = $\begin{bmatrix} 0 & 2 & 1 & 3\\ 0 & 0 & 4 & 4\end{bmatrix}$, convert it into a system of equations, and solve for a, b, c, and d. <li>
+									<li>Set up one matrix equation, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  $\begin{bmatrix} 0 & 2 & 0 & 2\\ 0 & 0 & 3 & 3\end{bmatrix}$ = $\begin{bmatrix} 0 & 2 & 1 & 3\\ 0 & 0 & 4 & 4\end{bmatrix}$, convert it into a system of equations, and solve for a, b, c, and d. </li>
 							</ul>
 							<br>
 							The instructor could have students present their solution techniques and final solution for A to the class.
@@ -394,14 +427,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 						</div>	
 
-				<br><br>		
+				<br>		
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Defining “Linear Transformation” in whole class discussion &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i5">
-					
+				<div class="accordion-body collapse" id = "i5">					
 						<blockquote>						
-							<p>Defining “Linear Transformation” in whole class discussion </p>
-							<br>
+							<p>Defining “Linear Transformation” in whole class discussion </p>						
 							The problem in Task 1 that students have been working on is an example of a special type of transformation encountered in linear algebra, and so it is worth pausing to introduce and define that special class of transformations. 
 							<br><br>
 							Two other reasons it is useful to define linear transformation here is (a) it can be used to show that any transformation that can be defined with a matrix is linear (and so we can use A(x+y)=Ax+Ay and A(cx)=cAx in calculations and derivations; and (b) it is utilized in proofs of important results (such as knowing how a basis is transformed is sufficient to know how a whole space is transformed).
@@ -418,7 +449,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<ul>
 								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t60">Example Partner Talk Task &raquo;</a>
 								<br>
-								<div class="accordion-body collapse" id = "t60"">
+								<div class="accordion-body collapse" id = "t60">
 									<ul style="list-style-type: none;">
 										<blockquote style="background-color:#F8F8F8;">	
 										Use the definition of linear transformation to prove that T(0)=0. That is, that under a 
@@ -496,7 +527,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							<br><br>
 							Example (f) is the matrix that represents the “Italicizing N” transformation.  That can serve as a nice example of how to use the definition to prove linearity: 
 							<br>
-							<ul>
+							<ul style="font-size:13px">
 								<li style="padding-bottom:20px;">
 									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$
 									( $\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$ +
@@ -506,16 +537,16 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									$\begin{bmatrix} (x_{1}+y_{1}) + (1/3)(x_{2} + y_{2}) \\ (4/3)(x_{2} + y_{2}) \end{bmatrix}$
 
 								</li>
-								<li style="list-style-type:none; padding-left:356px; padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:310px; padding-bottom:20px">
 									=   $\begin{bmatrix} x_{1} + (1/3)x_{2} + y_{1} +(1/3)y_{2} \\ (4/3)x_{2} + (4/3)y_{2} \end{bmatrix}$
 								</li>
-								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:310px;padding-bottom:20px">
 									=   $\begin{bmatrix} x_{1} + (1/3)x_{2}  \\ (4/3)x_{2} \end{bmatrix}$ +  $\begin{bmatrix} y_{1} +(1/3)y_{2} \\ (4/3)y_{2} \end{bmatrix}$
 								</li>
-								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:310px;padding-bottom:20px">
 									=   $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} x_{1} \\ x_{2} \end{bmatrix}$ +  $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} y_{1} \\ y_{2} \end{bmatrix}$
 								</li>
-								<li style="list-style-type:none; padding-left:356px;padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:3101px;padding-bottom:20px">
 									&there4; T(x+y)=T(x)+ T(y) 	
 								</li>
 								<li style="padding-bottom:20px;">
@@ -525,14 +556,15 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									c$\begin{bmatrix} x_{1} + (1/3)x_{2}\\ (4/3)x_{2}\end{bmatrix}$ 
 									
 								</li>
-								<li style="list-style-type:none; padding-left:413px; padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:384px; padding-bottom:20px">
 									=   c$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$$\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$
 								</li>
-								<li style="list-style-type:none; padding-left:413px; padding-bottom:20px">
+								<li style="list-style-type:none; padding-left:384px; padding-bottom:20px">
 									&there4; T(cx)=cT(x)	
 								</li>
 								<li style="padding-bottom:20px;">
 									The two properties of a linear transformation (distribution across vector addition and scalar multiplication) could be illustrated through considering specific input-output pairs of the Italicizing N transformation:
+									<br>
 									<ul>
 										<li>Choosing the bottom left corner of the N to be the origin (in both Ns) illustrates that zero gets sent to zero </li>
 										<li>One could consider the “parallelogram rule,” that $\begin{bmatrix} 2 \\ 0\end{bmatrix}$+
@@ -595,7 +627,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 										 u under T can also be determined.</li>
 								</ul>
 								<br>
-								<li>The teacher may wish to further connect to <strong>basis</strong> by discussing how the columns of A are the images of the (ordered) basis
+								<li>The teacher may wish to further connect to <strong>basis</strong> by discussing how the columns of 	A are the images of the (ordered) basis
 								 vectors.  Here, where the standard basis has been assumed, the first column of A is the image of <strong>e</strong><sub>1</sub> (which is just <strong>e</strong><sub>1</sub>), and 
 								 the second column of A is the image of <strong>e</strong><sub>2</sub>(which is <1/3, 4/3>).  While this instructional unit may be completed without this 
 								 information, it may be nice to say it here to connect with later transformations within eigen theory and change of basis. </li>
@@ -603,38 +635,85 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 					</ul>
 				</div>	
+				<br>
+				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i71">Exploring a matrix times a matrix in whole class discussion&raquo;</a>
+				<br>
+				<div class="accordion-body collapse" id = "i71">
+					<ul>
+						<blockquote>				
+							<p>Exploring a matrix times a matrix in whole class discussion</p>
+							As mentioned previously, some students might try to find A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$by “concatenating” multiple input-output pairs and then make use of a system of equations to solve for A, such as:
+							<br>
+							<ul>
+								<li>$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}$=
+									$\begin{bmatrix} 2 & 1 \\ 0 & 4 \end{bmatrix}$ (use 2 input-outputs pairs from the N)</li>
+								<li>$\begin{bmatrix} a & b \\ c&  d \end{bmatrix}$$\begin{bmatrix} 2 & 0 & 2 & 0 \\ 0 & 3 & 3 & 0\end
+									{bmatrix}$=$\begin{bmatrix} 2 & 1 & 3 & 0 \\ 0 & 4 & 4 & 0\end{bmatrix}$ (use 4 input-outputs pairs from the N)</li>
+							</ul>	
+							<br><br>
+							However, to this point, A acting on inputs to produce outputs has only been defined for one pair at a time: A<b>x</b> = <b>b</b>. Why this “concatenation” is valid is a great way to develop that AB can be defined as A acting on the columns of B:
+							<br><br>
+							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t72">Example Discussion Question &raquo;</a>
+								<br><br>
+								<div class="accordion-body collapse" id = "t72">
+									Why is it ok to use more than one input-output pair at a time to determine A? 
+									In other words, we know A<b>x<sub>1</sub>=b<sub>1</sub></b> is valid, but is A<b>[x<sub>1</sub>
+									x<sub>2</sub>...x<sub>n</sub>]=[b<sub>1</sub> b<sub>2</sub> ... b<sub>n</sub>]</b> ok?	
+								</div>
+								<br>
+								One way to explore this is to consider <b>[x<sub>1</sub> x<sub>2</sub>...x<sub>n</sub>]</b> as a matrix.  Let’s call it D.  So we’re trying to determine how to interpret / compute AD = A<b>[x<sub>1</sub>
+									x<sub>2</sub>...x<sub>n</sub>]</b>
+								<br>
+								To help out, let’s consider AD<b>y</b> for some vector <b>y</b>=$\begin{bmatrix} y_{1} \\ y_{2} \\ &darr; \\ y_{n}\end{bmatrix}$
+								<br><br>
+
+								
+								<li style="list-style-type:none;padding-bottom:20px;">
+									So AD<b>y</b> =  A(D<b>y</b>) = A ([<b>x<sub>1</sub> x<sub>2</sub> ... x<sub>n</sub></b>]
+									$\begin{bmatrix} y_{1} \\ y_{2} \\ &darr; \\ y_{n} \end{bmatrix}$)
+								</li>	
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									= A(y<sub>1</sub><b>x<sub>1</sub></b> + y<sub>2</sub><b>x<sub>2</sub></b> + ... + y<sub>n</sub><b>x<sub>n</sub></b>)
+								</li>
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									= Ay<sub>1</sub><b>x<sub>1</sub></b> + Ay<sub>2</sub><b>x<sub>2</sub></b> + ... + Ay<sub>n</sub><b>x<sub>n</sub></b>) because of linearity
+								</li>	
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									= y<sub>1</sub><b>Ax<sub>1</sub></b> + y<sub>2</sub><b>Ax<sub>2</sub></b> + ... + y<sub>n</sub><b>Ax<sub>n</sub></b>) because of linearity
+								</li>
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									= [A<b>x<sub>1</sub></b> A<b>x<sub>2</sub></b> ... A<b>x<sub>n</sub></b>]
+									$\begin{bmatrix} y_{1} \\ y_{2} \\ &darr; \\ y_{n} \end{bmatrix}$
+								</li>
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									= [A<b>x<sub>1</sub></b> A<b>x<sub>2</sub></b> ... A<b>x<sub>n</sub></b>]<b>y</b>
+								</li>
+								<li style="list-style-type:none;padding-bottom:20px;padding-left:105px">
+									&there4; AD = A[<b>x<sub>1</sub> x<sub>2</sub> ... x<sub>n</sub></b>] = [A<b>x<sub>1</sub></b> A<b>x<sub>2</sub></b> ... A<b>x<sub>n</sub></b>]
+								</li>
+
+								<br>
+								<b>Therefore, the matrix multiplication AD can be interpreted as A acting on the columns of D</b>, and student approaches such as $\begin{bmatrix} a & b \\ c&  d \end{bmatrix}$$\begin{bmatrix} 2 & 0 & 2 & 0 \\ 0 & 3 & 3 & 0\end {bmatrix}$=$\begin{bmatrix} 2 & 1 & 3 & 0 \\ 0 & 4 & 4 & 0\end{bmatrix}$ are valid.
+								<br><br>
+								An instructor could leverage this conversation to look at what matrices can be multiplied together and what dimensions the resulting matrix would be: 
+								<br><br>
+
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t73">Example Discussion Question &raquo;</a>
+								<br><br>
+								<div class="accordion-body collapse" id = "t73">
+									So, in general, what dimensions do the matrices A and D have to be so that the 
+									multiplication is defined, and what dimensions would the resulting matrix F be in AD = F ?
+								</div>							
+ 
+								<!-- PUT THE IMAGE ON PAGE HERE -->
+
+						</blockquote>	
+					</ul>
+				</div>	
+
 									
 		
-			<ul>
-				<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
-				<div class="accordion-body collapse" id = "studentthinkingexamplequestion">
-					<ul>				
-					<blockquote>
-						Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>
-						<div class="paragraphs">
-							<div class="row">
-								<div class="span4">
-									<div class="clearfix content-heading">
-										<img class="pull-left" src="img/u1t1/s1.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
-										<br><br>
-										<img class="pull-right" src="img/u1t1/s2.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group claimed that you could not reach Gauss with only one mode because "$\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ is not a divisor of $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$," and that the same was true for $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. Algebraically, they showed that for $ t \begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, whatever t-value worked for the top equation would not satisfy the bottom one. This demonstrates 1 of the 4 cases. Their claim, "no matter if you can reach the x coord[inate] of Gauss cabin @ 1 time & y coord[inate] @ 1 time it is never the same time. $\therefore$ You cannot reach the cabin," generalizes beyond that one case.									<br><br>
-										<img class="pull-left" src="img/u1t1/s3.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 									<br><br>
-										<img class="pull-right" src="img/u1t1/s4.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								</div>
-		  
-								</div>
-							</div>
-						</div>
-					</blockquote>
-				</ul>
-			</ul>
+			
 		</div>
 	</section>
 
