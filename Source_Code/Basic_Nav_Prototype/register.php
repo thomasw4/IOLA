@@ -74,8 +74,8 @@
             $result = $stmt->execute($query_params); 
         } 
         catch(PDOException $ex){ die("Failed to run query: " . $ex->getMessage()); } 
-        header("Location: mockup.php"); 
-        die("Redirecting to mockup.php"); 
+        header("Location: index.php"); 
+        die("Redirecting to index.php"); 
     } 
 ?>
 
@@ -122,13 +122,13 @@
 
 			  <form class="navbar-form navbar" action="register.php" method="post">
 				<div class="form-group">
-				  <input type="text" name="username" class="form-control" value="username">
+				  <input type="text" name="username" class="form-control" value="username" onclick="this.value='';">
 				</div>
 				<div class="form-group">
-				  <input type="text" name="email" class="form-control" value="email">
+				  <input type="text" name="email" class="form-control" value="email" onclick="this.value='';">
 				</div>
 				<div class="form-group">
-				  <input type="password" class="form-control" name="password" value="password">
+				  <input type="password" class="form-control" name="password" value="password" onclick="this.value='';">
 				</div>
 				<button type="submit" class="btn btn-success" value="Register">Register!</button>
 			  </form> 

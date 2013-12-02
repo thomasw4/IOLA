@@ -51,12 +51,12 @@
 	  <?php  if (!isset($_SESSION['user'])) {  ?>
 	  <form class="navbar-form navbar-right" action="index.php" method="post">
 		<div class="form-group">
-		  <input type="text" name="username" class="form-control" value="username">
+		  <input type="text" name="username" class="form-control" value="username" onclick="this.value='';">
 		</div>
 		<div class="form-group">
-		  <input type="password" class="form-control" name="password" value="password">
+		  <input type="password" class="form-control" name="password" value="password" onclick="this.value='';">
 		</div>
-		<button type="submit" class="btn btn-primary" value="Login">Sign in</button>
+		<button type="submit" class="btn btn-primary" value="Login" >Sign in</button>
 	  </form> 
 	<?php } ?>
 		<?php  if (isset($_SESSION['user'])) {  ?>
