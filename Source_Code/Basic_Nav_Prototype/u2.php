@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user']) || !$_SESSION['user']) {
-	header('Location:mockup.php');
+	header('Location:index.php');
 	exit();
 }
 ?>
@@ -33,50 +33,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
   </head>
 
   <body onload="init()">
-    <div class="navbar navbar-inverse navbar-fixed-top hidden-print">
-	  <div class="navbar-inner">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#"><img src="img/logo_i.png" width="48" height="48" alt="IOLA"></a>
-			  			  
-
-			</div>
-			<div class="navbar-collapse collapse">
-			
-			  <ul class="nav navbar-nav">
-				<li></li>
-				<li><a href="mockup.php">Home</a></li>
-				<li  class="active"><a id="simple-menu" href="#sidr">Modules</a></li>
-				<li><a href="team.php">Team</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Pictures</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header">Links</li>
-					<li><a href="#">NSF</a></li>
-					<li><a href="#">Related Projects</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			  <form class="navbar-form navbar-right" action="logout.php" method="post">
-				<div class="form-group" style="padding-right:15px">
-					<font  color="FFFFFF">Hello, <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>!</font>
-				</div>
-				<button type="submit" class="btn btn-warning" value="logout">Log out</button>
-			  </form> 
-			</div><!--/.navbar-collapse -->
-		  </div>
-		</div>
+    <div class="navbar navbar-inverse  navbar-fixed-top">
+	  <?php include 'header.php' ?>
     </div>
-	
-	
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<a style="display:block" href="#sidr">

@@ -8,7 +8,7 @@ if (htmlspecialchars($_POST['username']) == 'test' &&
 	exit();
 } else {
 	$_SESSION['login'] = FALSE;
-	header('Location:mockup.php');
+	header('Location:index.php');
 	exit();
 }
 ?>
