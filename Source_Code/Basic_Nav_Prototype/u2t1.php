@@ -107,7 +107,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				   </p>
                 </li>		
 				<li>
-				<a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2  <b class="caret"></b></a>
+				<a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2 Italicizing N <b class="caret"></b></a>
 				   <p class="collapse" id="u2">
 						<a href="u2.php" title="Title">- Unit 2 Summary</a>
 						<a href="u2t1.php" title="Title"> - Task 1: Italicizing N</a>
@@ -134,7 +134,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			</ul>
 		</div>
 	
-        <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
+        <h1 class="text-center">Unit 2: Italicizing N</h1>
 		</div>
 				<!-- Begin expandall section -->
 		<div class="jumbotron">
