@@ -101,9 +101,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div class="accordion-body collapse" id = "handout1">
 				<ul>
 					<blockquote>
-						<object data-src="media/unit1/handouts/u1_handout1.pdf" type="application/pdf" width="100%" height="800">				 
+						<object data="media/unit2/handouts/u2_handout1.pdf" type="application/pdf" width="100%" height="800">				 
 							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/h1.pdf">click here to download the handout.</a></p>  
+							<a href="media/unit2/handouts/u2_handout1.pdf">click here to download the handout.</a></p>  
 						</object>					
 					</blockquote>
 				</ul>
@@ -329,7 +329,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Sharing solution approaches and the correct answer in Whole Class Discussion &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i4">
-					
+					<ul>
 						<blockquote>						
 							<p>Sharing solution approaches and the correct answer in Whole Class Discussion </p>
 							 If the class had not determined that all points on the N will be thought of as the endpoint of a vector that emanates from a fixed origin before they engaged in the task, examination of past student work has revealed two common notational strategies: 
@@ -349,12 +349,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							The instructor could have students present their solution techniques and final solution for A to the class.
 							<br>
 						</blockquote>
-						</div>	
+					</ul>
+				</div>	
 
 				<br>		
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Defining “Linear Transformation” in whole class discussion &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i5">					
+				<div class="accordion-body collapse" id = "i5">	
+					<ul>
 						<blockquote>						
 							<p>Defining “Linear Transformation” in whole class discussion </p>						
 							The problem in Task 1 that students have been working on is an example of a special type of transformation encountered in linear algebra, and so it is worth pausing to introduce and define that special class of transformations. 
@@ -422,25 +424,24 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							It is beneficial to provide some time for students to explore examples that are and are not linear. This also involves needed practice in knowing what counts as evidence in either case (namely, that a transformation that is not linear needs to be shown to fail one of the two properties or T(0)≠0, whereas a transformation that is linear needs to be shown to satisfy both properties from the definition of linearity). 
 							<br><br>
 							Below are a few possible examples.  The instructor should choose which examples make sense for the class level, how many to do, how much time to spend in class discussing them, etc. 
-							<br>
-
+							<br><br>
 							<ul>
 								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t300">Example Discussion Questions:  &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id="t300">
 									<ul style="list-style-type:none;">
-									<blockquote style="background-color:#F8F8F8;">
-									
-									Determine if the following transformations are linear or not: 
-									
-										<li>(a) T:R→R where T(x)=x<sup>2</sup></li>
-										<li>(b) T:R→R where T(x)=4x</li>
-										<li>(c) T:R→R where T(x)=x+3</li>
-										<li>(d) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T(x<sub>1</sub>,x<sub>2</sub> )=(3x<sub>1</sub>,x<sub>1</sub>+2x<sub>2</sub>)</li>
-										<li>(e) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup>where T(x<sub>1</sub>,x<sub>2</sub> )=(x<sub>1</sub>,2x<sub>2</sub>-1)</li>
-										<li>(f) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$.</li>
-										<li>(g) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$,a,b,c,d∈R.</li>
-									</blockquote>
+										<blockquote style="background-color:#F8F8F8;">
+										
+										Determine if the following transformations are linear or not: 
+										
+											<li>(a) T:R→R where T(x)=x<sup>2</sup></li>
+											<li>(b) T:R→R where T(x)=4x</li>
+											<li>(c) T:R→R where T(x)=x+3</li>
+											<li>(d) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T(x<sub>1</sub>,x<sub>2</sub> )=(3x<sub>1</sub>,x<sub>1</sub>+2x<sub>2</sub>)</li>
+											<li>(e) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup>where T(x<sub>1</sub>,x<sub>2</sub> )=(x<sub>1</sub>,2x<sub>2</sub>-1)</li>
+											<li>(f) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$.</li>
+											<li>(g) T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup> where T is defined by T(x)=Ax, and A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$,a,b,c,d∈R.</li>
+										</blockquote>
 									</ul>
 								</div>
 							</ul>
@@ -491,7 +492,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									<br>
 									<ul>
 										<li>Choosing the bottom left corner of the N to be the origin (in both Ns) illustrates that zero gets sent to zero </li>
-										<li>One could consider the “parallelogram rule,” that $\begin{bmatrix} 2 \\ 0\end{bmatrix}$+
+										<li>One could consider the “parallelogram rule,” that <br>
+											$\begin{bmatrix} 2 \\ 0\end{bmatrix}$+
 											$\begin{bmatrix} 0 \\ 3\end{bmatrix}$=$\begin{bmatrix} 2 \\ 3\end{bmatrix}$, and 
 											T($\begin{bmatrix} 2 \\ 3\end{bmatrix}$)=$\begin{bmatrix} 3 \\ 4\end{bmatrix}$, or that
 											T($\begin{bmatrix} 2 \\ 0\end{bmatrix}$)=$\begin{bmatrix} 2 \\ 0\end{bmatrix}$,T($\begin{bmatrix} 0 \\ 3\end{bmatrix}$)=
@@ -501,9 +503,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									</ul>
 								</li>
 							</ul>
-
-
 						</blockquote>
+					</ul>
 				</div>	
 
 				<br>
@@ -578,13 +579,17 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							However, to this point, A acting on inputs to produce outputs has only been defined for one pair at a time: A<b>x</b> = <b>b</b>. Why this “concatenation” is valid is a great way to develop that AB can be defined as A acting on the columns of B:
 							<br><br>
 							<a class="btn btn-warning center" data-toggle="collapse" data-target="#t72">Example Discussion Question &raquo;</a>
-								<br><br>
-								<div class="accordion-body collapse" id = "t72">
-									Why is it ok to use more than one input-output pair at a time to determine A? 
-									In other words, we know A<b>x<sub>1</sub>=b<sub>1</sub></b> is valid, but is A<b>[x<sub>1</sub>
-									x<sub>2</sub>...x<sub>n</sub>]=[b<sub>1</sub> b<sub>2</sub> ... b<sub>n</sub>]</b> ok?	
-								</div>
 								<br>
+								<div class="accordion-body collapse" id = "t72">
+									<ul style="list-style-type:none;">
+										<blockquote style="background-color:#F8F8F8;">								
+										Why is it ok to use more than one input-output pair at a time to determine A? 
+										In other words, we know A<b>x<sub>1</sub>=b<sub>1</sub></b> is valid, but is A<b>[x<sub>1</sub>
+										x<sub>2</sub>...x<sub>n</sub>]=[b<sub>1</sub> b<sub>2</sub> ... b<sub>n</sub>]</b> ok?	
+										</blockquote>
+									</ul>
+								</div>
+								<br><br>
 								One way to explore this is to consider <b>[x<sub>1</sub> x<sub>2</sub>...x<sub>n</sub>]</b> as a matrix.  Let’s call it D.  So we’re trying to determine how to interpret / compute AD = A<b>[x<sub>1</sub>
 									x<sub>2</sub>...x<sub>n</sub>]</b>
 								<br>
@@ -623,21 +628,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 								<br><br>
 
 								<a class="btn btn-warning center" data-toggle="collapse" data-target="#t73">Example Discussion Question &raquo;</a>
-								<br><br>
+								<br>
 								<div class="accordion-body collapse" id = "t73">
-									So, in general, what dimensions do the matrices A and D have to be so that the 
-									multiplication is defined, and what dimensions would the resulting matrix F be in AD = F ?
+									<ul style="list-style-type:none;">
+										<blockquote style="background-color:#F8F8F8;">
+										So, in general, what dimensions do the matrices A and D have to be so that the 
+										multiplication is defined, and what dimensions would the resulting matrix F be in AD = F ?
+										</blockquote>
+									</ul>
 								</div>							
- 
-								<!-- PUT THE IMAGE ON PAGE HERE -->
-
-						</blockquote>	
+								<br><br>						
+								<center><img src="img/u2t1/i1.jpg" alt="i1"></center>
 					</ul>
 				</div>	
-
-									
-		
-			
 		</div>
 	</section>
 

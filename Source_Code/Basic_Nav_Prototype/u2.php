@@ -56,39 +56,41 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				<?php include 'sidebar.php' ?>
 			</div>
 			<h1 class="text-center" style="font-size:53px">Unit 2: Italicizing N Task Sequence</h1>
+			<br>
 			<h4>
+				<ul>
 				<p style="font-size:18px; padding:0">Common Prior Knowledge:</p>
 				<ul>
 					<li>Linear combinations, span, and linear (in)dependence</li> 
 					<li>Methods for determining solutions to a linear system such as Gaussian elimination; existence 				and uniqueness of solutions</li>
-					<li>The interpretation of Ax = b as a vector equation both algebraically and geometrically</li>
-					<li>The interpretation of Ax = b as a system of equations both algebraically and geometrically</li>
+					<li>The interpretation of $Ax = b$ as a vector equation both algebraically and geometrically</li>
+					<li>The interpretation of $Ax = b$ as a system of equations both algebraically and geometrically</li>
 				</ul>
+				<br>
 				<p style="font-size:18px; padding:0">Prerequisite Skills:</p>
 				<ul>
 					<li>How to compute the product of a matrix and a vector</li>
 					<li>2x2 matrix multiplication</li>
 				</ul>
+				<br>
 				<p style="font-size:18px; padding:0">Overarching Learning Goals for the Entire Task Sequence:</p>
 				To develop a robust conceptual understanding of matrices as linear transformations by:
-				<br>
+				<br><br>
 				<ul>
 					<li>Interpreting A<b>x = b</b> as the matrix A acting on the input vector x to transform it to the output vector <b>b</b></li>
 					<li>Interpreting products of matrices as a composition of linear transformations and inverse matrices as objects that undo a transformation</li>
-					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., 2 or 3)</li>
+					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., $[]^2$ or $[]^3$)</li>
 				</ul>
 				<br>
-				<br>
 				<p>Expected Length: 4 - 75 minute instructional sessions</p>
-				<br>
-			
+				</ul>
 			</h4>
 		</div>
 		<div class="jumbotron">
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
 			<div class="accordion " id="summary">		  
-				<h2><a href="u2t1.php">Task 1: Italicizing N</a></h2>
+				<h2><a href="u2t1.php">Task 1: Italicizing $N$</a></h2>
 				<ul>
 					<a class="btn btn-gray" id ="moreInfo"data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t1">
@@ -97,8 +99,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 								<p class="lead">The goal is to construct a matrix that yields a desired transformation and to explore linear transformations through this example.</p>
 								<p>By the end of the lesson students should be able to:</p>
 								<ul>
-									<li>Conceive of a matrix as a way of mapping elements of 2 to elements of 2</li>
-									<li>Find a matrix that produces the desired geometric transformation from 2 to 2</li>
+									<li>Conceive of a matrix as a way of mapping elements of $[]^2$ to elements of $[]^2$</li>
+									<li>Find a matrix that produces the desired geometric transformation from $[]^2$ to $[]^2$</li>
 									<li>Determine whether the matrix for a transformation is unique (within a particular choice of basis)</li>
 									<li>Articulate criteria by which a set of vectors can be chosen to determine the (unique) transformation matrix (e.g., the set of vectors must span the domain)</li>
 
@@ -115,7 +117,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					</div>
 				</ul>
 		
-				<h2><a href="u2t2.php">Task 2: Beyond N</a></h2>
+				<h2><a href="u2t2.php">Task 2: Beyond $N$</a></h2>
 				<ul>
 					<a class="btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t2">
@@ -126,14 +128,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 								<ul>
 									<li>Explain how the Italicizing N transformation affects the entire plane, not just one “N”</li>
 									<li>Interpret matrices as objects that transform sets of input vectors to sets of output vectors in a coordinated and predictable way</li>
-									<li>Determine the matrix for a linear transformation (from 2 to 2) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
+									<li>Determine the matrix for a linear transformation (from $[]^2$ to $[]^2$) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
 									<li>Identify the geometric effect of a transformation based on the associated matrix values </li>
 								</ul>
 								<br>
 								<p>The instructor should:</p>
 								<ul>
 									<li>Prompt students to consider how the entire domain is affected by a transformation</li>
-									<li>Provide follow-up example transformations within 2 or 3</li>
+									<li>Provide follow-up example transformations within $[]^2$ or $[]^3$</li>
 
 								</ul>
 							</blockquote>
@@ -167,7 +169,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					</ul>
 				</ul>
 		
-				<h2><a href="u2t4.php">Task 4: Getting Back To N</a></h2>
+				<h2><a href="u2t4.php">Task 4: Getting Back To $N$</a></h2>
 				<ul>
 					<a class=" btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">

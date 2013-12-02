@@ -104,10 +104,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div class="accordion-body collapse" id = "handout1">
 				<ul>
 					<blockquote>
-						<object data-src="media/unit1/handouts/u1_handout1.pdf" type="application/pdf" width="100%" height="800">				 
+						<object data="media/unit1/handouts/u1_handout1.pdf" type="application/pdf" width="100%" height="800">				 
 							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/h1.pdf">click here to download the handout.</a></p>  
-						</object>					
+							<a href="media/unit1/handouts/u1_handout1.pdf">click here to download the handout.</a></p>  
+						</object>												
 					</blockquote>
 				</ul>
 			</div>

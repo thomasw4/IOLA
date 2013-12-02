@@ -123,7 +123,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					<blockquote>
 						<object data="media/unit1/handouts/u1_handout4.pdf" type="application/pdf" width="100%" height="800">				 
 							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/u1_handout3.pdf">click here to download the handout.</a></p>  
+							<a href="media/unit1/handouts/u1_handout4.pdf">click here to download the handout.</a></p>  
 						</object>					
 					</blockquote>
 				</ul>
