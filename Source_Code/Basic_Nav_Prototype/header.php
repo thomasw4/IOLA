@@ -6,7 +6,24 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href="#"><img src="img/logo_i.png" width="48" height="48" alt="IOLA"></a>
+	  <a class="navbar-brand" href="#">
+	  	<!-- <img src="img/logo_i.png" width="48" height="48" alt="IOLA"> -->
+
+		<div class="flip-container" style="float:left" ontouchstart="this.classList.toggle('hover');">
+		  <div class="flipper">
+			<div class="front">
+		<div id="flipimagediv" style="float:left">
+			<img id="front" src="img/logo_i.png" />
+		</div>
+			</div>
+			<div class="back">
+		<div id="flipimagediv" style="float:left">
+			<img id="front" src="img/logo_i_back.png" />
+		</div>
+			</div>
+		  </div>
+		</div>
+	  </a>
 	  			  
 
 	</div>
