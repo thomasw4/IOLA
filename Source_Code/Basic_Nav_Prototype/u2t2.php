@@ -109,16 +109,18 @@
 				<ul>
 					<blockquote>
 						<p class="lead">Goals</p>						
-						<p>In this task and its follow-ups, emphasis here is to shift away from only considering particular input-output pairs to how transformations affect the entire space without needing to go through the motions of plotting particular pairs.</p>				
-						<br>						
-							<p>The “Beyond the N” task asks students to consider how the letter “E,” placed in various locations on the plane, is affected by the transformation defined by A = $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$. Rather than have students graph the image of the original E’s, the students are asked to determine which image (from a choice of 4) is correct, if any.</p>
+						In this task and its follow-ups, emphasis here is to shift away from only considering particular input-output pairs to how transformations affect the entire space without needing to go through the motions of plotting particular pairs.				
 						<br>
+						The “Beyond the N” task asks students to consider how the letter “E,” placed in various locations on the plane, is affected by the transformation defined by A = $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$. Rather than have students graph the image of the original E’s, the students are asked to determine which image (from a choice of 4) is correct, if any.
+						<br><br>
 						<p class="lead">Rationale</p>
-						<p>The task on Handout 2 asks students to evaluate choices because it prompts them to consider not only what the correct transformation is (choice C), but also why the other choices are incorrect. The choices lay a foundation for the class to discuss how the entire domain changes under the transformation, not just the points within the original N.</p>
-						<br>
-						<p> We placed an “E” above the N because the change in the vertical distance between the N and the E highlights how the entire space is transformed, even the seemingly “empty” space. This can be leveraged for conversation in class.</p>
-						<br>
-						<p>The follow-ups to Handout 2 include investigating geometric interpretations of the standard 2x2 matrices for rotations, reflections, stretches, and skews. This is compatible with the learning goal of coming to view matrices as objects that geometrically transform a space. Furthermore, we see these as useful to investigate because:</p>
+						The task on Handout 2 asks students to evaluate choices because it prompts them to consider not only what the correct transformation is (choice C), but also why the other choices are incorrect. The choices lay a foundation for the class to discuss how the entire domain changes under the transformation, not just the points within the original N.
+						<br><br>
+					
+						 We placed an “E” above the N because the change in the vertical distance between the N and the E highlights how the entire space is transformed, even the seemingly “empty” space. This can be leveraged for conversation in class.
+						<br><br>
+						The follow-ups to Handout 2 include investigating geometric interpretations of the standard 2x2 matrices for rotations, reflections, stretches, and skews. This is compatible with the learning goal of coming to view matrices as objects that geometrically transform a space. Furthermore, we see these as useful to investigate because:
+						<br><br>
 						<ul>
 							<li>Conceptualizing the geometric interpretation of elementary matrices helps students in coordinating the “undoing” of a linear transformation with the process of determining A-1 by row-reducing [ A | I ] to [ I | A<sup>-1</sup> ]</li>
 							<li>It lays the foundation for exploring other “geometric” transformations, such as stretching along lines other than the standard axis (i.e., along eigenvectors) as a way to connect to eigentheory</li>						
@@ -206,10 +208,9 @@
 				<p class="lead">Getting Started with the Task</p>
 				This task is meant to be a natural follow up to the Italicizing N task in Handout 1.  As such, students should be able to “jump in” with respect to understanding what Handout 2 is asking them to investigate.  This does not mean that the correct answer is obvious to students, but rather that the question connects to their previous experience.  
 				<br><br>				
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example "Getting Started" Prompt: &raquo;</a>					
-					<br><br>					
+					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example "Getting Started" Prompt: &raquo;</a>									
 					<div class="accordion-body collapse" id = "t6">
-						<blockquote>
+						<blockquote style="background-color:#F8F8F8;">
 						So we just determined the matrix A that would perform that one N, which we treated as if it was in the first quadrant.  
 						<br><br>
 						In another class, I have some students that wonder what would happen to the letter “E” placed in various locations under that transformation matrix.
@@ -217,7 +218,7 @@
 						The students can’t decide. On this handout I have 4 of different answers that students believe represent how the “E’s” would be transformed. We need to help them decide who is right.	
 						</blockquote>
 					</div>				
-				<br>
+				<br><br>
 				
 			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups&raquo;</a>
 			<br>
@@ -277,10 +278,9 @@
 				<br><br>
 				A nice follow-up is to ask students to determine the matrix that represents this transformation of stretching by 2 horizontally and by 3 vertically:
 				<br><br>
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t61">Example follow-up question to the “Smiley Face” Transformation: &raquo;</a>					
-					<br><br>					
+					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t61">Example follow-up question to the “Smiley Face” Transformation: &raquo;</a>									
 					<div class="accordion-body collapse" id = "t61">
-						<blockquote>
+						<blockquote style="background-color:#F8F8F8;">
 						The problem states that a group of students found the matrix A that transforms the smiley face into one twice as wide and three times as tall. We’ve discussed how this matrix would have that same effect on the entire plane. What is that <b>matrix A</b>?
 						<br>
 						This question is beneficial because it gives students additional practice in determining a matrix based on how input-output pairs are coordinated.
@@ -323,19 +323,19 @@
 				We conclude with examples of each of these three avenues for exploration.
 				<br><br>
 				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example questions for: Find the matrix for the given transformation &raquo;</a>					
-					<br><br>					
+										
 					<div class="accordion-body collapse" id = "t63">
-						<blockquote>
+						<blockquote style="background-color:#F8F8F8;">
 							<ul>
 							<li>Find a matrix for the transformation that reflects all vectors in R<sup>2</sup> over y-axis</li><li>Find a matrix for the transformation that rotates all vectors in R<sup>2</sup>by degrees counterclockwise.</li>
 							</ul>
 						</blockquote>
 					</div>
 					<br>
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t64">Example questions for: Describe the transformation for the given matrix &raquo;</a>					
-					<br><br>					
+				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t64">Example questions for: Describe the transformation for the given matrix &raquo;</a>				
+								
 					<div class="accordion-body collapse" id = "t64">
-						<blockquote>
+						<blockquote style="background-color:#F8F8F8;">
 							<ul>
 							<li>Describe the geometric affect of the transformation defined by
 								A = $\begin{bmatrix} 1 & 0 \\ 2 & 1\end{bmatrix}$
@@ -346,8 +346,105 @@
 							</ul>
 						</blockquote>
 					</div>
-					<br>	
+					<br>
 
+
+					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t65">Example applets for: Graphical Explorations with Technology&raquo;</a>				
+								
+					<div class="accordion-body collapse" id = "t65">
+						<blockquote style="background-color:#F8F8F8;">
+						We recommend instructors make use of the free Wolfram Demonstrations Project to aid in exploring transformations graphically. 
+						<br><br>
+						This website contains thousands of free demonstrations:<a href="http://demonstrations.wolfram.com/">http://demonstrations.wolfram.com/</a> 
+						Users can explore the demonstrations in a limited way on the website but will have more freedom from the downloaded version (that needs an installed player, which can be downloaded for free at: <a href="http://www.wolfram.com/products/player/">http://www.wolfram.com/products/player/</a>
+						<br><br>
+						The demonstrations we have chosen as useful are below.  Of course, there may be others that instructors find useful or interesting instead. 
+						<br><br>
+						This demonstration keeps an original letter “F” in blue fixed and allows the user to change the values in the transformation matrix via 4 sliders. The resulting transformed “F” is graphed in red.<a href="http://demonstrations.wolfram.com/MatrixTransformationsF/">http://demonstrations.wolfram.com/MatrixTransformationsF/</a>
+						<br><br>
+						<img src = "img/u2t2/matrix_F.png" alt="matrix_F">
+						<br><br><br>
+						This demonstration is similar to the one above except that the original “circle” is in all four quadrants, rather than only quadrant one. Manipulating and exploring this figure and its graphical image may provide further insight that the “F” demonstration does not facilitate. <a href="http://demonstrations.wolfram.com/MatrixTransformation/">http://demonstrations.wolfram.com/MatrixTransformation/</a>
+						<br><br>
+						<img src = "img/u2t2/matrix.png" alt="matrix">
+						<br><br><br>
+						This demonstration is labeled as being about determinants. It also, however, allows a user to see how the unit square and the unit cube are transformed when the entries of the transformation matrix (according to the standard basis) are changed.  We particularly like that this allows for exploration in 3 dimensions
+						<a href="http://demonstrations.wolfram.com/DeterminantsSeenGeometrically/">http://demonstrations.wolfram.com/DeterminantsSeenGeometrically/</a>
+						<br><br>
+						<img src = "img/u2t2/determinant.png" alt="determinant">
+						<br><br>
+						<img src = "img/u2t2/determinant2.png" alt="determinant2">
+						</blockquote>
+					</div>	
+					<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Suggestions for homework &raquo;</a>
+					<br><br>
+					<div class="accordion-body collapse" id = "i29">
+						Below are problems we have used in the past for homework.  Instructors should feel free to use any subset of these that they feel would be beneficial to their students.
+						<br> 
+						<b>NOTE: #1-7 could be given after Task 1 or after Task 2.</b>
+						<br>
+						<blockquote>
+							<ol>
+							<li style="padding-bottom:20px">
+								 Let A=$\begin{bmatrix}3 &0 \\ 0 & -2\end{bmatrix}$ and define T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> by T(x) = Ax. Find the images under T of <b>u</b> = $\begin{bmatrix}3 \\ -1\end{bmatrix}$, <b>v</b>=$\begin{bmatrix}0 \\ 1.5\end{bmatrix}$, and the vector (u + v). Also sketch the three vectors before and after the transformation.  Write 1-2 sentences that explain how you found your answers/knew they were right and why the sketch makes sense.	
+							</li>
+							<li style="padding-bottom:20px">
+								Let A=$\begin{bmatrix} 1 & -5 & -7 \\ -3 & 7 &5\end{bmatrix}$ and define T:&#x211d;<sup>2</sup>→ &#x211d;<sup>3</sup> by T(x) = Ax.
+								<ul>
+									<li style="list-style-type:none; padding-bottom:20px">
+										a. Find the image under T of <b>u</b> = 
+										$\begin{bmatrix} 2\\ 1 \\ -1 \end{bmatrix}$
+									</li>
+
+									<li style="list-style-type:none; padding-bottom:20px">
+										b. Find a vector x whose image under T is <b>b</b> =
+										$\begin{bmatrix} -12 \\ 12\end{bmatrix}$
+									</li>
+								</ul>
+							</li>
+							<li style="padding-bottom:20px">
+								[If not done in class] Suppose that a transformation T: &#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is defined by the matrix = $\begin{bmatrix}a & b \\ c & c\end{bmatrix}$. In orde to do this, you must show that the definition of linear transformation is satisfied with this matrix A. To help you get started, let <b>x</b> = $\begin{bmatrix} x_{1}\\ x_{2}\end{bmatrix}$ and <b>y</b> = $\begin{bmatrix}y_{1}\\ y_{2}\end{bmatrix}$, and c be a real number. You need to algebraically show both that A(<b>x + y</b>) = A<b>x</b> + A<b>y</b> and A(c<b>x</b>) = cA(<b>x</b>).
+							</li>
+							<li style="padding-bottom:20px">
+								Show that the transformation T defined by T($\begin{bmatrix} x_{1}\\ x_{2}\end{bmatrix}$) = $\begin{bmatrix} x_{1} + 5\\ x_{2}\end{bmatrix}$ is not a linear transformation.
+							</li>
+							<li style="padding-bottom:20px">
+								TRUE OR FALSE: (Assume that the product AB is defined). If the columns of B are linearly dependent, then so are the columns of AB. If TRUE, provide a justification. If FALSE, provide a counterexample.
+							</li>
+							<li style="padding-bottom:20px">
+								After class, two linear algebra students start talking about linear transformations and the letter “N.” One of the students suggested translation (shifting up) as another linear transformation that could be done to the letter “N,” like the following:
+								<br><br>
+								 <img src="img/u2t2/hw_6.png" alt="hw_6">
+								 <br>
+								 The other student disagreed, stating that shifting the “N” up like this is NOT an example of a linear transformation.  Which student is right? Why?
+							</li>
+							<li style="padding-bottom:20px">
+								Consider the image given below and the transformation matrix C = $\begin{bmatrix} 2 & 0 \\ 0 & -1.5\end{bmatrix}$
+
+								<ol type="a">
+									<li>Sketch what will happen to the image under the transformation</li>
+									<li>Describe in words what will happen to the image under the transformation</li>
+									<li>Describe how you determined that happened. (What, if any, calculations did you do? Did you make a prediction? How did you know you were right? etc.)</li>
+								</ol>
+							</li>
+							<li style="padding-bottom:20px">
+								Assume that T is a linear transformation and that e<b><sub>1</sub></b> = $\begin{bmatrix}1 & 0\end{bmatrix}$ and e<b><sub>2</sub></b> = $\begin{bmatrix}0 & 1\end{bmatrix}$. For each part, find the standard matrix A for T, and draw the image of the "half=shaded unit square" (shown below) under the given transformation:
+								<br><br>
+								<ol type="a">
+									<li>T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> rotates points (about the origin) through &Pi;/4 radians (clockwise</li>
+									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is a vertical shear that maps <b>e<sub>1</sub></b> into <b>e<sub>1</sub> - e<sub>2</sub></b> but leaves the vector <b>e<sub>2</sub></b> unchanged</li>
+									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> first reflects points across the vertical axis and then rotates points &Pi;/2 radians (counterclockwise) </li>
+									<br>
+									 <img src="img/u2t2/hw_8.png" alt="hw_8">
+								 <br>
+								</ol>
+
+							</li>
+
+
+							</ol>
+						</blockquote>
+					</div>
 
 
 
