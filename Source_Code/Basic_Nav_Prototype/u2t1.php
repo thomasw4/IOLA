@@ -201,46 +201,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div><!-- /.carousel -->					
 
-						<!-- NON-CAROUSEL STUDENT THINKING: MAY BE BETTER SUITED FOR MOBILE-->
-						<!--div class="paragraphs">
-							<div class="row">
-								<div class="span4">
-									<div class="clearfix content-heading">
-										<img class="pull-left" src="img/u2t1/1.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										 <p><em>Group 1</em> method:</p>
-									This group began by determining the scale of the x- and y-axes and naming each line segment of the letter N on the left. Notice that the left-most vertical segment is named [0,12], indicating that the group named this vector relative to an origin fixed on the bottom of this segment. However, the students named the second (diagonal) segment relative to an origin located at the upper left-hand corner of the letter N. Further, the last segment is named relative to an origin located on the bottom-right. The second N is labeled similarly, with the origin moving to the corners of N each time a new segment is named.
-										<br><br>
-										<img class="pull-right" src="img/u2t1/2.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										<p><em>Group 2</em> method:</p>
-									This group’s approach was similar to group 1, with the exception that they used a different scale for the coordinates of the line segments. Notice again that, when naming each segment, the students varied the location of the origin and named each segment as though it were a vector itself.
-										<br><br>
-										<img class="pull-left" src="img/u2t1/3.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										 <p><em>Group 3</em> method:</p>
-									Unlike Groups 1 and 2, this group named points on N relative to a fixed origin at the lower left-hand corner of each N. 								
-										<br><br>
-										<img class="pull-right" src="img/u2t1/4.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										 <p><em>Group 4</em> method:</p>
-									Regardless of the way in which students represent the letter N, a common approach is setting up a system of matrix equations – one matrix equation for each input-output pair – in order to determine the component values of A. Group 4 has shown their calculations for determining matrix A based on two input-output pairs. These pairs are consistent with Group 2’s naming system for the line segments. Notice that the matrix A is initially written with parameters a, b, c, and d. Using this matrix, in chorus with the two input-output pairs, the group found two systems of two equations. The first system yielded constant values for b and d, which the group substituted into the second system of equations to find a and c. From this work, the group determined the matrix A.										
-										<br><br>
-										<img class="pull-left" src="img/u2t1/5.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										 <p><em>Group 5</em> method:</p>
-									This group attempted to determine the equation of the line that would be consistent with various parts of each N. Note that the equations corresponding to the vertical portions of the N on the left on the left are both x = 0. Similarly the equations of the parallel portions on the right are y = 4x. No further work with this approach was shown, and it is unclear how this work could help in correctly determining A.									
-										<br><br>
-										<img class="pull-right" src="img/u2t1/6.png"/ height="300" width="300" hspace="20">
-										<br><br>
-										<p><em>Group 6</em> method:</p>
-									This group’s approach is similar to Group 4 in that they attempted to correspond input-output pairs with each other through matrix multiplication. Unlike Group 4, this group did not write A as a matrix of parameters. Also, this group concatenated the input and output vectors into 2x3 matrices. This could be viewed as an anticipation of matrix multiplication, seen as a repeated matrix multiplication on each of the three column vectors.									
-										<br><br>
-									</div>
-		  
-								</div>
-							</div>
-						</div-->						
+											
 					</blockquote>
 				</ul>
 			</div>
@@ -271,11 +232,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups  &raquo;</a>
 				<br>
-				<div class="accordion-body collapse" id = "i2" ">
+				<div class="accordion-body collapse" id = "i2">
 					<ul>
 						<blockquote>
-							<p>Working in small groups </p>
-							
+							<p>Working in small groups </p>							
 								This task involves a number of preliminary key steps for students to engage in during their small group work: <br><br>
 								<ul>
 									<li>Determining that &#x211d;<sup>2</sup> is the domain and the codomain for the transformation that A represents, so that means A will be a 2x2 matrix</li>
@@ -293,6 +253,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 						</blockquote>
 					</ul>
 				</div>
+
+
+
 				<br>					
 				
 				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Deciding the dimension of A during Whole Class Discussion &raquo;</a>

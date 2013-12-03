@@ -578,6 +578,7 @@ h4 small,
 ul,
 ol {
   margin-top: 0;
+  padding-left:10px;
   margin-bottom: 10px;
 }
 
