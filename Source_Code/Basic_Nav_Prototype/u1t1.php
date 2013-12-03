@@ -60,20 +60,30 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<?php include 'sidebar.php' ?>
 		</div>
 	
-        <h1 class="text-center">Unit 1: Magic Carpet Ride</h1>
+        <h1 class="text-center">Unit 1: Linear Independence and Span</h1>
+		
 		</div>
 				<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
+			<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
-			<div class="accordion" id="summary">		  
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u1_task1.pdf">PDF Download</a> | <a href="media/unit1/u1_task1.doc">DOC Download</a>
+						</blockquote>
+					</ul>
+				</div>
 
-		<h2 class="text">Task 1: The Carpet Ride Problem
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+		<div class="accordion" id="summary">		  
+
+		<h2 class="text">Task 1: The Carpet Ride Problem</h2>		
+		<br>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 				<p class="lead" >Goal is to develop students' familiarity with the language, notation, and graphical representations for linear combinations of vectors (and connections to linear systems).</p>
 				<p>By the end of the lesson students should be able to:</p>
@@ -92,13 +102,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 					<li>Define what is meant by vector equation and system of equations</li>
 				</ul>
 				</blockquote>
-			</ul>
-		<br>
-		
-		<ul>
-			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
+				</ul>
+			</div>
 		</ul>
-		
 		<ul>
 			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: The Carpet Ride Problem &raquo;</a>
 			<div class="accordion-body collapse" id = "handout1">
@@ -445,43 +451,42 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 									</ul>
 								</div>
 							</ul>
+							<br>
+							<ul>
+							<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
+							<div class="accordion-body collapse" id = "studentthinkingexamplequestion">
+								<ul>				
+								<blockquote>
+									Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>
+									<div class="paragraphs">
+										<div class="row">
+											<div class="span4">
+												<div class="clearfix content-heading">
+													<img class="pull-left" src="img/u1t1/s1.jpg"/ height="300" width="300" hspace="20">
+													<br><br>
+													This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
+													<br><br>
+													<img class="pull-right" src="img/u1t1/s2.jpg"/ height="300" width="300" hspace="20">
+													<br><br>
+													This group claimed that you could not reach Gauss with only one mode because "$\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ is not a divisor of $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$," and that the same was true for $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. Algebraically, they showed that for $ t \begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, whatever t-value worked for the top equation would not satisfy the bottom one. This demonstrates 1 of the 4 cases. Their claim, "no matter if you can reach the x coord[inate] of Gauss cabin @ 1 time & y coord[inate] @ 1 time it is never the same time. $\therefore$ You cannot reach the cabin," generalizes beyond that one case.									<br><br>
+													<img class="pull-left" src="img/u1t1/s3.jpg"/ height="300" width="300" hspace="20">
+													<br><br>
+													This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 									<br><br>
+													<img class="pull-right" src="img/u1t1/s4.jpg"/ height="300" width="300" hspace="20">
+													<br><br>
+													This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								</div>				  
+												</div>
+											</div>
+										</div>
+									</blockquote>
+								</ul>
+							</ul>
 							</blockquote>
 						</ul>
 						</blockquote>
 					</ul>
 				</div>
-		</ul>	
-		
-			<ul>
-				<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
-				<div class="accordion-body collapse" id = "studentthinkingexamplequestion">
-					<ul>				
-					<blockquote>
-						Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>
-						<div class="paragraphs">
-							<div class="row">
-								<div class="span4">
-									<div class="clearfix content-heading">
-										<img class="pull-left" src="img/u1t1/s1.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
-										<br><br>
-										<img class="pull-right" src="img/u1t1/s2.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group claimed that you could not reach Gauss with only one mode because "$\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ is not a divisor of $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$," and that the same was true for $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. Algebraically, they showed that for $ t \begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, whatever t-value worked for the top equation would not satisfy the bottom one. This demonstrates 1 of the 4 cases. Their claim, "no matter if you can reach the x coord[inate] of Gauss cabin @ 1 time & y coord[inate] @ 1 time it is never the same time. $\therefore$ You cannot reach the cabin," generalizes beyond that one case.									<br><br>
-										<img class="pull-left" src="img/u1t1/s3.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 									<br><br>
-										<img class="pull-right" src="img/u1t1/s4.jpg"/ height="300" width="300" hspace="20">
-										<br><br>
-										This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								</div>
-		  
-								</div>
-							</div>
-						</div>
-					</blockquote>
-				</ul>
-			</ul>
+			</ul>			
 		</div>
 	</section>
 

@@ -58,7 +58,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<?php include 'sidebar.php' ?>
 		</div>
 
-        <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
+        <h1 class="text-center">Unit 2: Matrices as Transformations</h1>
 		</div>
 				<!-- Begin expandall section -->
 		<div class="jumbotron">
@@ -661,7 +661,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	function init(){
 	$('#simple-menu').sidr({ speed : 0 });
 	$.sidr('open', 'sidr');
-	$('#u1').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
+	$('#u2').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
 	}
 	
 	$('.carousel').carousel(

@@ -57,7 +57,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<?php include 'sidebar.php' ?>
 		</div>
 		
-        <h1 class="text-center">Unit 1: Magic Carpet Ride</h1>
+        <h1 class="text-center">Unit 1: Linear Independence and Span</h1>
 		</div>
 		<!-- Begin expandall section -->
 		<div class="jumbotron">

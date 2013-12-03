@@ -55,7 +55,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 			<div id="sidr" class="hidden-print">
 				<?php include 'sidebar.php' ?>
 			</div>
-			<h1 class="text-center" style="font-size:53px">Unit 2: Italicizing N Task Sequence</h1>
+			<h1 class="text-center" style="font-size:53px">Unit 2: Matrices as Transformations</h1>
 			<br>
 			<h4>
 				<ul>
@@ -245,7 +245,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	function init(){
 	$('#simple-menu').sidr({ speed : 0 });
 	$.sidr('open', 'sidr');
-	$('#u1').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
+	$('#u2').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
 	}
 	
 function printDiv(divName) {

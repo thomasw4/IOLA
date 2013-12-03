@@ -1,6 +1,6 @@
 <ul>
 <li>
-<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><Strong>Unit 1 Magic Carpet Ride  <b class="caret"></b></strong></a>
+<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><Strong><p>Unit 1 Linear Independence<br> and Span  <b class="caret"></b></strong></p></a>
    <p class="collapse" id="u1">
 		<a href="u1.php" title="Title"><strong> - Unit 1 Summary</strong></a>
 		<a href="u1t1.php" title="Title"> - Task 1: The Carpet Ride Problem</a>
@@ -10,7 +10,7 @@
    </p>
 </li>		
 <li>
-<a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2 Italicizing N <b class="caret"></b></a>
+<a class="accordion-toggle" data-toggle="collapse" data-target="#u2"><p>Unit 2 Matrices as Transformations <b class="caret"></b></p></a>
    <p class="collapse" id="u2">
 		<a href="u2.php" title="Title"><strong> - Unit 2 Summary</strong></a>
 		<a href="u2t1.php" title="Title"> - Task 1: Italicizing N</a>
