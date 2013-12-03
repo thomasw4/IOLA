@@ -153,7 +153,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		<ul>
 			<a class="btn btn-success center" data-toggle="collapse" data-target="#lds">Classifying Types of Linearly Dependent Sets: &raquo;</a>
 			<br>
-			<div class="accordion-body collapse" id = "lds"">
+			<div class="accordion-body collapse" id = "lds">
 				<ul>
 					<blockquote>
 						To communicate more easily in this document, we developed abbreviated names for the types of generalizations we expect students to make about linearly dependent sets of vectors. We do not intend for the instructor to use these names in class discussion. It is merely for coherence and conciseness within this document that we use the following names. These classifications align with the essential generalizations described in the Overview for Task 4.

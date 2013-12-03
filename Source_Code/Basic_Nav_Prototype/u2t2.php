@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
 	<link href="css/carousel.css" rel="stylesheet">
+    <link href="css/imgflip.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,50 +30,9 @@
   </head>
 
   <body onload="init()">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="navbar-inner">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#"><img src="img/logo_i.png" width="48" height="48" alt="IOLA"></a>
-			  			  
-
-			</div>
-			<div class="navbar-collapse collapse">
-			
-			  <ul class="nav navbar-nav">
-				<li></li>
-				<li><a href="mockup.php">Home</a></li>
-				<li  class="active"><a id="simple-menu" href="#sidr">Modules</a></li>
-				<li><a href="team.php">Team</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Pictures</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header">Links</li>
-					<li><a href="#">NSF</a></li>
-					<li><a href="#">Related Projects</a></li>
-				  </ul>
-				</li>
-			  </ul>
-			  <form class="navbar-form navbar-right" action="logout.php" method="post">
-				<div class="form-group" style="padding-right:15px">
-					<font  color="FFFFFF">Hello, iola!</font>
-				</div>
-				<button type="submit" class="btn btn-warning" value="logout">Log out</button>
-			  </form> 
-			</div><!--/.navbar-collapse -->
-		  </div>
-		</div>
+    <div class="navbar navbar-inverse  navbar-fixed-top">
+	  <?php include 'header.php' ?>
     </div>
-	
-	
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<a style="display:block" href="#sidr">
@@ -88,44 +48,8 @@
     <div class="container">
 
       <div class="jumbotron">
-		<div id="sidr">
-			<ul>
-				<li>
-				<a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><strong>Unit 1 Magic Carpet Ride  <b class="caret"></b></strong></a>
-				   <p class="collapse" id="u1">
-				   		<a href="u1.php" title="Title"> - Unit 1 Summary</a>
-						<a href="u1t1.php" title="Title"><strong> - Task 1: The Carpet Ride Problem</strong></a>
-						<a href="u1t2.php" title="Title"> - Task 2: Hide and Seek</a>
-						<a href="u1t3.php" title="Title"> - Task 3: Getting Back Home</a>
-						<a href="u1t4.php" title="Title"> - Task 4: Linear (In)dependence</a>
-				   </p>
-                </li>		
-				<li>
-				<a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2  <b class="caret"></b></a>
-				   <p class="collapse" id="u2">
-						<a href="u2.php" title="Title">- Unit 2 Summary</a>
-						<a href="u2t1.php" title="Title"> - Task 1: Italicizing N</a>
-						<a href="u2t2.php" title="Title"> - Task 2: Beyond the N</a>
-						<a href="u2t3.php" title="Title"> - Task 3: Pat and Jamie </a>
-						<a href="u2t4.php" title="Title"> - Task 4: Getting Back to N</a>
-				   </p>
-                </li>	
-				<li>				
-				<a class="accordion-toggle" data-toggle="collapse" data-target="#u3">Unit 3  <b class="caret"></b></a>
-				   <p class="collapse" id="u3">
-						<a href="#" title="Title"> - Task 1</a>
-						<a href="#" title="Title"> - Task 2</a>
-				   </p>
-                </li>
-
-                <li>
-				<a class="accordion-toggle" data-toggle="collapse" data-target="#u4">Unit 4  <b class="caret"></b></a>
-				   <p class="collapse" id="u4">
-						<a href="#" title="Title"> - Task 1</a>
-						<a href="#" title="Title"> - Task 2</a>
-				   </p>
-                </li>
-			</ul>
+		<div id="sidr" class="hidden-print">
+			<?php include 'sidebar.php' ?>
 		</div>
 	
         <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
@@ -180,7 +104,7 @@
 		</ul>
 
 		<ul>
-			<a class="btn center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -275,8 +199,8 @@
 
 
 		
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 		<ul>
+		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 				<div class="accordion-body collapse" id = "implementation">	
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
