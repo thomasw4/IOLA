@@ -136,7 +136,7 @@
 
 		  <a class="btn btn-default" data-toggle="collapse" data-target="#u5">View details &raquo;</a>
 				   <p class="collapse" id="u5">
-          This material is based upon work supported by the National Science Foundation under Grant No. 0######. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
+          This material is based upon work supported by the National Science Foundation under grant numbers <b>DUE-1245673/1245796/1246083</b>. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 		  </p>
 <br><br></center>
         </div>
