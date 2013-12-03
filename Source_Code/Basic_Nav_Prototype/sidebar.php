@@ -13,6 +13,7 @@
 <a class="accordion-toggle" data-toggle="collapse" data-target="#u2"><p>Unit 2 Matrices as Transformations <b class="caret"></b></p></a>
    <p class="collapse" id="u2">
 		<a href="u2.php" title="Title"><strong> - Unit 2 Summary</strong></a>
+		<a href="u2t0.php" title="Title"> - Introductory Lesson</a>
 		<a href="u2t1.php" title="Title"> - Task 1: Italicizing N</a>
 		<a href="u2t2.php" title="Title"> - Task 2: Beyond the N</a>
 		<a href="u2t3.php" title="Title"> - Task 3: Pat and Jamie</a>

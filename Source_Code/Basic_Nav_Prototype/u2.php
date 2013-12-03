@@ -89,7 +89,28 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		<div class="jumbotron">
 		<section id="accordion">
 			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
-			<div class="accordion " id="summary">		  
+			<div class="accordion " id="summary">
+
+
+				<h2><a href="u2t0.php">Introductory Lesson</a></h2>
+				<ul>
+					<a class="btn btn-gray" id="moreInfo" data-toggle="collapse" data-target="#t0">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<div class="accordion-body collapse" id = "t0">
+						<ul>
+							<blockquote>
+								<p class="lead">The goal is to introduce the idea of interpreting a matrix times a vector as a linear transformation.</p>
+								<p>We suggest the instructor begin this unit with a mini-lecture that:</p>
+								<ul>
+									<li>Contrasts a transformation interpretation of a matrix equation Ax = b with previously discussed views (e.g. vector equation, system of equations).  The transformation interpretation should highlight the view that A acts on an input vector x to transform it into the output vector b</li>
+									<li>Explore ways of determining the dimensions of a matrix that would transform vectors in n to vectors in m for specified n and m</li>
+									<li>•	Introduce the terms transformation, domain, image, range, and codomain</li>
+									
+								</ul>
+								
+							</blockquote>
+						</div>
+					</ul>
+				</ul>	  
 				<h2><a href="u2t1.php">Task 1: Italicizing $N$</a></h2>
 				<ul>
 					<a class="btn btn-gray" id ="moreInfo"data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>

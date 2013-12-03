@@ -139,7 +139,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 						<!-- Carousel
 						================================================== -->
-						<div id="myCarousel" class="carousel slide" style="height:675px">
+						<div id="myCarousel" class="carousel slide" style="height:600px">
 						  <!-- Indicators -->
 						  <div class="carousel-inner">
 							<div class="item active">
@@ -152,7 +152,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t1/2.png"/ alt="Student thinking 2">
+							  <img src="img/u2t1/2.png"  alt="Student thinking 2">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Group 2</em> method:</p>
@@ -169,7 +169,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t1/4.png"/ alt="Student thinking 4">
+							  <img src="img/u2t1/4.png" style="height:385px" alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Group 4</em> method:</p>

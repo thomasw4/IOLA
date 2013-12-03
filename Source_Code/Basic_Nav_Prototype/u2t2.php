@@ -89,19 +89,22 @@
 			<a class="btn btn-gray printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
 		</ul>
 		
-		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: Beyond the N&raquo;</a>
+
+<ul>
+			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: Beyond the N &raquo;</a>
 			<div class="accordion-body collapse" id = "handout1">
 				<ul>
 					<blockquote>
-						<object data-src="media/unit1/handouts/u1_handout1.pdf" type="application/pdf" width="100%" height="800">				 
+						<object data="media/unit2/handouts/u2_handout2.pdf" type="application/pdf" width="100%" height="800">				 
 							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/h1.pdf">click here to download the handout.</a></p>  
+							<a href="media/unit2/handouts/u2_handout2.pdf">click here to download the handout.</a></p>  
 						</object>					
 					</blockquote>
 				</ul>
 			</div>
 		</ul>
+
+	
 
 		<ul>
 			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
@@ -136,7 +139,7 @@
 					<blockquote>
 											<!-- Carousel
 						================================================== -->
-						<div id="myCarousel" class="carousel slide" style="height:675px">
+						<div id="myCarousel" class="carousel slide" style="height:600px">
 						  <!-- Indicators -->
 						  <div class="carousel-inner">
 							<div class="item active">
@@ -158,7 +161,7 @@
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t2/3.png"/ alt="Student thinking 3">
+							  <img src="img/u2t2/3.png" alt="Student thinking 3">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Student 3</em></p>
@@ -167,7 +170,7 @@
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t2/4.png"/ alt="Student thinking 4">
+							  <img src="img/u2t2/4.png" style="height:390px" alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Students 4, 5, and 6</em></p>
