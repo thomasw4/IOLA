@@ -68,7 +68,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 		</div>
 		<div class="jumbotron">
 		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
 			<div class="accordion " id="summary">		  
 				<h2><a href="u1t1.php">Task 1: The Carpet Ride Problem (Working in $R^2$)</a></h2>
 				<ul>

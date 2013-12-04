@@ -528,7 +528,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	function init(){
 	$('#simple-menu').sidr({ speed : 0 });
 	$.sidr('open', 'sidr');
-	$('#u1').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
+	$('#u2').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
 	}
 	
 	$('.carousel').carousel(

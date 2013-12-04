@@ -11,7 +11,7 @@ body {
     background:#222222;
     width : 20px;
     height : 100%;
-    display : table-cell;
+    display : fixed;
     border : 1px solid black;
     float:none;
 	position:fixed;
@@ -20,14 +20,16 @@ body {
     background:#222222;
     width : 34px;
     height : 20%;
-    display : table-cell;
+	max-height:120px;
+	min-height:120px;
+    display : fixed;
 	border : 1px solid black;
     float:none;
 	position:fixed;
 	top:30%;
 }
 .bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}
-.ba {position:fixed; top:32%;  margin-bottom:0; margin-left: 5px;}
+.ba {position:fixed;  margin-bottom:50px; margin-left: 8px;}
 
 /* A few custom-colored buttons. */
 /* useful generator: http://twitterbootstrap3buttons.w3masters.nl/ */

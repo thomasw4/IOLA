@@ -41,7 +41,7 @@ if (isset($error)) {
 $message = Swift_Message::newInstance("IOLA: $name Has Requested An Account")
   ->setFrom(array('iola.automated.mailer@gmail.com' => 'IOLA Mailer'))
   ->setTo(array('wtlucy@gmail.com'))
-  ->setBody("$name has requested an account.\n Email Address: $email_address\n Requested username: $username\n Requested password: $password\n Attached Message: $message");
+  ->setBody("$name has requested an account.\n Email Address: $email_address\n Requested username: $username\n Requested password: $password\n Attached Message: $message\n\nAdd this user at: http://iola.dnsd.me/register.php");
 
 $result = $mailer->send($message);
 
