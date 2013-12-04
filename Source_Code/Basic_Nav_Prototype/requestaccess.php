@@ -45,7 +45,7 @@
 			<div class="panel panel-default" style="margin:0 auto;width:80%">
 
 				<div class="panel-body">
-					<form name="contactform" method="post" action="request-form-submission.php" class="form-horizontal" role="form">
+					<form name="contactform" method="post" action="register.php" class="form-horizontal" role="form">
 						<div class="form-group">
 							<label for="inputName" class="col-lg-2 control-label">Name</label>
 							<div class="col-lg-10">
@@ -89,7 +89,7 @@
 			</div>  
 		<br>
 			<footer>
-				<?php include 'footer.php'?>
+				<?php include 'footer.php' ?>
 			</footer>
 		</div>
     </div> <!-- /container -->

@@ -1,87 +1,132 @@
 <?php 
+    require_once 'swift/lib/swift_required.php';
+    require 'config.php';
 
-    require("config.php");
-		if (!isset($_SESSION['user']) || !$_SESSION['user']) {
-		header('Location:index.php');
-		exit();
-	}
-    if(!empty($_POST)) 
-    { 
-        // Ensure that the user fills out fields 
-        if(empty($_POST['username'])) 
-        { die("Please enter a username."); } 
-        if(empty($_POST['password'])) 
-        { die("Please enter a password."); } 
-        if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
-        { die("Invalid E-Mail Address"); } 
-         
-        // Check if the username is already taken
-        $query = " 
-            SELECT 
-                1 
-            FROM users 
-            WHERE 
-                username = :username 
-        "; 
-        $query_params = array( ':username' => $_POST['username'] ); 
-        try { 
-            $stmt = $db->prepare($query); 
-            $result = $stmt->execute($query_params); 
-        } 
-        catch(PDOException $ex){ die("Failed to run query: " . $ex->getMessage()); } 
-        $row = $stmt->fetch(); 
-        if($row){ die("This username is already in use"); } 
-        $query = " 
-            SELECT 
-                1 
-            FROM users 
-            WHERE 
-                email = :email 
-        "; 
-        $query_params = array( 
-            ':email' => $_POST['email'] 
-        ); 
-        try { 
-            $stmt = $db->prepare($query); 
-            $result = $stmt->execute($query_params); 
-        } 
-        catch(PDOException $ex){ die("Failed to run query: " . $ex->getMessage());} 
-        $row = $stmt->fetch(); 
-        if($row){ die("This email address is already registered"); } 
-         
-        // Add row to database 
-        $query = " 
-            INSERT INTO users ( 
-                username, 
-                password, 
-                salt, 
-                email 
-            ) VALUES ( 
-                :username, 
-                :password, 
-                :salt, 
-                :email 
-            ) 
-        "; 
-         
-        // Security measures
-        $salt = dechex(mt_rand(0, 2147483647)) . dechex(mt_rand(0, 2147483647)); 
-        $password = hash('sha256', $_POST['password'] . $salt); 
-        for($round = 0; $round < 65536; $round++){ $password = hash('sha256', $password . $salt); } 
-        $query_params = array( 
-            ':username' => $_POST['username'], 
-            ':password' => $password, 
-            ':salt' => $salt, 
-            ':email' => $_POST['email'] 
-        ); 
-        try {  
-            $stmt = $db->prepare($query); 
-            $result = $stmt->execute($query_params); 
-        } 
-        catch(PDOException $ex){ die("Failed to run query: " . $ex->getMessage()); } 
-        header("Location: index.php"); 
-        die("Redirecting to index.php"); 
+    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+        ->setUsername('iola.automated.mailer')
+        ->setPassword('iolaiola');
+
+    $mailer = Swift_Mailer::newInstance($transport);
+
+    // check for form submission - if it doesn't exist then send back to contact form  
+    if (!isset($_POST["save"]) || $_POST["save"] != "contact") {  
+        header("Location: requestaccess.php"); exit;  
+    }  
+          
+    // get the posted data  
+    $name = $_POST["contact_name"];  
+    $email_address = $_POST["contact_email"];  
+    $username = $_POST["username"];  
+    $password = $_POST["password"];  
+    $message = $_POST["contact_message"];  
+
+    // Ensure that the user fills out fields 
+    if(empty($username)) 
+    { $error = "Please enter a username."; } 
+    if(empty($password)) 
+    { $error = "Please enter a password."; } 
+    if(!filter_var($email_address, FILTER_VALIDATE_EMAIL)) 
+    { $error = "Invalid E-Mail Address."; } 
+
+    // check if an error was found - if there was, send the user back to the form  
+    if (isset($error)) {  
+        header("Location: requestaccess.php?e=".urlencode($error)); exit;  
+    }  
+     
+    // Check if the username is already taken
+    $query = " 
+        SELECT 
+            1 
+        FROM users 
+        WHERE 
+            username = :username 
+    "; 
+    $query_params = array( ':username' => $username ); 
+    try { 
+        $stmt = $db->prepare($query); 
+        $result = $stmt->execute($query_params); 
     } 
+    catch(PDOException $ex){
+        header("Location: requestaccess.php?e=".urlencode("Failed to run query: " . $ex->getMessage())); exit;
+    } 
+    $row = $stmt->fetch(); 
+    if($row){
+        header("Location: requestaccess.php?e=".urlencode("This username is already in use.")); exit;
+    } 
+    $query = " 
+        SELECT 
+            1 
+        FROM users 
+        WHERE 
+            email = :email 
+    "; 
+    $query_params = array( 
+        ':email' => $email_address
+    ); 
+    try { 
+        $stmt = $db->prepare($query); 
+        $result = $stmt->execute($query_params); 
+    } 
+    catch(PDOException $ex){
+        header("Location: requestaccess.php?e=".urlencode("Failed to run query: " . $ex->getMessage())); exit;
+    } 
+    $row = $stmt->fetch(); 
+    if($row){
+        header("Location: requestaccess.php?e=".urlencode("This email address is already registered.")); exit;
+    } 
+     
+    // Add row to database 
+    $query = " 
+        INSERT INTO users ( 
+            username, 
+            password, 
+            salt, 
+            email,
+            user_level
+        ) VALUES ( 
+            :username, 
+            :password, 
+            :salt, 
+            :email,
+            :user_level
+        ) 
+    "; 
+     
+    // Security measures
+    $salt = dechex(mt_rand(0, 2147483647)) . dechex(mt_rand(0, 2147483647)); 
+    $password = hash('sha256', $password . $salt); 
+    for($round = 0; $round < 65536; $round++){ $password = hash('sha256', $password . $salt); } 
+    $query_params = array( 
+        ':username' => $username, 
+        ':password' => $password, 
+        ':salt' => $salt, 
+        ':email' => $email_address,
+        ':user_level' => 0
+    ); 
+    try {  
+        $stmt = $db->prepare($query); 
+        $result = $stmt->execute($query_params); 
+    } 
+    catch(PDOException $ex){
+        die("Failed to run query: " . $ex->getMessage());
+    }
+
+    $message = Swift_Message::newInstance("IOLA: $name Has Requested An Account")
+      ->setFrom(array('iola.automated.mailer@gmail.com' => 'IOLA Mailer'))
+      ->setTo(array('ef314159@vt.edu'))
+      ->setBody("$name has registered an IOLA account.\n Username: $username\n Email Address: $email_address\n\n Attached Message:\n $message");
+
+    $result = $mailer->send($message);
+
+    $message = Swift_Message::newInstance("Your IOLA account has been created")
+      ->setFrom(array('iola.automated.mailer@gmail.com' => 'IOLA Mailer'))
+      ->setTo(array($email_address))
+      ->setBody("Your IOLA account has been created. Your username is $username.\n\n You currently do not have access to view the curriculum; the IOLA team may verify your account soon.");
+
+    $result = $mailer->send($message);
+
+    header("Location: index.php");
+    die("Redirecting to index.php"); 
 ?>
 
 <!DOCTYPE html>
@@ -139,7 +184,7 @@
 
 			</form>
 		<footer>
-			<?php include 'footer.php'?>
+			<?php include 'footer.php' ?>
 		</footer>
     </div> <!-- /container -->
 	</div>
