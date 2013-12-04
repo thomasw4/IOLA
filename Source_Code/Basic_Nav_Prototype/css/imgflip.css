@@ -18,7 +18,7 @@
 	opacity: 1;
 }
 #flipimagediv:hover #front, #flipimagediv #back{
-	opacity: 0;
+	opacity: 1;
 }
 
 

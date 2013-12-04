@@ -57,6 +57,7 @@
 		  <input type="password" class="form-control" name="password" value="password" onclick="this.value='';">
 		</div>
 		<button type="submit" class="btn btn-primary" value="Login" >Sign in</button>
+		<a class="btn btn-primary btn-warning" href="requestaccess.php">Request Access</a>
 	  </form> 
 	<?php } ?>
 		<?php  if (isset($_SESSION['user'])) {  ?>

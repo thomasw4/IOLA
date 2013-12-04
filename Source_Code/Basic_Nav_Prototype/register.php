@@ -1,5 +1,10 @@
 <?php 
+
     require("config.php");
+		if (!isset($_SESSION['user']) || !$_SESSION['user']) {
+		header('Location:index.php');
+		exit();
+	}
     if(!empty($_POST)) 
     { 
         // Ensure that the user fills out fields 
@@ -117,10 +122,9 @@
     <div class="jumbotron">
       <div class="container">
 	  
-        <h1>Register an account</h1>
-        <p>Inquiry Oriented Linear Algebra</p>
-
-			  <form class="navbar-form navbar" action="register.php" method="post">
+        <h1>Administrator: Create Account</h1>
+		<br>
+			<form class="navbar-form navbar" action="register.php" method="post">
 				<div class="form-group">
 				  <input type="text" name="username" class="form-control" value="username" onclick="this.value='';">
 				</div>
@@ -133,23 +137,12 @@
 				<button type="submit" class="btn btn-success" value="Register">Register!</button>
 			  </form> 
 
-    </form>
-
-      </div>
-    </div>
-
-    <div class="container">
-
-      <hr>
-
+			</form>
 		<footer>
-			<ul class="list-inline text-right">
-				<li><p>&copy; IOLA Team 2013</p></li>
-				<li><a href="team.php">Contact Us</a></li>
-				<li><a href="register.php">Request Access</a></li>
-			</ul>
+			<?php include 'footer.php'?>
 		</footer>
     </div> <!-- /container -->
+	</div>
 
 
     <!-- Bootstrap core JavaScript

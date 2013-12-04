@@ -1,7 +1,7 @@
 <ul class="list-inline text-right">
 	<li><p>&copy; IOLA Team 2013</p></li>
-	<li><a id="element1" data-toggle="collapse" data-target="#u6" onClick="//changeText(1);">Contact Us</a></li>
-	<li><a href="register.php">Request Access</a></li>
+	<!--li><a id="element1" data-toggle="collapse" data-target="#u6" onClick="//changeText(1);">Contact Us</a></li-->
+	<li><a href="contact-form.php">Contact Us</a></li>
 	<li></li>
 </ul>
 
