@@ -103,7 +103,7 @@
         $body.css({
 		// ########## BILL MODIFICATION: scale the document size to consider menu size
           width: $body.width() - (menuWidth - 1),
-          position: 'absolute'
+          position: 'relative'
         }).animate(bodyAnimation, speed);
         $menu.css('display', 'block').animate(menuAnimation, speed, function() {
           sidrMoving = false;

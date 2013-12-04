@@ -89,34 +89,6 @@ fieldset[disabled] .btn-blue.active {
   border-color: #389eb2;
 }
 
-.btn-tan {
-  background-color: #feebc3;
-  border-color: #feebc3;
-  color: #000000;
-}
-.btn-tan:hover,
-.btn-tan:focus,
-.btn-tan:active,
-.btn-tan.active {
-  background-color: #fee3aa;
-  border-color: #fdda91;
-}
-.btn-tan.disabled:hover,
-.btn-tan.disabled:focus,
-.btn-tan.disabled:active,
-.btn-tan.disabled.active,
-.btn-tan[disabled]:hover,
-.btn-tan[disabled]:focus,
-.btn-tan[disabled]:active,
-.btn-tan[disabled].active,
-fieldset[disabled] .btn-tan:hover,
-fieldset[disabled] .btn-tan:focus,
-fieldset[disabled] .btn-tan:active,
-fieldset[disabled] .btn-tan.active {
-  background-color: #feebc3;
-  border-color: #feebc3;
-}
-
 .btn-gray {
   background-color: #3f3f3f;
   border-color: #3f3f3f;

@@ -119,7 +119,6 @@
     <div class="container">
 		<div class="jumbotron">
 			<div class="row">
-		  
 				<div class="col-lg-6">
 					<center>
 						<h2>New Site In-Progress</h2>
@@ -130,8 +129,7 @@
 						This new site is a work-in-progress.  It's being developed by computer science design students at Virginia Tech: Bill Lucy, Ethan Francis, and Thomas Walton.  
 						</p>
 					</center>
-			   </div>
-			   
+				</div>			   
 				<div class="col-lg-6">
 					<center>
 						<h2>NSF Grant Information</h2>
@@ -143,20 +141,9 @@
 						</p>
 						<br><br>
 					</center>
-				</div>		
-				<!--
-				<div class="col-lg-4">
-				  <h2>Classroom Motivation Up</h2>
-												  <p><img width="250" height="150" src="img/student.gif"></p>
+				</div>	
+			</div>
 
-				  <a class="btn btn-default" data-toggle="collapse" data-target="#u7">View details &raquo;</a>
-
-						   <p class="collapse" id="u7">
-				  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-				</div>
-				</div>
-				-->
-				</div>
 			<footer>
 				<?php include 'footer.php'?>
 			</footer>
@@ -182,14 +169,14 @@
 			$('#simple').sidr({ speed : 50 });
 		});
 		function changeText(idElement) {
-	var element = document.getElementById('element' + idElement);
-	if (idElement === 1 || idElement === 2) {
-		if (element.innerHTML === 'Contact Us') element.innerHTML = '<a href="mailto:mwawro@vt.edu">mwawro@vt.edu</a>';
-		else {
-			element.innerHTML = 'Contact Us';
+		var element = document.getElementById('element' + idElement);
+		if (idElement === 1 || idElement === 2) {
+			if (element.innerHTML === 'Contact Us') element.innerHTML = '<a href="mailto:mwawro@vt.edu">mwawro@vt.edu</a>';
+			else {
+				element.innerHTML = 'Contact Us';
+				}
+			}
 		}
-	}
-}
 	</script>
-  </body>
+	</body>
 </html>
