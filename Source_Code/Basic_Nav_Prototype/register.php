@@ -167,7 +167,7 @@
     <div class="jumbotron">
       <div class="container">
 	  
-        <h1>Administrator: Create Account</h1>
+        <h1>Create Account</h1>
 		<br>
 			<form class="navbar-form navbar" action="register.php" method="post">
 				<div class="form-group">
