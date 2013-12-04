@@ -117,54 +117,51 @@
     </div>
 
     <div class="container">
-<div class="jumbotron">
-      <!-- Example row of columns -->
-      <div class="row">
-	  
-	   <div class="col-lg-6"><center>
-          <h2>New Site In-Progress</h2>
-		  		  <p><img width="350" height="230" src="img/screen.jpg" style="border:1px solid gray"></p>
-		  <a class="btn btn-default" data-toggle="collapse" data-target="#u6">View details &raquo;</a>
-				   <p class="collapse" id="u6">
-          This new site is a work-in-progress.  It's being developed by computer science design students at Virginia Tech: Bill Lucy, Ethan Francis, and Thomas Walton.  
-       </center></div>
-	   
-        <div class="col-lg-6">
-		<center>
-          <h2>NSF Grant Information</h2>
-		  		  		  <p><img width="230" height="230" src="img/nsf1.gif"></p>
+		<div class="jumbotron">
+			<div class="row">
+		  
+				<div class="col-lg-6">
+					<center>
+						<h2>New Site In-Progress</h2>
+						<p><img width="350" height="230" src="img/screen.jpg" style="border:1px solid gray"></p>
+						<!--a class="btn btn-default" data-toggle="collapse" data-target="#u6">View details &raquo;</a>
+							   <p class="collapse" id="u6"--> 
+						<p>
+						This new site is a work-in-progress.  It's being developed by computer science design students at Virginia Tech: Bill Lucy, Ethan Francis, and Thomas Walton.  
+						</p>
+					</center>
+			   </div>
+			   
+				<div class="col-lg-6">
+					<center>
+						<h2>NSF Grant Information</h2>
+						<p><img width="166" height="167" src="img/nsf1.gif"></p>
+						<!--a class="btn btn-default" data-toggle="collapse" data-target="#u5">View details &raquo;</a>
+							   <p class="collapse" id="u5"-->
+						<p>
+						This material is based upon work supported by the National Science Foundation under grant numbers <b>DUE-1245673/1245796/1246083</b>. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
+						</p>
+						<br><br>
+					</center>
+				</div>		
+				<!--
+				<div class="col-lg-4">
+				  <h2>Classroom Motivation Up</h2>
+												  <p><img width="250" height="150" src="img/student.gif"></p>
 
-		  <a class="btn btn-default" data-toggle="collapse" data-target="#u5">View details &raquo;</a>
-				   <p class="collapse" id="u5">
-          This material is based upon work supported by the National Science Foundation under grant numbers <b>DUE-1245673/1245796/1246083</b>. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
-		  </p>
-<br><br></center>
-        </div>
-		
-<!--
-        <div class="col-lg-4">
-          <h2>Classroom Motivation Up</h2>
-		  		  		  		  		  <p><img width="250" height="150" src="img/student.gif"></p>
+				  <a class="btn btn-default" data-toggle="collapse" data-target="#u7">View details &raquo;</a>
 
-		  <a class="btn btn-default" data-toggle="collapse" data-target="#u7">View details &raquo;</a>
-
-				   <p class="collapse" id="u7">
-          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
-        </div>
-      </div>
--->
-      <hr>
-
-		<footer>
-
-			<ul class="list-inline text-right">
-				<li><p>&copy; IOLA Team 2013</p></li>
-				<li><a href="team.php">Contact Us</a></li>
-				<li><a href="register.php">Request Access</a></li>
-			</ul>
-		</footer>
+						   <p class="collapse" id="u7">
+				  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+				</div>
+				</div>
+				-->
+				</div>
+			<footer>
+				<?php include 'footer.php'?>
+			</footer>
+		</div>
     </div> <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -172,20 +169,27 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
- 
-	<!-- Include the Sidr JS -->
+	<script src="js/sidr/iola.js"></script>
+	
 	<script>
-	$(document).ready(function() {
-	$('#simple-menu').sidr();
-	$('#float2').sidr();
-	$('#simple').sidr();
-	$('#float').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
-	$('#simple').sidr({ speed : 50 });
-	});
+		$(document).ready(function() {
+			$('#simple-menu').sidr();
+			$('#float2').sidr();
+			$('#simple').sidr();
+			$('#float').sidr();
+		});
+		$(document).ready(function() {
+			$('#simple').sidr({ speed : 50 });
+		});
+		function changeText(idElement) {
+	var element = document.getElementById('element' + idElement);
+	if (idElement === 1 || idElement === 2) {
+		if (element.innerHTML === 'Contact Us') element.innerHTML = '<a href="mailto:mwawro@vt.edu">mwawro@vt.edu</a>';
+		else {
+			element.innerHTML = 'Contact Us';
+		}
+	}
+}
 	</script>
   </body>
 </html>

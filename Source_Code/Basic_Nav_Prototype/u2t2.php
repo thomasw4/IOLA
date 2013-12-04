@@ -468,23 +468,9 @@
 			</blockquote>
 			</div>
 		</ul>
-			
-	
-	
-
-
-
-
-
-
-
-      <hr>
-	<footer>
-		<ul class="list-inline text-right">
-			<li><p>&copy; IOLA Team 2013</p></li>
-			<li><a href="team.php">Contact Us</a></li>
-		</ul>
-	</footer>
+		<footer>
+			<?php include 'footer.php'?>
+		</footer>
 	</section>
     </div> <!-- /container -->
 

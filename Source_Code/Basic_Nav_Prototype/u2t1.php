@@ -615,10 +615,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
       <hr>
 	<footer>
-		<ul class="list-inline text-right">
-			<li><p>&copy; IOLA Team 2013</p></li>
-			<li><a href="team.php">Contact Us</a></li>
-		</ul>
+		<?php include 'footer.php'?>
 	</footer>
     </div> <!-- /container -->
 
