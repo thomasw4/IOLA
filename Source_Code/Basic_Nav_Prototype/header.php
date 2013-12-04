@@ -32,7 +32,7 @@
 	  <ul class="nav navbar-nav">
 		<li></li>
 		<li class="active"><a href="index.php">Home</a></li>
-			<?php  if (isset($_SESSION['user'])) {  ?>
+			<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 			<li><a id="simple-menu" href="#sidr">Modules</a></li>
 			<?php } ?>
 		<li><a href="team.php">Team</a></li>

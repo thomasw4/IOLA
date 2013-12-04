@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['user']) || !$_SESSION['user']) {
-	header('Location:index.php');
-	exit();
-}
+//if (!isset($_SESSION['user']) || !$_SESSION['user']) {
+//	header('Location:index.php');
+//	exit();
+//}
 ?>
 
 <!DOCTYPE html>
@@ -38,23 +38,26 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 	  <?php include 'header.php' ?>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 	<a style="display:block" href="#sidr">
-	<div id="float" class="hidden-print">
-		<br>
-		<span class="glyphicon glyphicon-resize-horizontal"></span>
-		<span class="bottomaligned">
+		<div id="float" class="hidden-print">
+			<br>
 			<span class="glyphicon glyphicon-resize-horizontal"></span>
-		</span>
-	</div>
+			<span class="bottomaligned">
+				<span class="glyphicon glyphicon-resize-horizontal"></span>
+			</span>
+		</div>
+	</a>
+	<?php } ?>
 
-</a>
     <div class="container print">
 	
 		<div class="jumbotron">
-			<div id="sidr" class="hidden-print">
+		  	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
+			<div id="sidr">
 				<?php include 'sidebar.php' ?>
 			</div>
+		  	<?php } ?>		
 			<h1 class="text-center">Meet the IOLA Team!</h1>
 		</div>
 		<div class="jumbotron">
@@ -128,7 +131,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				</div>
 			</div>
 			<footer>
-				<?php include 'footer.php'?>
+				<?php include 'footer.php' ?>
 			</footer>
 		</div>
     </div> <!-- /container -->
