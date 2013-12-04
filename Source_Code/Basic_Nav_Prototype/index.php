@@ -112,7 +112,7 @@
         <h1>Welcome to IOLA!</h1>
         <h3><p>Developing Inquiry-Oriented Instructional Materials for Linear Algebra Instruction</p>
 		<br>
-        <p><a class="btn btn-primary btn-lg " href="register.php">Meet the team &raquo;</a></p></h3>
+        <p><a class="btn btn-primary btn-lg " href="team.php">Meet the team &raquo;</a></p></h3>
       </div>
     </div>
 
