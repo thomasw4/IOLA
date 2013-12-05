@@ -33,19 +33,17 @@
 		<li></li>
 		<li class="active"><a href="index.php">Home</a></li>
 			<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
-			<li><a id="simple-menu" href="#sidr">Modules</a></li>
+			<li><a id="simple-menu" href="#sidr">Units</a></li>
 			<?php } ?>
 		<li><a href="team.php">Team</a></li>
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 		    <li><a href="publications.php">Publications</a></li>
-			<li><a href="#">Videos</a></li>
-			<li><a href="#">Pictures</a></li>
+			<li><a href="videos.php">Videos</a></li>			
+			<li><a href="nsf.php">NSF</a></li>			
 			<li class="divider"></li>
-			<li class="dropdown-header">Links</li>
-			<li><a href="#">NSF</a></li>
-			<li><a href="#">Related Projects</a></li>
+			<li><a href="related.php">Related Projects</a></li>
 		  </ul>
 		</li>
 

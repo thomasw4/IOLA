@@ -70,7 +70,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</div>
 
 				<div class="accordion" id="summary">		  
-					<h2 class="text">Task 1: The Carpet Ride Problem</h2>		
+					<h2 class="text">Task 1: The Magic Carpet Ride</h2>		
 					<br>		
 					<!-- HANDOUT -->
 					<ul>

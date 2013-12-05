@@ -71,7 +71,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>
 			<div class="accordion" id="summary">		  
-		<h2 class="text">Task 4: Linear (In)Dependence</h2>		
+		<h2 class="text">Task 4: Creating Examples</h2>		
 		<br>
 		<ul>
 			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout">Handout 4: Linear Independence and Dependence &raquo;</a>
