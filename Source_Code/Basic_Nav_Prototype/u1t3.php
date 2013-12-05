@@ -61,39 +61,20 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</div>
 		<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u1_task3.pdf">.pdf Download</a> <br><a href="media/unit1/u1_task3.doc">.doc Download</a>
+						</blockquote>
+					</ul>
+				</div>
 			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Task 3: Getting Back Home
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
-				<blockquote>
-					<p class="lead" >Main Goal: to develop informal ideas about linear dependence (drawing on a metaphor of "getting back home").  </p>
-					<p>By the end of the lesson students should be able to:</p>
-					<ul>
-						<li>Interpret the zero vector as "home"  </li>
-						<li>Intuitively understand linear dependence as getting home (in a non-trivial manner) </li>
-						<li>Relate linear independence to Task 2</li>
-					</ul>
-					<br>
-					<p>The instructor should:</p>
-					<ul>
-						<li>Introduce the formal definition of Linear Dependence </li>
-						<li>Introduce definition of Linear Independence</li>
-					</ul>
-				</blockquote>
-			</ul>
+		<h2 class="text">Task 3: Getting Back Home</h2>		
 		<br>
 		<ul>
-			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>
-		
-		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout">Handout 3: Getting Back Home &raquo;</a>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout">Handout 3: Getting Back Home &raquo;</a>
 			<div class="accordion-body collapse" id = "handout">
 				<ul>
 					<blockquote>
@@ -105,9 +86,31 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</ul>
 			</div>		
 		</ul>		
+		<ul>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+				<div class="accordion-body collapse" id = "t1" >
+					<ul>
+					<blockquote>
+						<p class="lead" >Main Goal: to develop informal ideas about linear dependence (drawing on a metaphor of "getting back home").  </p>
+						<p>By the end of the lesson students should be able to:</p>
+						<ul>
+							<li>Interpret the zero vector as "home"  </li>
+							<li>Intuitively understand linear dependence as getting home (in a non-trivial manner) </li>
+							<li>Relate linear independence to Task 2</li>
+						</ul>
+						<br>
+						<p>The instructor should:</p>
+						<ul>
+							<li>Introduce the formal definition of Linear Dependence </li>
+							<li>Introduce definition of Linear Independence</li>
+						</ul>
+					</blockquote>
+					</ul>
+				</div>
+		</ul>			
 		
 		<ul>
-			<a class="btn btn-success center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -129,7 +132,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse" id = "studentthinking">
 				<ul>
 					<blockquote>
@@ -185,7 +188,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 			<div class="accordion-body collapse" id = "implementation">
 				<ul>
 				<blockquote>
@@ -215,7 +218,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<br>
 				The <em>Getting Back Home</em> problem is important for allowing students to develop their own notions of what it means to have a nontrivial solution to the zero equation. Because of this, the instructor should emphasize the restriction that each mode of transportation should be used only once (this can tie back into their work in Task 1). This discussion might tie in the ideas of commutativity and associativity of vector addition. 
 				<br><br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i1" ">
 					<ul>
@@ -229,7 +232,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</div>
 				<br><br>
 
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
 					<ul>
@@ -340,7 +343,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>
 				<br><br>					
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Relating solutions to a geometric representation  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i3">Relating solutions to a geometric representation  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i3" ">
 					<ul>
@@ -382,7 +385,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>	
 				<br><br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Formally Defining Linear Dependence and Linear Independence  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i4">Formally Defining Linear Dependence and Linear Independence  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i4" ">
 					<ul>
@@ -462,7 +465,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>	
 				<br><br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Important follow-ups arising from the Getting Back Home task that drive student thinking  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i5">Important follow-ups arising from the Getting Back Home task that drive student thinking  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i5" ">
 					<ul>
@@ -564,7 +567,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>	
 				<br><br>
-					<a class="btn btn-blue center" data-toggle="collapse" data-target="#oo">(Optional) Getting more practice with linear (in)dependence  &raquo;</a>
+					<a class="btn btn-success center" data-toggle="collapse" data-target="#oo">(Optional) Getting more practice with linear (in)dependence  &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "oo"">
 						<ul>
@@ -611,7 +614,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			
 		</ul>	
 		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
 			<div class="accordion-body collapse" id = "videos">
 				<ul>
 					<blockquote>

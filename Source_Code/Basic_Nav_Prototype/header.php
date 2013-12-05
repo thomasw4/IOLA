@@ -6,7 +6,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href="#">
+	  <a class="navbar-brand">
 	  	<!-- <img src="img/logo_i.png" width="48" height="48" alt="IOLA"> -->
 
 		<div class="flip-container" style="float:left" ontouchstart="this.classList.toggle('hover');">

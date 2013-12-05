@@ -61,16 +61,35 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</div>
 		<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u1_task4.pdf">.pdf Download</a> <br><a href="media/unit1/u1_task4.doc">.doc Download</a>
+						</blockquote>
+					</ul>
+				</div>
 			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Task 4: Linear (In)Dependence
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+		<h2 class="text">Task 4: Linear (In)Dependence</h2>		
+		<br>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout">Handout 4: Linear Independence and Dependence &raquo;</a>
+			<div class="accordion-body collapse" id = "handout">
+				<ul>
+					<blockquote>
+						<object data="media/unit1/handouts/u1_handout4.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit1/handouts/u1_handout4.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>	
+		</ul>
+		<ul>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 					<p class="lead" >Main Goal: To develop conjectures about linear dependence/independence. Secondary goals are to develop generalizations about span and about connections between span and linear (in)dependence.  </p>
 					<p>By the end of the lesson students should be able to:</p>
@@ -110,28 +129,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<li>It is essential to discuss with the students why these are true, but the level of rigor with which you discuss the proofs of the conjectures depends on the level of your course. </li>
 					</ul>
 				</blockquote>
-			</ul>
-		<br>
-		<ul>
-			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
+				</ul>
+			</div>
 		</ul>
 		
 		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout">Handout 4: Linear Independence and Dependence &raquo;</a>
-			<div class="accordion-body collapse" id = "handout">
-				<ul>
-					<blockquote>
-						<object data="media/unit1/handouts/u1_handout4.pdf" type="application/pdf" width="100%" height="800">				 
-							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/u1_handout4.pdf">click here to download the handout.</a></p>  
-						</object>					
-					</blockquote>
-				</ul>
-			</div>	
-		</ul>		
-		
-		<ul>
-			<a class="btn btn-success center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -151,7 +154,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 		</ul>
 		<ul>
-			<a class="btn btn-success center" data-toggle="collapse" data-target="#lds">Classifying Types of Linearly Dependent Sets: &raquo;</a>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#lds">Classifying Types of Linearly Dependent Sets: &raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "lds">
 				<ul>
@@ -171,7 +174,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 		</ul>
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse" id = "studentthinking">
 				<ul>
 					<blockquote>
@@ -252,7 +255,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 			<div class="accordion-body collapse" id = "implementation">
 				<ul>
 				<blockquote>
@@ -262,7 +265,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				The instructor should ask students to try to identify several strategies for determining the linear (in)dependence of a set of vectors as they generate their examples. The reasoning behind the strategies could inform the development of generalizations as they work on and discuss Handout 4.
 				<br><br>
 				
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i1">Working in small groups  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i1" ">
 					<ul>
@@ -297,7 +300,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</div>
 				<br>
 
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Sharing examples during whole class discussion  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i2">Sharing examples during whole class discussion  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
 					<ul>
@@ -440,7 +443,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>
 				<br>					
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Making generalizations  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i3">Making generalizations  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i3" ">
 					<ul>
@@ -488,7 +491,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>		
 				<br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i4">Developing an intellectual need for sophisticated solution techniques  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i4">Developing an intellectual need for sophisticated solution techniques  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i4" ">
 					<ul>
@@ -507,7 +510,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>	
 				<br>
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i5">Extension of Task 4: Span   &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i5">Extension of Task 4: Span   &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i5" ">
 					<ul>
@@ -523,7 +526,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 
 		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout2">Handout 4: Linear Independence and Dependence: Creating Examples &raquo;</a>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout2">Handout 4: Linear Independence and Dependence: Creating Examples &raquo;</a>
 			<div class="accordion-body collapse" id = "handout2">
 				<ul>
 					<blockquote>
@@ -537,7 +540,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 		
 		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
 			<div class="accordion-body collapse" id = "videos">
 				<ul>
 					<blockquote>

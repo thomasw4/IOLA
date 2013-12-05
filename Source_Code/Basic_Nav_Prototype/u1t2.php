@@ -61,16 +61,35 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</div>
 		<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
-			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Task 2: Hide and Seek
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+				<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+				<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+					<div class="accordion-body collapse pull-right" id = "t">
+						<ul>
+							<blockquote>
+								<a href="media/unit1/u1_task2.pdf">.pdf Download</a> <br><a href="media/unit1/u1_task2.doc">.doc Download</a>
+							</blockquote>
+						</ul>
+					</div>
+				<div class="accordion" id="summary">		  
+		<h2 class="text">Task 2: Hide and Seek</h2>
+		<br>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout">Handout 2: Hide-and-Seek &raquo;</a>
+			<div class="accordion-body collapse" id = "handout">
+				<ul>
+					<blockquote>
+						<object data="media/unit1/handouts/u1_handout2.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit1/handouts/u1_handout2.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>
+		</ul>
+		<ul>		
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>		
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 					<p class="lead" >Main Goal: To develop informal ideas about span in a 2D setting (drawing on a metaphor of "getting anywhere" using 2 modes of transportation corresponding to vectors). </p>
 					<p>By the end of the lesson students should be able to:</p>
@@ -86,27 +105,11 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<li><em>NOT</em> mention Linear (in)dependence (this comes up in Task 3)</li>
 					</ul>
 				</blockquote>
-			</ul>
-		<br>
-		<ul>
-			<a class="btn btn-gray center" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>	
-		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout">Handout 2: Hide-and-Seek &raquo;</a>
-			<div class="accordion-body collapse" id = "handout">
-				<ul>
-					<blockquote>
-						<object data="media/unit1/handouts/u1_handout2.pdf" type="application/pdf" width="100%" height="800">				 
-							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit1/handouts/u1_handout2.pdf">click here to download the handout.</a></p>  
-						</object>					
-					</blockquote>
 				</ul>
 			</div>
-		</ul>		
-		
+		</ul>
 		<ul>
-			<a class="btn btn-success center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -127,7 +130,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse" id = "studentthinking">
 				<ul>
 					<blockquote>
@@ -201,7 +204,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 			<div class="accordion-body collapse" id = "implementation">
 				<ul>
 				<blockquote>
@@ -210,7 +213,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				Point out to the students that in Task 1 they were trying to determine how to travel to one location, whereas Task 2 of this Magic Carpet Ride Sequence is to determine if one can get to any point on the plane using just these two modes of transportation.
 				<br><br>
 				
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i1">Working in small groups towards a solution  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i1" ">
 					<ul>
@@ -223,7 +226,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</div>
 				<br><br>
 
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i2">Discussing different solution strategies during whole class discussion  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i2" ">
 					<ul>
@@ -231,7 +234,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<p>Discussing different solution strategies during whole class discussion</p>
 							Whole class discussion can be organized around various solution methods.  <br><br>
 								<ul>
-									<a class="btn btn-warning center" data-toggle="collapse" data-target="#na">Numeric approaches (method of 'guess-and-check') &raquo;</a>
+									<a class="btn btn-success center" data-toggle="collapse" data-target="#na">Numeric approaches (method of 'guess-and-check') &raquo;</a>
 									<br>
 									<div class="accordion-body collapse" id = "na"">
 										<ul>
@@ -243,7 +246,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								</ul>	
 								<br>
 								<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#ga">Geometric approaches &raquo;</a>
+								<a class="btn btn-success center" data-toggle="collapse" data-target="#ga">Geometric approaches &raquo;</a>
 									<br>
 									<div class="accordion-body collapse" id = "ga"">
 										<ul>
@@ -297,7 +300,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								</ul>		
 								<br>
 								<ul>
-									<a class="btn btn-warning center" data-toggle="collapse" data-target="#sle">System of linear equations &raquo;</a>
+									<a class="btn btn-success center" data-toggle="collapse" data-target="#sle">System of linear equations &raquo;</a>
 									<br>
 									<div class="accordion-body collapse" id = "sle"">
 										<ul>
@@ -321,7 +324,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</div>
 				<br><br>					
-				<a class="btn btn-blue center" data-toggle="collapse" data-target="#i3">Defining span  &raquo;</a>
+				<a class="btn btn-success center" data-toggle="collapse" data-target="#i3">Defining span  &raquo;</a>
 				<br>
 				<div class="accordion-body collapse" id = "i3" ">
 					<ul>
@@ -386,7 +389,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>		
 		</ul>	
 		<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#videos">Videos &raquo;</a>
 			<div class="accordion-body collapse" id = "videos">
 				<ul>
 					<blockquote>

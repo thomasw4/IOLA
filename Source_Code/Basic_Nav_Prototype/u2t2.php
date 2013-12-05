@@ -59,18 +59,36 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	
         <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
 		</div>
-				<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u2_task2.pdf">.pdf Download</a> <br><a href="media/unit1/u2_task2.doc">.doc Download</a>
+						</blockquote>
+					</ul>
+				</div>
 			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Task 2: Beyond the N
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+		<h2 class="text">Task 2: Beyond the N</h2>
+		<br>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout1">Handout 1: Beyond the N &raquo;</a>
+			<div class="accordion-body collapse" id = "handout1">
+				<ul>
+					<blockquote>
+						<object data="media/unit2/handouts/u2_handout2.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit2/handouts/u2_handout2.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>
+		</ul>
+		<ul>
+			<a class="btn btn-primary center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 				<p class="lead" >Goal is to understand how linear transformations affect the entire space</p>
 				<p>By the end of the lesson students should be able to:</p>
@@ -87,32 +105,11 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<li>Provide follow-up example transformations (from 2 to 2 or from 3 to 3)</li>					
 				</ul>
 				</blockquote>
-			</ul>
-		<br>
-		
-		<ul>
-			<a class="btn btn-gray printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>
-		
-
-<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: Beyond the N &raquo;</a>
-			<div class="accordion-body collapse" id = "handout1">
-				<ul>
-					<blockquote>
-						<object data="media/unit2/handouts/u2_handout2.pdf" type="application/pdf" width="100%" height="800">				 
-							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit2/handouts/u2_handout2.pdf">click here to download the handout.</a></p>  
-						</object>					
-					</blockquote>
 				</ul>
 			</div>
 		</ul>
-
-	
-
 		<ul>
-			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-primary center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -138,7 +135,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse"  id = "studentthinking">
 				<ul>
 					<blockquote>
@@ -206,12 +203,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 		</ul> 
 
-
-
-		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 				<div class="accordion-body collapse" id = "implementation">	
+				<ul>
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
 				This task is meant to be a natural follow up to the Italicizing N task in Handout 1.  As such, students should be able to “jump in” with respect to understanding what Handout 2 is asking them to investigate.  This does not mean that the correct answer is obvious to students, but rather that the question connects to their previous experience.  
@@ -228,7 +223,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</div>				
 				<br><br>
 				
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i2">Working In Small Groups&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i2">
 			<ul>
@@ -242,7 +237,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 
 			<br>
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i22">Sharing Responses in Whole Class Discussion&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i22">Sharing Responses in Whole Class Discussion&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i22">
 			<ul>
@@ -270,7 +265,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 			<br>
 
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i23">Exploring additional linear transformations&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i23">Exploring additional linear transformations&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i23">
 			<ul>
@@ -309,7 +304,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</div>
 					</div>	
 					<br>		
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Exploring Transformation Matrices for Common Geometric Transformations&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i24">Exploring Transformation Matrices for Common Geometric Transformations&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i24">
 			<ul>
@@ -384,7 +379,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<img src = "img/u2t2/determinant2.png" alt="determinant2">
 						</blockquote>
 					</div>	
-					<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Suggestions for homework &raquo;</a>
+					<a class="btn btn-success center" data-toggle="collapse" data-target="#i29">Suggestions for homework &raquo;</a>
 					<br><br>
 					<div class="accordion-body collapse" id = "i29">
 						Below are problems we have used in the past for homework.  Instructors should feel free to use any subset of these that they feel would be beneficial to their students.
@@ -452,6 +447,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 							</ol>
 						</blockquote>
+						</ul>
 					</div>
 
 

@@ -59,18 +59,36 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	
         <h1 class="text-center">Unit 2: Italicizing N Task Sequence</h1>
 		</div>
-				<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u2_task3.pdf">.pdf Download</a> <br><a href="media/unit1/u2_task3.doc">.doc Download</a>
+						</blockquote>
+					</ul>
+				</div>
 			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Task 3: Pat and Jamie
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+		<h2 class="text">Task 3: Pat and Jamie</h2>
+		<br>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#handout1">Handout 1: Pat and Jamie &raquo;</a>
+			<div class="accordion-body collapse" id = "handout1">
+				<ul>
+					<blockquote>
+						<object data="media/unit2/handouts/u2_handout3.pdf" type="application/pdf" width="100%" height="800">				 
+							<p>It appears you don't have a PDF plugin for this browser!
+							<a href="media/unit2/handouts/u2_handout3.pdf">click here to download the handout.</a></p>  
+						</object>					
+					</blockquote>
+				</ul>
+			</div>
+		</ul>
+		<ul>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 				<p class="lead" >Goal is to To interpret the product of matrices as a composition of linear transformations</p>
 				<p>By the end of the lesson students should be able to:</p>
@@ -87,32 +105,11 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<li>Introduce the terms commutative and non-commutative after the students complete the task</li>					
 				</ul>
 				</blockquote>
-			</ul>
-		<br>
-		
-		<ul>
-			<a class="btn btn-gray printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>
-		
-
-<ul>
-			<a class="btn btn-info center" data-toggle="collapse" data-target="#handout1">Handout 1: Pat and Jamie &raquo;</a>
-			<div class="accordion-body collapse" id = "handout1">
-				<ul>
-					<blockquote>
-						<object data="media/unit2/handouts/u2_handout3.pdf" type="application/pdf" width="100%" height="800">				 
-							<p>It appears you don't have a PDF plugin for this browser!
-							<a href="media/unit2/handouts/u2_handout3.pdf">click here to download the handout.</a></p>  
-						</object>					
-					</blockquote>
 				</ul>
-			</div>
+			</div>		
 		</ul>
-
-	
-
 		<ul>
-			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
+			<a class="btn btn-primary center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Learning Goals and Rationale &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -129,7 +126,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#studentthinking">Student Thinking &raquo;</a>
 			<div class="accordion-body collapse"  id = "studentthinking">
 				<ul>
 					<blockquote>
@@ -206,7 +203,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 				<div class="accordion-body collapse" id = "implementation">	
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
@@ -481,12 +478,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
       <hr>
 	<footer>
-		<ul class="list-inline text-right">
-			<li><p>&copy; IOLA Team 2013</p></li>
-			<li><a href="team.php">Contact Us</a></li>
-		</ul>
+		<?php include 'footer.php'?>
 	</footer>
-	</section>
     </div> <!-- /container -->
 
 

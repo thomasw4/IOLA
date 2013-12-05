@@ -62,16 +62,21 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</div>
 				<!-- Begin expandall section -->
 		<div class="jumbotron">
-
-		<section id="accordion">
-			<a href="#_" class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="expandcollapse btn  btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
+			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
+				<div class="accordion-body collapse pull-right" id = "t">
+					<ul>
+						<blockquote>
+							<a href="media/unit1/u1_task4.pdf">.pdf Download</a> <br><a href="media/unit1/u1_task4.doc">.doc Download</a>
+						</blockquote>
+					</ul>
+				</div>
 			<div class="accordion" id="summary">		  
-
-		<h2 class="text">Introductory Lesson
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
-		</h2>
-		
-			<ul class="collapse" id = "t1" >
+		<h2 class="text">Introductory Lesson</h2>
+		<ul>
+			<a class="btn btn-warning center" data-toggle="collapse" data-target="#t1">Lesson Overview &raquo;</a>
+			<div class="accordion-body collapse" id = "t1" >
+				<ul>
 				<blockquote>
 				<p>The first learning goal of the instructional sequence is interpreting matrices as mathematical objects that transform input vectors to output vectors. Thus, a goal of this introductory whole-class discussion is to help students conceive of input-output pairs of vectors that are related through a matrix transformation.</p>
 				<p>It is appropriate to introduce students to this through a mini-lecture with a few examples.  This will provide the pre-requisite information students need to engage in the Italicizing N task sequence.</p>
@@ -81,19 +86,13 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<li>Methods for determining solutions to a linear system such as Gaussian elimination; existence and uniqueness of solutions</li>
 					<li>The interpretation of A<b>x</b> = <b>b</b> as a vector equation both algebraically and geometrically</li>
 					<li>The interpretation of A<b>x</b> = <b>b</b> as a system of equations both algebraically and geometrically</li>
-				</ul>
-				
+				</ul>		
 				</blockquote>
-			</ul>
-		<br>
-		
+				</ul>
+			</div>
+		</ul>
 		<ul>
-			<a class="btn btn-gray printLesson" id="printt" onclick="window.print();" >Print Lesson</a>
-		</ul>		
-		
-
-		<ul>
-			<a class="btn btn-success center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Mini-lecture on transformations &raquo;</a>
+			<a class="btn btn-primary center" id="contentInfo" data-toggle="collapse" data-target="#goalsrationale">Mini-lecture on transformations &raquo;</a>
 			<div class="accordion-body collapse" id = "goalsrationale">
 				<ul>
 					<blockquote>
@@ -157,8 +156,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 		
 		<ul>
-		<a class="btn btn-success center" data-toggle="collapse" data-target="#implementation">Definitions &raquo;</a>
+		<a class="btn btn-primary center" data-toggle="collapse" data-target="#defintions">Definitions &raquo;</a>
 			<div class="accordion-body collapse" id = "defintions">
+				<ul>
 				<blockquote>
 					<p>Definitions</p>
 					The instructor might give the following definitions and briefly relate them to how students are familiar with them from high school and calculus (functions from R to R). 
@@ -224,24 +224,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						</li>
 
 					</ol>
-
 				</blockquote>
-
-		</ul>
-				
-
-
-
-								
-				
-								
-
-				
-
-			
-
-					
-				
+				</ul>
+			</ul>		
 		</div>
 	</section>
 
