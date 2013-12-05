@@ -58,7 +58,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			<h1 class="text-center" style="font-size:53px">Unit 2: Matrices as Transformations</h1>
 			<br>
 			<h4>
-				<ul>
+				
 				<p style="font-size:18px; padding:0">Common Prior Knowledge:</p>
 				<ul>
 					<li>Linear combinations, span, and linear (in)dependence</li> 
@@ -79,11 +79,11 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<ul>
 					<li>Interpreting A<b>x = b</b> as the matrix A acting on the input vector x to transform it to the output vector <b>b</b></li>
 					<li>Interpreting products of matrices as a composition of linear transformations and inverse matrices as objects that undo a transformation</li>
-					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., $[]^2$ or $[]^3$)</li>
+					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., <b>$\begin{bmatrix}  \\ \end{bmatrix}$<sup>2</sup></b> or <b>$\begin{bmatrix}  \\ \end{bmatrix}$<sup>3</sup></b>)</li>
 				</ul>
 				<br>
 				<p>Expected Length: 4 - 75 minute instructional sessions</p>
-				</ul>
+				
 			</h4>
 		</div>
 		<div class="jumbotron">
