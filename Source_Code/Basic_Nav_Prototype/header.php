@@ -39,6 +39,7 @@
 		<li class="dropdown">
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
+		    <li><a href="publications.php">Publications</a></li>
 			<li><a href="#">Videos</a></li>
 			<li><a href="#">Pictures</a></li>
 			<li class="divider"></li>
