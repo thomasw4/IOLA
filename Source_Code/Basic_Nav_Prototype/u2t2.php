@@ -92,17 +92,17 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<blockquote>
 				<p class="lead" >Goal is to understand how linear transformations affect the entire space</p>
 				<p>By the end of the lesson students should be able to:</p>
-				<ul>
+				<ul style="padding-left:35px">
 					<li>Explain how the Italicizing N transformation affects the entire plane, not just one “N”</li>
 					<li>Interpret matrices as objects that transform sets of input vectors to sets of output vectors in a coordinated and predictable way</li>
-					<li>Determine the matrix for a linear transformation (from 2 to 2) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
+					<li>Determine the matrix for a linear transformation (from &#x211d;<sup>2</sup> to &#x211d;<sup>2</sup>) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
 					<li>Identify the geometric affect of a transformation based on the associated matrix values</li>
 				</ul>
 				<br>
 				<p>The instructor should:</p>
-				<ul>
+				<ul style="padding-left:35px">
 					<li>Prompt students to consider how the entire domain is affected by a transformation</li>
-					<li>Provide follow-up example transformations (from 2 to 2 or from 3 to 3)</li>					
+					<li>Provide follow-up example transformations (from &#x211d;<sup>2</sup> to &#x211d;<sup>2</sup> or from &#x211d;<sup>3</sup> to &#x211d;<sup>3</sup>)</li>					
 				</ul>
 				</blockquote>
 				</ul>
@@ -126,7 +126,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<br><br>
 						The follow-ups to Handout 2 include investigating geometric interpretations of the standard 2x2 matrices for rotations, reflections, stretches, and skews. This is compatible with the learning goal of coming to view matrices as objects that geometrically transform a space. Furthermore, we see these as useful to investigate because:
 						<br><br>
-						<ul>
+						<ul style="padding-left:35px">
 							<li>Conceptualizing the geometric interpretation of elementary matrices helps students in coordinating the “undoing” of a linear transformation with the process of determining A-1 by row-reducing [ A | I ] to [ I | A<sup>-1</sup> ]</li>
 							<li>It lays the foundation for exploring other “geometric” transformations, such as stretching along lines other than the standard axis (i.e., along eigenvectors) as a way to connect to eigentheory</li>						
 					</blockquote>
@@ -316,7 +316,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<br>
 				<br>
 				We see three main ways for instructors to pursue exploring these with their students. Instructors should make their decision based on their own learning goals, technological resources, and amount of time to dedicate during class. As such, much of these could be relegated to homework if so desired. Some examples of past homework problems are given in the next section.
-				<br>
+				<br><br>
 				<ul style="padding-left:30px" >
 					<li>Instructors could verbally describe transformations and ask students to determine the matrix that represents that transformation.</li>
 					<li >Instructors could provide a matrix and ask students to describe in words how the space would be transformed graphically</li>
@@ -329,7 +329,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										
 					<div class="accordion-body collapse" id = "t63">
 						<blockquote style="background-color:#F8F8F8;">
-							<ul>
+							<ul style="padding-left:35px">
 							<li>Find a matrix for the transformation that reflects all vectors in R<sup>2</sup> over y-axis</li><li>Find a matrix for the transformation that rotates all vectors in R<sup>2</sup>by degrees counterclockwise.</li>
 							</ul>
 						</blockquote>
@@ -339,7 +339,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								
 					<div class="accordion-body collapse" id = "t64">
 						<blockquote style="background-color:#F8F8F8;">
-							<ul>
+							<ul style="padding-left:35px">
 							<li>Describe the geometric affect of the transformation defined by
 								A = $\begin{bmatrix} 1 & 0 \\ 2 & 1\end{bmatrix}$
 							</li>
@@ -383,9 +383,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<br><br>
 					<div class="accordion-body collapse" id = "i29">
 						Below are problems we have used in the past for homework.  Instructors should feel free to use any subset of these that they feel would be beneficial to their students.
-						<br> 
+						<br> <br>
 						<b>NOTE: #1-7 could be given after Task 1 or after Task 2.</b>
-						<br>
+						<br><br>
 						<blockquote>
 							<ol>
 							<li style="padding-bottom:20px">
@@ -393,17 +393,17 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							</li>
 							<li style="padding-bottom:20px">
 								Let A=$\begin{bmatrix} 1 & -5 & -7 \\ -3 & 7 &5\end{bmatrix}$ and define T:&#x211d;<sup>2</sup>→ &#x211d;<sup>3</sup> by T(x) = Ax.
-								<ul>
+								<ol type="a" style="padding-left:35px">
 									<li style="list-style-type:none; padding-bottom:20px">
-										a. Find the image under T of <b>u</b> = 
+										Find the image under T of <b>u</b> = 
 										$\begin{bmatrix} 2\\ 1 \\ -1 \end{bmatrix}$
 									</li>
 
 									<li style="list-style-type:none; padding-bottom:20px">
-										b. Find a vector x whose image under T is <b>b</b> =
+										Find a vector x whose image under T is <b>b</b> =
 										$\begin{bmatrix} -12 \\ 12\end{bmatrix}$
 									</li>
-								</ul>
+								</ol>
 							</li>
 							<li style="padding-bottom:20px">
 								[If not done in class] Suppose that a transformation T: &#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is defined by the matrix = $\begin{bmatrix}a & b \\ c & c\end{bmatrix}$. In orde to do this, you must show that the definition of linear transformation is satisfied with this matrix A. To help you get started, let <b>x</b> = $\begin{bmatrix} x_{1}\\ x_{2}\end{bmatrix}$ and <b>y</b> = $\begin{bmatrix}y_{1}\\ y_{2}\end{bmatrix}$, and c be a real number. You need to algebraically show both that A(<b>x + y</b>) = A<b>x</b> + A<b>y</b> and A(c<b>x</b>) = cA(<b>x</b>).
@@ -424,7 +424,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<li style="padding-bottom:20px">
 								Consider the image given below and the transformation matrix C = $\begin{bmatrix} 2 & 0 \\ 0 & -1.5\end{bmatrix}$
 
-								<ol type="a">
+								<ol type="a" style="padding-left:35px;">
 									<li>Sketch what will happen to the image under the transformation</li>
 									<li>Describe in words what will happen to the image under the transformation</li>
 									<li>Describe how you determined that happened. (What, if any, calculations did you do? Did you make a prediction? How did you know you were right? etc.)</li>
@@ -433,7 +433,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<li style="padding-bottom:20px">
 								Assume that T is a linear transformation and that e<b><sub>1</sub></b> = $\begin{bmatrix}1 & 0\end{bmatrix}$ and e<b><sub>2</sub></b> = $\begin{bmatrix}0 & 1\end{bmatrix}$. For each part, find the standard matrix A for T, and draw the image of the "half=shaded unit square" (shown below) under the given transformation:
 								<br><br>
-								<ol type="a">
+								<ol type="a" style="padding-left:35px;">
 									<li>T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> rotates points (about the origin) through &Pi;/4 radians (clockwise</li>
 									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is a vertical shear that maps <b>e<sub>1</sub></b> into <b>e<sub>1</sub> - e<sub>2</sub></b> but leaves the vector <b>e<sub>2</sub></b> unchanged</li>
 									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> first reflects points across the vertical axis and then rotates points &Pi;/2 radians (counterclockwise) </li>
