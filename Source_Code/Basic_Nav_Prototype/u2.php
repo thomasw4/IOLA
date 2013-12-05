@@ -59,7 +59,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			<br>
 			<h4>
 				
-				<p style="font-size:18px; padding:0">Common Prior Knowledge:</p>
+				<b><p style="font-size:18px; padding:0">Common Prior Knowledge:</p></b>
 				<ul>
 					<li>Linear combinations, span, and linear (in)dependence</li> 
 					<li>Methods for determining solutions to a linear system such as Gaussian elimination; existence 				and uniqueness of solutions</li>
@@ -67,19 +67,20 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<li>The interpretation of $Ax = b$ as a system of equations both algebraically and geometrically</li>
 				</ul>
 				<br>
-				<p style="font-size:18px; padding:0">Prerequisite Skills:</p>
+				<b><p style="font-size:18px; padding:0">Prerequisite Skills:</p></b>
 				<ul>
 					<li>How to compute the product of a matrix and a vector</li>
 					<li>2x2 matrix multiplication</li>
 				</ul>
 				<br>
-				<p style="font-size:18px; padding:0">Overarching Learning Goals for the Entire Task Sequence:</p>
+				<b><p style="font-size:18px; padding:0">Overarching Learning Goals for the Entire Task Sequence:</p></b>
+		
 				To develop a robust conceptual understanding of matrices as linear transformations by:
 				<br><br>
 				<ul>
 					<li>Interpreting A<b>x = b</b> as the matrix A acting on the input vector x to transform it to the output vector <b>b</b></li>
 					<li>Interpreting products of matrices as a composition of linear transformations and inverse matrices as objects that undo a transformation</li>
-					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., <b>$\begin{bmatrix}  \\ \end{bmatrix}$<sup>2</sup></b> or <b>$\begin{bmatrix}  \\ \end{bmatrix}$<sup>3</sup></b>)</li>
+					<li>Interpreting matrices as mathematical objects that transform sets of input vectors to sets of output vectors – which gives rise to a way of conceiving of matrices as objects that geometrically transform a space (e.g., &#x211d;<sup>2</sup> or &#x211d;<sup>3</sup>)</li>
 				</ul>
 				<br>
 				<p>Expected Length: 4 - 75 minute instructional sessions</p>
@@ -102,8 +103,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<p>We suggest the instructor begin this unit with a mini-lecture that:</p>
 								<ul>
 									<li>Contrasts a transformation interpretation of a matrix equation Ax = b with previously discussed views (e.g. vector equation, system of equations).  The transformation interpretation should highlight the view that A acts on an input vector x to transform it into the output vector b</li>
-									<li>Explore ways of determining the dimensions of a matrix that would transform vectors in n to vectors in m for specified n and m</li>
-									<li>•	Introduce the terms transformation, domain, image, range, and codomain</li>
+									<li>Explore ways of determining the dimensions of a matrix that would transform vectors in &#x211d;<sup>n</sup> to vectors in &#x211d;<sup>m</sup> for specified n and m</li>
+									<li>Introduce the terms transformation, domain, image, range, and codomain</li>
 									
 								</ul>
 								
@@ -120,8 +121,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<p class="lead">The goal is to construct a matrix that yields a desired transformation and to explore linear transformations through this example.</p>
 								<p>By the end of the lesson students should be able to:</p>
 								<ul>
-									<li>Conceive of a matrix as a way of mapping elements of $[]^2$ to elements of $[]^2$</li>
-									<li>Find a matrix that produces the desired geometric transformation from $[]^2$ to $[]^2$</li>
+									<li>Conceive of a matrix as a way of mapping elements of &#x211d;<sup>2</sup> to elements of &#x211d;<sup>2</sup></li>
+									<li>Find a matrix that produces the desired geometric transformation from &#x211d;<sup>2</sup> to &#x211d;<sup>2</sup></li>
 									<li>Determine whether the matrix for a transformation is unique (within a particular choice of basis)</li>
 									<li>Articulate criteria by which a set of vectors can be chosen to determine the (unique) transformation matrix (e.g., the set of vectors must span the domain)</li>
 
@@ -149,14 +150,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<ul>
 									<li>Explain how the Italicizing N transformation affects the entire plane, not just one “N”</li>
 									<li>Interpret matrices as objects that transform sets of input vectors to sets of output vectors in a coordinated and predictable way</li>
-									<li>Determine the matrix for a linear transformation (from $[]^2$ to $[]^2$) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
+									<li>Determine the matrix for a linear transformation (from &#x211d;<sup>2</sup> to &#x211d;<sup>2</sup>) for common geometric transformations such as reflection, rotation, stretching, and shearing</li>
 									<li>Identify the geometric effect of a transformation based on the associated matrix values </li>
 								</ul>
 								<br>
 								<p>The instructor should:</p>
 								<ul>
 									<li>Prompt students to consider how the entire domain is affected by a transformation</li>
-									<li>Provide follow-up example transformations within $[]^2$ or $[]^3$</li>
+									<li>Provide follow-up example transformations within &#x211d;<sup>2</sup> or &#x211d;<sup>3</sup></li>
 
 								</ul>
 							</blockquote>
