@@ -207,245 +207,208 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<div class="accordion-body collapse" id = "implementation">	
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
-				This task is meant to be a natural follow up to the Italicizing N task in Handout 1.  As such, students should be able to “jump in” with respect to understanding what Handout 2 is asking them to investigate.  This does not mean that the correct answer is obvious to students, but rather that the question connects to their previous experience.  
-				<br><br>				
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t6">Example "Getting Started" Prompt: &raquo;</a>									
-					<div class="accordion-body collapse" id = "t6">
-						<blockquote style="background-color:#F8F8F8;">
-						So we just determined the matrix A that would perform that one N, which we treated as if it was in the first quadrant.  
-						<br><br>
-						In another class, I have some students that wonder what would happen to the letter “E” placed in various locations under that transformation matrix.
-						<br><br>
-						The students can’t decide. On this handout I have 4 of different answers that students believe represent how the “E’s” would be transformed. We need to help them decide who is right.	
-						</blockquote>
-					</div>				
-				<br><br>
-				
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i2">Working In Small Groups&raquo;</a>
-			<br>
-			<div class="accordion-body collapse" id = "i2">
-			<ul>
-			<blockquote>
-				<p>Working in small groups </p>	
-				The instructor should allow students to work on this problem in their small groups. This task should not take students too long, so 5-8 minutes in small group should be sufficient.
-				<br><br>
-				Choice C is the correct answer to the task on Handout 2. The difference between choice B and C is that choice B does not account for the vertical stretch of the “empty space” between the N and the E above it, whereas choice C does. Choice A incorrectly keeps the bottom of the E above the N “anchored,” and choice D incorrectly has the E in the third quadrant skew incorrectly.
-				</blockquote>
-			</ul>
-			</div>
-
-			<br>
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i22">Sharing Responses in Whole Class Discussion&raquo;</a>
+				The Pat and Jamie task sets the stage for a shift in students’ mathematical activity and goals; students are asked to combine matrices that define transformations in addition to determining what those matrices are. This is a shift from the goal of constructing a single transformation matrix based on inputs and outputs, such as in the Italicizing N task.   
+				<br><br>	
+				Encourage students talking in their small groups about whether Pat and Jamie’s approach seems sensible and if that approach should give the same final matrix A that was found in the initial Italicizing N task.  (See Questions 1-2 from the Handout.)
+				<br><br>			
+		
+			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i22">Working in small groups towards a solution &raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i22">
 			<ul>
 			<blockquote>
-				<p>Sharing Responses in Whole Class Discussion</p>	
-				This task presents a nice opportunity for students to share their ways of thinking with the whole class. As in the work by Student 4, 5, and 6 in the student thinking section, not all students realize Choice C is the correct answer.
+				<p>Working in small groups towards a solution</p>	
+				The class begins the Pat and Jamie task by talking in their small groups about whether Pat and Jamie’s approach seems sensible and whether that approach should give the same final matrix A that was found in the initial Italicizing N task. The teacher plays an important role in facilitating the subsequent whole class discussion, eliciting students’ initial ideas. Students tend to take the view that Pat and Jamie's approach seems sensible, and that it should yield the same matrix A as the previous task.  We have found it useful to make these explicit in whole class conversation prior to students’ work on Question 2 from the Handout.
+
 				<br><br>
-				<ul style="list-style-type: none;">
-					<li><b>Choice A</b></li>					
-					Students who choose this tend state that the transformation doesn’t have a horizontal affect. This reasoning possibly arises from a conflation with the preservation of length in the horizontal direction; that is, that if the horizontal lengths of the letters were 2 units long in the original image they are still 2 units long in the transformed image. An instructor may choose to have a student who chose Choice A justify it in class (which would most likely lead to a debate). An instructor may alternatively ask a student who did not choose A explain how he/she knew that choice A was incorrect.
-					<br><br>
-					<li><b>Choice D</b></li>
-					Choice D is not commonly chosen. It was created as a distractor because it seems to “lean” in the same manner as the N. One response that students give for why it is not correct is that (0,0)was mapped to (1,0), which they know is not possible in a linear transformation.
-					<br><br>
-					<li><b>Choice B</b></li>
-					Choice B is the most common incorrect response. Students who choose this tend to not consider how the vertical stretch in the transformation affects the “empty space” between the N and the E above it. They are, however, at least implicitly, realizing that the transformation affects the whole plane, not just the N.
-					<br><br>
-					<li><b>Choice C</b></li>
-					This is the correct choice. Students who choose this tend to reason that the whole space is affects by the transformation and notice the small difference in the placement of the upper E between choices B and C. Many students, such as Student 1 in the Student Thinking section, actually compute Ax for a set of x vectors from that E, such as (0,5) and (2,5). This helps them to see that vertical stretching of the plane increased the vertical “empty space” between the N and the E.
-				</ul>
-				<br>
-				We recommend that the instructor have students share their reasoning and lead the class in coming to a consensus that Choice C is correct. We also recommend a mini-lecture in which the instructor “tells” the students that, consistent with what this task was demonstrating, linear transformations affect the entire domain in a consistent and predictable manner.				
-				</blockquote>
+				During small group work, the instructor should notice the various approaches that the students are taking - noting which examples of student thinking might be leveraged in whole class discussion. Here we provide typical student responses/difficulties and recommend how they might be leveraged in whole class discussion:
+				<br><br>
+				Students will likely begin with the one of the approaches they used in Tasks 1 and 2. For instance the students might first determine the image of “N” under a desired transformation and then use an unknown matrix to find a system of equations (a, right). Another approach would use the generalizations discussed in Task 2 to determine what matrix would distort 2 in a desired way (b).
+				<br><br>
+				<img src = "img/u2t3/6.png" alt="6">
+				<br><br>
+				Between these two approaches, each group should be able to determine correctly a matrix that would make the “N” taller (from 12-pt font to 16-pt font, as described in the task set-up). This matrix is $\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$. The more difficult part of this task (from the students’ perspective) is usually the coordination of this “taller” transformation with a new transformation that would italicize the new, 16-pt font “N.” Specifically, students using approach (a) from above often have difficulty determining appropriate input-output pairs to use with the unknown matrix to generate a system of equations. For instance, students may try to find a matrix that italicizes the original 12-pt N (Groups 1 and 2 in Student Thinking section). Because of this, students often do not view the output of the first transformation as the input for the second transformation, which Pat and Jamie’s method requires. The difficulty with using the second approach (anticipating the entries of the matrix by observing the geometric distortion of the plane) is that the italicizing matrix skews the plane, and students may not yet know the form of a matrix for that geometric transformation.
+
+			</blockquote>
 			</ul>
 			</div>
 			<br>
 
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i23">Exploring additional linear transformations&raquo;</a>
+			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i23">Short break into Whole Class Discussion&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i23">
 			<ul>
 			<blockquote>
-				<p>Exploring additional linear transformations</p>	
-				We recommend that instructors allow the students to explore additional linear transformations beyond the one highlighted in the Italicizing N tasks. We recommend some coverage of the standard linear transformations from R2 to R2: rotations, horizontal and vertical stretches and dilations, and skews.Some may be addressed in class, whereas others may be relegated to homework.
+				<p>Short break into Whole Class Discussion</p>	
+				If many groups’ progress is stalling here (trying to determine the “leaning” matrix in Pat and Jamie’s approach), the instructor should reconvene everyone into a whole class discussion. 
 				<br>
-				One task that can assist in transitioning to considering other transformations is the “Smiley Face” task. An editable version of this is found at the end of the student pages section.
+				This “mini whole class discussion” would have two main purposes: 
 				<br><br>
-				<center><img src="img/u2t2/smiley_face.jpg" alt="smileyface"></center>
+				<ul style="padding-left:35px">
+					<li>To allow students to describe their progress, articulate what they are finding difficult about the problem, and bounce ideas off of each other of how to proceed
+					</li>
+					<li>To allow the teacher to suggest that the class agree upon a shared notational system for the problem
+					</li>
+				</ul>
+
+				<br><br>
+				In service of the first goal, as students start to share their reasoning and progress, the instructor may wish to have everyone agree on names and notation for the various matrices (which serves the second goal), which the class should readily agree would help in their progress. 
+				<br><br>
+				For instance, the instructor could ask students what label they gave the matrix that made the N “taller” and use that.  Alternatively, the instructor could suggest they all agree to use “B” (for “make bigger”) to notate this matrix.
 				<br>
-				The Smiley Face problem provides students with an image in which the input / output vectors may be harder to determine (for instance, (2,0) is not on the smiley face). The question itself asks students to determine what happens to the point (3,3), which is not on the smiley face. Most students can answer correctly (choice D) without problem.
+				<b>NOTE:</b> In the past, we have avoided using “T” for the matrix that makes the N “taller” because of the use of “T” to denote a linear transformation throughout this section.
 				<br><br>
-				A nice follow-up is to ask students to determine the matrix that represents this transformation of stretching by 2 horizontally and by 3 vertically:
+				Similarly, the instructor could ask students what label they gave the matrix that made the N “lean” and use that. Alternatively, the instructor could suggest they all agree to use “L” (for “make lean”). 
 				<br><br>
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t61">Example follow-up question to the “Smiley Face” Transformation: &raquo;</a>									
+				<b>NOTE:</b> In the past, we have avoided using “I” for the matrix that “italicizes” the N because “I” is reserved for the identity matrix and identity transformation in Task 4.
+				<br><br>
+				It is often the case that all of the students develop the same B matrix, but not all students develop the same L matrix. The instructor may recommend naming these matrices L<sub>1</sub> & L<sub>2</sub>, or L & L’, etc. 
+				
+				<br><br>
+					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t61">What’s Happening Here Mathematically and How Do I Use It? &raquo;</a>	
 					<div class="accordion-body collapse" id = "t61">
 						<blockquote style="background-color:#F8F8F8;">
-						The problem states that a group of students found the matrix A that transforms the smiley face into one twice as wide and three times as tall. We’ve discussed how this matrix would have that same effect on the entire plane. What is that <b>matrix A</b>?
+						The mathematics below surfaces eventually through students’ work – most often after students are sent back into small groups after the above mini-whole class discussion.  We include it here so that instructors can be prepared for the variety of student responses.
+
 						<br>
-						This question is beneficial because it gives students additional practice in determining a matrix based on how input-output pairs are coordinated.
-						<ul >
-							<li style="padding-bottom:30px;">
-							 	Some students pick specific input-output pairs to determine A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$, such as 
-								$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$\begin{bmatrix} 1 \\ 0\end{bmatrix}$ 
-								=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$\begin{bmatrix} 1 \\ 2\end{bmatrix}$ 
-								=$\begin{bmatrix} 2 \\ 6\end{bmatrix}$ , correctly yielding $\begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}$							
-							</li>
-							<li>
-								Other students use a generic vector and reason that because the transformation stretches things twice as wide and three times as tall, every vector  $\begin{bmatrix} x \\ y \end{bmatrix}$ is transformed to $\begin{bmatrix} 2x \\ 2y \end{bmatrix}$, The only matrix that makes the equation
-								$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$$\begin{bmatrix} x \\ y \end{bmatrix}$ = $\begin{bmatrix} 2x \\ 2y \end{bmatrix}$ for every x and y value is A =
-								 $\begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}$ (see the student thinking page).
-							</li>
-						</ul>
+						We stress that stress that students may not even think to use matrix multiplication at first, much less to know why it is sensible in this task. These mathematical relationships <b>do</b> need to come out in whole class discussion by the end of Task 3. 
+						<br><br>
+						The students who use the 16-pt “N” as input for L will probably find the matrix L (or L<sub>1</sub>)= $\begin{bmatrix} 1 & 1/4 \\ 0 & 1\end{bmatrix}$
+						<br><br>
+						The students who use the 12-pt “N” as input for L will probably find the matrix L (or L<sub>1</sub>)= $\begin{bmatrix} 1 & 1/2 \\ 0 & 1\end{bmatrix}$
+						<br><br>
+						All students will probably find the matrix B = $\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$. Notice that:
+
+						<br>
+						BL ≠ A but BL' = A:
+						<br><br>
+						BL = $\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$$\begin{bmatrix} 1 & 1/4 \\ 0 & 1\end{bmatrix}$ = $\begin{bmatrix} 1 & 1/4 \\ 0 & 4/3\end{bmatrix}$ ≠ A = $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3\end{bmatrix}$ = $\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$
+						$\begin{bmatrix} 1 & 1/3 \\ 0 & 1\end{bmatrix}$ = BL'
+						<br><br>
+						and LB = A (which matches what Pat and Jamie did) but L'B ≠ A:
+						<br><br>
+						LB = $\begin{bmatrix} 1 & 1/4 \\ 0 & 1\end{bmatrix}$$\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$ = $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3\end{bmatrix}$ = A ≠ $\begin{bmatrix} 1 & 1/4 \\ 0 & 4/3\end{bmatrix}$ = $\begin{bmatrix} 1 & 1/3 \\ 0 & 1\end{bmatrix}$
+						$\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$ = L'B.
 						</blockquote>
 					</div>
-					</div>	
-					<br>		
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Exploring Transformation Matrices for Common Geometric Transformations&raquo;</a>
+
+				<br><br>
+				Once issues of notation are balanced, the instructor should prompt students for general strategies for moving forward with the Pat and Jamie task. Some groups may have (correctly) used the vectors from the 16-pt “N” as the inputs for the italicizing transformation to correctly determine the “lean” matrix L.The teacher may choose to summarize and revoice this explanation using mathematical symbolism that highlights how the output of the first transformation becomes the input for the second and illustrate this with particular input-output pairs (e.g., see Figure 3.1). This discussion is important because it lays a foundation for students’ understanding matrix multiplication as composition of linear transformations. 
+				<br><br>
+
+				<img src = "img/u2t3/7.png" alt="7">
+				<br><br>
+				The students should be able to continue in small group work toward explicitly finding the matrices B and L (if they have not already done so) and determining how the two matrices are combined (and why) to produce matrix A from the original Italicizing N task.
+				<br><br>
+
+				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t62">Example Prompt for Small Group Work &raquo;</a>	
+					<div class="accordion-body collapse" id = "t62">
+						<blockquote style="background-color:#F8F8F8;">
+						“Thanks for sharing your initial ideas. We still have some work to do to confidently decide what “bigger” matrix B and “lean” matrix L represent Pat and Jamie’s approach.  Also, we need to decide how to combine these matrices – we know (from #1 on the handout) that the matrices should combine to equal A. But what method of combination makes sense, and why? If we didn’t know they should equal A, how could we know what to do?”
+						</blockquote>
+					</div>
+				
+		</blockquote>
+		</ul>
+		</div>
+
+	
+			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Back in Small Groups&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i24">
 			<ul>
 			<blockquote>
-				<p>Exploring Transformation Matrices for Common Geometric Transformations</p>
+				<p>Back in Small Groups</p>
 				<br>	
-				The Smiley Face problem can serve as a transition into considering transformation matrices for common geometric transformations, namely (a) Horizontal Stretch / Dilation, (b) Vertical Stretch / Dilation (c) Skew, (d) Rotation, and (e) Reflection. The instructor could lead a discussion in which the class explores why a matrix of the form $\begin{bmatrix} k & 0 \\ 0 & 1\end{bmatrix}$ 
-				corresponds to a horizontal stretch transformation for k > 1, and $\begin{bmatrix} 1 & 0 \\ 0 & k\end{bmatrix}$ corresponds to a vertical stretch transformation for k > 1.
-				<br>
-				<br>
-				We see three main ways for instructors to pursue exploring these with their students. Instructors should make their decision based on their own learning goals, technological resources, and amount of time to dedicate during class. As such, much of these could be relegated to homework if so desired. Some examples of past homework problems are given in the next section.
-				<br>
-				<ul style="padding-left:30px" >
-					<li>Instructors could verbally describe transformations and ask students to determine the matrix that represents that transformation.</li>
-					<li >Instructors could provide a matrix and ask students to describe in words how the space would be transformed graphically</li>
-					<li >Instructors could point students towards applets that aid them in exploring how the various entries in the matrix affect the transformation graphically.</li>
-				</ul>
-				<br>
-				We conclude with examples of each of these three avenues for exploration.
+				If they hadn’t done so already, all students should now be ready to find at least one lean matrix. The task is now to find a way to sensibly combine these two matrices to produce A, the matrix that transforms the normal size 12 N to the italicized size 16 N. It is likely that a few groups will try to add the matrices component-wise. Other students may recall the matrix multiplication algorithm from previous classes. In the latter case, these students may multiply both BL and LB (or L’B and BL’). The students should see that only one of these products (in each pair) results in A, which the instructor could leverage into a discussion of the noncommutativity of matrix multiplication. 
+				<br><br>				
+				Specifically, the students who italicized the 12-pt “N” will need to realize that, although they can multiply their matrices to create A (BL’ = A), these matrices do not represent the transformations described by Pat and Jamie’s approach. 
 				<br><br>
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example questions for: Find the matrix for the given transformation &raquo;</a>					
-										
+				This is an example of two distinct matrices (L and L’) that, when multiplied by B, yield A but not when multiplied in the same order (i.e., BL ≠ BL’). Even more, BL ≠ LB and BL’ ≠ L’B. 
+				</blockquote>
+			</ul>
+			</div>
+			<br><br>
+
+		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Reconvening in Whole Class Discussion &raquo;</a>
+					<br>
+					<div class="accordion-body collapse" id = "i29">
+						<ul>
+						<blockquote>
+						Again, students’ main difficulties in this task are:				
+						<br>
+						<ul style="padding-left:35px">
+							<li>Using the outputs from the “make taller” transformation as inputs in the “lean” transformation to find the correct matrix for the “lean” transformation</li>
+							<li>Realizing the order of matrix multiplication that matches Pat and Jamie’s approach is multiplying the matrix B on the left by “lean” matrix L</li>
+						</ul>
+						<br>
+						These common challenges serve as valuable points for whole class discussion that provide students with opportunities to consider ways to coordinate input and output vectors across multiple transformations, as well as how to interpret matrix multiplication as composition of functions. The instructor should, if possible, find representatives of student work to discuss in whole class: one that tried BL’ = A, and one that tried LB = A. 
+						<br>
+
+
+					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example Discussion Question:&raquo;</a>	
 					<div class="accordion-body collapse" id = "t63">
 						<blockquote style="background-color:#F8F8F8;">
-							<ul>
-							<li>Find a matrix for the transformation that reflects all vectors in R<sup>2</sup> over y-axis</li><li>Find a matrix for the transformation that rotates all vectors in R<sup>2</sup>by degrees counterclockwise.</li>
-							</ul>
+						“Ok here we have two groups that represent the two main approaches I saw out there: it looks like this group decided on BL’ = A as Pat and Jamie’s approach, and the other decided on LB = A. Can both approaches be correct? If not, how to do we decide? 
+						<br><br>
+						<b>Note:</b> Some students may not have experience multiplying matrices. If this is the case, it is often useful to discuss matrix multiplication as an extension of the product of a matrix and a vector. Extending this, the product of the two matrices is the concatenation of the individual matrix-vector products. While it is not the only approach the instructor may choose to discuss matrix multiplication, this discussion does rely on the students’ current ways of operating with matrices and vectors (i.e., making use of their knowledge of A <b>x=b</b> to understand AX=B as A[<b>x<sub>1</sub> x<sub>2</sub></b>]=[<b>b<sub>1</sub> b<sub>2</sub></b>]. In a more proof-oriented course, the instructor may view this discussion as insufficient or unnecessary. 
 						</blockquote>
 					</div>
-					<br>
-				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t64">Example questions for: Describe the transformation for the given matrix &raquo;</a>				
-								
-					<div class="accordion-body collapse" id = "t64">
-						<blockquote style="background-color:#F8F8F8;">
-							<ul>
-							<li>Describe the geometric affect of the transformation defined by
-								A = $\begin{bmatrix} 1 & 0 \\ 2 & 1\end{bmatrix}$
-							</li>
-							<li>Describe the geometric affect of the transformation defined by
-								A = $\begin{bmatrix} 1 & -4/5 \\ 0 & 1\end{bmatrix}$
-							</li>
-							</ul>
-						</blockquote>
+					</blockquote>
+					</ul>
 					</div>
+
+
+<a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Emphasizing the Connection to Composition of Functions&raquo;</a>
+			<br>
+			<div class="accordion-body collapse" id = "i25">
+			<ul>
+			<blockquote>
+				<p>Emphasizing the Connection to Composition of Functions</p>
+				
+				The instructor should wrap up Task 3 by connecting students’ work to the concept of function composition.  Through this mini-lecture, the instructor can use students’ work to highlight how, in Task 1, Ax=y was interpreted as the linear transformation defined by A, acting on the input vector x to produce the output vector y. Now, in Pat and Jamie’s approach, that vector x would first be acted on by the matrix transformation B, then that result (let’s call it z, so Bx = z) would be acted on by L to produce y (so Lz = y). In other words: 
+				<br><br>
+				<ul style="padding-left:35px">
+					<li> x could be turned into y in one step via A: Ax=y</li>
+					<li>x could be turned into y in two steps via B and L: L(Bx)=L(z)=y
+						<ul style="padding-left:60px">
+							<li>Therefore, Ax=y and LBx=y
+							</li>
+							<li>This works for any input vector x, implying A=LB.
+							</li>
+						</ul>
+					</li>
+				</ul>	
+				<br>
+				The instructor should state that, when considering matrices as linear transformations, matrix multiplication is interpreted as a composition of functions.
+				<br><br>
+				<ul style="padding-left:35px">
+					<li>Instructors may wish to bring up a few examples from high school algebra to remind students that they are familiar with how composition of functions works: 
+						<ul style="padding-left:60px">
+							<li>f(x)=x+4 and g(x)=x<sup>2</sup>: f(g(2))=f(4)=8 but g(f(2))=g(6)=36. Thus f(g(x))≠g(f(x)) for every x in the domain.
+							</li>
+							<li>Some classes may choose to further emphasize that the codomain of the first function serves as the domain for the second function.  This gives a nice rationale (in terms of linear transformations) for why an m x n matrix can only be multiplied by an n x p matrix. 
+							</li>					
+						</ul>	
+					</li>
+					
+			</blockquote>
+			</ul>
+			</div>
+	
+
+			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i30">Defining Commutative and Noncommutative Matrices &raquo;</a>
 					<br>
-
-
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t65">Example applets for: Graphical Explorations with Technology&raquo;</a>				
-								
-					<div class="accordion-body collapse" id = "t65">
-						<blockquote style="background-color:#F8F8F8;">
-						We recommend instructors make use of the free Wolfram Demonstrations Project to aid in exploring transformations graphically. 
-						<br><br>
-						This website contains thousands of free demonstrations:<a href="http://demonstrations.wolfram.com/">http://demonstrations.wolfram.com/</a> 
-						Users can explore the demonstrations in a limited way on the website but will have more freedom from the downloaded version (that needs an installed player, which can be downloaded for free at: <a href="http://www.wolfram.com/products/player/">http://www.wolfram.com/products/player/</a>
-						<br><br>
-						The demonstrations we have chosen as useful are below.  Of course, there may be others that instructors find useful or interesting instead. 
-						<br><br>
-						This demonstration keeps an original letter “F” in blue fixed and allows the user to change the values in the transformation matrix via 4 sliders. The resulting transformed “F” is graphed in red.<a href="http://demonstrations.wolfram.com/MatrixTransformationsF/">http://demonstrations.wolfram.com/MatrixTransformationsF/</a>
-						<br><br>
-						<img src = "img/u2t2/matrix_F.png" alt="matrix_F">
-						<br><br><br>
-						This demonstration is similar to the one above except that the original “circle” is in all four quadrants, rather than only quadrant one. Manipulating and exploring this figure and its graphical image may provide further insight that the “F” demonstration does not facilitate. <a href="http://demonstrations.wolfram.com/MatrixTransformation/">http://demonstrations.wolfram.com/MatrixTransformation/</a>
-						<br><br>
-						<img src = "img/u2t2/matrix.png" alt="matrix">
-						<br><br><br>
-						This demonstration is labeled as being about determinants. It also, however, allows a user to see how the unit square and the unit cube are transformed when the entries of the transformation matrix (according to the standard basis) are changed.  We particularly like that this allows for exploration in 3 dimensions
-						<a href="http://demonstrations.wolfram.com/DeterminantsSeenGeometrically/">http://demonstrations.wolfram.com/DeterminantsSeenGeometrically/</a>
-						<br><br>
-						<img src = "img/u2t2/determinant.png" alt="determinant">
-						<br><br>
-						<img src = "img/u2t2/determinant2.png" alt="determinant2">
-						</blockquote>
-					</div>	
-					<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Suggestions for homework &raquo;</a>
-					<br><br>
-					<div class="accordion-body collapse" id = "i29">
-						Below are problems we have used in the past for homework.  Instructors should feel free to use any subset of these that they feel would be beneficial to their students.
-						<br> 
-						<b>NOTE: #1-7 could be given after Task 1 or after Task 2.</b>
-						<br>
+					<div class="accordion-body collapse" id = "i30">
+						<ul>
 						<blockquote>
-							<ol>
-							<li style="padding-bottom:20px">
-								 Let A=$\begin{bmatrix}3 &0 \\ 0 & -2\end{bmatrix}$ and define T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> by T(x) = Ax. Find the images under T of <b>u</b> = $\begin{bmatrix}3 \\ -1\end{bmatrix}$, <b>v</b>=$\begin{bmatrix}0 \\ 1.5\end{bmatrix}$, and the vector (u + v). Also sketch the three vectors before and after the transformation.  Write 1-2 sentences that explain how you found your answers/knew they were right and why the sketch makes sense.	
-							</li>
-							<li style="padding-bottom:20px">
-								Let A=$\begin{bmatrix} 1 & -5 & -7 \\ -3 & 7 &5\end{bmatrix}$ and define T:&#x211d;<sup>2</sup>→ &#x211d;<sup>3</sup> by T(x) = Ax.
-								<ul>
-									<li style="list-style-type:none; padding-bottom:20px">
-										a. Find the image under T of <b>u</b> = 
-										$\begin{bmatrix} 2\\ 1 \\ -1 \end{bmatrix}$
-									</li>
-
-									<li style="list-style-type:none; padding-bottom:20px">
-										b. Find a vector x whose image under T is <b>b</b> =
-										$\begin{bmatrix} -12 \\ 12\end{bmatrix}$
-									</li>
-								</ul>
-							</li>
-							<li style="padding-bottom:20px">
-								[If not done in class] Suppose that a transformation T: &#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is defined by the matrix = $\begin{bmatrix}a & b \\ c & c\end{bmatrix}$. In orde to do this, you must show that the definition of linear transformation is satisfied with this matrix A. To help you get started, let <b>x</b> = $\begin{bmatrix} x_{1}\\ x_{2}\end{bmatrix}$ and <b>y</b> = $\begin{bmatrix}y_{1}\\ y_{2}\end{bmatrix}$, and c be a real number. You need to algebraically show both that A(<b>x + y</b>) = A<b>x</b> + A<b>y</b> and A(c<b>x</b>) = cA(<b>x</b>).
-							</li>
-							<li style="padding-bottom:20px">
-								Show that the transformation T defined by T($\begin{bmatrix} x_{1}\\ x_{2}\end{bmatrix}$) = $\begin{bmatrix} x_{1} + 5\\ x_{2}\end{bmatrix}$ is not a linear transformation.
-							</li>
-							<li style="padding-bottom:20px">
-								TRUE OR FALSE: (Assume that the product AB is defined). If the columns of B are linearly dependent, then so are the columns of AB. If TRUE, provide a justification. If FALSE, provide a counterexample.
-							</li>
-							<li style="padding-bottom:20px">
-								After class, two linear algebra students start talking about linear transformations and the letter “N.” One of the students suggested translation (shifting up) as another linear transformation that could be done to the letter “N,” like the following:
-								<br><br>
-								 <img src="img/u2t2/hw_6.png" alt="hw_6">
-								 <br>
-								 The other student disagreed, stating that shifting the “N” up like this is NOT an example of a linear transformation.  Which student is right? Why?
-							</li>
-							<li style="padding-bottom:20px">
-								Consider the image given below and the transformation matrix C = $\begin{bmatrix} 2 & 0 \\ 0 & -1.5\end{bmatrix}$
-
-								<ol type="a">
-									<li>Sketch what will happen to the image under the transformation</li>
-									<li>Describe in words what will happen to the image under the transformation</li>
-									<li>Describe how you determined that happened. (What, if any, calculations did you do? Did you make a prediction? How did you know you were right? etc.)</li>
-								</ol>
-							</li>
-							<li style="padding-bottom:20px">
-								Assume that T is a linear transformation and that e<b><sub>1</sub></b> = $\begin{bmatrix}1 & 0\end{bmatrix}$ and e<b><sub>2</sub></b> = $\begin{bmatrix}0 & 1\end{bmatrix}$. For each part, find the standard matrix A for T, and draw the image of the "half=shaded unit square" (shown below) under the given transformation:
-								<br><br>
-								<ol type="a">
-									<li>T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> rotates points (about the origin) through &Pi;/4 radians (clockwise</li>
-									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> is a vertical shear that maps <b>e<sub>1</sub></b> into <b>e<sub>1</sub> - e<sub>2</sub></b> but leaves the vector <b>e<sub>2</sub></b> unchanged</li>
-									<li>T:T:&#x211d;<sup>2</sup>→ &#x211d;<sup>2</sup> first reflects points across the vertical axis and then rotates points &Pi;/2 radians (counterclockwise) </li>
-									<br>
-									 <img src="img/u2t2/hw_8.png" alt="hw_8">
-								 <br>
-								</ol>
-
-							</li>
-
-
-							</ol>
+							Finally, the instructor should define the term commutative: We say two matrices D and F are commutative if DF = FD. If not, we say F and D are not commutative. Students should connect this to noncommutativity of function composition as well. 
 						</blockquote>
-					</div>
+						</ul>
+					</div>	
+
+
+
 
 
 
@@ -453,19 +416,13 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</ul>
 			</div>
 
-
 			</blockquote>
 			</ul>
 			</div>
 
-
-
-
-
-
 			</blockquote>
 			</div>
-		</ul>
+			</ul>
 			
 	
 	
