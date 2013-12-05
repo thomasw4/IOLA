@@ -91,10 +91,11 @@
 				<span class="glyphicon glyphicon-resize-horizontal"></span>
 			</span>
 		</div>
-		<div id="float2" class="hidden-print">
+		<div id="float2" class="">
 			<br>
 			<span class="ba"><h3>
-				<span class="glyphicon glyphicon-circle-arrow-right"></span></h3>
+				<!--span class="glyphicon glyphicon-circle-arrow-right"></span></h3-->
+				<a class="expandside" state="0"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</span>
 		</div>
 	</a>
