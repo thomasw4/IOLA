@@ -144,7 +144,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						  <!-- Indicators -->
 						  <div class="carousel-inner">
 							<div class="item active">
-							  <img src="img/u2t1/1.png" alt="Student thinking 1">
+							  <img src="img/u2t1/1.png" tyle="height:418px"  alt="Student thinking 1">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Group 1</em> method:</p>
@@ -170,7 +170,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t1/4.png" style="height:385px" alt="Student thinking 4">
+							  <img src="img/u2t1/4.png" style="height:372px" alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Group 4</em> method:</p>
@@ -188,7 +188,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u2t1/6.png"/ alt="Student thinking 6">
+							  <img src="img/u2t1/6.png" style="height:430px" alt="Student thinking 6">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Group 6</em> method:</p>
@@ -216,14 +216,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<p class="lead">Getting Started with the Task</p>
 				Following the Introduction mini-lecture (see page 4) on interpreting Ax=b as a transformation that acts on an input vector x to produce the output vector b, the instructor should pass out the Italicizing N task on Handout 1 (see page 48 for the student printable version).  
 				<br>
-				<ul>
+				<ul style="padding-left:35px">
 					<li>Again, take a moment to make sure everyone is “on the same page” of what the task is asking them to do, etc. </li>
 					<li>We recommend reading the task out loud with the students and giving them a few seconds to think over what is being asked of them before they get started on it.</li>
 
 				</ul>
 				We leave it to the instructor whether to discuss the location (and fixedness) of the origin before having the students engage in the Italicizing N task. This discussion would distinguish between approaches like those of Groups 1 and 2 from approaches like that of Group 3. 
-				<br>
-				<ul>
+				<br><br>
+				<ul style="padding-left:35px">
 					<li>One advantage of deciding (as a class) that the origin is at the bottom left corner of both Ns before the students engage in the task is that the students’ responses may be relatively more consistent, having selected a standard that everyone can follow. This approach, however, depending on the student population, can be seen as “doing” too much of the mathematics for the students. </li>
 					<li>Allowing students to determine where the origin is for themselves allows them to engage in the task using their own naming system. This could develop into a debate in whole class discussion through which the students (along with the instructor) could navigate distinctions between various naming systems and democratically develop a convention for the class (that all points on the N will be thought of as the endpoint of a vector that emanates from a fixed origin). This discussion is nontrivial because the general mathematical community fixes the origin even though, in this case, both approaches are logically consistent and ultimately successful.</li>
 
@@ -238,15 +238,15 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<blockquote>
 							<p>Working in small groups </p>							
 								This task involves a number of preliminary key steps for students to engage in during their small group work: <br><br>
-								<ul>
+								<ul style="padding-left:35px">
 									<li>Determining that &#x211d;<sup>2</sup> is the domain and the codomain for the transformation that A represents, so that means A will be a 2x2 matrix</li>
 									<li>Determining a way to “coordinatize” the original N and the italicized N (e.g., the lower left corner of both Ns can be described by the point/vector <0,0> and the upper right corners of the Ns can be described by <2,3> and <3,4>, respectively)</li>
 									<li>Finding various input-output pairs that can be used to determine A </li>
 								</ul>	
 								<br>
 								Additionally, the instructor should look out for more nuanced issues that students may encounter (explicitly or implicitly) that can be leveraged to help explore properties of transformation during whole class discussion. While these don’t need to be explored during small group work, the instructor may wish to make note of for whom these issues surfaced so as to facilitate a discussion of them during whole class discussion:
-								<br>
-								<ul>
+								<br><br>
+								<ul style="padding-left:35px">
 									<li>How many input-output pairs are needed to determine the matrix A</li>
 									<li>What type of input-output pairs are needed to determine the matrix A</li>
 									<li>Whether the matrix A is unique </li>
@@ -277,7 +277,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										<li><strong>Instructor:</strong> So did anyone try to think about what the domain or codomain might be for these input and output space?</li><br>
 										<li><strong>Jonathan:</strong> Yes. The regular N is your domain and then the italicized 16 N is your codomain.</li><br>
 										<li><strong>Instructor:</strong> Okay, so you said the domain was the regular N, and the codomain was this italicized N. If we think back to the examples we saw before, we had 
-										spaces like &#x211d;<sup>2</sup>, R<sup>5</sup>, R<sup>8</sup>, etc. as our domains and codomains. So, here we could say 
+										spaces like &#x211d;<sup>2</sup>, &#x211d;<sup>5</sup>,&#x211d;<sup>8</sup>, etc. as our domains and codomains. So, here we could say 
 										that the original N is a collection of vectors in the domain, and the italicized N is a	collection of vectors in the codomain. And if we think about the fact that the N and the italicized N are all lying on the plane and can be represented with 2 	components, we’d say that the input space is &#x211d;<sup>2</sup> and the codomain is still &#x211d;<sup>2</sup>. </li>
 										</blockquote>
 									</ul>				
@@ -297,15 +297,15 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<blockquote>						
 							<p>Sharing solution approaches and the correct answer in Whole Class Discussion </p>
 							 If the class had not determined that all points on the N will be thought of as the endpoint of a vector that emanates from a fixed origin before they engaged in the task, examination of past student work has revealed two common notational strategies: 
-							<br>
-							<ul>
-								<li>Using vectors in &#x211d;<sup>2</sup> in which the 3 portions of the N are the vectors (e.g., Group 1-2)</li>
+							<br><br>
+							<ul style="padding-left:35px">
+								<li >Using vectors in &#x211d;<sup>2</sup> in which the 3 portions of the N are the vectors (e.g., Group 1-2)</li>
 								<li>Using vectors in R<sup>2 </sup>(or points in the x-y plane) in which the N is represented with vectors whose endpoint lay on the N with tips originating from the same point on the letter (corresponding to a fixed origin) (e.g., Group 3)</li>
 
 							</ul>
 							<br><br>
 							To find the matrix A, students tend to either:
-							<ul>
+							<ul style="padding-left:35px">
 									<li>Set up two matrix equations, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ = $\begin{bmatrix} 2 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 0 \\  3  \end{bmatrix}$ = $\begin{bmatrix} 1 \\ 4 \end{bmatrix}$, convert them into two systems of equations, and solve for a, b, c, and d.</li>
 									<li>Set up one matrix equation, such as $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  $\begin{bmatrix} 0 & 2 & 0 & 2\\ 0 & 0 & 3 & 3\end{bmatrix}$ = $\begin{bmatrix} 0 & 2 & 1 & 3\\ 0 & 0 & 4 & 4\end{bmatrix}$, convert it into a system of equations, and solve for a, b, c, and d. </li>
 							</ul>
@@ -346,7 +346,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										linear transformation, the zero vector in R^n has to map to the zero vector in &#x211d;<sup>m</sup>.
 										<br><br>
 										Possible justifications: 
-										<ul>
+										<ul style="padding-left:35px">
 											<li>Because T is linear, we know T(cx)=cT(x) for every x∈&#x211d;<sup>n</sup> and every c∈R. So choose c=0 and consider what happens: </li>
 											<br>
 											<ul>
@@ -397,6 +397,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										<blockquote style="background-color:#F8F8F8;">
 										
 										Determine if the following transformations are linear or not: 
+										<br>
 										
 											<li>(a) T:R→R where T(x)=x<sup>2</sup></li>
 											<li>(b) T:R→R where T(x)=4x</li>
@@ -415,8 +416,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							Example (g) may want to be saved for homework. If the class is advanced and/or proof-oriented, the example “prove that any T:&#x211d;<sup>n</sup>→&#x211d;<sup>m</sup> that can be defined by an m x n matrix A is linear” may be given for homework of small group work.
 							<br><br>
 							Example (f) is the matrix that represents the “Italicizing N” transformation.  That can serve as a nice example of how to use the definition to prove linearity: 
-							<br>
-							<ul style="font-size:13px">
+							<br><br>
+							<ul style="font-size:13px:padding-left:20px;">
 								<li style="padding-bottom:20px;">
 									$\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3 \end{bmatrix}$
 									( $\begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix}$ +
@@ -453,8 +454,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								</li>
 								<li style="padding-bottom:20px;">
 									The two properties of a linear transformation (distribution across vector addition and scalar multiplication) could be illustrated through considering specific input-output pairs of the Italicizing N transformation:
-									<br>
-									<ul>
+									<br><br>
+									<ul style="padding-left:35px">
 										<li>Choosing the bottom left corner of the N to be the origin (in both Ns) illustrates that zero gets sent to zero </li>
 										<li>One could consider the “parallelogram rule,” that <br>
 											$\begin{bmatrix} 2 \\ 0\end{bmatrix}$+
@@ -483,14 +484,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							There is no linear order in which these need to be discussed, and it is up to the instructor to decide the rigor with which 
 							to discuss these issues, if at all. 
 							<br><br>
-							<ul>
+							<ul style="padding-left:35px">
 								<li>How many input-output pairs are needed to determine the matrix A</li>
 								<li>What type of input-output pairs are needed to determine the matrix A</li>
 								<li>Whether the matrix A is unique </li>
 							</ul>
 							<br>
 							The responses to these three questions are somewhat bound together.  For instance, if students did not choose input vectors 
-							that spanned 2 in order to determine A, the matrix A they found may not be unique. However, that matrix A would not perform
+							that spanned &#x211d;<sup>2</sup> in order to determine A, the matrix A they found may not be unique. However, that matrix A would not perform
 							the desired italicizing transformation for all possible input vectors. Thus, to find an A that works for all inputs as desired, 
 							one needs to choose input vectors that span the domain. If this occurs, the matrix A will be the unique matrix for that 
 							(up to a choice of basis). 	
@@ -499,15 +500,15 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							that A can be determined. As such, if the term basis has not already been defined in the linear algebra course, this may be a 
 							natural place to do so:
 							<br><br>
-							<strong>Definition:</strong> A basis for a vector space V is a set of linearly independent vectors in V that spans V.  	
+							<strong>Definition:</strong> A <b>basis</b> for a vector space V is a set of linearly independent vectors in V that spans V.  	
 							<br>
-							<strong>NOTE:</strong> An instructor may choose to use a less general definition, such as “A basis for n is a set of linearly independent vectors in V that spans n.”
+							<strong>NOTE:</strong> An instructor may choose to use a less general definition, such as “A basis for &#x211d;<sup>n</sup> is a set of linearly independent vectors in V that spans &#x211d;<sup>n</sup>.”
 							<br><br>
-							<ul>
+							<ul style="padding-left:35px">
 								<li>Thus, the class may come to establish that, in order to determine the mxn matrix A for a transformation, they only need to know the input-output pairs for inputs that form a basis for &#x211d;<sup>n</sup>.</li>
 								<li>This can be leveraged to explain that if one knows what happens to a basis under a transformation, then one knows what happens to any vector in the domain:</li>
 								<br>
-								<ul>
+								<ul style="padding-left:35px">
 									<li style="list-style-type:none;">(Assuming T:&#x211d;<sup>2</sup>→&#x211d;<sup>2</sup>) Suppose v and w are chosen as input vectors, v and w form a basis for &#x211d;<sup>2</sup>, and how v and w are 
 										transformed under T is known.  Because they form a basis, any vector in &#x211d;<sup>2</sup> can be written as a linear combination 
 										of v and w. That is, for any u in &#x211d;<sup>2</sup> there exists scalars a and b such that u=av+bw.  Next consider T(u).
@@ -532,8 +533,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<blockquote>				
 							<p>Exploring a matrix times a matrix in whole class discussion</p>
 							As mentioned previously, some students might try to find A=$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$by “concatenating” multiple input-output pairs and then make use of a system of equations to solve for A, such as:
-							<br>
-							<ul>
+							<br><br>
+						<ul style="padding-left:35px">
 								<li>$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ $\begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}$=
 									$\begin{bmatrix} 2 & 1 \\ 0 & 4 \end{bmatrix}$ (use 2 input-outputs pairs from the N)</li>
 								<li>$\begin{bmatrix} a & b \\ c&  d \end{bmatrix}$$\begin{bmatrix} 2 & 0 & 2 & 0 \\ 0 & 3 & 3 & 0\end
