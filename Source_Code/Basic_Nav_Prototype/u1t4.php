@@ -87,7 +87,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<p>By the end of the lesson students should be able to:</p>
 					<ul>
 						<li>Develop a travel interpretation of a non-zero scalar times the zero vector (e.g., $4\begin{bmatrix} 0\\0 \end{bmatrix}$] means riding a stationary bike for 4 hours)</li>
-						<li>Develop generalized notions of linear independence and dependence in $R^n$
+						<li>Develop generalized notions of linear independence and dependence in $\mathbb{R}^n$
 							<ul>
 								<br>
 								<li>
@@ -96,7 +96,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<ul>
 									<li>If a set contains two vectors that are scalar multiples of each other, then the set is linearly dependent.</li>
 									<li>If at least one vector in a set is a linear combination of the other vectors in the set, then the set is linearly dependent.</li>
-									<li>Any set of vectors from $R^n$ containing more than n vectors is linearly dependent.</li>
+									<li>Any set of vectors from $\mathbb{R}^n$ containing more than n vectors is linearly dependent.</li>
 									<li>Any set containing the zero vector is linearly dependent.</li>
 									<li>NOTE: The latter three generalizations are consistent with Theorems 7-9 of Chapter 1 of Lay (2007).</li>
 								</ul>
@@ -104,8 +104,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<li>
 								Possible generalizations:
 								<ul>
-									<li>Any set of vectors from $R^n$ with fewer than n vectors cannot span $R^n$</li>
-									<li>A set of n vectors in $R^n$ spans $R^n$ if and only if the set is linearly independent.</li>
+									<li>Any set of vectors from $\mathbb{R}^n$ with fewer than n vectors cannot span $\mathbb{R}^n$</li>
+									<li>A set of n vectors in $\mathbb{R}^n$ spans $\mathbb{R}^n$ if and only if the set is linearly independent.</li>
 									<li>NOTE: These could support early notions of basis and help form a foundation for the Invertible Matrix Theorem.</li>
 								</ul>
 								</li>
@@ -133,13 +133,13 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<p class="lead">Goals</p>
 						<ul>
 							<li>The main goal of Handout 4 - Linear Independence and Dependence: Creating Examples - is to guide students to develop generalizations and supporting justifications regarding linear independence and dependence for any given set of vectors, shifting away from a reliance on the Magic Carpet Ride scenario.</li>
-							<li>Although worded in terms of $[]^2$ and $[]^3$, the students' reasoning behind the strategies should inform the development of generalizations that extend to any $[]^n$ as they work on and discuss Handout 4.</li>
+							<li>Although worded in terms of $\mathbb{R}^2$ and $\mathbb{R}^3$, the students' reasoning behind the strategies should inform the development of generalizations that extend to any $\mathbb{R}^n$ as they work on and discuss Handout 4.</li>
 							<li>A secondary goal is to develop an intellectual need for efficient computational strategies and sophisticated solution techniques.</li>							
 						</ul>
 						<br>
 						<p>Rationale</p>
 						<ul>
-							<li>Handout 4 asks students to generate sets of vectors that satisfy three varying constraints: number of vectors (2, 3, or 4), vector space ($[]^2$ or $[]^3$), and linear dependence or linear independence. These were chosen to provide a wide enough variety of situations that students would have a good opportunity to develop the essential generalizations. The prompts purposefully ask for examples from $[]^2$ and $[]^3$ because students have already developed some intuition for vectors in 2 and 3 dimensions because of their work on Tasks 1-3 (and perhaps from other courses like physics). </li><br>
+							<li>Handout 4 asks students to generate sets of vectors that satisfy three varying constraints: number of vectors (2, 3, or 4), vector space ($\mathbb{R}^2$ or $\mathbb{R}^3$), and linear dependence or linear independence. These were chosen to provide a wide enough variety of situations that students would have a good opportunity to develop the essential generalizations. The prompts purposefully ask for examples from $\mathbb{R}^2$ and $\mathbb{R}^3$ because students have already developed some intuition for vectors in 2 and 3 dimensions because of their work on Tasks 1-3 (and perhaps from other courses like physics). </li><br>
 						</ul>
 					</blockquote>
 				</ul>
@@ -157,7 +157,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<li>Scalar multiple dependence: when a set contains two or more vectors that are scalar multiples of each other (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 2\\4 \end{bmatrix}\}$).</li>
 							<li>Zero vector dependence: when the set includes the zero vector (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 0\\0 \end{bmatrix},\begin{bmatrix} -5\\0.4 \end{bmatrix}\}$).</li>
 							<li>Linear combination dependence: when a vector can be written as a linear combination of the other vectors in the set (e.g., $\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 6\\3\\8 \end{bmatrix},\begin{bmatrix} 4\\1\\6 \end{bmatrix}\}$).</li>
-							<li>"Too many vectors" dependence: When the cardinality of the set of vectors exceeds the dimension of the vector space (i.e., a set of 3 vectors in $[]^2$).</li>
+							<li>"Too many vectors" dependence: When the cardinality of the set of vectors exceeds the dimension of the vector space (i.e., a set of 3 vectors in $\mathbb{R}^2$).</li>
 							<br>
 							<li>Note: These classifications are not mutually exclusive. </li>
 						</ul>					
@@ -173,11 +173,11 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						This section highlights examples of responses to Handout 4 and points out the types of linear dependence that the examples satisfy.  It also points out instances in which groups used sets of vectors from previous tasks in the MCR Unit. 
 						<br><br>
 						<!-- Carousel ================================================== -->
-						<div id="myCarousel" class="carousel slide">
+						<div id="myCarousel"  class="carousel slide">
 						  <!-- Indicators -->
-						  <div class="carousel-inner">
+						  <div class="carousel-inner" >
 							<div class="item active">
-							  <img src="img/u1t4/1.jpg" alt="Student thinking 1">
+							  <img src="img/u1t4/1.jpg" style="height:350px"  alt="Student thinking 1">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p>Group 1: (1/5)</p>
@@ -190,7 +190,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t4/2.jpg"/ alt="Student thinking 2">
+							  <img src="img/u1t4/2.jpg"/  style="height:350px" alt="Student thinking 2">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p>Group 2: (2/5)</p>
@@ -203,7 +203,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t4/3.jpg"/ alt="Student thinking 3">
+							  <img src="img/u1t4/3.jpg"/  style="height:400px"alt="Student thinking 3">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p>Group 3: (3/5)</p>
@@ -227,7 +227,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t4/5.jpg"/ alt="Student thinking 5">
+							  <img src="img/u1t4/5.jpg"/  style="height:360px" alt="Student thinking 5">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p>Group 5:  (5/5)</p>
@@ -273,7 +273,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 									<li><em>Zero vector dependence:</em> when the set includes the zero vector (e.g., $\{\begin{bmatrix} 1\\2 \end{bmatrix},\begin{bmatrix} 0\\0 \end{bmatrix},\begin{bmatrix} -5\\0.4 \end{bmatrix}\}$).</li>
 									<li><em>Linear combination dependence:</em> when a vector can be written as a linear combination of the other vectors in the set (e.g., $\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 6\\3\\8 \end{bmatrix},\begin{bmatrix} 4\\1\\6 \end{bmatrix}\}$).</li>
 								</ul><br>
-								<li>Another thing to look for is examples from student work that contradict another group's work. For instance, one group says that having a set of 3 vectors in $[]^2$ that is linearly independent is impossible and another group gives an example of such a set (this is the most common example of a contradictory case).  This will allow the instructor to select specific students to debate their reasoning, in turn, producing a richer and more productive whole-class discussion.</li>
+								<li>Another thing to look for is examples from student work that contradict another group's work. For instance, one group says that having a set of 3 vectors in $\mathbb{R}^2$ that is linearly independent is impossible and another group gives an example of such a set (this is the most common example of a contradictory case).  This will allow the instructor to select specific students to debate their reasoning, in turn, producing a richer and more productive whole-class discussion.</li>
 								<br>
 								<li>Finally, the instructor should look for student thinking that is unexpected and new to him/her. </li>
 							</ul>
@@ -283,7 +283,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<center><img src="img/u1t4/i1.jpg" width=450 height=300></center><br><br>
 							Example: This group consulted their textbook (Lay, 2009), as indicated by their references to Theorems 8 and 9. While the group's work is correct, consulting the book only allowed them to practice using the theorems, rather than to practice generating theorems that are sensible to them based on their own mathematical experiences and understanding.
 							<br><br>
-							The instructor should keep in mind that some groups may be unsuccessful at generating some of the examples requested in Handout 4.  While only two examples are impossible to generate (3 linearly independent vectors in $[]^2$ and 4 linearly independent vectors in $[]^3$), students may have difficulty generating examples in other cells where it is possible.  The instructor might find it beneficial to talk with students when they have empty blanks - did they run out of time? Did they think those examples were too hard to find, or did they think there was no solution?
+							The instructor should keep in mind that some groups may be unsuccessful at generating some of the examples requested in Handout 4.  While only two examples are impossible to generate (3 linearly independent vectors in $\mathbb{R}^2$ and 4 linearly independent vectors in $\mathbb{R}^3$), students may have difficulty generating examples in other cells where it is possible.  The instructor might find it beneficial to talk with students when they have empty blanks - did they run out of time? Did they think those examples were too hard to find, or did they think there was no solution?
 							<br><br>
 							Finally, the instructor should encourage students to keep track of the strategies used to generate their examples. As students use these to write generalizations (that are conjectural), the instructor could encourage them to think about how they might determine if their conjectures are true (i.e., develop some sort of proof of each conjecture). 
 							<br>
@@ -333,7 +333,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<p>Below is a summary of key points of Handout 4, organized by row: </p>
 							<br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r1">Row 1 (2 vectors in $[]^2$) &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r1">Row 1 (2 vectors in $\mathbb{R}^2$) &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "r1"">
 									<ul>
@@ -359,7 +359,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							</ul>	
 							<br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r2">Row 2 (3 vectors in $[]^2$) &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r2">Row 2 (3 vectors in $\mathbb{R}^2$) &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "r2"">
 									<ul>
@@ -375,7 +375,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 											<br><br>
 											<ul>
 												<li>It is often the case, however, that students still feel as though they have successfully generated an example. The instructor should be aware of which groups have and have not generated an example so that they may have students debate their reasoning (e.g., students were asked to debate Groups 3 and 4's examples because they could not both be correct). </li>
-												<li>By the end of this discussion, there should at least be a conjecture out that any set in $[]^2$ of more than 2 vectors has to be linearly dependent, hopefully generated by the students' reasoning. This lays a foundation for the broader generalization, "any set of vectors from $[]^n$ containing more than n vectors is linearly dependent."</li>
+												<li>By the end of this discussion, there should at least be a conjecture out that any set in $\mathbb{R}^2$ of more than 2 vectors has to be linearly dependent, hopefully generated by the students' reasoning. This lays a foundation for the broader generalization, "any set of vectors from $\mathbb{R}^n$ containing more than n vectors is linearly dependent."</li>
 											</ul>
 										</blockquote>
 									</ul>
@@ -383,19 +383,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							</ul>	
 							<br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r3">Row 3 (2 vectors in $[]^3$) &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r3">Row 3 (2 vectors in $\mathbb{R}^3$) &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "r3"">
 									<ul>
 										<blockquote>
-											This row is similar to Row 1, except that the vectors are in $[]^3$ rather than $[]^2$. Instructors may want to address that shift in dimension directly, if needed. That is, this row could be useful for allowing students to practice visualizing and reasoning with vectors in $[]^3$, especially when they generate linearly independent sets. Otherwise, this row can be skimmed over and treated more lightly than the other rows. 
+											This row is similar to Row 1, except that the vectors are in $\mathbb{R}^3$ rather than $\mathbb{R}^2$. Instructors may want to address that shift in dimension directly, if needed. That is, this row could be useful for allowing students to practice visualizing and reasoning with vectors in $\mathbb{R}^3$, especially when they generate linearly independent sets. Otherwise, this row can be skimmed over and treated more lightly than the other rows. 
 										</blockquote>
 									</ul>
 								</div>
 							</ul>	
 							<br>
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r4">Row 4 (3 vectors in $[]^3$) &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r4">Row 4 (3 vectors in $\mathbb{R}^3$) &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "r4"">
 									<ul>
@@ -407,7 +407,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							</ul>	
 							<br>	
 							<ul>
-								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r5">Row 5 (4 vectors in $[]^3$) &raquo;</a>
+								<a class="btn btn-warning center" data-toggle="collapse" data-target="#r5">Row 5 (4 vectors in $\mathbb{R}^3$) &raquo;</a>
 								<br>
 								<div class="accordion-body collapse" id = "r5"">
 									<ul>
@@ -455,7 +455,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							<ul>
 								<li>1.	If a set contains two vectors that are scalar multiples of each other, then the set is linearly dependent.</li>
 								<li>2.	If at least one vector in a set is a linear combination of the other vectors in the set, then the set is linearly dependent.</li>
-								<li>3.	Any set of vectors from $R^n$ containing more than n vectors is linearly dependent.</li>
+								<li>3.	Any set of vectors from $\mathbb{R}^n$ containing more than n vectors is linearly dependent.</li>
 								<li>4.	Any set containing the zero vector is linearly dependent.</li><br>
 								<li>NOTE: The latter three generalizations are consistent with Theorems 7-9 of Chapter 1 of Lay (2007). As such, this task, coupled with Task 3, can replace a textbook section on linear (in)dependence. </li><br>
 							</ul>
@@ -489,7 +489,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<ul>
 						<blockquote>				
 							<p>Developing an intellectual need for sophisticated solution techniques </p>				
-							A final learning goal of Task 4 is the development of an intellectual need for an efficient computational strategies and sophisticated solution techniques. It is common for students to assume that if by inspection they cannot immediately "see" the dependence relation among a set of vectors in $R^n$ for $n \geq 3$, then the set must be linearly independent. The instructor is in the position to draw attention to this, stating that sometimes it is difficult to be certain from inspection alone whether or not a set of vectors is linearly dependent. Thus, they needed a more rigorous solution strategy. 
+							A final learning goal of Task 4 is the development of an intellectual need for an efficient computational strategies and sophisticated solution techniques. It is common for students to assume that if by inspection they cannot immediately "see" the dependence relation among a set of vectors in $\mathbb{R}^n$ for $n \geq 3$, then the set must be linearly independent. The instructor is in the position to draw attention to this, stating that sometimes it is difficult to be certain from inspection alone whether or not a set of vectors is linearly dependent. Thus, they needed a more rigorous solution strategy. 
 							<br><br>
 							Example Transition Statement, given by the instructor:
 							<br><br>

@@ -88,7 +88,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<ul>
 						<li>Conclude that there is nowhere that Gauss can hide </li>
 						<li>Explicitly compare various graphical and algebraic justifications to this conclusion </li>
-						<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $R^2$ that Gauss tries to hide</li>
+						<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $\mathbb{R}^2$ that Gauss tries to hide</li>
 					</ul>
 					<br>
 					<p>The instructor should:</p>
@@ -107,7 +107,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<blockquote>
 						<p class="lead">Goals</p>
 						<ul>
-							<li>The main goal of the problem on Handout 2 - <a href="#handout">Hide-and-Seek</a> - is to determine whether there is any location where Old Man Gauss can hide so that a person would be unable to reach him using the same two modes of transportation from the previous problem. </li>
+							<li>The main goal of the problem on Handout 2 - <a data-toggle="collapse" data-target="#handout">Hide-and-Seek</a> - is to determine whether there is any location where Old Man Gauss can hide so that a person would be unable to reach him using the same two modes of transportation from the previous problem. </li>
 							<li>More generally, the goal is to help students develop the notion of span in a two-dimensional setting before formalizing the concept with a definition. </li>
 						</ul>
 						<br>
@@ -160,7 +160,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							</div>
 							</div>
 							<div class="item">
-							  <img src="img/u1t2/4.jpg"/ alt="Student thinking 4">
+							  <img src="img/u1t2/4.jpg"/ style="height:400px" alt="Student thinking 4">
 							  <div class="container">
 								<div class="carousel-caption">
 								  <p><em>Sliding</em> method:  (4/6)</p>
@@ -322,7 +322,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<ul>
 						<blockquote>				
 							<p>Defining span </p>				
-							At this point the students, although they don't yet realize it, have a good intuitive sense of the span of two vectors in $R^2$ that are not multiples of each other. The preceding solutions to the Hide-and-Seek problem give us that for any location we might want to reach $\begin{bmatrix} A \\ B \end{bmatrix}$ there exists $c_1$ and $c_2$ such that $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. In other words, any $\begin{bmatrix} A \\ B \end{bmatrix}$ in the plane can be written as a linear combination of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. There is a technical word for the collection of all such vectors $\begin{bmatrix} A \\ B \end{bmatrix}$.  The term is span.  In determining that there is nowhere Gauss can hide, the students have discovered that the span of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ is all of $R^2$.  In other words,  $Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\} = R^2$.  
+							At this point the students, although they don't yet realize it, have a good intuitive sense of the span of two vectors in $\mathbb{R}^2$ that are not multiples of each other. The preceding solutions to the Hide-and-Seek problem give us that for any location we might want to reach $\begin{bmatrix} A \\ B \end{bmatrix}$ there exists $c_1$ and $c_2$ such that $\begin{bmatrix} A \\ B \end{bmatrix} = c_1\begin{bmatrix} 3 \\ 1 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. In other words, any $\begin{bmatrix} A \\ B \end{bmatrix}$ in the plane can be written as a linear combination of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. There is a technical word for the collection of all such vectors $\begin{bmatrix} A \\ B \end{bmatrix}$.  The term is span.  In determining that there is nowhere Gauss can hide, the students have discovered that the span of $\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ is all of $\mathbb{R}^2$.  In other words,  $Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\} = \mathbb{R}^2$.  
 							<br><br>
 							We can also relate this back to the calculations in Task 1.  We can see that $\begin{bmatrix} 107 \\ 64 \end{bmatrix} \in Span \{ \begin{bmatrix} 3 \\ 1 \end{bmatrix}$,  $\begin{bmatrix} 1 \\ 2 \end{bmatrix}\}$ because it can be written as a linear combination of those two vectors, i.e., $\begin{bmatrix} 107 \\ 64 \end{bmatrix} = 30\begin{bmatrix} 3 \\ 1 \end{bmatrix} + 17\begin{bmatrix} 1 \\ 2 \end{bmatrix}$.
 							<br><br>

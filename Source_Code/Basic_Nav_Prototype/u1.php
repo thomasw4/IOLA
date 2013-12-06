@@ -50,7 +50,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			<h1 class="text-center">Unit 1: Linear Independence and Span</h1>
 			<h4>
 			<p class="text-center">
-				Prerequisite Knowledge: Intuitive understanding of vector in $R^2$ (formal definition not required)<br>
+				Prerequisite Knowledge: Intuitive understanding of vector in $\mathbb{R}^2$ (formal definition not required)<br>
 				Expected Length: 4-5 75 minute instructional sessions
 			<br>
 			</p>
@@ -60,7 +60,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		<section id="accordion">
 			<a class="expandcollapse btn btn-mini btn-primary pull-right" state="0"><span class="glyphicon glyphicon-chevron-down"></span> Expand All</a>
 			<div class="accordion " id="summary">		  
-				<h2><a href="u1t1.php">Task 1: The Carpet Ride Problem (Working in $R^2$)</a></h2>
+				<h2><a href="u1t1.php">Task 1: The Carpet Ride Problem (Working in $\mathbb{R}^2$)</a></h2>
 				<ul>
 					<a class="btn btn-gray" data-toggle="collapse" data-parent="#parent" data-target="#t1">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t1">
@@ -87,7 +87,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</div>
 				</ul>
 		
-				<h2><a href="u1t2.php">Task 2: Hide and Seek (Working in $R^2$)</a></h2>
+				<h2><a href="u1t2.php">Task 2: Hide and Seek (Working in $\mathbb{R}^2$)</a></h2>
 				<ul>
 					<a class="btn btn-gray" data-toggle="collapse" data-target="#t2">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t2">
@@ -98,7 +98,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<ul>
 									<li>Conclude that there is nowhere that Gauss can hide </li>
 									<li>Explicitly compare various graphical and algebraic justifications to this conclusion</li>
-									<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $R^2$ that Gauss tries to hide </li>
+									<li>Articulate why / how the vector equation $c_1[3, 1] + c_2[1, 2] = [a, b]$ means that you can get anywhere in $\mathbb{R}^2$ that Gauss tries to hide </li>
 								</ul>
 								<br>
 								<p>The instructor should:</p>
@@ -111,7 +111,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</ul>
 
-				<h2><a href="u1t3.php">Task 3: Getting Back Home (Working in $R^3$)</a></h2>
+				<h2><a href="u1t3.php">Task 3: Getting Back Home (Working in $\mathbb{R}^3$)</a></h2>
 				<ul>
 					<a class="btn btn-gray" data-toggle="collapse" data-target="#t3">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t3">
@@ -135,7 +135,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 				</ul>
 		
-				<h2><a href="u1t4.php">Task 4: Linear [In]dependence (Moving Towards $R^n$)</a></h2>
+				<h2><a href="u1t4.php">Task 4: Linear [In]dependence (Moving Towards $\mathbb{R}^n$)</a></h2>
 				<ul>
 					<a class=" btn btn-gray hidden-print" data-toggle="collapse" data-target="#t4">More Information <span class="glyphicon glyphicon-chevron-down"></span></a>
 					<div class="accordion-body collapse" id = "t4">
@@ -145,21 +145,21 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<p>By the end of the lesson students should be able to:</p>
 								<ul>
 									<li>Develop a travel interpretation of a non-zero scalar times the zero vector (e.g., $4 \begin{bmatrix} 0 \\ 0 \end{bmatrix}$  means riding a stationary bike for 4 hours)</li>
-									<li>Develop generalized notions of linear independence and dependence in $R^n$</li>
+									<li>Develop generalized notions of linear independence and dependence in $\mathbb{R}^n$</li>
 										<ul>
 											<li>Essential Generalizations:</li>
 											<ul>
 												<li>If a set contains two vectors that are scalar multiples of each other, then the set is linearly dependent.</li>
 												<li>If at least one vector in a set is a linear combination of the other vectors in the set, then the set is linearly dependent.</li>
-												<li>Any set of vectors from $R^n$ containing more than $n$ vectors is linearly dependent.</li>
+												<li>Any set of vectors from $\mathbb{R}^n$ containing more than $n$ vectors is linearly dependent.</li>
 												<li>Any set containing the zero vector is linearly dependent.  <br>
 												<strong>NOTE:</strong> The latter three generalizations are consistent with Theorems 7-9 of Chapter 1 of Lay (2007). </li>
 
 											</ul>
 											<li>Possible Generalizations:</li>
 											<ul>
-												<li>Any set of vectors from $R^n$ with fewer than n vectors cannot span $R^n$</li>
-												<li>A set of n vectors in $R^n$ spans $R^n$ if and only if the set is linearly independent.  <br>
+												<li>Any set of vectors from $\mathbb{R}^n$ with fewer than n vectors cannot span $\mathbb{R}^n$</li>
+												<li>A set of n vectors in $\mathbb{R}^n$ spans $\mathbb{R}^n$ if and only if the set is linearly independent.  <br>
 												<strong>NOTE:</strong> These could support early notions of basis and help form a foundation for the Invertible Matrix Theorem.</li>
 											</ul>
 

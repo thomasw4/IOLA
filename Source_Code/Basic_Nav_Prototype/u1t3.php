@@ -110,7 +110,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<ul>
 							<li>The main goal of the problem on the front of Handout 3 - Getting Back Home - is to determine if it is possible to use the three given modes of transportation to leave and return back to "home." The problem is stated with modes of transportation in the 3-dimensional world. By the end of the task, linear dependence and linear independence will be formally defined. </li>
 							<li>The purpose of this exercise is to have students develop a sense of linear dependence from their previous understanding of vectors as modes of transportation. That is, for students to consider the possibility of a nontrivial linear combination that is equal to no net change (the zero vector). This is then leveraged to develop a definition of linear independence. </li>
-							<li>In the follow-up questions, students will need to visualize such a linear combination within 3-space as well as consider the geometric implications of linear dependence in $[]^3$. For instance, in the main problem, the vectors span a plane in $[]^3$. The follow-up questions are intended to have students explicitly consider the span and also relate this to their work and reasoning in Task 2.</li>
+							<li>In the follow-up questions, students will need to visualize such a linear combination within 3-space as well as consider the geometric implications of linear dependence in $\mathbb{R}^3$. For instance, in the main problem, the vectors span a plane in $\mathbb{R}^3$. The follow-up questions are intended to have students explicitly consider the span and also relate this to their work and reasoning in Task 2.</li>
 						</ul>
 						<br>
 						<p>Rationale</p>
@@ -388,7 +388,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							The instructor should now label the ability to "get back home" with the term linearly dependent, and introduce the <strong>formal definition of linear dependence</strong> as follows: 
 							<br><br>
 							<ul><li>
-								A set of vectors {$v_1,v_2,...,v_p$} in $R^n$ is called a linearly dependent set if there exists a solution to the equation $c_1v_1 + c_2v_2+...+ c_pv_p = 0$ where not all $c_1, c_2, ..., c_p$ are zero.
+								A set of vectors {$v_1,v_2,...,v_p$} in $\mathbb{R}^n$ is called a linearly dependent set if there exists a solution to the equation $c_1v_1 + c_2v_2+...+ c_pv_p = 0$ where not all $c_1, c_2, ..., c_p$ are zero.
 							</li></ul>
 							<br>
 							After defining linear dependence, it is helpful to provide students with various sets of vectors and allow them to practice determining whether these sets are linearly dependent. The two examples below are chosen for specific purposes: 
@@ -449,10 +449,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 							The instructor could tag the two vectors in set (b), the Gauss's Cabin scenario vectors, as linearly independent and may now also formally define linear independence.
 							<br><br>
 							<ul><li>
-								A set of vectors {$v_1,v_2,...,v_p$} in $R^n$ is a linearly independent set if the only solution to the equation $c_1v_1 + c_2v_2 +...+ c_pv_p = 0$  is if all $c_1, c_2, ..., c_p$ are zero.
+								A set of vectors {$v_1,v_2,...,v_p$} in $\mathbb{R}^n$ is a linearly independent set if the only solution to the equation $c_1v_1 + c_2v_2 +...+ c_pv_p = 0$  is if all $c_1, c_2, ..., c_p$ are zero.
 							</li></ul>
 							<br>
-							If time permits you may do more examples, but students generate their own examples of linearly (in)dependent sets in Task 4. Students will also explore making generalizations about linear (in)dependence in Task 4 (such as 3 vectors in $R^2$ are LD), so it isn't necessary to pursue those here. If students offer such conjecture here, the instructor can make note of it and say the class will come back to that interesting idea soon.  
+							If time permits you may do more examples, but students generate their own examples of linearly (in)dependent sets in Task 4. Students will also explore making generalizations about linear (in)dependence in Task 4 (such as 3 vectors in $\mathbb{R}^2$ are LD), so it isn't necessary to pursue those here. If students offer such conjecture here, the instructor can make note of it and say the class will come back to that interesting idea soon.  
 						</blockquote>
 					</ul>
 				</div>	
@@ -515,7 +515,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 											<p>Is there anywhere in this 3D world that Gauss could hide from you?  If so, where?  If not, why not?</p>
 											<ul>
 											<li>
-												The purpose of this question is to allow the students to practice finding the span of a set of vectors, as they did in Task 2, but with vectors in a 3-dimensional vector space. Essentially, the question is asking whether this set of vectors spans $[]^3$. From their work in Task 2, the students should be able to explain how the first two vectors would span a plane in $[]^3$ (the instructor may need to distinguish between $[]^2$ and planar subspaces of $[]^3$). Once it is established that any two of these vectors form a plane in $[]^3$, the students may use their geometric representation to confirm that the third vector is indeed contained in this plane (the dynamic graphing software is especially useful here). From this, the students should see that Gauss could hide from them anywhere away from this plane. 
+												The purpose of this question is to allow the students to practice finding the span of a set of vectors, as they did in Task 2, but with vectors in a 3-dimensional vector space. Essentially, the question is asking whether this set of vectors spans $\mathbb{R}^3$. From their work in Task 2, the students should be able to explain how the first two vectors would span a plane in $\mathbb{R}^3$ (the instructor may need to distinguish between $\mathbb{R}^2$ and planar subspaces of $\mathbb{R}^3$). Once it is established that any two of these vectors form a plane in $\mathbb{R}^3$, the students may use their geometric representation to confirm that the third vector is indeed contained in this plane (the dynamic graphing software is especially useful here). From this, the students should see that Gauss could hide from them anywhere away from this plane. 
 											</li>
 											</ul>
 										</blockquote>
@@ -532,7 +532,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 											<p>What is $span\{\begin{bmatrix} 1\\1\\1 \end{bmatrix},\begin{bmatrix} 6\\3\\8 \end{bmatrix},\begin{bmatrix} 4\\1\\6 \end{bmatrix}\}$?</p>
 											<ul>
 											<li>
-												Relying on their response to Question 2, the students will likely begin by describing the span as a plane in $[]^3$. The instructor could use a 3-D graphing technology, such as the Grapher file referenced above (link), and have that program sketch the span of the set of three vectors: 
+												Relying on their response to Question 2, the students will likely begin by describing the span as a plane in $\mathbb{R}^3$. The instructor could use a 3-D graphing technology, such as the Grapher file referenced above (link), and have that program sketch the span of the set of three vectors: 
 												<br><br>
 												<center><img src="img/u1t3/i4.jpg" height=400 width=600></center>
 											</li><br>
