@@ -39,15 +39,7 @@ session_start();
     </div>
 
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
-	<a style="display:block" href="#sidr">
-		<div id="float" class="hidden-print">
-			<br>
-			<span class="glyphicon glyphicon-resize-horizontal"></span>
-			<span class="bottomaligned">
-				<span class="glyphicon glyphicon-resize-horizontal"></span>
-			</span>
-		</div>
-	</a>
+		<?php include 'sidebtn.php' ?>	
 	<?php } ?>
 
     <div class="container print">
@@ -157,24 +149,11 @@ session_start();
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
-	<script src="js/expandall.js"></script>
-
+	<script src="js/iola.js"></script>
  
 	<!-- Include the Sidr JS -->
 	<script>
-	$(document).ready(function() {
-	$('#simple-menu').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
-	$('#simple').sidr();
-	});
-	</script>
-	<script>
-	$(document).ready(function() {
-	$('#float').sidr();
-	});
+
 	</script>
 	
   </body>

@@ -39,16 +39,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	  <?php $ref='unit'; include 'header.php' ?>
     </div>
 	
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-	<a style="display:block" href="#sidr">
-	<div id="float" class="hidden-print">
-		<br>
-		<span class="glyphicon glyphicon-resize-horizontal"></span>
-		<span class="bottomaligned">
-			<span class="glyphicon glyphicon-resize-horizontal"></span>
-		</span>
-	</div>
+	<?php include 'sidebtn.php' ?>
 
 </a>
     <div class="container ">
@@ -215,16 +206,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/expandall.js"></script>
-
- 
-	<!-- Include the Sidr JS -->
-	<script>
-	$(document).ready(function() {
-	$('#simple-menu').sidr();
-	$('#simple').sidr();
-	$('#float').sidr();
-	});
-	</script>
+	<script src="js/iola.js"></script>
 
 	<!-- Automatically open sidebar -->
 	<script>
@@ -233,19 +215,6 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	$.sidr('open', 'sidr');
 	$('#u1').collapse("hide"); <!--Auto-open Unit 1 sidebar link -->
 	}
-	
-function printDiv(divName) {
-     var printContents = document.getElementById(divName).innerHTML;
-     var originalContents = document.body.innerHTML;
-
-     document.body.innerHTML = printContents;
-
-     window.print();
-
-     document.body.innerHTML = originalContents;
-}
-
-
 	</script>
   </body>
 </html>

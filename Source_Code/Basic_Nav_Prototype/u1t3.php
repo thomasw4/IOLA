@@ -41,15 +41,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-	<a style="display:block" href="#sidr">
-		<div id="float" class="hidden-print">
-			<br>
-			<span class="glyphicon glyphicon-resize-horizontal"></span>
-			<span class="bottomaligned">
-				<span class="glyphicon glyphicon-resize-horizontal"></span>
-			</span>
-		</div>
-	</a>
+	<?php include 'sidebtn.php' ?>
     <div class="container">
 
       <div class="jumbotron">
@@ -658,16 +650,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/expandall.js"></script>
- 
-	<!-- Include the Sidr JS -->
-	<script>
-	$(document).ready(function() {
-	$('#simple-menu').sidr();
-	$('#printt').sidr();
-	$('#simple').sidr();
-	$('#float').sidr();
-	});
-	</script>
+ 	<script src="js/iola.js"></script>
 
 	<!-- Automatically open sidebar -->
 	<script>

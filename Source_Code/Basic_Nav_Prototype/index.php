@@ -81,24 +81,8 @@
     <div class="navbar navbar-inverse  navbar-fixed-top">
 	  <?php  $ref = 'home'; include 'header.php' ?>
     </div>
-    
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
-	<a style="display:block" href="#sidr">
-		<div id="float" class="hidden-print">
-			<br>
-			<span ></span>
-			<span class="bottomaligned">
-				<span ></span>
-			</span>
-		</div>
-		<div id="float2" class="">
-			<br>
-			<span class="ba"><h3>
-				<!--span class="glyphicon glyphicon-circle-arrow-right"></span></h3-->
-				<a class="expandside" state="0"><span class="glyphicon glyphicon-chevron-right"></span></a>
-			</span>
-		</div>
-	</a>
+		<?php include 'sidebtn.php' ?>		
 	<?php } ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -171,27 +155,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
-	<script src="js/sidr/iola.js"></script>
-	
-	<script>
-		$(document).ready(function() {
-			$('#simple-menu').sidr();
-			$('#float2').sidr();
-			$('#simple').sidr();
-			$('#float').sidr();
-		});
-		$(document).ready(function() {
-			$('#simple').sidr({ speed : 50 });
-		});
-		function changeText(idElement) {
-	var element = document.getElementById('element' + idElement);
-	if (idElement === 1 || idElement === 2) {
-		if (element.innerHTML === 'Contact Us') element.innerHTML = '<a href="mailto:mwawro@vt.edu">mwawro@vt.edu</a>';
-		else {
-			element.innerHTML = 'Contact Us';
-		}
-	}
-}
-	</script>
+	<script src="js/iola.js"></script>
   </body>
 </html>

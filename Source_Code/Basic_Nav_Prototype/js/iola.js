@@ -1,9 +1,13 @@
-function changeText(idElement) {
-	var element = document.getElementById('element' + idElement);
-	if (idElement === 1 || idElement === 2) {
-		if (element.innerHTML === 'Contact Us') element.innerHTML = '<a href="mailto:mwawro@vt.edu">mwawro@vt.edu</a>';
-		else {
-			element.innerHTML = 'Contact Us';
-		}
-	}
+$(document).ready(function() {
+	$('#simple-menu').sidr();
+	$('#float2').sidr();
+	$('#float').sidr();
+	$('#simple').sidr({ speed : 50 });
+});
+
+function expandside() {
+	var newstate = $("#arrow").attr('state') ^ 1,
+	icon = newstate ? "left" : "right";
+	$("#arrow").html("<span class=\"glyphicon glyphicon-chevron-" + icon + "\"></span> " );
+	$("#arrow").attr('state',newstate)
 }

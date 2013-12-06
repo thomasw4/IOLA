@@ -30,7 +30,7 @@ session_start();
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php include 'header.php' ?>
+	  <?php $ref='contact'; include 'header.php' ?>
     </div>
 
     <div class="container print">

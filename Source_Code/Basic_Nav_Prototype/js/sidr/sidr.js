@@ -54,8 +54,10 @@
       else if(!name) {
         name = 'sidr';
       }
-
-      // Declaring
+	  // ##### Flips arrow on sidebar -- IOLA SPECIFIC
+		expandside();
+	  
+	  // Declaring
       var $menu = $('#' + name),
           $body = $($menu.data('body')),
           $html = $('html'),

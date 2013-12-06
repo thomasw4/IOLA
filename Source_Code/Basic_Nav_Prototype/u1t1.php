@@ -37,15 +37,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		<div class="navbar navbar-inverse  navbar-fixed-top">
 		  <?php $ref = 'unit'; include 'header.php' ?>
 		</div>
-		<a style="display:block" href="#sidr">
-			<div id="float" class="hidden-print">
-				<br>
-				<span class="glyphicon glyphicon-resize-horizontal"></span>
-				<span class="bottomaligned">
-					<span class="glyphicon glyphicon-resize-horizontal"></span>
-				</span>
-			</div>
-		</a>
+		<?php include 'sidebtn.php' ?>
 		
 		<!-- Content Section -->
 		<div class="container">
@@ -518,18 +510,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/expandall.js"></script>
- 
-	<!-- Include the Sidr JS -->
-	<script>
-	$(document).ready(function() {
-	$('#simple-menu').sidr();
-	$('#float2').sidr();
-	$('#printt').sidr();
-	$('#simple').sidr();
-	$('#float').sidr();
-	});
-	</script>
-
+	<script src="js/iola.js"></script>
+	
 	<!-- Automatically open sidebar -->
 	<script>
 	function init(){
