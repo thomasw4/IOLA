@@ -35,7 +35,7 @@ session_start();
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php include 'header.php' ?>
+	  <?php $ref = 'team'; include 'header.php' ?>
     </div>
 
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
@@ -55,7 +55,7 @@ session_start();
 		<div class="jumbotron">
 		  	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 			<div id="sidr">
-				<?php include 'sidebar.php' ?>
+				<?php $unit=""; $task=""; include 'sidebar.php' ?>
 			</div>
 		  	<?php } ?>		
 			<h1 class="text-center">Meet the IOLA Team!</h1>

@@ -36,7 +36,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php include 'header.php' ?>
+	  <?php $ref='unit'; include 'header.php' ?>
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -54,7 +54,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
       <div class="jumbotron">
 		<div id="sidr" class="hidden-print">
-			<?php include 'sidebar.php' ?>
+			<?php  $unit = 'u2'; $task = 't1'; include 'sidebar.php' ?>
 		</div>
 
         <h1 class="text-center">Unit 2: Matrices as Transformations</h1>

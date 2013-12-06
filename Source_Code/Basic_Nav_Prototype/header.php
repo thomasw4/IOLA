@@ -31,13 +31,19 @@
 	
 	  <ul class="nav navbar-nav">
 		<li></li>
-		<li class="active"><a href="index.php">Home</a></li>
+			<?php if($ref == 'home') { ?> <li class="active"><a href="index.php">Home</a></li> <?php } ?>
+			<?php if($ref != 'home') {?> <li><a href="index.php">Home</a></li><?php } ?>
+
 			<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
-			<li><a id="simple-menu" href="#sidr">Units</a></li>
+			<?php if($ref == 'unit') { ?> <li class="active"><a id="simple-menu" href="#sidr">Units</a></li><?php } ?>
+			<?php if($ref != 'unit') { ?> <li><a id="simple-menu" href="#sidr">Units</a></li><?php } ?>
 			<?php } ?>
-		<li><a href="team.php">Team</a></li>
-		<li class="dropdown">
-		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+			
+		<?php if($ref == 'team') { ?> <li class="active"><a href="team.php">Team</a></li><?php } ?>
+		<?php if($ref != 'team') { ?> <li><a href="team.php">Team</a></li><?php } ?>		
+		<?php if($ref == 'res') { ?><li class="dropdown active"><?php } ?>
+		<?php if($ref != 'res') { ?><li class="dropdown"><?php } ?>
+		  <a href="" class="open dropdown-toggle active" data-toggle="dropdown">Resources <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 		    <li><a href="publications.php">Publications</a></li>
 			<li><a href="videos.php">Videos</a></li>			
@@ -48,7 +54,8 @@
 		</li>
 
 	    <?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] == 2) {  ?>
-		<li class="dropdown">
+		<?php if($ref == 'admin') { ?><li class="dropdown active"><?php } ?>
+		<?php if($ref != 'admin') { ?><li class="dropdown"><?php } ?>
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 			<li><a href="useradmin.php">Manage Users</a></li>

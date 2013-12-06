@@ -88,7 +88,7 @@ if (!empty($_POST)) {
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-      <?php include 'header.php' ?>
+      <?php $ref = 'admin'; include 'header.php' ?>
     </div>
 	
 

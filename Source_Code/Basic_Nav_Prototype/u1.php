@@ -36,7 +36,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php include 'header.php' ?>
+	  <?php $ref='unit'; include 'header.php' ?>
     </div>
 	
 
@@ -51,11 +51,10 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	</div>
 
 </a>
-    <div class="container print">
-	
+    <div class="container ">
 		<div class="jumbotron">
 			<div id="sidr" class="hidden-print">
-				<?php include 'sidebar.php' ?>
+				<?php $unit = 'u1'; $task = 's'; include 'sidebar.php' ?>
 			</div>
 			<h1 class="text-center">Unit 1: Linear Independence and Span</h1>
 			<h4>

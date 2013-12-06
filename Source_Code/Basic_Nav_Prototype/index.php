@@ -58,7 +58,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Mockup</title>
+    <title>Inquiry Oriented Linear Algebra</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -79,7 +79,7 @@
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php include 'header.php' ?>
+	  <?php  $ref = 'home'; include 'header.php' ?>
     </div>
     
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
@@ -107,7 +107,7 @@
 	  
 	  	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 		<div id="sidr">
-			<?php include 'sidebar.php' ?>
+			<?php $unit=""; $task=""; include 'sidebar.php' ?>
 		</div>
 	  	<?php } ?>		
 
