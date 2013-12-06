@@ -41,15 +41,14 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<a style="display:block" href="#sidr">
-		<div id="float" class="hidden-print">
+			<div id="float2" class="">
 			<br>
-			<span class="glyphicon glyphicon-resize-horizontal"></span>
-			<span class="bottomaligned">
-				<span class="glyphicon glyphicon-resize-horizontal"></span>
+			<span class="ba"><h3>
+				<!--span class="glyphicon glyphicon-circle-arrow-right"></span></h3-->
+				<a class="expandside" state="0"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</span>
 		</div>
 	</a>
-
     <div class="container">
 
       <div class="jumbotron">

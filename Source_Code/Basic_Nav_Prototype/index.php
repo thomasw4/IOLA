@@ -86,9 +86,9 @@
 	<a style="display:block" href="#sidr">
 		<div id="float" class="hidden-print">
 			<br>
-			<span class="glyphicon glyphicon-resize-horizontal"></span>
+			<span ></span>
 			<span class="bottomaligned">
-				<span class="glyphicon glyphicon-resize-horizontal"></span>
+				<span ></span>
 			</span>
 		</div>
 		<div id="float2" class="">
