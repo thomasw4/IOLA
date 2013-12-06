@@ -90,12 +90,14 @@ if (!empty($_POST)) {
     <div class="navbar navbar-inverse  navbar-fixed-top">
       <?php $ref = 'admin'; include 'header.php' ?>
     </div>
-	
+	<?php include 'sidebtn.php' ?>	
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-	  
+		<div id="sidr">
+			<?php $unit=""; $task=""; include 'sidebar.php' ?>
+		</div>
         <h1>Modify Accounts</h1>
 		<br>
 
@@ -188,5 +190,7 @@ if (!empty($_POST)) {
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/sidr/sidr.js"></script>
+	<script src="js/iola.js"></script>
   </body>
 </html>

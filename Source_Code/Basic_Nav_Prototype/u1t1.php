@@ -116,7 +116,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 								<blockquote>
 									<p class="lead">Goals</p>
 									<ul>
-										<li>Students' goal on Handout 1 - <a href="#handout">The Carpet Ride Problem</a> - is to determine if it is possible to reach Old Man Gauss with the two given modes of transportation. </li>
+										<li>Students' goal on Handout 1 - <a data-toggle="collapse" data-target="#handout1">The Carpet Ride Problem</a> - is to determine if it is possible to reach Old Man Gauss with the two given modes of transportation. </li>
 										<li>More generally, the goal is to develop students' familiarity with the language, notation, and graphical representations for linear combinations of vectors (and connections to systems of equations).</li>
 										<li>An implicit goal for Problem 1 is to provide an opportunity for students to conceptualize and work with linear combination as a mathematical object. This will help students' success in Task 2, when they are asked to consider the collection of all possible places Gauss could live. This sets them up well for the definition of span - the set of all possible linear combinations of a set of vectors.</li>
 									</ul>
@@ -203,42 +203,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										</div>
 									  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 									  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-									</div><!-- /.carousel -->					
-
-									<!-- NON-CAROUSEL STUDENT THINKING: MAY BE BETTER SUITED FOR MOBILE-->
-									<!--div class="paragraphs">
-										<div class="row">
-											<div class="span4">
-												<div class="clearfix content-heading">
-													<img class="pull-left" src="img/u1t1/1.png"/ height="300" width="300" hspace="20">
-													<br><br>
-													<em>Guess and check</em> method:  This group began by using the hoverboard 10 hours at a time. After iterating this 10-hour journey three times and recognizing that this got them to a location of 90 miles E and 30 units N, they determined that riding the magic carpet for 17 additional hours would allow them to arrive at their desired destination of 107 miles E and 64 miles N. 
-													<br><br>
-													<img class="pull-right" src="img/u1t1/2.jpg"/ height="300" width="300" hspace="20">
-													<br><br>
-													<em>Guess and check via vector weighting</em> method: This group wrote a vector equation (but with 'fraction-like' notation). They determined the weights that each vector would need so the East and North components would sum to 107 and 64, respectively. They included a graphical representation where the weighted vectors are depicted tip-to-tail. 
-													<br><br>
-													<img class="pull-left" src="img/u1t1/3.png"/ height="300" width="300" hspace="20">
-													<br><br>
-													<em>Systems of equations</em> method: This group defined variables ($t1$ and $t2$) for the amount of time spent on each mode of transportation and represented the problem using a system of equations. They used elimination to solve the system and drew a diagram to indicate the journey corresponding to their solution. In their diagram they used right triangles to illustrate the component parts of each vector that made up their journey to Gauss's cabin and included a dashed line to depict the resultant vector. 									
-													<br><br>
-													<img class="pull-right" src="img/u1t1/4.png"/ height="300" width="300" hspace="20">
-													<br><br>
-													<em>Vector equation becomes a system</em> method: This group began by representing the problem using a vector equation. They rewrote the vector equation as a system of equations, which they solved. Finally, they depicted the journey corresponding to their solution with vectors drawn tip-to-tail. They also included a depiction of the resultant vector.									
-													<br><br>
-													<img class="pull-left" src="img/u1t1/5.jpg"/ height="300" width="300" hspace="20">
-													<br><br>
-													Noticing <em>net times</em>: This group's made use of a vector equation becomes a systems of equation approach.  They summarized their conclusion by stating, Solution: Use H. Board for 30 hrs and F. Carpet for 17 hrs (these are net times). The mention of the solution representing net time can be leveraged during whole class discussion to a conversation about unique solutions.									
-													<br><br>
-													<img class="pull-right" src="img/u1t1/6.jpg"/ height="300" width="300" hspace="20">
-													<br><br>
-													<em>Two different paths</em>: This group makes use of horizontal notation for vectors, a practice students may be familiar with from previous calculus classes. Additionally, the sketch of the problem scenario is color-coded, with red notating the hover board's travel and purple notating the magic carpet's travel.  The group sketch both sides of a parallelogram, representing that one could ride the hover board first and then the magic carpet (the lower half of the parallelogram) or vice versa (the upper half). This could be leveraged in a discussion about unique solutions.									
-													<br><br>
-												</div>
-					  
-											</div>
-										</div>
-									</div-->						
+									</div><!-- /.carousel -->											
 								</blockquote>
 							</ul>
 						</div>
@@ -446,31 +411,59 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 										<br>
 										<ul>
 											<a class="btn btn-success center" data-toggle="collapse" data-target="#studentthinkingexamplequestion">Student Thinking, Example Discussion Question &raquo;</a>
+											
+											
+											
+											
+											
+											
+											
 											<div class="accordion-body collapse" id = "studentthinkingexamplequestion">
 												<ul>				
 												<blockquote>
-													Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>
-													<div class="paragraphs">
-														<div class="row">
-															<div class="span4">
-																<div class="clearfix content-heading">
-																	<img class="pull-left" src="img/u1t1/s1.jpg"/ height="300" width="300" hspace="20">
-																	<br><br>
-																	This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
-																	<br><br>
-																	<img class="pull-right" src="img/u1t1/s2.jpg"/ height="300" width="300" hspace="20">
-																	<br><br>
-																	This group claimed that you could not reach Gauss with only one mode because "$\begin{bmatrix} 3 \\ 1 \end{bmatrix}$ is not a divisor of $\begin{bmatrix} 107 \\ 64 \end{bmatrix}$," and that the same was true for $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$. Algebraically, they showed that for $ t \begin{bmatrix} 3 \\ 1 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$, whatever t-value worked for the top equation would not satisfy the bottom one. This demonstrates 1 of the 4 cases. Their claim, "no matter if you can reach the x coord[inate] of Gauss cabin @ 1 time & y coord[inate] @ 1 time it is never the same time. $\therefore$ You cannot reach the cabin," generalizes beyond that one case.									<br><br>
-																	<img class="pull-left" src="img/u1t1/s3.jpg"/ height="300" width="300" hspace="20">
-																	<br><br>
-																	This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 									<br><br>
-																	<img class="pull-right" src="img/u1t1/s4.jpg"/ height="300" width="300" hspace="20">
-																	<br><br>
-																	This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								
-																</div>				  
+													Examples of student responses to the question: Is it possible to reach Old Man Gauss with only one mode of transportation? If so, provide a solution and sketch of the problem and solution. If not, develop a justification for why it is not possible					<br><br>												
+													<!-- Carousel
+													================================================== -->
+													<div id="sc" class="carousel slide">
+													  <!-- Indicators -->
+													  <div class="carousel-inner">
+														<div class="item active">
+														  <img src="img/u1t1/s1.jpg" style="height:500px; width:500px" alt="Student thinking 1">
+														  <div class="container">
+															<div class="carousel-caption">
+																This group determined that the point-slope form of the line that connects the origin to Old Man Gauss is $y = 1.671x$. They also determined that the point-slope form of the lines that have the same slope as the vector representing the motion of the magic carpet and the hoverboard are $y = 2x$ and $y = (1/3)x$, respectively. The group sketched these lines and concluded that the lines only intersect at $(0, 0)$.									
 															</div>
+														  </div>
 														</div>
-													</div>
+														<div class="item">
+														  <img src="img/u1t1/s2.jpg"/ style="height:500px; width:500px" alt="Student thinking 2">
+														  <div class="container">
+															<div class="carousel-caption">
+																This group wrote a vector equation (but with 'fraction-like' notation). They determined the weights that each vector would need so the East and North components would sum to 107 and 64, respectively. They included a graphical representation where the weighted vectors are depicted tip-to-tail.
+															</div>
+														  </div>
+														</div>
+														<div class="item">
+														  <img src="img/u1t1/s3.jpg"/ alt="Student thinking 3">
+														  <div class="container">
+															<div class="carousel-caption">
+																This group's approach seems similar to the previous one. They first found that $107 \div 3=35\frac{2}{3}$ and wrote, "didn't divide evenly." This is not further explained, but the calculations "$64 \times 3 = 192$" and "$64 \times 1 = 64$" most likely were used to support that claim. For the magic carpet, the group found that $64 \div 2=32$ (so the amount of time on the hover board would be 32 hours), but that $1 \times 32 = 32$ not $107$; thus, a rider "did not make the trip North" by using only the magic carpet for 32 hrs. The group did a similar calculation (but no explanation) with the magic carpet dealing with 107 as primary. 
+															</div>
+														  </div>
+														</div>
+														<div class="item">
+														  <img src="img/u1t1/s4.jpg"/ style="height:500px; width:500px" alt="Student thinking 4">
+														  <div class="container">
+															<div class="carousel-caption">
+																This group's justification for the claim that you cannot reach Gauss states explicitly that there exists no real number $c$ such that $c \begin{bmatrix} 3 \\ 1 \end{bmatrix} = \begin{bmatrix} 107 \\ 64 \end{bmatrix}$ or $c\begin{bmatrix} 1 \\ 2 \end{bmatrix}=\begin{bmatrix} 107 \\ 64 \end{bmatrix}$. The group did not include algebraic justification to support how they knew this was true.								
+															</div>
+														  </div>
+														</div>
+
+														</div>
+													  <a class="left carousel-control" href="#sc" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+													  <a class="right carousel-control" href="#sc" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+													</div><!-- /.carousel -->					
 												</blockquote>
 												</ul>
 											</div>

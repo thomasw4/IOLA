@@ -132,7 +132,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					<blockquote>
 						<p class="lead">Goals</p>
 						<ul>
-							<li>The main goal of Handout 4 - Linear Independence and Dependence: Creating Examples - is to guide students to develop generalizations and supporting justifications regarding linear independence and dependence for any given set of vectors, shifting away from a reliance on the Magic Carpet Ride scenario.</li>
+							<li>The main goal of Handout 4 - <a data-toggle="collapse" data-target="#handout">Linear Independence and Dependence: Creating Examples</a> - is to guide students to develop generalizations and supporting justifications regarding linear independence and dependence for any given set of vectors, shifting away from a reliance on the Magic Carpet Ride scenario.</li>
 							<li>Although worded in terms of $\mathbb{R}^2$ and $\mathbb{R}^3$, the students' reasoning behind the strategies should inform the development of generalizations that extend to any $\mathbb{R}^n$ as they work on and discuss Handout 4.</li>
 							<li>A secondary goal is to develop an intellectual need for efficient computational strategies and sophisticated solution techniques.</li>							
 						</ul>

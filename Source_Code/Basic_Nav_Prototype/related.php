@@ -1,6 +1,11 @@
 <?php
 session_start();
+if (!isset($_SESSION['user']) || !$_SESSION['user']) {
+	header('Location:index.php');
+	exit();
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,9 +13,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Team</title>
+    <title>IOLA - Related Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css"  type="text/css" rel="stylesheet">
@@ -30,64 +35,38 @@ session_start();
 
   <body onload="init()">
     <div class="navbar navbar-inverse  navbar-fixed-top">
-	  <?php $ref='contact'; include 'header.php' ?>
+	  <?php $ref = 'res'; include 'header.php' ?>
     </div>
+
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 				<?php include 'sidebtn.php' ?>	
+
 	<?php } ?>
 
     <div class="container print">
+	
 		<div class="jumbotron">
-
-			<?php  
-            // check for a successful form post  
-            if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";     
-            // check for a form error  
-            elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";      
-			?>  
 		  	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 			<div id="sidr">
 				<?php $unit=""; $task=""; include 'sidebar.php' ?>
 			</div>
-		  	<?php } ?>					
-			<h1 class="text-center">Contact Us!</h1>
-			<br>	
-			<div class="panel panel-default" style="margin:0 auto;width:80%">
-
-				<div class="panel-body">
-					<form name="contactform" method="post" action="contact-form-submission.php" class="form-horizontal" role="form">
-						<div class="form-group">
-							<label for="inputName" class="col-lg-2 control-label">Name</label>
-							<div class="col-lg-10">
-								<input type="text" class="form-control" id="inputName" name="contact_name" placeholder="Your Name">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputEmail1" class="col-lg-2 control-label">Email</label>
-							<div class="col-lg-10">
-								<input type="text" class="form-control" id="inputEmail" name="contact_email" placeholder="Your Email Address">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputPassword1" class="col-lg-2 control-label">Message</label>
-							<div class="col-lg-10">
-								<textarea class="form-control" rows="4" id="inputMessage" name="contact_message" placeholder="Your message..."></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-lg-offset-2 col-lg-10">
-								<input type="hidden" name="save" value="contact">  
-								<button type="submit" class="btn btn-primary">
-									Send Message
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>  
-		<br>
+		  	<?php } ?>		
+			<h1 class="text-center">Related Projects</h1>
+		</div>
+		<div class="jumbotron">
+		    <div class="container">
+				<div class="jumbotron">
+					<center><img width="15%"  src="img/logo.png">
+					<br><br>
+					<p style="font-size:20px">
+						<a href="http://www.web.pdx.edu/~slarsen/TAAFU/home.php"> TAAFU: Teaching Abstract Algebra for Understanding</a>
+						<br><br>
+						Additional related projects will go here.
+						</p>
+				</center>				
+			</div>				
 			<footer>
-				<?php include 'footer.php'?>
+				<?php include 'footer.php' ?>
 			</footer>
 		</div>
     </div> <!-- /container -->
@@ -109,9 +88,11 @@ session_start();
 	<script type="text/javascript"
 			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/iola.js"></script>
+	
   </body>
 </html>
