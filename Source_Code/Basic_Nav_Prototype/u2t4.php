@@ -40,8 +40,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-	<?php include 'sidebtn.php' ?>
-
+	
+<?php include 'sidebtn.php' ?>
     <div class="container">
 
       <div class="jumbotron">
@@ -252,7 +252,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 				
 				<br><br>
-				<img src = "img/u2t4/10.png" alt="10">
+				<img  style="width:100%" src="img/u2t4/10.png" alt="10">
 				<br><br>
 				
 			<ul style="padding-left:35px">
@@ -298,8 +298,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<br><br>				
 				To help determine which of these two possibilities describes “undoing” Pat and Jamie’s approach from Task 3, the instructor may use the graphical representation of the maps from “N” to “N” to “N” (versus “N” to “N” to “N,” which was not Pat and Jamie’s approach) as a tool to help conceptualize of the order in which each transformation should be “undone.” In the example below, the group used “UL” and “UB” to represent the matrices that “undo lean” and “undo bigger,” respectively, in a diagram that conveys the importance of the order in which each matrix should be “undone.” 
 				<br><br>
-
-				<!--image here -->
+ 				<img src="img/u2t4/4_1.png" style="width:100%" alt="4_1">
 				<br><br>
 
 				Once it has been agreed that the matrices U<sub>L</sub>=$\begin{bmatrix} 1 & 1/4 \\ 0 & 1\end{bmatrix}$ and U<sub>B</sub>=$\begin{bmatrix} 1 & 0 \\ 0 & 3/4\end{bmatrix}$ actually “undo” each of Pat and Jamie’s matrices, the instructor should lead a discussion of how to use these two “undo” matrices might be used to generate matrix C. As with Task 3, this discussion should emphasize the non-commutativity of matrix multiplication.
@@ -325,7 +324,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					Because this works for every input vector x, we can conclude U<sub>A</sub>=U<sub>B</sub> U<sub>L</sub>.
 				</ul>
 				<br>
-				<b>NOTE:Connecting Matrices to Transformations:</b>
+				<b>NOTE: Connecting Matrices to Transformations:</b>
+				<br>
 					<ul style="padding-left:35px">
 						<li style="list-style-type:none">We have found that repeatedly reinforcing the connections between matrix multiplication and composition of functions is important. One way we have found helpful to do this is to repeatedly attach input vectors and output vectors to the transformations under discussion (as above).This can help students coordinate the importance of order, as well as conceptualize the transformations that the matrices represent.
 						</li>
@@ -335,82 +335,92 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 			<br><br>
 
-		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Reconvening in Whole Class Discussion &raquo;</a>
+
+
+
+		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Whole class discussion: Multiplying U<sub>A</sub>•A and A•U<sub>A</sub> (and composing a transformation and its “undoing”) &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "i29">
 						<ul>
 						<blockquote>
-						Again, students’ main difficulties in this task are:				
-						<br>
+						The instructor should now discuss with the students what the results of A•U and U<sub>A</sub>•A are. This discussion should be relatively straightforward, in that the students should be able to calculate the product (see Group 5 in the Student Thinking section). Once the product is established, the instructor should discuss the effect that the product U<sub>A</sub>•A has on specific vectors, for instance, on “N.” The students should be able to see that U<sub>A</sub>•A sends N to N. This discussion might be elaborated by utilizing the above graphical representation of sending N to N to N to N to N. A similar discussion could take place regarding A•U<sub>A</sub> as well as with B•U<sub>B</sub>, U<sub>B</sub>•B, L•U<sub>L</sub>, and U<sub>L</sub>•L. That is, the students may calculate each of these products and discuss the effect these products (what you know to be the identity) would have on specific vectors or “N.”			
+						<br><br>
+						<b>Defining Identities and Inverses</b>
+						<br><br>
+						This should lead into a formal discussion of how inverses of matrices are typically written and used. For instance, the instructor may ask students what matrix A(U<sub>A</sub>) represents. Having calculated the identity matrix, the students will likely describe a matrix with ones down the diagonal and zeros elsewhere. The instructor may then define the identity matrix and notate it as I<sub>n</sub>. 
+						<br><br>
 						<ul style="padding-left:35px">
-							<li>Using the outputs from the “make taller” transformation as inputs in the “lean” transformation to find the correct matrix for the “lean” transformation</li>
-							<li>Realizing the order of matrix multiplication that matches Pat and Jamie’s approach is multiplying the matrix B on the left by “lean” matrix L</li>
+							<li style="list-style-type:none; padding-bottom:20px">
+								<b>Definition:</b>The <b>identity matrix</b> of size n (denoted I<sub>n</sub>) is the n x n matrix in which a<sub>ij</sub>=1 if i=j and aa<sub>ij</sub>=0 if i≠j (where aa<sub>ij</sub> denotes the entry in the i<sup>th</sup> row and j<sup>th</sup> column).
+							</li>
+						
+							<li style="list-style-type:none;">
+							<b>Definition:</b> The <b>identity transformation</b> I<sub>n</sub>:&#x211d;<sup>n</sup>→&#x211d;<sup>m</sup> is the linear transformation that sends every vector to itself. That is, I<sub>n</sub> (x)=x for all x∈&#x211d;<sup>n</sup>. This could be informally referred to as the “do nothing” function.</li>
+							<br>
+						</ul>
+						It is now appropriate for the instructor to formally define the inverse transformation as the mathematical object that when composed with the original transformation yields the identity transformation. In other words, it is the transformation that, when composed (in either order) with the original transformation, the “net effect” is as if nothing happened at all. 
+						<br><br>
+						<ul style="padding-left:35px">
+							<li style="list-style-type:none;">
+								<b>Definition:</b> A linear transformation T:&#x211d;<sup>n</sup>→&#x211d;<sup>m</sup> is called an invertible transformation if there exists a transformation S:&#x211d;<sup>m</sup>→&#x211d;<sup>n</sup> such that S(T(x))=x for all x∈&#x211d;<sup>n</sup> and T(S(y))=y for all y∈&#x211d;<sup>m</sup>. In this case, S is called the <b>inverse</b> of T and is denoted T<sup>-1</sup>.
+							</li>						
 						</ul>
 						<br>
-						These common challenges serve as valuable points for whole class discussion that provide students with opportunities to consider ways to coordinate input and output vectors across multiple transformations, as well as how to interpret matrix multiplication as composition of functions. The instructor should, if possible, find representatives of student work to discuss in whole class: one that tried BL’ = A, and one that tried LB = A. 
-						<br>
-						<br>
-
-					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example Discussion Question:&raquo;</a>	
-					<div class="accordion-body collapse" id = "t63">
-						<blockquote style="background-color:#F8F8F8;">
-						“Ok here we have two groups that represent the two main approaches I saw out there: it looks like this group decided on BL’ = A as Pat and Jamie’s approach, and the other decided on LB = A. Can both approaches be correct? If not, how to do we decide? 
+						Additionally, it is appropriate for the instructor to formally define the inverse matrix as the mathematical object that when multiplied with the original matrix yields the identity matrix. 
 						<br><br>
-						<b>Note:</b> Some students may not have experience multiplying matrices. If this is the case, it is often useful to discuss matrix multiplication as an extension of the product of a matrix and a vector. Extending this, the product of the two matrices is the concatenation of the individual matrix-vector products. While it is not the only approach the instructor may choose to discuss matrix multiplication, this discussion does rely on the students’ current ways of operating with matrices and vectors (i.e., making use of their knowledge of A <b>x=b</b> to understand AX=B as A[<b>x<sub>1</sub> x<sub>2</sub></b>]=[<b>b<sub>1</sub> b<sub>2</sub></b>]. In a more proof-oriented course, the instructor may view this discussion as insufficient or unnecessary. 
-						</blockquote>
-					</div>
+						<ul style="padding-left:35px">
+							<li style="list-style-type:none;"> <b>Definition:</b> An n x n matrix A is called <b>invertible</b> if there exists an n x n matrix C such that C•A = I<sub>n</sub> and A•C = I<sub>n</sub>. In this case, C is called the inverse of A and is denoted A<sup>-1</sup>.
+							<br><br>
+							<ul style="padding-left:50px">
+							<li>One version of a formal definition of inverse does not explicitly state that the inverse is square and of the same dimension as A. Rather, these can be derived from the definition itself. This may be a worthwhile task in a more formal class. </li>	
+							<br>
+							<li>The instructor may wish to prove with the class that the inverse matrix is unique:
+								<br>
+								<ul style="padding-left:65px">
+									<li>Suppose there exist two n x n matrices, C and D, such that AC = CA = I and AD = DA = I. Consider (ACD):(DAC) = D(AC) = DI = D(DAC) = (DA)C = IC = C. Thus, C = D and the inverse is unique.
+									</li>
+								</ul>
+							</li>
+							</ul>
+							</li>
+						</ul>
+						<br>
+						<b>Computing the Inverse of a Product of Matrices </b>
+						<br><br>
+						Now that the term and notation A<sup>-1</sup> for the inverse of A has been introduced, the teacher should return to the work on Handout 4 and ask students about determining the inverse of Pat and Jamie’s approach – that is determining what (LB)<sup>-1</sup> equals. This may have already been discussed when considering what occurs when you multiply A and U<sub>A</sub>.  Even so, it is beneficial to return to it here in order to pair it with the term and notation of inverse. 
+						<br><br>
+						Students may reason that, for some x in the original “N”, the series of actions through Pat and Jamie’s approach and the appropriate “undoing” would be: U<sub>B</sub> (U<sub>L</sub> (L(B<b>x</b>)))=<b>x</b> or in inverse notation, B<sup>-1</sup> (L<sup>-1</sup> (L(B<b>x</b>)))=<b>x</b>.  Because this is true for any x for which the multiplication is defined, (LB)<sup>-1</sup>=B<sup>-1</sup> L<sup>-1</sup>.
 					</blockquote>
 					</ul>
 					</div>
 
 
-<a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Emphasizing the Connection to Composition of Functions&raquo;</a>
+<a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Suggested “Next Steps” after the Italicizing N Unit&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i25">
 			<ul>
 			<blockquote>
-				<p>Emphasizing the Connection to Composition of Functions</p>
+				<p>Suggested “Next Steps” after the Italicizing N Unit</p>
 				
-				The instructor should wrap up Task 3 by connecting students’ work to the concept of function composition.  Through this mini-lecture, the instructor can use students’ work to highlight how, in Task 1, Ax=y was interpreted as the linear transformation defined by A, acting on the input vector x to produce the output vector y. Now, in Pat and Jamie’s approach, that vector x would first be acted on by the matrix transformation B, then that result (let’s call it z, so Bx = z) would be acted on by L to produce y (so Lz = y). In other words: 
+				Note that this task does not offer a formula or procedure for finding the inverse of a matrix. That is, this activity does not result in students having a general process for finding matrix inverses, but it helps them conceive of <b>what</b> an inverse matrix (and inverse transformation) is. 
 				<br><br>
-				<ul style="padding-left:35px">
-					<li> x could be turned into y in one step via A: Ax=y</li>
-					<li>x could be turned into y in two steps via B and L: L(Bx)=L(z)=y
-						<ul style="padding-left:60px">
-							<li>Therefore, Ax=y and LBx=y
-							</li>
-							<li>This works for any input vector x, implying A=LB.
-							</li>
-						</ul>
-					</li>
-				</ul>	
+				In the past, we have followed up this task sequence by:
 				<br>
-				The instructor should state that, when considering matrices as linear transformations, matrix multiplication is interpreted as a composition of functions.
-				<br><br>
 				<ul style="padding-left:35px">
-					<li>Instructors may wish to bring up a few examples from high school algebra to remind students that they are familiar with how composition of functions works: 
+					<li>Exploring what types of matrices are invertible and why. We have used that opportunity to introduce the terms <b>one-to-one </b>transformations and <b>onto</b> transformations.</li>
+					<li>Exploring algorithms and formulas for determining A<sup>-1</sup> (in 2x2 or 3x3 only)
 						<ul style="padding-left:60px">
-							<li>f(x)=x+4 and g(x)=x<sup>2</sup>: f(g(2))=f(4)=8 but g(f(2))=g(6)=36. Thus f(g(x))≠g(f(x)) for every x in the domain.
+							<li>Investigate why [ A | I ] ~ [ I | A<sup>-1</sup>] makes sense conceptually and how that connects to what matrices are and aren’t invertible
 							</li>
-							<li>Some classes may choose to further emphasize that the codomain of the first function serves as the domain for the second function.  This gives a nice rationale (in terms of linear transformations) for why an m x n matrix can only be multiplied by an n x p matrix. 
-							</li>					
-						</ul>	
-					</li>
-					
-			</blockquote>
-			</ul>
-			</div>
-	
-
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i30">Defining Commutative and Noncommutative Matrices &raquo;</a>
-					<br>
-					<div class="accordion-body collapse" id = "i30">
-						<ul>
-						<blockquote>
-							Finally, the instructor should define the term commutative: We say two matrices D and F are commutative if DF = FD. If not, we say F and D are not commutative. Students should connect this to noncommutativity of function composition as well. 
-						</blockquote>
+							<li>	Derive the formula for the inverse of a 2x2, A<sup>-1</sup>=1/(det⁡(A)) $\begin{bmatrix} d & -b \\ -c & -a\end{bmatrix}$ for A=$\begin{bmatrix} a & b \\ c & -d\end{bmatrix}$ from the investigation of [ A | I ] ~ [ I | A<sup>-1</sup>
+							</li>
 						</ul>
-					</div>	
+					</li>
+					<li>Introducing elementary matrices in service of connecting to geometric interpretations of matrix transformations. In particular, for any invertible matrix A can be written as a finite sequence of elementary matrices E<sub>i</sub> such that A = E<sub>1</sub> E<sub>2</sub>… E<sub>k-1</sub>E<sub>k</sub>. Thus (based on the “undoing” seen in Pat and Jamie’s two-step inverse), A<<sup>-1</sup>=(E<sub>k</sub>)<sub>-1</sub>(E><sub>k-1</sub>)<sup>-1</sup>... (E<sub>2</sub>)<sup>-1</sup>(E<sub>1</sub>)<sup>-1</sup>. These elementary matrices (and their order) aren’t necessarily unique, but each can correspond to a geometric action (such as stretching or skewing) and the inverse of that elementary matrix corresponds to “undoing” that geometric action</li>
+				</ul>	
+				</blockquote>
+				</ul>
+				</div>	
 
 
 
@@ -466,6 +476,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/expandall.js"></script>
+ 
 	<script src="js/iola.js"></script>
 
 	<!-- Automatically open sidebar -->

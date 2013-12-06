@@ -28,6 +28,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 	<link href="css/carousel.css" rel="stylesheet">
     <link href="css/imgflip.css" rel="stylesheet">
 
+
+
+     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -41,8 +44,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-	<?php include 'sidebtn.php' ?>
-
+	
+    <?php include 'sidebtn.php' ?>
     <div class="container">
 
       <div class="jumbotron">
@@ -256,6 +259,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/sidr/sidr.js"></script>
 	<script src="js/expandall.js"></script>
+ 
 	<script src="js/iola.js"></script>
 
 	<!-- Automatically open sidebar -->
