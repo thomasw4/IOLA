@@ -58,7 +58,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/logo.png">
 
-    <title>Inquiry Oriented Linear Algebra</title>
+    <title>Inquiry Oriented Linear Algebra - IOLA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

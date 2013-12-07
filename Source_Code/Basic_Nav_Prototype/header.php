@@ -39,10 +39,10 @@
 			<?php if($ref != 'unit') { ?> <li><a id="simple-menu" href="#sidr">Units</a></li><?php } ?>
 			<?php } ?>
 			
-		<?php if($ref == 'team') { ?> <li class="active"><a href="team.php">Team</a></li><?php } ?>
-		<?php if($ref != 'team') { ?> <li><a href="team.php">Team</a></li><?php } ?>		
-		<?php if($ref == 'res') { ?><li class="dropdown active"><?php } ?>
-		<?php if($ref != 'res') { ?><li class="dropdown"><?php } ?>
+		<?php if($ref == 'team') { ?> <li class="active"><a href="team.php">Team</a></li>
+		<?php } else {?><li><a href="team.php">Team</a></li><?php } ?>		
+		<?php if($ref == 'res') { ?><li class="dropdown active">
+		<?php } else {?><li class="dropdown"><?php } ?>
 		  <a href="" class="open dropdown-toggle active" data-toggle="dropdown">Resources <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 		    <li><a href="publications.php">Publications</a></li>
@@ -54,8 +54,8 @@
 		</li>
 
 	    <?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] == 2) {  ?>
-		<?php if($ref == 'admin') { ?><li class="dropdown active"><?php } ?>
-		<?php if($ref != 'admin') { ?><li class="dropdown"><?php } ?>
+		<?php if($ref == 'admin') { ?><li class="dropdown active">
+		<?php } else {?><li class="dropdown"><?php } ?>
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
 			<li><a href="useradmin.php">Manage Users</a></li>

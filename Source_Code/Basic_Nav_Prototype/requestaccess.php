@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/ico/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
 
-    <title>IOLA Team</title>
+    <title>Request Access - IOLA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css"  type="text/css" rel="stylesheet">
