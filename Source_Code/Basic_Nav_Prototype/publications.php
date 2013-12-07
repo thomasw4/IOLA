@@ -40,7 +40,6 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 
 	<?php  if (isset($_SESSION['user']) && $_SESSION['user']['user_level'] > 0) {  ?>
 				<?php include 'sidebtn.php' ?>	
-
 	<?php } ?>
 
     <div class="container print">

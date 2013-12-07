@@ -57,7 +57,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<div class="accordion-body collapse pull-right" id = "t">
 					<ul>
 						<blockquote>
-							<a href="media/unit1/u2_task1.pdf">.pdf Download</a> <br><a href="media/unit1/u2_task1.doc">.doc Download</a>
+							<a href="media/unit2/docs/u2t1.pdf">.pdf Download</a> <br><a href="media/unit2/docs/u2t1.docx">.docx Download</a>
 						</blockquote>
 					</ul>
 				</div>
