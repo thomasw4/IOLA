@@ -197,6 +197,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		<ul>
 		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 				<div class="accordion-body collapse" id = "implementation">	
+				<ul>
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
 				The Pat and Jamie task sets the stage for a shift in students’ mathematical activity and goals; students are asked to combine matrices that define transformations in addition to determining what those matrices are. This is a shift from the goal of constructing a single transformation matrix based on inputs and outputs, such as in the Italicizing N task.   
@@ -304,14 +305,13 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</ul>
 		</div>
 
-	
+		<br>
 			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Back in Small Groups&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i24">
 			<ul>
 			<blockquote>
-				<p>Back in Small Groups</p>
-				<br>	
+				<p>Back in Small Groups</p>			
 				If they hadn’t done so already, all students should now be ready to find at least one lean matrix. The task is now to find a way to sensibly combine these two matrices to produce A, the matrix that transforms the normal size 12 N to the italicized size 16 N. It is likely that a few groups will try to add the matrices component-wise. Other students may recall the matrix multiplication algorithm from previous classes. In the latter case, these students may multiply both BL and LB (or L’B and BL’). The students should see that only one of these products (in each pair) results in A, which the instructor could leverage into a discussion of the noncommutativity of matrix multiplication. 
 				<br><br>				
 				Specifically, the students who italicized the 12-pt “N” will need to realize that, although they can multiply their matrices to create A (BL’ = A), these matrices do not represent the transformations described by Pat and Jamie’s approach. 
@@ -320,7 +320,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</blockquote>
 			</ul>
 			</div>
-			<br><br>
+			<br>
 
 		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Reconvening in Whole Class Discussion &raquo;</a>
 					<br>
@@ -350,7 +350,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</ul>
 					</div>
 
-
+<br>
 <a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Emphasizing the Connection to Composition of Functions&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i25">
@@ -388,7 +388,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</ul>
 			</div>
 	
-
+			<br>
 			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i30">Defining Commutative and Noncommutative Matrices &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "i30">
@@ -403,7 +403,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 
 
-
+			</ul>
 			</blockquote>
 			</ul>
 			</div>
