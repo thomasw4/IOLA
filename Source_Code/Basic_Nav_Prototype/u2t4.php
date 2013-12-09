@@ -243,7 +243,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				The instructor should draw on students’ reasoning that the transformation defined by C “undoes” the effect of the transformation defined by A, and support this reasoning by using notation such as C = U<sub>A</sub>, explaining that U<sub>A</sub> stands for “undoes A.” It need not be the case that this matrix is called “U<sub>A</sub>,” but this notation works well when the instructors move toward formally defining the inverse matrix. In any case, the instructor should discuss what notation the students might adopt throughout the Task
 				<br><br>			
 		
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i22">Working in small groups towards a solution &raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i22">Working in small groups towards a solution &raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i22">
 			<ul>
@@ -276,7 +276,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 			<br>
 
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i23">Whole class discussion: Discussing the solution C&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i23">Whole class discussion: Discussing the solution C&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i23">
 			<ul>
@@ -288,8 +288,8 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</ul>
 			</div>
 
-	
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Whole class discussion: Finding two matrices, each of which “undoes” one of Pat and Jamie’s matrices&raquo;</a>
+		<br>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i24">Whole class discussion: Finding two matrices, each of which “undoes” one of Pat and Jamie’s matrices&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i24">
 			<ul>
@@ -308,17 +308,19 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<br><br>
 				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example Discussion Question:&raquo;</a>	
 					<div class="accordion-body collapse" id = "t63">
+					<ul>
 					<blockquote style="background-color:#F8F8F8;">
 					How does the matrix C that we found in Question 1 of the Handout coordinate with the matrices (that we called “U<sub>L</sub>” and “U<sub>B</sub>”) that we found in Question 2 of the Handout? 
 					<br><br>
 					Should the final answer for “getting back” be the same for each approach?  Why (or why not), and how can we make sense of it?			
 					</blockquote>
+					</ul>
 					</div>
 				<br>
 				Using diagrams such as Figure 4.1 above can facilitate the instructor in leading a discussion on why “undoing” the original transformation in one step and “undoing” the original transformation in two steps should yield the same final transformation matrix.  After their work on Task 3 (“Pat and Jamie”), students will most likely have been approaching the problem with that assumption.
 				<br><br>
 				<ul style="padding-left:35px">
-					<li>In Task 3, the class had found that, for an input vector x in the original “N,” the result was the same if that x was made bigger, and then that result was italicized: Ax ⃗=L(Bx ⃗ )=b ⃗ <br>
+					<li>In Task 3, the class had found that, for an input vector x in the original “N,” the result was the same if that x was made bigger, and then that result was italicized: A \vec{x}$=L(Bx ⃗ )=b ⃗ <br>
 					Because this works for every input vector x, we concluded that A=LB.
 					<br><br>
 					<li>In Task 3, the class had found that, for an input vector x in the original “N,” the result was the same if that x was made bigger, and then that result was italicized: Ax ⃗=L(Bx ⃗ )=b ⃗ <br>
@@ -334,12 +336,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</blockquote>
 			</ul>
 			</div>
-			<br><br>
+			<br>
 
 
 
 
-		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Whole class discussion: Multiplying U<sub>A</sub>•A and A•U<sub>A</sub> (and composing a transformation and its “undoing”) &raquo;</a>
+		<a class="btn btn-success center" data-toggle="collapse" data-target="#i29">Whole class discussion: Multiplying U<sub>A</sub>•A and A•U<sub>A</sub> (and composing a transformation and its “undoing”) &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "i29">
 						<ul>
@@ -394,9 +396,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 					</blockquote>
 					</ul>
 					</div>
+				<br>
 
-
-<a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Suggested “Next Steps” after the Italicizing N Unit&raquo;</a>
+<a class="btn btn-success center" data-toggle="collapse" data-target="#i25">Suggested “Next Steps” after the Italicizing N Unit&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i25">
 			<ul>
@@ -423,7 +425,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				</ul>
 				</div>	
 
-
+				
 
 
 

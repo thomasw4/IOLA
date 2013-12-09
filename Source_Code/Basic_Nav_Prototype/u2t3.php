@@ -205,7 +205,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				Encourage students talking in their small groups about whether Pat and Jamie’s approach seems sensible and if that approach should give the same final matrix A that was found in the initial Italicizing N task.  (See Questions 1-2 from the Handout.)
 				<br><br>			
 		
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i22">Working in small groups towards a solution &raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i22">Working in small groups towards a solution &raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i22">
 			<ul>
@@ -227,7 +227,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 			<br>
 
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i23">Short break into Whole Class Discussion&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i23">Short break into Whole Class Discussion&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i23">
 			<ul>
@@ -260,6 +260,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<br><br>
 					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t61">What’s Happening Here Mathematically and How Do I Use It? &raquo;</a>	
 					<div class="accordion-body collapse" id = "t61">
+						<ul>
 						<blockquote style="background-color:#F8F8F8;">
 						The mathematics below surfaces eventually through students’ work – most often after students are sent back into small groups after the above mini-whole class discussion.  We include it here so that instructors can be prepared for the variety of student responses.
 
@@ -282,7 +283,9 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						<br><br>
 						LB = $\begin{bmatrix} 1 & 1/4 \\ 0 & 1\end{bmatrix}$$\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$ = $\begin{bmatrix} 1 & 1/3 \\ 0 & 4/3\end{bmatrix}$ = A ≠ $\begin{bmatrix} 1 & 1/4 \\ 0 & 4/3\end{bmatrix}$ = $\begin{bmatrix} 1 & 1/3 \\ 0 & 1\end{bmatrix}$
 						$\begin{bmatrix} 1 & 0 \\ 0 & 4/3\end{bmatrix}$ = L'B.
+					
 						</blockquote>
+						</ul>
 					</div>
 
 				<br><br>
@@ -296,9 +299,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 				<a class="btn btn-warning center" data-toggle="collapse" data-target="#t62">Example Prompt for Small Group Work &raquo;</a>	
 					<div class="accordion-body collapse" id = "t62">
+						<ul>
 						<blockquote style="background-color:#F8F8F8;">
 						“Thanks for sharing your initial ideas. We still have some work to do to confidently decide what “bigger” matrix B and “lean” matrix L represent Pat and Jamie’s approach.  Also, we need to decide how to combine these matrices – we know (from #1 on the handout) that the matrices should combine to equal A. But what method of combination makes sense, and why? If we didn’t know they should equal A, how could we know what to do?”
+
 						</blockquote>
+						</ul>
 					</div>
 				
 		</blockquote>
@@ -306,7 +312,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		</div>
 
 		<br>
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i24">Back in Small Groups&raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i24">Back in Small Groups&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i24">
 			<ul>
@@ -322,7 +328,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 			<br>
 
-		<a class="btn btn-blue center" data-toggle="collapse" data-target="#i29">Reconvening in Whole Class Discussion &raquo;</a>
+		<a class="btn btn-success center" data-toggle="collapse" data-target="#i29">Reconvening in Whole Class Discussion &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "i29">
 						<ul>
@@ -340,18 +346,20 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 					<a class="btn btn-warning center" data-toggle="collapse" data-target="#t63">Example Discussion Question:&raquo;</a>	
 					<div class="accordion-body collapse" id = "t63">
+						<ul>
 						<blockquote style="background-color:#F8F8F8;">
 						“Ok here we have two groups that represent the two main approaches I saw out there: it looks like this group decided on BL’ = A as Pat and Jamie’s approach, and the other decided on LB = A. Can both approaches be correct? If not, how to do we decide? 
 						<br><br>
 						<b>Note:</b> Some students may not have experience multiplying matrices. If this is the case, it is often useful to discuss matrix multiplication as an extension of the product of a matrix and a vector. Extending this, the product of the two matrices is the concatenation of the individual matrix-vector products. While it is not the only approach the instructor may choose to discuss matrix multiplication, this discussion does rely on the students’ current ways of operating with matrices and vectors (i.e., making use of their knowledge of A <b>x=b</b> to understand AX=B as A[<b>x<sub>1</sub> x<sub>2</sub></b>]=[<b>b<sub>1</sub> b<sub>2</sub></b>]. In a more proof-oriented course, the instructor may view this discussion as insufficient or unnecessary. 
 						</blockquote>
+					</ul>
 					</div>
 					</blockquote>
 					</ul>
 					</div>
 
 <br>
-<a class="btn btn-blue center" data-toggle="collapse" data-target="#i25">Emphasizing the Connection to Composition of Functions&raquo;</a>
+<a class="btn btn-success center" data-toggle="collapse" data-target="#i25">Emphasizing the Connection to Composition of Functions&raquo;</a>
 			<br>
 			<div class="accordion-body collapse" id = "i25">
 			<ul>
@@ -389,7 +397,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</div>
 	
 			<br>
-			<a class="btn btn-blue center" data-toggle="collapse" data-target="#i30">Defining Commutative and Noncommutative Matrices &raquo;</a>
+			<a class="btn btn-success center" data-toggle="collapse" data-target="#i30">Defining Commutative and Noncommutative Matrices &raquo;</a>
 					<br>
 					<div class="accordion-body collapse" id = "i30">
 						<ul>
