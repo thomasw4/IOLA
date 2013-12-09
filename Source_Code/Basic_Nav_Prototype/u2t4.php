@@ -235,6 +235,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 		<ul>
 		<a class="btn btn-primary center" data-toggle="collapse" data-target="#implementation">Implementation &raquo;</a>
 				<div class="accordion-body collapse" id = "implementation">	
+				<ul>
 				<blockquote>
 				<p class="lead">Getting Started with the Task</p>
 				The students should be able to engage in the task relatively easily, although finding the explicit matrices to map the italicized N to the original N is typically more difficult than Tasks 1 and 3. One reason for this difficulty is that the vertical components of the italicized N are no longer scalar multiples of a standard basis vector, but are skewed, causing it to be more difficult for students to “Guess-and-Check” the inverse matrices   
@@ -426,7 +427,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 
 
 
-
+			</ul>
 			</blockquote>
 			</ul>
 			</div>
