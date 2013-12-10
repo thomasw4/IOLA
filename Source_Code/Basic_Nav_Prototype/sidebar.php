@@ -1,7 +1,7 @@
 <ul>
 	<li>
-		<?php if($unit == 'u1') {?><a class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><b>Unit 1: Linear Independence and Span  </b><b class="caret"></b></a>
-		<?php } else {?><a class="accordion-toggle in" data-toggle="collapse" data-target="#u1">Unit 1: Linear Independence<br> and Span  <b class="caret"></b></a><?php } ?>		
+		<?php if($unit == 'u1') {?><a href="#unit1" class="accordion-toggle in" data-toggle="collapse" data-target="#u1"><b>Unit 1: Linear Independence and Span  </b><b class="caret"></b></a>
+		<?php } else {?><a href="#unit1" class="accordion-toggle in" data-toggle="collapse" data-target="#u1">Unit 1: Linear Independence<br> and Span  <b class="caret"></b></a><?php } ?>		
 		   <div class="collapse" id="u1">
 		   <ul>
 				<?php if($unit == 'u1' && $task == 's') {?><li><a href="u1.php" title="Title"><b> - Unit 1 Summary</b></a></li>
@@ -19,8 +19,8 @@
 	</li>	
 	<br>	
 	<li>
-		<?php if($unit == 'u2') {?><a class="accordion-toggle" data-toggle="collapse" data-target="#u2"><b>Unit 2: Matrices as Transformations </b><b class="caret"></b></a>
-		<?php } else {?><a class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2: Matrices as Transformations <b class="caret"></b></a><?php } ?>
+		<?php if($unit == 'u2') {?><a href="#unit2" class="accordion-toggle" data-toggle="collapse" data-target="#u2"><b>Unit 2: Matrices as Transformations </b><b class="caret"></b></a>
+		<?php } else {?><a href="#unit2" class="accordion-toggle" data-toggle="collapse" data-target="#u2">Unit 2: Matrices as Transformations <b class="caret"></b></a><?php } ?>
 			<div class="collapse" id="u2">
 		   	<ul>
 				<?php if($unit == 'u2' && $task == 's') {?><li><a href="u2.php" title="Title"><b> - Unit 2 Summary</b></a></li>
@@ -38,4 +38,9 @@
 			</ul>
 			</div>
 	</li>	
+	<br><br>
+	<li>
+<a id = "float" href="#float">Close sidebar <span class="glyphicon glyphicon-chevron-left pull-right"></span></a>
+
+	</li>
 </ul>

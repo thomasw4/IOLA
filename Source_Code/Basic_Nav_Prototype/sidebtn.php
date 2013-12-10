@@ -1,4 +1,4 @@
-<a style="display:block" href="sidr" id="open">
+<a style="display:inline" href="sidr" id="open">
 	<div id="float2" class="">
 		<br>
 		<span class="ba"><h3>

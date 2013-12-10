@@ -102,12 +102,8 @@
         $html.css('overflow-x', 'hidden').scrollTop(scrollTop);
 
         // Open menu
-        $body.css({
-		// ########## BILL MODIFICATION: scale the document size to consider menu size
-          width: $body.width() - (menuWidth - 1),
-          position: 'relative'
-        }).animate(bodyAnimation, speed);
-        $menu.css('display', 'block').animate(menuAnimation, speed, function() {
+
+        $menu.css('display', 'inline').animate(menuAnimation, 0, function() {
           sidrMoving = false;
           sidrOpened = name;
           // Callback
@@ -116,6 +112,11 @@
           }
         });
 		
+		$body.css({
+		// ########## BILL MODIFICATION: scale the document size to consider menu size
+          width: $body.width() - (menuWidth - 1),
+          position: 'relative'
+        }).animate(bodyAnimation, speed);
       }
       // Close Sidr
       else {

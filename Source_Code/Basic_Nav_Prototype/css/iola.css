@@ -22,7 +22,7 @@ body {
     height : 20%;
 	max-height:120px;
 	min-height:120px;
-    display : fixed;
+    display : inline;
 	border : 1px solid black;
     float:none;
 	position:fixed;
@@ -30,7 +30,7 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.bottomaligned {position:absolute; bottom:0;  margin-bottom:50px; left: 0;}
+.bottomaligned {position:fixed; bottom:0;  margin-bottom:50px; left: 0;}
 .ba {position:fixed;  margin-bottom:50px; margin-left: 8px;}
 
 /* A few custom-colored buttons. */
