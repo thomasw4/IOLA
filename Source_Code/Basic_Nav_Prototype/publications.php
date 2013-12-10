@@ -109,6 +109,63 @@ if (!isset($_SESSION['user']) || !$_SESSION['user']) {
 				</div>	
 				<br>
 				<div class="row">
+					<div class = "col-md-10">Developing instructor support materials for an inquiry-oriented curriculum</div>
+					<div class = "col-md-1"></div>					
+					<div class = "col-md-1"><a class="btn btn-default center pull-right" data-toggle="collapse" data-target="#6">View .pdf &raquo;</a></div>
+					<div class="accordion-body collapse" id = "6">
+						<ul><br><br>
+								<object data="media/pubs/Lockwood Johnson Larsen 2013.pdf" type="application/pdf" width="100%" height="800">				 
+									<p><a href="media/pubs/Lockwood Johnson Larsen 2013.pdf">Click here to download.</a></p>  
+								</object>					
+						</ul>
+					</div>
+				</div>	
+
+				<br>
+				<div class="row">
+					<div class = "col-md-10">A local instructional theory for the guided reinvention of the quotient group concept</div>
+					<div class = "col-md-1"></div>					
+					<div class = "col-md-1"><a class="btn btn-default center pull-right" data-toggle="collapse" data-target="#7">View .pdf &raquo;</a></div>
+					<div class="accordion-body collapse" id = "7">
+						<ul><br><br>
+								<object data="media/pubs/Larsen Lockwood 2013.pdf" type="application/pdf" width="100%" height="800">				 
+									<p><a href="media/pubs/Larsen Lockwood.pdf">Click here to download.</a></p>  
+								</object>					
+						</ul>
+					</div>
+				</div>	
+				<br>
+
+				<div class="row">
+					<div class = "col-md-10">Developing instructor support materials for an inquiry-oriented curriculum</div>
+					<div class = "col-md-1"></div>					
+					<div class = "col-md-1"><a class="btn btn-default center pull-right" data-toggle="collapse" data-target="#8">View .pdf &raquo;</a></div>
+					<div class="accordion-body collapse" id = "8">
+						<ul><br><br>
+								<object data="media/pubs/Lockwood Johnson Larsen 2013.pdf" type="application/pdf" width="100%" height="800">				 
+									<p><a href="media/pubs/Lockwood Johnson Larsen 2013.pdf">Click here to download.</a></p>  
+								</object>					
+						</ul>
+					</div>
+				</div>	
+				<br>
+
+				<div class="row">
+					<div class = "col-md-10">Locating starting points in differential equations: a realistic mathematics education approach</div>
+					<div class = "col-md-1"></div>					
+					<div class = "col-md-1"><a class="btn btn-default center pull-right" data-toggle="collapse" data-target="#10">View .pdf &raquo;</a></div>
+					<div class="accordion-body collapse" id = "10">
+						<ul><br><br>
+								<object data="media/pubs/Rasmussen King 2000.pdf" type="application/pdf" width="100%" height="800">				 
+									<p><a href="media/pubs/Rasmussen King 2000.pdf">Click here to download.</a></p>  
+								</object>					
+						</ul>
+					</div>
+				</div>	
+				<br>
+
+
+				<div class="row">
 					<div class = "col-md-10">A HYPOTHETICAL COLLECTIVE PROGRESSION FOR CONCEPTUALIZING MATRICES AS LINEAR TRANSFORMATIONS </div>
 					<div class = "col-md-1"></div>					
 					<div class = "col-md-1"><a class="btn btn-default center pull-right" data-toggle="collapse" data-target="#5">View .pdf &raquo;</a></div>
