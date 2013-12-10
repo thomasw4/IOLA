@@ -70,7 +70,7 @@ session_start();
 					<h2 style="float:right">Chris Rasmussen</h2><br><br><br><br>
 						<img width="250" height="250" src="img/team/rasmussen.jpg" style="float:right; padding-left:10px">
 						<ul>
-							<blockquote><p>
+							<blockquote style=" border-top-left-radius:15px"><p>
 								<a href="mailto:Chris.rasmussen@sdsu.edu">Chris Rasmussen</a> is Professor of Mathematics Education in the Department of Mathematics and Statistics at San Diego State University. He received an undergraduate degree in mechanical engineering, a master's degree in mathematics, and his Ph.D. in mathematics education at the University of Maryland. His research focuses on the learning and teaching of undergraduate mathematics, with a focus on courses that serve as a transition from students' current ways of reasoning to more formal and abstract ways of reasoning.
 							</p></blockquote>
 						</ul>	
@@ -88,7 +88,7 @@ session_start();
 					<h2 style="float:right">Christine Larson</h2><br><br><br><br>
 						<img width="250" height="250" src="img/team/larson.jpg" style="float:right; padding-left:10px">
 						<ul>
-							<blockquote><p>
+							<blockquote style=" border-top-left-radius:15px"><p>
 								<a href="mailto:christine.j.larson@vanderbilt.edu">Christine Larson</a> is an assistant professor of mathematics education at Florida State University. She recently completed a post-doctoral research fellowship in Vanderbilt University's Peabody School of Education in the Department of Teaching and Learning. In this capacity, she had the opportunity to assume a leadership role on a longitudinal project aimed understanding the institutional supports needed to improve middle school math instruction at scale. She earned her undergraduate and master's degrees in mathematics from the University of Kansas, and her Ph.D. in mathematics education and learning sciences from Indiana University. Her dissertation research focused on instructional design in introductory undergraduate linear algebra, exploring the ways in which student thinking, modeling, and history of mathematics serve to inform the development of inquiry oriented instructional materials in that content domain. Her current work explores teacher learning and institutional supports for effectively scaling up the implementation of inquiry oriented instruction.
 							</p></blockquote>
 						</ul>	
@@ -112,7 +112,7 @@ session_start();
 					<h2 style="float:right">Kathy Czeranko</h2><br><br><br><br>
 						<img width="250" height="250" src="img/team/czeranko.jpg" style="float:right; padding-left:10px">
 						<ul>
-							<blockquote><p>
+							<blockquote style=" border-top-left-radius:15px"><p>
 								Kathy Czeranko earned her BS and MS in Electrical Engineering from George Mason University. She has a Secondary Education Teaching Certificate in Mathematics in the State of Arizona. Kathy is currently an instructor at Arizona State University.
 							</p></blockquote>
 						</ul>	

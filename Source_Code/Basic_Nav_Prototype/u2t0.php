@@ -61,7 +61,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
 				<div class="accordion-body collapse pull-right" id = "t">
 					<ul>
-						<blockquote>
+						<blockquote style="border-top-left-radius:15px">
 							<a href="media/unit2/docs/u2t0.pdf">.pdf Download</a> <br><a href="media/unit2/docs/u2t0.docx">.docx Download</a>
 						</blockquote>
 					</ul>

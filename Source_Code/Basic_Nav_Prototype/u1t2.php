@@ -57,7 +57,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				<a class="btn btn-gray center pull-right" style="margin-right:15px"data-toggle="collapse" data-target="#t">Print Lesson &raquo;</a>
 					<div class="accordion-body collapse pull-right" id = "t">
 						<ul>
-							<blockquote>
+							<blockquote style="border-top-left-radius:15px">
 								<a href="media/unit1/docs/u1t2.pdf">.pdf Download</a> <br><a href="media/unit1/docs/u1t2.docx">.docx Download</a>
 							</blockquote>
 						</ul>
@@ -392,6 +392,7 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 						</video>
 						<br>
 						<video id="video_2" class="video-js vjs-default-skin"
+							controls preload="false"
 							data-setup='{"controls": true, "autoplay": false, "preload": "false"}'>
 							<source src="media/unit1/task2/Justin_Task_2.mp4" type='video/mp4' />
 						</video>
