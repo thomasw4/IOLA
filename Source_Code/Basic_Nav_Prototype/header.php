@@ -45,10 +45,11 @@
 		<?php } else {?><li class="dropdown"><?php } ?>
 		  <a href="" class="open dropdown-toggle active" data-toggle="dropdown">Resources <b class="caret"></b></a>
 		  <ul class="dropdown-menu">
-		    <li><a href="publications.php">Publications</a></li>
+		    <li><a href="typicalday.php">Typical Day</a></li>		    
 			<li><a href="videos.php">Videos</a></li>			
 			<li><a href="nsf.php">NSF</a></li>			
 			<li class="divider"></li>
+			<li><a href="publications.php">Publications</a></li>
 			<li><a href="related.php">Related Projects</a></li>
 		  </ul>
 		</li>

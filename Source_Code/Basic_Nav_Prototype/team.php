@@ -95,10 +95,16 @@ session_start();
 					<br>
 				   
 					<h2>David Plaxco</h2><br>
-						<img width="250" height="250" src="img/team/plaxco.jpg" style="float:left; padding-right:10px">
+						<img width="250" height="250" src="img/team/david.jpg" style="float:left; padding-right:10px">
 						<ul>
 							<blockquote style="border-right: 5px solid #3f3f3f; border-left: 0px"><p>
-								<a href="mailto:dplaxco@vt.edu">David Plaxco</a> is a doctoral student in Mathematics with an emphasis in Mathematics Education. David received his Bachelor's degree in Secondary Mathematics Education from Auburn University. He taught eighth grade in Muscle Shoals, AL (his hometown) for two years before becoming a graduate student at Virginia Tech. David earned his Master's degree in Mathematics from Virginia Tech, completing a thesis that used the context of probability to investigate relationships between undergraduate students' proof schemes and definitions. He is currently interested in students' understanding of mathematical concepts, especially how specific proving activities evoke and influence various aspects of a student's conception about the mathematics involved. His goal is to investigate students' individual understanding of concepts in an Abstract Algebra curriculum and how this understanding changes over time, specifically while engaged in proof activity. David works in the Virginia Tech Mathematics Department under a research assistantship with Dr. Wawro. His previous work in the department includes assisting Dr. Norton with the Noyce Scholarship Program and teaching Vector Geometry, Mathematics Tutoring, and the Early Field Experience for Preservice Teachers.
+								<a href="mailto:dplaxco@vt.edu">David Plaxco</a> is a doctoral student in Mathematics at Virginia Tech. David earned his
+									Bachelor's degree in Secondary Mathematics Education from Auburn
+									University and his Master's degree in Mathematics from Virginia Tech. He
+									taught eighth grade for two years in Muscle Shoals, AL. David is currently
+									interested in students' understanding of mathematical concepts, especially
+									how engaging in specific proof activities evokes and informs various aspects
+									of a student's conception about the mathematics involved.
 							</p></blockquote>
 						</ul>
 					<br>
@@ -113,7 +119,7 @@ session_start();
 					<br><br><br><br><br>
 					
 					<h2>Hayley Miles-Leighton </h2><br>
-						<!--img width="250" height="250" src="img/team/plaxco.jpg" style="float:left; padding-right:10px"-->
+						<img width="250" height="250" src="img/team/hayley.jpg" style="float:left; padding-right:10px">
 						<ul>
 							<blockquote style="border-right: 5px solid #3f3f3f; border-left: 0px"><p>
 								Hayley Miles-Leighton is a doctoral student in Mathematics Education jointly at San Diego State University and University of California, San Diego. She received a B.S. in Scientific Computation from the University of California, San Diego and a M.S. in Applied Mathematics from the University of Arizona. Her research focuses on the learning and teaching of undergraduate mathematics. Hayley works as a research assistant with Dr. Rasmussen on student thinking and instructional design in linear algebra, as well as student persistance in calculus. 
