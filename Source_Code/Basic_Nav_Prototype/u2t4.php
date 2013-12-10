@@ -320,11 +320,12 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 				Using diagrams such as Figure 4.1 above can facilitate the instructor in leading a discussion on why “undoing” the original transformation in one step and “undoing” the original transformation in two steps should yield the same final transformation matrix.  After their work on Task 3 (“Pat and Jamie”), students will most likely have been approaching the problem with that assumption.
 				<br><br>
 				<ul style="padding-left:35px">
-					<li>In Task 3, the class had found that, for an input vector x in the original “N,” the result was the same if that x was made bigger, and then that result was italicized: A \vec{x}$=L(Bx ⃗ )=b ⃗ <br>
-					Because this works for every input vector x, we concluded that A=LB.
+					<li>In Task 3, the class had found that, for an input vector <b>x</b> in the original “N,” the result was the same if that <b>x</b> was made bigger, and then that result was italicized: A $\vec{x}$=L(B$\vec{x}$)= b$\vec{x}$<br>
+					Because this works for every input vector <b>x</b>, we concluded that A = LB.
 					<br><br>
-					<li>In Task 3, the class had found that, for an input vector x in the original “N,” the result was the same if that x was made bigger, and then that result was italicized: Ax ⃗=L(Bx ⃗ )=b ⃗ <br>
-					Because this works for every input vector x, we can conclude U<sub>A</sub>=U<sub>B</sub> U<sub>L</sub>.
+					<li>When trying to get back to the original, using the “undo” matrices allows one to switch the input and output vectors: U<sub>A</sub>$\vec{b}$ = C$\vec{b}$ = U<sub>B</sub>(U<sub>L</sub>$\vec{b}$) = $\vec{b}$
+					<br>
+					Because this works for every input vector <b>x</b>, we can conclude U<sub>A</sub>=U<sub>B</sub> U<sub>L</sub>.
 				</ul>
 				<br>
 				<b>NOTE: Connecting Matrices to Transformations:</b>
@@ -337,8 +338,6 @@ if (!isset($_SESSION['user']) || !$_SESSION['user'] || $_SESSION['user']['user_l
 			</ul>
 			</div>
 			<br>
-
-
 
 
 		<a class="btn btn-success center" data-toggle="collapse" data-target="#i29">Whole class discussion: Multiplying U<sub>A</sub>•A and A•U<sub>A</sub> (and composing a transformation and its “undoing”) &raquo;</a>
